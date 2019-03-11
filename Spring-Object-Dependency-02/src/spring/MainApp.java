@@ -7,8 +7,7 @@ import org.springframework.core.io.Resource;
 
 public class MainApp {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		Resource res1 = new ClassPathResource("spconfig1.xml");
 		BeanFactory factory1 = new XmlBeanFactory(res1);
 
@@ -19,7 +18,5 @@ public class MainApp {
 		Journey j = (Journey)o;
 
 		j.startJourney();
-
 	}
-
 }
