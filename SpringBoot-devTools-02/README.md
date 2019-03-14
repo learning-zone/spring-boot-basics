@@ -1,16 +1,16 @@
-# ================================
-# COMMON SPRING BOOT PROPERTIES
-# ================================
+## ================================
+## COMMON SPRING BOOT PROPERTIES
+## ================================
 
 
-## Enable debug logs.
+// Enable debug logs.
 debug=true 
 
-## Enable trace logs.
+// Enable trace logs.
 trace=false
 
-## Application Port Number
+// Application Port Number
 server.port = 8085
 
-## Application contextPath
+// Application contextPath
 server.contextPath=/springboot
