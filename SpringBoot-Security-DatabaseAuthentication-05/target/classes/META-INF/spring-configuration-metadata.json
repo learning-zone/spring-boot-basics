@@ -1,0 +1,12 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.spring.app.config.SpringSecurityConfig",
+      "name": "spring.datasource",
+      "sourceMethod": "public javax.sql.DataSource ds() ",
+      "type": "javax.sql.DataSource"
+    }
+  ],
+  "properties": []
+}
