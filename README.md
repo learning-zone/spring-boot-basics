@@ -1,4 +1,4 @@
-# Spring Question
+# Spring Questions
 
 1. What are the various ways of using Spring Framework?
 1. What are the different types of events in spring framework?
@@ -51,3 +51,40 @@
 1. How does the scope Prototype work?
 1. What is a MultipartResolver and when its used?
 1. Difference between JavaBean and Spring bean?
+
+
+# Microservices Questions
+
+1. List down the advantages of Microservices Architecture. 
+1. What are the best practices to design Microservices? 
+1. What is Cohesion and Coupling?  
+1. What are different types of Tests for Microservices?
+1. What do you understand by Distributed Transaction in microservices?
+1. What is an Idempotence in REST APIs? 
+1. What is Bounded Context? 
+1. How does HTTPS authentication works in Microservices? 
+1. What is the use of PACT in Microservices architecture?
+1. What is the use of Container in Microservices? 
+1. What is the role of Web, RESTful APIs in Microservices? 
+1. What is OAuth?
+1. What is Conway’s law?
+1. What is a Consumer-Driven Contract (CDC)?
+1. What do you understand by Semantic monitoring in Microservices architecture? 
+1. What is Canary Releasing? 
+1. Why would we need Reports and Dashboards in Microservices? 
+1. What is Semantic Versioning? 
+1. What is the difference between Mean Time to Repair (MTTR) and Mean Time between failures (MTBF)? 
+1. What is Confused Deputy Problem in security context?
+1. What are the important Cross-Functional Requirements to consider during the design of a Microservice?
+1. What is a Circuit Breaker pattern in the context of Microservice?
+1. What is Bulkhead design pattern?
+1. How can you scale a Database?
+1. What is Command Query Responsibility Segregation (CQRS) design pattern?
+1. What is CAP theorem?
+1. What do you mean by Eureka in the realm of Microservices?
+1. Can you integrate Zuul with other types of projects?
+1. Describe the circumstances under which you would use the Netflix Hystrix
+1. Shed light on Tasklet with reference to Spring Batch and Microservices  
+1. What do you know about YAML in the realm of Microservices?
+1. Shed light on the various types of IT characteristics that are available in Microservices
+1. How Will You Monitor Multiple Microservices For Various Indicators Like Health?
