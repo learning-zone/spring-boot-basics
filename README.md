@@ -87,4 +87,4 @@
 1. Shed light on Tasklet with reference to Spring Batch and Microservices  
 1. What do you know about YAML in the realm of Microservices?
 1. Shed light on the various types of IT characteristics that are available in Microservices
-1. How Will You Monitor Multiple Microservices For Various Indicators Like Health?
+1. How to monitor multiple Microservices For Various Indicators Like Health?
