@@ -1,0 +1,11 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="beanId03" class="spring.Travel">
+		<property name="v">
+			<ref parent="beanId02" />
+		</property>
+	</bean>
+</beans> 
+  
