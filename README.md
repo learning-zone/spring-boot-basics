@@ -51,6 +51,7 @@
 1. How does the scope Prototype work?
 1. What is a MultipartResolver and when its used?
 1. Difference between JavaBean and Spring bean?
+1. Write a program in spring-boot to get employees details based on employee id?
 
 
 # Microservices Questions
