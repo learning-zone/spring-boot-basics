@@ -9,7 +9,6 @@
 #### Q. Explain JoinPoint and Pointcut in spring 
 #### Q. Why do we need to Wrapper classes.
 #### Q. How Website caching works 
-#### Q. What are the various ways you will secure a website.
 #### Q. How to create marker interface?
 #### Q. Explain how hashMap works?
 #### Q. Write a code to implement hashMap, arrayList 
@@ -17,24 +16,22 @@
 #### Q. What are jsp implicit objects? 
 #### Q. Difference between sendRedirect() and forward() 
 #### Q. Tell me what happens when a servlet is invoked, when is init invoked and when is sevice invoked.
-#### Q. servlet, ejb, jsp lifecycle 
+#### Q. Explain servlet and jsp lifecycle 
 #### Q. What are the major additions for jdk from 1.7 to 1.8 so on.
 #### Q. How serialization works in java? 
 #### Q. Better way to manage transactions.
 #### Q. What are the various ways to load a class. 
-#### Q. Implement link list 
-#### Q. design patterns related question(Singleton, Adaptor, Factory, Strategy) 
+#### Q. Java Program to Implement Singly Linked List
+#### Q. Design patterns related question(Singleton, Adaptor, Factory, Strategy) 
 #### Q. Spring bean scope. 
 #### Q. What is AOP. what does spring AOP provide. 
 #### Q. What is servlet context. parameter, argument.
-#### Q. equals() and hashcode() contract between them. 
 #### Q. How set implement unique values?
-#### Q. comparable and comparator difference. 
-#### Q. About spring transaction. 
+#### Q. What is Comparable and Comparator interface in java?
+#### Q. Explain spring transaction. 
 #### Q. DAO factory pattern. 
 #### Q. How to stop thread? 
 #### Q. Insert a uppercase value into map without using toUpperCase() of string class. 
-#### Q. How do you implement immutable to a class?
 #### Q. While overriding a method can you throw another exception or broader exception? 
 #### Q. Difference between entrySet(), keySet() and values() in HashMap. 
 #### Q. A java prog in windows, how will you run it on linux machine?
@@ -54,7 +51,6 @@
 #### Q. Array and arrayList what is the difference in datastructure 
 #### Q. bootstrap, class.forname, permgen what way are these done 
 #### Q. How microservices communicate with each other? 
-#### Q. How does class loader work?
 #### Q. Array or ArrayList which one is faster?  [ Array is faster ]
 #### Q. How to prevent from database attacks/SQL Injection? 
 #### Q. How to do SSO implementation using Spring Boot?
@@ -119,8 +115,5 @@
 #### Q. Do you know Generics? What is it? Why we need that? How did you used in your coding?
 #### Q. Why we prefer implements Runnable to create THREAD?
 #### Q. Difference between String and StringBuilder and StringBuffer ?
-#### Q. What is the use of default Constructor?
-#### Q. What is the use of static block?
 #### Q. How can we create a object of a class without using new operator
-#### Q. what are the purposes of native, transiant key words?
 #### Q. what are upcasting and downcasting?
