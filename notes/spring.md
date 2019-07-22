@@ -1,6 +1,5 @@
 # Spring-Framework Notes
 
-IOC, MVC, AOP Spring-Framework-Interview-Question
 
 #### 1.  What is Spring ?
   Spring is an open source framework created to address the complexity of enterprise application development. One of the chief advantages of the Spring framework is its layered architecture, which allows you to be selective about which of its components you use while also providing a cohesive framework for J2EE application development.
