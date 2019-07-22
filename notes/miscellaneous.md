@@ -5,7 +5,6 @@
 #### Q. How bootstrap class loader works in java?
 
 Bootstrap **ClassLoader** is repsonsible for loading standard JDK classs files from **rt.jar** and it is parent of all class loaders in java.
-
 There are three types of built-in ClassLoader in Java:
 
 1. **Bootstrap Class Loader** – It loads JDK internal classes, typically loads rt.jar and other core classes for example java.lang.* package classes
