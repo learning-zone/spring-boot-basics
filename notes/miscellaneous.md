@@ -3,6 +3,15 @@
 
 #### Q. Write a program in spring-boot to get employees details based on employee id?
 #### Q. How bootstrap class loader works in java?
+
+Bootstrap **ClassLoader** is repsonsible for loading standard JDK classs files from **rt.jar** and it is parent of all class loaders in java.
+
+There are three types of built-in ClassLoader in Java:
+
+1. **Bootstrap Class Loader** – It loads JDK internal classes, typically loads rt.jar and other core classes for example java.lang.* package classes
+1. **Extensions Class Loader** – It loads classes from the JDK extensions directory, usually $JAVA_HOME/lib/ext directory.
+1. **System Class Loader** – It loads classes from the current classpath that can be set while invoking a program using -cp or -classpath command line options.
+
 #### Q. Why string is immutable in java? 
 #### Q. What is Java String Pool?  
 #### Q. Explain how Garbage collector algorithm works? 
