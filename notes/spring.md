@@ -1,30 +1,17 @@
 # Spring-Framework Notes
 
 
-#### 1.  What is Spring ?
+#### Q. What is Spring ?
   Spring is an open source framework created to address the complexity of enterprise application development. One of the chief advantages of the Spring framework is its layered architecture, which allows you to be selective about which of its components you use while also providing a cohesive framework for J2EE application development.
 
-#### 2. What are the advantages of Spring framework?
-  The advantages of Spring are as follows:
-  -	Spring has layered architecture. Use what you need and leave you don't need now.
-  -		Spring Enables POJO Programming. There is no behind the scene magic here. POJO programming enables continuous integration and testability.
-  -	Dependency Injection and Inversion of Control Simplifies JDBC
-  -		Open source and no vendor lock-in.
-#### 3. What are features of Spring?
-  -	Lightweight:
-  spring is lightweight when it comes to size and transparency. The basic version of spring framework is around 1MB. And the processing overhead is also very negligible.
-  -	Inversion of control (IOC):
-  Loose coupling is achieved in spring using the technique Inversion of Control. The objects give their dependencies instead of creating or looking for dependent objects.
-  -	Aspect oriented (AOP):
-  Spring supports Aspect oriented programming and enables cohesive development by separating application business logic from system services.
-  -	Container:
-  Spring contains and manages the life cycle and configuration of application objects.
-  -	MVC Framework:
-  Spring comes with MVC web application framework, built on core Spring functionality. This framework is highly configurable via strategy interfaces, and accommodates multiple view technologies like JSP, Velocity, Tiles, iText, and POI. But other frameworks can be easily used instead of Spring MVC Framework.
-  -	Transaction Management:
-  Spring framework provides a generic abstraction layer for transaction management. This allowing the developer to add the pluggable transaction managers, and making it easy to demarcate transactions without dealing with low-level issues. Spring's transaction support is not tied to J2EE environments and it can be also used in container less environments.
-  - JDBC Exception Handling:
-  The JDBC abstraction layer of the Spring offers a meaningful exception hierarchy, which simplifies the error handling strategy. Integration with Hibernate, JDO, and iBATIS: Spring provides best Integration services with Hibernate, JDO and iBATIS
+#### Q. What are features of Spring?
+  -	**Lightweight**: spring is lightweight when it comes to size and transparency. The basic version of spring framework is around 1MB. And the processing overhead is also very negligible.
+  -	**Inversion of control (IOC)**: Loose coupling is achieved in spring using the technique Inversion of Control. The objects give their dependencies instead of creating or looking for dependent objects.
+  -	**Aspect oriented (AOP)**: Spring supports Aspect oriented programming and enables cohesive development by separating application business logic from system services.
+  -	**Container**: Spring contains and manages the life cycle and configuration of application objects.
+  -	**MVC Framework**: Spring comes with MVC web application framework, built on core Spring functionality. This framework is highly configurable via strategy interfaces, and accommodates multiple view technologies like JSP, Velocity, Tiles, iText, and POI. But other frameworks can be easily used instead of Spring MVC Framework.
+  -	**Transaction Management**: Spring framework provides a generic abstraction layer for transaction management. This allowing the developer to add the pluggable transaction managers, and making it easy to demarcate transactions without dealing with low-level issues. Spring's transaction support is not tied to J2EE environments and it can be also used in container less environments.
+  - **JDBC Exception Handling**: The JDBC abstraction layer of the Spring offers a meaningful exception hierarchy, which simplifies the error handling strategy. Integration with Hibernate, JDO, and iBATIS: Spring provides best Integration services with Hibernate, JDO and iBATIS
 
 #### 4. How many modules are there in Spring? What are they?
  Spring comprises of seven modules. They are..
