@@ -1,7 +1,11 @@
 # Java, J2EE, Spring-boot Questions
 
 
-#### Q. Write a program in spring-boot to get employees details based on employee id?
+#### Q. Spring Boot program to get employees details based on employee id?
+#### Q. Spring Boot program for file upload / download
+#### Q. Spring Boot program for Send Mail
+#### Q. Spring Boot RESTful web services programs
+#### Q. Connecting Spring Boot with databases
 #### Q. How bootstrap class loader works in java?
 
 Bootstrap **ClassLoader** is repsonsible for loading standard JDK classs files from **rt.jar** and it is parent of all class loaders in java.
