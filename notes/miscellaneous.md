@@ -5,7 +5,7 @@
 #### Q. Spring Boot program for Send Mail
 #### Q. Spring Boot RESTful web services example
 
-* Step 01: pom.xml Settings
+* **Step 01: pom.xml Settings**
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -294,7 +294,7 @@ public class MainRESTController {
 }
 ```
 
-**Step 06: Run and Test the application**
+* **Step 06: Run and Test the application**
 
 ```
 // Get all the employees details
