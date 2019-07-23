@@ -15,11 +15,10 @@
                         http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
  
-    <groupId>org.o7planning</groupId>
+    <groupId>com.springexample</groupId>
     <artifactId>SpringBootCrudRestful</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
- 
     <name>SpringBootCrudRestful</name>
     <description>Spring Boot + Restful</description>
  
@@ -92,9 +91,7 @@ public class Employee {
     private String empName;
     private String position;
  
-    public Employee() {
- 
-    }
+    public Employee() { }
  
     public Employee(String empNo, String empName, String position) {
         this.empNo = empNo;
@@ -138,7 +135,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
  
-import org.o7planning.sbcrudrestful.model.Employee;
+import org.springexample.sbcrudrestful.model.Employee;
 import org.springframework.stereotype.Repository;
  
 @Repository
@@ -194,8 +191,8 @@ public class EmployeeDAO {
 ```
 import java.util.List;
  
-import org.o7planning.sbcrudrestful.dao.EmployeeDAO;
-import org.o7planning.sbcrudrestful.model.Employee;
+import org.springexample.sbcrudrestful.dao.EmployeeDAO;
+import org.springexample.sbcrudrestful.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
