@@ -71,7 +71,7 @@ public class FileDemoApplication {
 
 ```
 
-* **Step 03: Writing APIs for File Upload and Download**
+* **Step 04: Writing APIs for File Upload and Download**
 
 ```
 
@@ -151,7 +151,7 @@ public class FileController {
 
 ```
 
-* **Step 04: UploadFileResponse**
+* **Step 05: UploadFileResponse**
 
 ```
 
@@ -175,7 +175,7 @@ public class UploadFileResponse {
 
 ```
 
-* **Step 04: Service for Storing Files in the FileSystem and retrieving them**
+* **Step 06: Service for Storing Files in the FileSystem and retrieving them**
 
 ```
 package com.example.filedemo.service;
@@ -250,7 +250,7 @@ public class FileStorageService {
 
 ```
 
-* **Step 05: FileStorageException**
+* **Step 07: FileStorageException**
 
 ```
 package com.example.filedemo.exception;
@@ -267,7 +267,7 @@ public class FileStorageException extends RuntimeException {
 
 ```
 
-* **Step 06: MyFileNotFoundException**
+* **Step 08: MyFileNotFoundException**
 
 ```
 package com.example.filedemo.exception;
@@ -288,7 +288,7 @@ public class MyFileNotFoundException extends RuntimeException {
 
 ```
 
-* **Step 06: Running the Application and Testing the APIs via Postman**
+* **Step 09: Running the Application and Testing the APIs via Postman**
 
 ```
 mvn spring-boot:run
