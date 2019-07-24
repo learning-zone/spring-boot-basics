@@ -363,8 +363,8 @@ mvn spring-boot:run
 ```
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
-spring.mail.username=username
-spring.mail.password=password
+spring.mail.username=pradeep.vwa@gmail.com
+spring.mail.password=*****
 
 # Other properties
 spring.mail.properties.mail.smtp.auth=true
