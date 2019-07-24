@@ -829,6 +829,9 @@ There are three types of built-in ClassLoader in Java:
 1. **System Class Loader** – It loads classes from the current classpath that can be set while invoking a program using -cp or -classpath command line options.
 
 #### Q. Why string is immutable in java? 
+
+The string is Immutable in Java because String objects are cached in String pool. Since cached String literals are shared between multiple clients there is always a risk, where one client's action would affect all another client. 
+
 #### Q. What is Java String Pool?  
 #### Q. Explain how Garbage collector algorithm works? 
 #### Q. Explain JoinPoint and Pointcut in spring 
