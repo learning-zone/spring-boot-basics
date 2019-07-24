@@ -828,6 +828,37 @@ There are three types of built-in ClassLoader in Java:
 1. **Extensions Class Loader** – It loads classes from the JDK extensions directory, usually $JAVA_HOME/lib/ext directory.
 1. **System Class Loader** – It loads classes from the current classpath that can be set while invoking a program using -cp or -classpath command line options.
 
+```
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/**
+ * Java program to demonstrate How ClassLoader works in Java,
+ * in particular about visibility principle of ClassLoader.
+ *
+ */
+
+public class ClassLoaderTest {
+  
+    public static void main(String args[]) {
+        try {          
+            //printing ClassLoader of this class
+            System.out.println("ClassLoaderTest.getClass().getClassLoader() : "
+                                 + ClassLoaderTest.class.getClassLoader());
+
+          
+            //trying to explicitly load this class again using Extension class loader
+            Class.forName("test.ClassLoaderTest", true 
+                            ,  ClassLoaderTest.class.getClassLoader().getParent());
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(ClassLoaderTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+}
+
+```
+
 #### Q. Why string is immutable in java? 
 
 The string is Immutable in Java because String objects are cached in String pool. Since cached String literals are shared between multiple clients there is always a risk, where one client's action would affect all another client. 
