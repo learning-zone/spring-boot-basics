@@ -862,6 +862,8 @@ public class ClassLoaderTest {
 
 The string is Immutable in Java because String objects are cached in String pool. Since cached String literals are shared between multiple clients there is always a risk, where one client's action would affect all another client. 
 
+Since string is immutable it can safely share between many threads and avoid any synchronization issues in java.
+
 #### Q. What is Java String Pool?  
 #### Q. Explain how Garbage collector algorithm works? 
 #### Q. Explain JoinPoint and Pointcut in spring 
