@@ -74,7 +74,6 @@ public class FileDemoApplication {
 * **Step 04: Writing APIs for File Upload and Download**
 
 ```
-
 package com.example.filedemo.controller;
 
 import com.example.filedemo.payload.UploadFileResponse;
@@ -154,7 +153,6 @@ public class FileController {
 * **Step 05: UploadFileResponse**
 
 ```
-
 package com.example.filedemo.payload;
 
 public class UploadFileResponse {
