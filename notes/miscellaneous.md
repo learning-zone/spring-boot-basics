@@ -833,9 +833,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Java program to demonstrate How ClassLoader works in Java,
- * in particular about visibility principle of ClassLoader.
- *
+ * Java program to demonstrate How ClassLoader works in Java
+ * 
  */
 
 public class ClassLoaderTest {
