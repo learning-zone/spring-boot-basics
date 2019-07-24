@@ -885,7 +885,6 @@ public class StringPool {
         System.out.println("s1 == s2 :" +(s1==s2)); // true
         System.out.println("s1 == s3 :" +(s1==s3)); // false
     }
-
 }
 
 ```
