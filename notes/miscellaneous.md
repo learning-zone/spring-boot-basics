@@ -772,6 +772,55 @@ http://localhost:8080/employee/E01.json
 ```
 
 #### Q. Connecting Spring Boot with databases
+
+* **Step 01: application.properties Settings**
+
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/springbootdb  
+spring.datasource.username=root  
+spring.datasource.password=mysql  
+spring.jpa.hibernate.ddl-auto=create-drop  
+
+```
+
+* **Step 02: SpringBootJdbcApplication.java**
+
+```
+package com.learningzone;  
+
+import org.springframework.boot.SpringApplication;  
+import org.springframework.boot.autoconfigure.SpringBootApplication;  
+@SpringBootApplication  
+public class SpringBootJdbcApplication {  
+    public static void main(String[] args) {  
+        SpringApplication.run(SpringBootJdbcApplication.class, args);  
+    }  
+}  
+
+```
+
+* **Step 02: SpringBootJdbcController.java**
+
+```
+package com.learningzone;
+  
+import org.springframework.web.bind.annotation.RequestMapping;  
+import org.springframework.beans.factory.annotation.Autowired;  
+import org.springframework.jdbc.core.JdbcTemplate;  
+import org.springframework.web.bind.annotation.RestController;  
+@RestController  
+public class SpringBootJdbcController {  
+    @Autowired  
+    JdbcTemplate jdbc;    
+    @RequestMapping("/insert")  
+    public String index(){  
+        jdbc.execute("insert into user(name,email)values('javatpoint','java@javatpoint.com')");  
+        return"data inserted Successfully";  
+    }  
+}  
+
+```
+
 #### Q. How bootstrap class loader works in java?
 
 Bootstrap **ClassLoader** is repsonsible for loading standard JDK classs files from **rt.jar** and it is parent of all class loaders in java.
