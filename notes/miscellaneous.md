@@ -835,7 +835,7 @@ import java.util.logging.Logger;
 /**
  * Java program to demonstrate How ClassLoader works in Java
  * 
- */
+ **/
 
 public class ClassLoaderTest {
   
@@ -871,6 +871,10 @@ String Pool in java is a pool of Strings stored in Java Heap Memory. String pool
 When we use double quotes to create a String, it first looks for String with the same value in the String pool, if found it just returns the reference else it creates a new String in the pool and then returns the reference. However using new operator, we force String class to create a new String object in heap space.
 
 ```
+/**
+* Java program to illustrate String Pool
+*
+**/
 public class StringPool {
 
     /**
@@ -911,6 +915,10 @@ public interface Interface_Name {
 ```
 Example:
 ```
+/**
+* Java program to illustrate Maker Interface 
+*
+**/
 interface Marker {    }
 
 class A implements Marker {
