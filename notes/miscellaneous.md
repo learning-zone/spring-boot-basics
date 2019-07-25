@@ -749,7 +749,6 @@ http://localhost:8080/employees.xml
 http://localhost:8080/employee/E01
 http://localhost:8080/employee/E01.xml
 http://localhost:8080/employee/E01.json
-
 ```
 
 #### Q. Connecting Spring Boot with databases
