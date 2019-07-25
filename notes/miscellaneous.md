@@ -1012,7 +1012,6 @@ public class MapToListExamples {
         } 
     } 
 }
-
 ```
 #### Q. Difference between arrayList and linkedList 
 #### Q. What are jsp implicit objects? 
