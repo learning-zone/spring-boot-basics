@@ -1025,7 +1025,7 @@ ArrayList and LinkedList both implements List interface and maintains insertion 
 | ArrayList is better for storing and accessing data. 	          |LinkedList is better for manipulating data.|
 
 
-#### Q. What are jsp implicit objects? 
+#### Q. What is jsp implicit object? 
 
 * **request**: This is the HttpServletRequest object associated with the request.
 
