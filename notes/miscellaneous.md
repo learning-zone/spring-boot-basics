@@ -936,7 +936,10 @@ Since the internal array of HashMap is of fixed size, and if you keep storing ob
 
 Example:
 ```
-// Java program to illustrate internal working of HashMap 
+/**
+* Java program to illustrate internal working of HashMap 
+*
+**/
 import java.util.HashMap; 
   
 class Key { 
