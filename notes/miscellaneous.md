@@ -1066,6 +1066,178 @@ request.jsp
 </html>
 ```
 
+* **response**: This is the HttpServletResponse object associated with the response to the client.
+
+Example:
+```
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Implicit Objects</title>
+  </head>
+<body>
+    <%response.setContentType("text/html"); %>
+</body>
+</html>
+```
+
+* **session**: This is the HttpSession object associated with the request.
+
+Example: index.jsp
+```
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Implicit Objects</title>
+    </head>
+<body>
+    <% session.setAttribute("user","Pradeep"); %>
+    <a href="session.jsp">Click here to get user name</a>
+</body>
+</html>
+```
+session.jsp
+```
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Implicit Objects</title>
+    </head>
+<body>
+    <% String name = (String)session.getAttribute("user");
+        out.println("User Name is " +name);
+    %>
+</body>
+</html>
+```
+
+* **out**: This is the PrintWriter object used to send output to the client.
+
+Example:
+```
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Implicit Objects</title>
+    </head>
+<body>
+    <% int num1=10;int num2=20;
+        out.println("num1 is " +num1);
+        out.println("num2 is "+num2);
+    %>
+</body>
+</html>
+```
+
+* **application**: This is the ServletContext object associated with the application context.
+
+Example:
+```
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Implicit Objects</title>
+    </head>
+<body>
+    <% application.getContextPath(); %>
+</body>
+</html>
+```
+* **config**: This is the ServletConfig object associated with the page.
+
+Example: web.xml
+```
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>comingsoon</servlet-name>
+        <servlet-class>mysite.server.ComingSoonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>comingsoon</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+</web-app>
+```
+index.jsp
+```
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Implicit Objects</title>
+    </head>
+<body>
+    <% String servletName = config.getServletName();
+        out.println("Servlet Name is " +servletName);%>
+</body>
+</html>
+```
+
+* **pageContext**: It is used to get, set and remove the attributes from a particular scope.
+
+* **page**: Page implicit variable holds the currently executed servlet object for the corresponding jsp. Acts as this object for current jsp page.
+
+Example:
+```
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Implicit Guru JSP10</title>
+    </head>
+<body>
+    <% String pageName = page.toString();
+        out.println("Page Name is " +pageName);
+    %>
+</body>
+</html>
+```
+
+* **Exception**: It is used for exception handling in JSP.
+
+Example:
+```
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isErrorPage="true"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Implicit Guru JSP 11</title>
+    </head>
+<body>
+    <%  int[] num1={1,2,3,4};
+        out.println(num1[5]);
+    %>
+    <%= exception %>
+</body>
+</html>
+```
+
+
 #### Q. Difference between sendRedirect() and forward() 
 #### Q. What happens when a servlet is invoked, when is init invoked and when is sevice invoked?
 #### Q. Explain servlet and jsp lifecycle 
