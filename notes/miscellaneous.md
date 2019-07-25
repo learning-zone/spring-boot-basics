@@ -882,7 +882,6 @@ Syntax:
 public interface Interface_Name {
 
 }
-
 ```
 Example:
 ```
