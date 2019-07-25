@@ -832,7 +832,6 @@ public class ClassLoaderTest {
             Logger.getLogger(ClassLoaderTest.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
 }
 ```
 
