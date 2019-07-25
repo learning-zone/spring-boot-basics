@@ -761,7 +761,6 @@ spring.datasource.url=jdbc:mysql://localhost:3306/springbootdb
 spring.datasource.username=root  
 spring.datasource.password=mysql  
 spring.jpa.hibernate.ddl-auto=create-drop  
-
 ```
 
 * **Step 02: SpringBootJdbcApplication.java**
