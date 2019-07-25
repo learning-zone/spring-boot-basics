@@ -897,10 +897,19 @@ Garbage collection works on **Mark** and **Sweep** algorithm. In Mark phase it d
 There are methods like <code>System.gc()</code> and <code>Runtime.gc()</code> which is used to send request of Garbage collection to JVM but it’s not guaranteed that garbage collection will happen. If there is no memory space for creating a new object in Heap Java Virtual Machine throws <code>OutOfMemoryError</code> or <code>java.lang.OutOfMemoryError</code> heap space
 
 
-#### Q. Explain JoinPoint and Pointcut in spring 
-#### Q. Why do we need to Wrapper classes?
 #### Q. How website caching works? 
 #### Q. How to create marker interface?
+
+An interface with no methods is known as marker or tagged interface. It provides some useful information to JVM/compiler so that JVM/compiler performs some special operations on it. It is used for better readability of code.  Example: Serializable, Clonnable etc. 
+
+Syntax:
+```
+public interface Interface_Name {
+
+}
+
+```
+
 #### Q. Explain how hashMap works?
 #### Q. Write a code to implement hashMap, arrayList 
 #### Q. Difference between arrayList and linkedList 
