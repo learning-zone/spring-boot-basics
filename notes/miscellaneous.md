@@ -854,10 +854,6 @@ When we use double quotes to create a String, it first looks for String with the
 **/
 public class StringPool {
 
-    /**
-     * Java String Pool example
-     * @param args
-     */
     public static void main(String[] args) {
         String s1 = "Hello";
         String s2 = "Hello";
