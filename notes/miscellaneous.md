@@ -21,7 +21,6 @@ spring.servlet.multipart.max-request-size=215MB
 ## File Storage Properties
 # All files uploaded through the REST API will be stored in this directory
 file.upload-dir=/Users/files/uploads
-
 ```
 
 * **Step 02: Automatically binding properties to a POJO class**
@@ -43,7 +42,6 @@ public class FileStorageProperties {
         this.uploadDir = uploadDir;
     }
 }
-
 ```
 
 * **Step 03: Enable Configuration Properties**
@@ -68,7 +66,6 @@ public class FileDemoApplication {
         SpringApplication.run(FileDemoApplication.class, args);
     }
 }
-
 ```
 
 * **Step 04: Writing APIs for File Upload and Download**
@@ -147,7 +144,6 @@ public class FileController {
                 .body(resource);
     }
 }
-
 ```
 
 * **Step 05: UploadFileResponse**
@@ -170,7 +166,6 @@ public class UploadFileResponse {
 
 	// Getters and Setters (Omitted for brevity)
 }
-
 ```
 
 * **Step 06: Service for Storing Files in the FileSystem and retrieving them**
@@ -245,7 +240,6 @@ public class FileStorageService {
         }
     }
 }
-
 ```
 
 * **Step 07: FileStorageException**
@@ -262,7 +256,6 @@ public class FileStorageException extends RuntimeException {
         super(message, cause);
     }
 }
-
 ```
 
 * **Step 08: MyFileNotFoundException**
@@ -283,14 +276,12 @@ public class MyFileNotFoundException extends RuntimeException {
         super(message, cause);
     }
 }
-
 ```
 
 * **Step 09: Running the Application and Testing the APIs via Postman**
 
 ```
 mvn spring-boot:run
-
 ```
 
 #### Q. Spring Boot program for Send Mail
@@ -353,7 +344,6 @@ mvn spring-boot:run
         </plugins>
     </build>
 </project>
-
 ```
 
 * **Step 02: application.properties Settings**
@@ -376,7 +366,6 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 # SSL, post 465
 #spring.mail.properties.mail.smtp.socketFactory.port = 465
 #spring.mail.properties.mail.smtp.socketFactory.class = javax.net.ssl.SSLSocketFactory
-
 ```
 
 * **Step 03: Application.java**
@@ -461,7 +450,6 @@ public class Application implements CommandLineRunner {
 
     }
 }
-
 ```
 
 
@@ -525,7 +513,6 @@ public class Application implements CommandLineRunner {
     </build>
  
 </project>
-
 ```
 
 * **Step 02: SpringBootCrudRestfulApplication.java**
@@ -541,7 +528,6 @@ public class SpringBootCrudRestfulApplication {
         SpringApplication.run(SpringBootCrudRestfulApplication.class, args);
     }
 }
-
 ```
 
 * **Step 03: Employee.java**
@@ -586,7 +572,6 @@ public class Employee {
     }
  
 }
-
 ```
 * **Step 04: EmployeeDAO.java**
 
@@ -645,8 +630,6 @@ public class EmployeeDAO {
     }
  
 }
-
-
 ```
 * **Step 05: MainRESTController.java**
 
@@ -793,8 +776,7 @@ public class SpringBootJdbcApplication {
     public static void main(String[] args) {  
         SpringApplication.run(SpringBootJdbcApplication.class, args);  
     }  
-}  
-
+}
 ```
 
 * **Step 02: SpringBootJdbcController.java**
@@ -816,7 +798,6 @@ public class SpringBootJdbcController {
         return"data inserted Successfully";  
     }  
 }  
-
 ```
 
 #### Q. How bootstrap class loader works in java?
@@ -855,7 +836,6 @@ public class ClassLoaderTest {
     }
 
 }
-
 ```
 
 #### Q. Why string is immutable in java? 
@@ -890,7 +870,6 @@ public class StringPool {
         System.out.println("s1 == s3 :" +(s1==s3)); // false
     }
 }
-
 ```
 
 
@@ -932,7 +911,6 @@ class Main {
             }
        }
 }
-
 ```
 
 #### Q. Explain how hashMap works in Java?
@@ -981,7 +959,6 @@ public class HashMapExample {
         System.out.println("Value for key Java: " + map.get(new Key("Java")));   //hashCode for key: Java = 115
     } 
 } 
-
 ```
 
 #### Q. Write a code to convert HashMap to ArrayList.  
@@ -1001,10 +978,10 @@ public class MapToListExamples {
          
         //Adding elements to HashMap 
         performanceMap.put("John Kevin", "Average");  
-        performanceMap.put("Prachi D", "Very Good"); 
+        performanceMap.put("Ladarious Fernandez", "Very Good"); 
         performanceMap.put("Ivan Jose", "Very Bad"); 
         performanceMap.put("Smith Jacob", "Very Good"); 
-        performanceMap.put("Anjali N", "Bad"); 
+        performanceMap.put("Athena Stiltner", "Bad"); 
          
         //Getting Set of keys 
         Set<String> keySet = performanceMap.keySet(); 
