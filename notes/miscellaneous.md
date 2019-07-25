@@ -909,6 +909,24 @@ public interface Interface_Name {
 }
 
 ```
+Example:
+```
+interface Marker {    }
+
+class A implements Marker {
+      //do some task
+}
+
+class Main {
+         public static void main(String[] args) {
+            A obj = new A();
+            if (obj instanceOf Marker){
+                // do some task
+            }
+       }
+}
+
+```
 
 #### Q. Explain how hashMap works?
 #### Q. Write a code to implement hashMap, arrayList 
