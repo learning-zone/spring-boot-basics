@@ -901,7 +901,6 @@ Garbage collection works on **Mark** and **Sweep** algorithm. In Mark phase it d
 There are methods like <code>System.gc()</code> and <code>Runtime.gc()</code> which is used to send request of Garbage collection to JVM but it’s not guaranteed that garbage collection will happen. If there is no memory space for creating a new object in Heap Java Virtual Machine throws <code>OutOfMemoryError</code> or <code>java.lang.OutOfMemoryError</code> heap space
 
 
-#### Q. How website caching works? 
 #### Q. How to create marker interface?
 
 An interface with no methods is known as marker or tagged interface. It provides some useful information to JVM/compiler so that JVM/compiler performs some special operations on it. It is used for better readability of code.  Example: Serializable, Clonnable etc. 
@@ -985,7 +984,67 @@ public class HashMapExample {
 
 ```
 
-#### Q. Write a code to implement hashMap, arrayList 
+#### Q. Write a code to convert HashMap to ArrayList.  
+
+```
+import java.util.ArrayList; 
+import java.util.Collection; 
+import java.util.HashMap; 
+import java.util.Map.Entry; 
+import java.util.Set; 
+public class MapToListExamples {
+
+    public static void main(String[] args) {
+
+        //Creating a HashMap object 
+        HashMap<String, String> performanceMap = new HashMap<String, String>(); 
+         
+        //Adding elements to HashMap 
+        performanceMap.put("John Kevin", "Average");  
+        performanceMap.put("Prachi D", "Very Good"); 
+        performanceMap.put("Ivan Jose", "Very Bad"); 
+        performanceMap.put("Smith Jacob", "Very Good"); 
+        performanceMap.put("Anjali N", "Bad"); 
+         
+        //Getting Set of keys 
+        Set<String> keySet = performanceMap.keySet(); 
+         
+        //Creating an ArrayList of keys 
+        ArrayList<String> listOfKeys = new ArrayList<String>(keySet); 
+         
+        System.out.println("ArrayList Of Keys :"); 
+         
+        for (String key : listOfKeys) {
+            System.out.println(key); 
+        }
+                  
+        //Getting Collection of values 
+        Collection<String> values = performanceMap.values(); 
+         
+        //Creating an ArrayList of values 
+        ArrayList<String> listOfValues = new ArrayList<String>(values); 
+         
+        System.out.println("ArrayList Of Values :"); 
+         
+        for (String value : listOfValues) { 
+            System.out.println(value); 
+        } 
+                  
+        //Getting the Set of entries 
+        Set<Entry<String, String>> entrySet = performanceMap.entrySet(); 
+         
+        //Creating an ArrayList Of Entry objects 
+        ArrayList<Entry<String, String>> listOfEntry = new ArrayList<Entry<String,String>>(entrySet); 
+         
+        System.out.println("ArrayList of Key-Values :"); 
+         
+        for (Entry<String, String> entry : listOfEntry) { 
+            System.out.println(entry.getKey()+" : "+entry.getValue()); 
+        } 
+    } 
+}
+
+```
 #### Q. Difference between arrayList and linkedList 
 #### Q. What are jsp implicit objects? 
 #### Q. Difference between sendRedirect() and forward() 
