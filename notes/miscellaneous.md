@@ -1525,7 +1525,6 @@ public class SerialExample {
 }
 ```
 
-#### Q. What is better way to manage transactions.
 #### Q. What are the various ways to load a class?
 #### Q. Java Program to Implement Singly Linked List
 #### Q. Design patterns related question(Singleton, Adaptor, Factory, Strategy) 
