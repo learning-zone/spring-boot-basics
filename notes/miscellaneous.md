@@ -1268,7 +1268,28 @@ forward(ServletRequest request, ServletResponse response)
 |It is declared in RequestDispatcher interface. |It is declared in HttpServletResponse.
 |Signature: _forward(ServletRequest request, ServletResponse response)_ |Signature: _void sendRedirect(String url)_ |
 
+Example: sendRedirect() method
+```
+import java.io.IOException;
+import java.io.PrintWriter;
 
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class RedirectServlet extends HttpServlet {
+
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        
+		res.setContentType("text/html");
+		PrintWriter out = res.getWriter();
+
+		res.sendRedirect("https://www.java.com/en/");
+		out.close();
+	}
+}
+```
 #### Q. Explain servlet and jsp lifecycle 
 #### Q. What are the major additions for jdk from 1.7 to 1.8?
 #### Q. How serialization works in java? 
