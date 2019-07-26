@@ -1256,7 +1256,7 @@ Signature:
 forward(ServletRequest request, ServletResponse response)
 ```
 
-|FORWARD()	                                          |SENDREDIRECT()
+|Forward()	                                          |SendRediret()
 |:----------------------------------------------------|:--------------------------------------------------------
 |The forward() method is executed in the server side. |	The sendRedirect() method is executed in the client side.
 |The request is transfer to other resource within same server.|	The request is transfer to other resource to different server.|
