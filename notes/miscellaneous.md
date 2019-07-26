@@ -1239,7 +1239,6 @@ Example:
 
 
 #### Q. Difference between sendRedirect() and forward() 
-#### Q. What happens when a servlet is invoked, when is init invoked and when is sevice invoked?
 #### Q. Explain servlet and jsp lifecycle 
 #### Q. What are the major additions for jdk from 1.7 to 1.8?
 #### Q. How serialization works in java? 
