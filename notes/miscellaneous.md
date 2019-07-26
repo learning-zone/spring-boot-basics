@@ -1280,7 +1280,8 @@ import javax.servlet.http.HttpServletResponse;
 
 public class RedirectServlet extends HttpServlet {
 
-	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) 
+        throws ServletException, IOException {
 
 		res.setContentType("text/html");
 		PrintWriter out = res.getWriter();
@@ -1325,7 +1326,8 @@ import javax.servlet.http.HttpServletResponse;
 
 public class SimpleServlet extends HttpServlet {
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) 
+        throws ServletException, IOException {
 
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
@@ -1345,7 +1347,69 @@ public class SimpleServlet extends HttpServlet {
 }
 ```
 
-#### Q. Explain servlet and jsp lifecycle 
+#### Q. Explain Servlets Lifecycle?
+
+The web container maintains the life cycle of a servlet instance. 
+
+**Stages of the Servlet Life Cycle**: 
+1. The servlet is initialized by calling the **init()** method.
+1. The servlet calls **service()** method to process a client's request.
+1. The servlet is terminated by calling the **destroy()** method.
+1. Finally, servlet is garbage collected by the garbage collector of the JVM.
+
+* **The init() Method**
+The web container calls the init method only once after creating the servlet instance. The init method is used to initialize the servlet. It is the life cycle method of the javax.servlet.Servlet interface.
+
+Syntax 
+```
+public void init(ServletConfig config) throws ServletException {
+    // Initialization code...
+}
+```
+
+* **The service() Method**
+The servlet container calls the service() method to handle requests coming from the client and to write the formatted response back to the client. The service() method checks the HTTP request type (GET, POST, PUT, DELETE, etc.) and calls doGet, doPost, doPut, doDelete, etc. 
+
+Syntax
+```
+public void service(ServletRequest request, ServletResponse response) 
+   throws ServletException, IOException {
+}
+```
+
+* **The doGet() Method**
+A GET request results from a normal request for a URL or from an HTML form that has no METHOD specified and it should be handled by doGet() method.
+
+Syntax
+```
+public void doGet(HttpServletRequest request, HttpServletResponse response)
+   throws ServletException, IOException {
+   // Servlet code
+}
+```
+
+* **The doPost() Method**
+A POST request results from an HTML form that specifically lists POST as the METHOD and it should be handled by doPost() method.
+
+Syntax
+```
+public void doPost(HttpServletRequest request, HttpServletResponse response)
+   throws ServletException, IOException {
+   // Servlet code
+}
+```
+
+* **The destroy() Method**
+The web container calls the destroy method before removing the servlet instance from the service. It gives the servlet an opportunity to clean up any resource for example memory, thread etc.
+
+Syntax
+```
+public void destroy() {
+   // Finalization code...
+}
+```
+
+
 #### Q. What are the major additions for jdk from 1.7 to 1.8?
 #### Q. How serialization works in java? 
 #### Q. What is better way to manage transactions.
