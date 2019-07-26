@@ -1411,6 +1411,27 @@ public void destroy() {
 
 
 #### Q. What are the major additions for jdk from 1.7 to 1.8?
+
+Java 8 provides following features for Java Programming:
+
+* Lambda expressions
+* Method references
+* Functional interfaces
+* Stream API
+* Default methods
+* Base64 Encode Decode
+* Static methods in interface
+* Optional class
+* Collectors class
+* ForEach() method
+* Parallel array sorting
+* Nashorn JavaScript Engine
+* Parallel Array Sorting
+* Type and Repating Annotations
+* IO Enhancements
+* Concurrency Enhancements
+* JDBC Enhancements etc.
+
 #### Q. How serialization works in java? 
 #### Q. What is better way to manage transactions.
 #### Q. What are the various ways to load a class?
