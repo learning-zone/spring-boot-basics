@@ -1281,7 +1281,7 @@ import javax.servlet.http.HttpServletResponse;
 public class RedirectServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-        
+
 		res.setContentType("text/html");
 		PrintWriter out = res.getWriter();
 
@@ -1290,6 +1290,65 @@ public class RedirectServlet extends HttpServlet {
 	}
 }
 ```
+
+Example: forward() method
+```
+//index.html
+
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+ </head>
+<body>
+    <form action="Simple" method="get">
+        Name: <input type="text" name="uname">
+        password: <input type="password" name="upass"><br />
+    <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
+```
+SimpleServlet.java
+```
+package javaexample.net.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class SimpleServlet extends HttpServlet {
+
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		System.out.println("doGet--------------start");
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+
+		String str = request.getParameter("uname");
+		String st = request.getParameter("upass");
+		System.out.println("doGet--------------Middle");
+		if (st.equals("javaexample")) {
+			RequestDispatcher rd = request.getRequestDispatcher("Welcome");
+
+			rd.forward(request, response);
+
+		} else {
+			out.print("Sorry username and password error!");
+			RequestDispatcher rd = request.getRequestDispatcher("/index.html");
+			rd.include(request, response);
+		}
+		System.out.println("doGet--------------end");
+	}
+}
+```
+
 #### Q. Explain servlet and jsp lifecycle 
 #### Q. What are the major additions for jdk from 1.7 to 1.8?
 #### Q. How serialization works in java? 
