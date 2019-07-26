@@ -1303,8 +1303,8 @@ Example: forward() method
  </head>
 <body>
     <form action="Simple" method="get">
-        Name: <input type="text" name="uname">
-        password: <input type="password" name="upass"><br />
+        Name: <input type="text" name="username">
+        password: <input type="password" name="password"><br />
     <input type="submit" value="Submit" />
     </form>
 </body>
@@ -1325,26 +1325,22 @@ import javax.servlet.http.HttpServletResponse;
 
 public class SimpleServlet extends HttpServlet {
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		System.out.println("doGet--------------start");
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 
-		String str = request.getParameter("uname");
-		String st = request.getParameter("upass");
-		System.out.println("doGet--------------Middle");
+		String str = request.getParameter("username");
+		String st = request.getParameter("password");
+		
 		if (st.equals("javaexample")) {
 			RequestDispatcher rd = request.getRequestDispatcher("Welcome");
-
 			rd.forward(request, response);
-
 		} else {
-			out.print("Sorry username and password error!");
+			out.print("Sorry username or password incorrect!");
 			RequestDispatcher rd = request.getRequestDispatcher("/index.html");
 			rd.include(request, response);
 		}
-		System.out.println("doGet--------------end");
 	}
 }
 ```
