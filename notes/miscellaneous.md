@@ -1266,8 +1266,7 @@ forward(ServletRequest request, ServletResponse response)
 |It can be used within server. | It can be used within and outside the server.|
 |The forward() method is faster than sendRedirect() method.	|The sendRedirect() method is slower because when new request is created old request object is lost.|
 |It is declared in RequestDispatcher interface. |It is declared in HttpServletResponse.
-|Signature :
-forward(ServletRequest request, ServletResponse response) |Signature:void sendRedirect(String url) |
+|Signature: forward(ServletRequest request, ServletResponse response) |Signature:void sendRedirect(String url) |
 
 
 #### Q. Explain servlet and jsp lifecycle 
