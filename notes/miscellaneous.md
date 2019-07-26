@@ -1238,7 +1238,38 @@ Example:
 ```
 
 
-#### Q. Difference between sendRedirect() and forward() 
+#### Q. What is difference between sendRedirect() and forward() in Servlet?
+
+* **SendRedirect()**:  
+This method is declared in **HttpServletResponse** Interface. It is used to redirect client request to some other location for further processing, the new location is available on different server or different context.our web container handle this and transfer the request using  browser, and this request is visible in browser as a new request. 
+
+Signature: 
+```
+void sendRedirect(String url)
+```
+
+* **Forward()**:
+This method is declared in **RequestDispatcher** Interface. It is used to pass the request to another resource for further processing within the same server, another resource could be any servlet, jsp page any kind of file.
+
+Signature:
+```
+forward(ServletRequest request, ServletResponse response)
+```
+
+|FORWARD()	                                          |SENDREDIRECT()
+|:----------------------------------------------------|:--------------------------------------------------------
+|The forward() method is executed in the server side. |	The sendRedirect() method is executed in the client side.
+|The request is transfer to other resource within same server.|	The request is transfer to other resource to different server.|
+|It does not depend on the client’s request protocol since the forward ( ) method is provided by the servlet container.|	The sendRedirect() method is provided under HTTP so it can be used only with HTTP clients.|
+|The request is shared by the target resource. | New request is created for the destination resource.|
+|Only one call is consumed in this method. |Two request and response calls are consumed.
+|It can be used within server. | It can be used within and outside the server.|
+|The forward() method is faster than sendRedirect() method.	|The sendRedirect() method is slower because when new request is created old request object is lost.|
+|It is declared in RequestDispatcher interface. |It is declared in HttpServletResponse.
+|Signature :
+forward(ServletRequest request, ServletResponse response) |Signature:void sendRedirect(String url) |
+
+
 #### Q. Explain servlet and jsp lifecycle 
 #### Q. What are the major additions for jdk from 1.7 to 1.8?
 #### Q. How serialization works in java? 
