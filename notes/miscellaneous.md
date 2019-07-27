@@ -1525,7 +1525,7 @@ public class SerialExample {
 }
 ```
 
-#### Q. What are the various ways to load a class?
+#### Q. What are the various ways to load a class in Java?
 
 1. **creating a reference**:
 ```
