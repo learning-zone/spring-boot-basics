@@ -1532,12 +1532,12 @@ public class SerialExample {
 SomeClass someInstance = null;
 ```
 
-2. **Using forName method of class class**:
+2. **Using Class.forName(String)**:
 ```
  Class.forName("SomeClass");
 ```
 
-3. **Using SystemClassLoader**: 
+3. **Using SystemClassLoader()**: 
 ```
 ClassLoader.getSystemClassLoader().loadClass("SomeClass");
 ```
