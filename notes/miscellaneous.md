@@ -1526,6 +1526,27 @@ public class SerialExample {
 ```
 
 #### Q. What are the various ways to load a class?
+
+1. **creating a reference**:
+```
+SomeClass someInstance = null;
+```
+
+1. **Using forName method of class class**:
+```
+ Class.forName("SomeClass");
+```
+
+1. **Using systemclassloader**: 
+```
+ClassLoader.getSystemClassLoader().loadClass("SomeClass");
+```
+
+1. **using overloaded forname method of class class**:
+```
+Class.forName(String name, boolean initialize, ClassLoader loader);
+```
+
 #### Q. Java Program to Implement Singly Linked List
 #### Q. Design patterns related question(Singleton, Adaptor, Factory, Strategy) 
 #### Q. Spring bean scope. 
