@@ -1627,7 +1627,7 @@ Nodes of singly linked list:
 10 20 30 40
 ```
 
-#### Q. Design patterns related question(Singleton, Adaptor, Factory, Strategy) 
+#### Q. Design patterns related question (Singleton, Adaptor, Factory, Strategy) 
 
 * **Java Singleton Pattern**
 
@@ -1739,9 +1739,86 @@ public class BillPughSingleton {
 }
 ```
 
+* **Adapter Design Pattern in Java**
 
+Adapter design pattern is one of the structural design pattern and its used so that two unrelated interfaces can work together. The object that joins these unrelated interface is called an Adapter.
 
+Example:
 
+we have two incompatible interfaces: **MediaPlayer** and **MediaPackage**. MP3 class is an implementation of the MediaPlayer interface and we have VLC and MP4 as implementations of the MediaPackage interface. We want to use MediaPackage implementations as MediaPlayer instances. So, we need to create an adapter to help to work with two incompatible classes.
+
+**MediaPlayer.java**
+```
+public interface MediaPlayer {
+    void play(String filename);
+}
+```
+
+**MediaPackage.java**
+```
+public interface MediaPackage {
+    void playFile(String filename);
+}
+```
+
+**MP3.java**
+```
+public class MP3 implements MediaPlayer {
+ @Override
+ public void play(String filename) {
+    System.out.println("Playing MP3 File " + filename);
+ }
+}
+```
+
+**MP4.java**
+```
+public class MP4 implements MediaPackage {
+    @Override
+    public void playFile(String filename) {
+        System.out.println("Playing MP4 File " + filename);
+    }
+}
+```
+
+**VLC.java**
+```
+public class VLC implements MediaPackage {
+    @Override
+    public void playFile(String filename) {
+        System.out.println("Playing VLC File " + filename);
+    }
+}
+```
+
+**FormatAdapter.java**
+```
+public class FormatAdapter implements MediaPlayer {
+    private MediaPackage media;
+    public FormatAdapter(MediaPackage m) {
+        media = m;
+    }
+    @Override
+    public void play(String filename) {
+        System.out.print("Using Adapter --> ");
+        media.playFile(filename);
+    }
+}
+```
+
+**Main.java**
+```
+public class Main {
+    public static void main(String[] args) {
+        MediaPlayer player = new MP3();
+        player.play("file.mp3");
+        player = new FormatAdapter(new MP4());
+        player.play("file.mp4");
+        player = new FormatAdapter(new VLC());
+        player.play("file.avi");
+    }
+}
+```
 
 #### Q. Spring bean scope. 
 #### Q. What is AOP? what does spring AOP provide?
