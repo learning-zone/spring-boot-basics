@@ -2266,4 +2266,4 @@ XML config example of websocket bean scope –
 #### Q. Do you know Generics? What is it? Why we need that? How did you used in your coding?
 #### Q. Difference between String and StringBuilder and StringBuffer ?
 #### Q. How can we create a object of a class without using new operator?
-#### Q. what are upcasting and downcasting?
+#### Q. What are upcasting and downcasting?
