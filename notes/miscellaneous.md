@@ -2223,8 +2223,7 @@ XML config example of websocket bean scope –
 #### Q. Object oriented feature like: Association, Composition, Aggregation
 #### Q. Difference between DI and IOC in spring.
 #### Q. Optimistic vs pessimistic locking in table level and row level.
-#### Q. Main advantage of restful implementation over SOAP
-#### Q. How do you provide security features in REST and SOAP requests?
+#### Q. What is main advantage of RESTful implementation over SOAP
 #### Q. How do you implement secondary level cache? Clustering?
 #### Q. What is SQL injection attack?
 #### Q. Difference between symmetric, public and private keys, what are the procedure to implement the same using spring security.
