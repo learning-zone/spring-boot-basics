@@ -2060,13 +2060,10 @@ The core of spring framework is it’s bean factory and mechanisms to create and
 |prototype	            |Opposite to singleton, it produces a new instance each and every time a bean is requested.|
 |request	            |A single instance will be created and available during complete lifecycle of an HTTP request.
 Only valid in web-aware Spring ApplicationContext.|
-
 |session	            |A single instance will be created and available during complete lifecycle of an HTTP Session.
 Only valid in web-aware Spring ApplicationContext.|
-
 |application	        |A single instance will be created and available during complete lifecycle of ServletContext.
 Only valid in web-aware Spring ApplicationContext.|
-
 |websocket	            |A single instance will be created and available during complete lifecycle of WebSocket.
 Only valid in web-aware Spring ApplicationContext.|
 
