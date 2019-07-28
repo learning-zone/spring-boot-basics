@@ -1631,7 +1631,7 @@ Nodes of singly linked list:
 
 * **Java Singleton Pattern**
 
-1. **Eager initialization:**
+1. Eager initialization:
 
 In eager initialization, the instance of Singleton Class is created at the time of class loading.
 
@@ -1650,7 +1650,7 @@ public class EagerInitializedSingleton {
 }
 ```
 
-2. **Static block initialization:**
+2. Static block initialization:
 
 Static block initialization implementation is similar to eager initialization, except that instance of class is created in the static block that provides option for exception handling.
 
@@ -1677,7 +1677,7 @@ public class StaticBlockSingleton  {
 }
 ```
 
-3. **Lazy Initialization**
+3. Lazy Initialization
 
 Lazy initialization method to implement Singleton pattern creates the instance in the global access method.
 
@@ -1698,7 +1698,7 @@ public class LazyInitializedSingleton  {
 }
 ```
 
-4. **Thread Safe Singleton**
+4. Thread Safe Singleton
 
 The easier way to create a thread-safe singleton class is to make the global access method synchronized, so that only one thread can execute this method at a time.
 
@@ -1719,7 +1719,7 @@ public class ThreadSafeSingleton {
 }
 ```
 
-5. **Bill Pugh Singleton Implementation:**
+5. Bill Pugh Singleton Implementation:
 
 Prior to Java5, memory model had a lot of issues and above methods caused failure in certain scenarios in multithreaded environment. So, Bill Pugh suggested a concept of inner static classes to use for singleton.
 
