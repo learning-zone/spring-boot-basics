@@ -1895,7 +1895,7 @@ GenerateBill.java
 ```
 import java.io.*;    
 class GenerateBill {
-      
+
     public static void main(String args[])throws IOException {  
       GetPlanFactory planFactory = new GetPlanFactory();  
         
@@ -1916,6 +1916,139 @@ class GenerateBill {
 } 
 ```
 
+* **Strategy Design Pattern in Java**
+
+Strategy design pattern is one of the behavioral design pattern. Strategy pattern is used when we have multiple algorithm for a specific task and client decides the actual implementation to be used at runtime.
+
+Example: Simple Shopping Cart where we have two payment strategies – using Credit Card or using PayPal.
+
+PaymentStrategy.java
+```
+public interface PaymentStrategy {
+	public void pay(int amount);
+}
+```
+
+CreditCardStrategy.java
+```
+public class CreditCardStrategy implements PaymentStrategy {
+
+	private String name;
+	private String cardNumber;
+	private String cvv;
+	private String dateOfExpiry;
+	
+	public CreditCardStrategy(String nm, String ccNum, String cvv, String expiryDate){
+		this.name=nm;
+		this.cardNumber=ccNum;
+		this.cvv=cvv;
+		this.dateOfExpiry=expiryDate;
+	}
+	@Override
+	public void pay(int amount) {
+		System.out.println(amount +" paid with credit/debit card");
+	}
+}
+```
+
+PaypalStrategy.java
+```
+public class PaypalStrategy implements PaymentStrategy {
+
+	private String emailId;
+	private String password;
+	
+	public PaypalStrategy(String email, String pwd){
+		this.emailId=email;
+		this.password=pwd;
+	}
+	@Override
+	public void pay(int amount) {
+		System.out.println(amount + " paid using Paypal.");
+	}
+}
+```
+
+Item.java
+```
+public class Item {
+
+	private String upcCode;
+	private int price;
+	
+	public Item(String upc, int cost){
+		this.upcCode=upc;
+		this.price=cost;
+	}
+	public String getUpcCode() {
+		return upcCode;
+	}
+	public int getPrice() {
+		return price;
+	}
+}
+```
+
+ShoppingCart.java
+```
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ShoppingCart {
+
+	List<Item> items;
+	
+	public ShoppingCart(){
+		this.items=new ArrayList<Item>();
+	}
+	public void addItem(Item item){
+		this.items.add(item);
+	}
+	public void removeItem(Item item){
+		this.items.remove(item);
+	}
+	public int calculateTotal(){
+		int sum = 0;
+		for(Item item : items){
+			sum += item.getPrice();
+		}
+		return sum;
+	}
+	public void pay(PaymentStrategy paymentMethod){
+		int amount = calculateTotal();
+		paymentMethod.pay(amount);
+	}
+}
+```
+
+ShoppingCartTest.java
+```
+public class ShoppingCartTest {
+
+	public static void main(String[] args) {
+		ShoppingCart cart = new ShoppingCart();
+		
+		Item item1 = new Item("1234",10);
+		Item item2 = new Item("5678",40);
+		
+		cart.addItem(item1);
+		cart.addItem(item2);
+		
+		//pay by paypal
+		cart.pay(new PaypalStrategy("myemail@example.com", "mypwd"));
+		
+		//pay by credit card
+		cart.pay(new CreditCardStrategy("Pankaj Kumar", "1234567890123456", "786", "12/15"));
+	}
+}
+```
+
+Output 
+```
+500 paid using Paypal.
+500 paid with credit/debit card
+```
 
 #### Q. Spring bean scope. 
 #### Q. What is AOP? what does spring AOP provide?
