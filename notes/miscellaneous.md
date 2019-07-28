@@ -2052,7 +2052,7 @@ Output
 
 #### Q. Spring bean scope. 
 
-The core of spring framework is it’s bean factory and mechanisms to create and manage such beans inside Spring container. The beans in spring container can be created in five scopes i.e. singleton, prototype, request, session and global-session. They are called spring bean scopes.
+The core of spring framework is it’s bean factory and mechanisms to create and manage such beans inside Spring container. The beans in spring container can be created in six scopes i.e. singleton, prototype, request, session, application and websocket. They are called spring bean scopes.
 
 |SCOPE	                | DESCRIPTION                                                                              |
 |:----------------------|:-----------------------------------------------------------------------------------------|
