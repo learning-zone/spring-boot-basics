@@ -1747,21 +1747,21 @@ Example:
 
 we have two incompatible interfaces: **MediaPlayer** and **MediaPackage**. MP3 class is an implementation of the MediaPlayer interface and we have VLC and MP4 as implementations of the MediaPackage interface. We want to use MediaPackage implementations as MediaPlayer instances. So, we need to create an adapter to help to work with two incompatible classes.
 
-**MediaPlayer.java**
+MediaPlayer.java
 ```
 public interface MediaPlayer {
     void play(String filename);
 }
 ```
 
-**MediaPackage.java**
+MediaPackage.java
 ```
 public interface MediaPackage {
     void playFile(String filename);
 }
 ```
 
-**MP3.java**
+MP3.java
 ```
 public class MP3 implements MediaPlayer {
  @Override
@@ -1771,7 +1771,7 @@ public class MP3 implements MediaPlayer {
 }
 ```
 
-**MP4.java**
+MP4.java
 ```
 public class MP4 implements MediaPackage {
     @Override
@@ -1781,7 +1781,7 @@ public class MP4 implements MediaPackage {
 }
 ```
 
-**VLC.java**
+VLC.java
 ```
 public class VLC implements MediaPackage {
     @Override
@@ -1791,7 +1791,7 @@ public class VLC implements MediaPackage {
 }
 ```
 
-**FormatAdapter.java**
+FormatAdapter.java
 ```
 public class FormatAdapter implements MediaPlayer {
     private MediaPackage media;
@@ -1806,7 +1806,7 @@ public class FormatAdapter implements MediaPlayer {
 }
 ```
 
-**Main.java**
+Main.java
 ```
 public class Main {
     public static void main(String[] args) {
