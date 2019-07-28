@@ -2243,7 +2243,6 @@ XML config example of websocket bean scope –
         -> user can enter function name: add(2,3)  (invoke the respective function.)
               Based on user input perform the indicated task in parenthesis.
 #### Q. Given table Employee and Department write a sql statement to find count of employees department
-#### Q. Design patterns used in Javascript.
 #### Q. Difference between classnotfound and noclassdeffound
 #### Q. What do we mean by weak reference?
 #### Q. Difference between hashset and linkedhashset
