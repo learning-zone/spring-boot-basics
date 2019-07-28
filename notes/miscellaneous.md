@@ -1628,6 +1628,121 @@ Nodes of singly linked list:
 ```
 
 #### Q. Design patterns related question(Singleton, Adaptor, Factory, Strategy) 
+
+* **Java Singleton Pattern**
+
+1. **Eager initialization:**
+
+In eager initialization, the instance of Singleton Class is created at the time of class loading.
+
+Example:
+```
+public class EagerInitializedSingleton {
+    
+    private static final EagerInitializedSingleton instance = new EagerInitializedSingleton();
+    
+    //private constructor to avoid client applications to use constructor
+    private EagerInitializedSingleton(){}
+
+    public static EagerInitializedSingleton getInstance(){
+        return instance;
+    }
+}
+```
+
+2. **Static block initialization:**
+
+Static block initialization implementation is similar to eager initialization, except that instance of class is created in the static block that provides option for exception handling.
+
+Example:
+```
+public class StaticBlockSingleton  {
+
+    private static StaticBlockSingleton  instance;
+    
+    private StaticBlockSingleton (){}
+    
+    //static block initialization for exception handling
+    static{
+        try{
+            instance = new StaticBlockSingleton ();
+        }catch(Exception e){
+            throw new RuntimeException("Exception occured in creating Singleton instance");
+        }
+    }
+    
+    public static StaticBlockSingleton getInstance(){
+        return instance;
+    }
+}
+```
+
+3. **Lazy Initialization**
+
+Lazy initialization method to implement Singleton pattern creates the instance in the global access method.
+
+Example:
+```
+public class LazyInitializedSingleton  {
+
+    private static LazyInitializedSingleton  instance;
+    
+    private LazyInitializedSingleton(){}
+    
+    public static LazyInitializedSingleton  getInstance(){
+        if(instance == null){
+            instance = new LazyInitializedSingleton ();
+        }
+        return instance;
+    }
+}
+```
+
+4. **Thread Safe Singleton**
+
+The easier way to create a thread-safe singleton class is to make the global access method synchronized, so that only one thread can execute this method at a time.
+
+Example:
+```
+public class ThreadSafeSingleton {
+
+    private static ThreadSafeSingleton instance;
+    
+    private ThreadSafeSingleton(){}
+    
+    public static synchronized ThreadSafeSingleton getInstance(){
+        if(instance == null){
+            instance = new ThreadSafeSingleton();
+        }
+        return instance;
+    }
+}
+```
+
+5. **Bill Pugh Singleton Implementation:**
+
+Prior to Java5, memory model had a lot of issues and above methods caused failure in certain scenarios in multithreaded environment. So, Bill Pugh suggested a concept of inner static classes to use for singleton.
+
+Example:
+```
+public class BillPughSingleton {
+
+    private BillPughSingleton(){}
+    
+    private static class SingletonHelper{
+        private static final BillPughSingleton INSTANCE = new BillPughSingleton();
+    }
+    
+    public static BillPughSingleton getInstance(){
+        return SingletonHelper.INSTANCE;
+    }
+}
+```
+
+
+
+
+
 #### Q. Spring bean scope. 
 #### Q. What is AOP? what does spring AOP provide?
 #### Q. What is servlet context, parameter, argument?
