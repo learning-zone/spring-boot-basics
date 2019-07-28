@@ -2264,6 +2264,6 @@ XML config example of websocket bean scope –
 #### Q. Create a class, which have the behavior of Hash-map? 
 #### Q. What hashCode() and equals() does in HashMap?
 #### Q. Do you know Generics? How did you used in your coding?
-#### Q. Difference between String and StringBuilder and StringBuffer ?
+#### Q. What is difference between String, StringBuilder and StringBuffer ?
 #### Q. How can we create a object of a class without using new operator?
 #### Q. What are upcasting and downcasting?
