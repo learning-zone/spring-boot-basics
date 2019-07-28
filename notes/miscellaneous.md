@@ -2225,7 +2225,6 @@ XML config example of websocket bean scope –
 #### Q. Optimistic vs pessimistic locking in table level and row level.
 #### Q. What is main advantage of RESTful implementation over SOAP
 #### Q. How do you implement secondary level cache? Clustering?
-#### Q. What is SQL injection attack?
 #### Q. Difference between symmetric, public and private keys, what are the procedure to implement the same using spring security.
 #### Q. What code coverage tools are you using for your project? (we use cobetura, you can use it with ant, maven, gradle)
 #### Q. Implement thread-safe code without using the `synchronized` keyword? 
