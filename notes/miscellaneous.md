@@ -2256,7 +2256,6 @@ XML config example of websocket bean scope –
 #### Q. How do you sort out items in ArrayList in forward and reverse directions?
 #### Q. Tell me about join() and wait() methods?
 #### Q. If Parent Class have a method add() throws Exception, and child class overrides same method without Exception, will that compile and run? Is it overridden or overloaded? 
-#### Q. What are two uses of the equals() method? 
 #### Q. If I don't have Explicit constructor in parent class and having in child class, while calling the child's constructor jvm automatically calls Implicit Constructor of parent class? Yes OR No ?
 #### Q. What are the different types of JDBC Driver?
 #### Q. How Encapsulation concept implemented in JAVA?
