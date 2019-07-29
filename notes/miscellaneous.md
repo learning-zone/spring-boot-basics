@@ -2305,7 +2305,7 @@ class Logging {
 } 
 ```
 
-#### Q. What is ServletContext, parameter, argument?
+#### Q. What is ServletContext Interface?
 
 * **ServletContext Interface**
 
