@@ -2364,7 +2364,42 @@ web.xml
 </web-app>
 ```
 
-#### Q. How set implement unique values?
+#### Q. How Set/HashSet implement unique values?
+
+Java HashSet class is used to create a collection that uses a hash table for storage. It inherits the AbstractSet class and implements Set interface.
+
+* HashSet stores the elements by using a mechanism called hashing.
+* HashSet contains unique elements only.
+* HashSet allows null value.
+* HashSet class is non synchronized.
+* HashSet doesn't maintain the insertion order. Here, elements are inserted on the basis of their hashcode.
+* HashSet is the best approach for search operations.
+* The initial default capacity of HashSet is 16, and the load factor is 0.75.
+
+Example:
+```
+import java.util.*;  
+class HashSetExample {  
+
+ public static void main(String args[]){  
+
+  //Creating HashSet and adding elements  
+    HashSet<String> set=new HashSet();  
+           set.add("10");    
+           set.add("20");    
+           set.add("30");   
+           set.add("40");  
+           set.add("50");  
+           Iterator<String> i=set.iterator();  
+           while(i.hasNext()) {  
+             System.out.println(i.next());  
+           }  
+    }  
+}  
+```
+
+When we create a HashSet, it internally creates a HashMap and if we insert an element into this HashSet using add() method, it actually call put() method on internally created HashMap object with element you have specified as it’s key and constant Object called **PRESENT** as it’s value. So we can say that a Set achieves uniqueness internally through HashMap. 
+
 #### Q. What is Comparable and Comparator interface in java?
 #### Q. DAO factory pattern. 
 #### Q. How to stop thread? 
