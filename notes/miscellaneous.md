@@ -2307,8 +2307,6 @@ class Logging {
 
 #### Q. What is ServletContext Interface?
 
-* **ServletContext Interface**
-
 ServletContext is a configuration Object which is created when web application is started. It contains different initialization parameter that can be configured in web.xml.
 
 * **ServletContext Interface Methods**
