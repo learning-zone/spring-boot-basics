@@ -2352,7 +2352,7 @@ web.xml
         <servlet-class>DemoServlet</servlet-class>
     </servlet>
     <context-param>
-        <param-name>username</param-name>
+        <param-name>uname</param-name>
         <param-value>Pradeep Kumar</param-value>
     </context-param>
     <context-param>
