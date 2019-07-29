@@ -2400,7 +2400,19 @@ class HashSetExample {
 
 When we create a HashSet, it internally creates a HashMap and if we insert an element into this HashSet using add() method, it actually call put() method on internally created HashMap object with element you have specified as it’s key and constant Object called **PRESENT** as it’s value. So we can say that a Set achieves uniqueness internally through HashMap. 
 
-#### Q. What is Comparable and Comparator interface in java?
+#### Q. What is Comparable and Comparator Interface in java?
+
+Comparable and Comparator both are interfaces and can be used to sort collection elements.
+
+|Comparable	                |Comparator                                                                                 |
+|:--------------------------|:------------------------------------------------------------------------------------------|
+|1) Comparable provides a single sorting sequence. In other words, we can sort the collection on the basis of a single element such as id, name, and price. |The Comparator provides multiple sorting sequences. In other words, we can sort the collection on the basis of multiple elements such as id, name, and price etc.|
+|2) Comparable affects the original class, i.e., the actual class is modified.|Comparator doesn't affect the original class, i.e., the actual class is not modified.|
+|3) Comparable provides compareTo() method to sort elements. | Comparator provides compare() method to sort elements.
+|4) Comparable is present in java.lang package.|A Comparator is present in the java.util package.|
+5) We can sort the list elements of Comparable type by Collections.sort(List) method.|We can sort the list elements of Comparator type by Collections.sort(List, Comparator) method.|
+
+
 #### Q. DAO factory pattern. 
 #### Q. How to stop thread? 
 #### Q. Insert a uppercase value into map without using toUpperCase() of string class. 
