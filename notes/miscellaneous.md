@@ -2444,9 +2444,9 @@ class Student implements Comparable<Student>{
 public class ComparableMain {  
     public static void main(String args[]) {  
         ArrayList<Student> al=new ArrayList<Student>();  
-        al.add(new Student(101,"Vijay",23));  
-        al.add(new Student(106,"Ajay",27));  
-        al.add(new Student(105,"Jai",21));  
+        al.add(new Student(101,"Ryan Frey",23));  
+        al.add(new Student(106,"Kenna Bean",27));  
+        al.add(new Student(105,"Jontavius Herrell",21));  
 
         Collections.sort(al);  
         for(Student st:al){  
@@ -2508,9 +2508,9 @@ class TestComparator {
     public static void main(String args[]) {  
         //Creating a list of students  
         ArrayList<Student> al=new ArrayList<Student>();  
-        al.add(new Student(101,"Vijay",23));  
-        al.add(new Student(106,"Ajay",27));  
-        al.add(new Student(105,"Jai",21));  
+        al.add(new Student(101,"Caelyn Romero",23));  
+        al.add(new Student(106,"Olivea Gold",27));  
+        al.add(new Student(105,"Courtlyn Kilgore",21));  
         
         System.out.println("Sorting by Name");  
         //Using NameComparator to sort the elements  
@@ -2530,6 +2530,20 @@ class TestComparator {
     }  
 }  
 ```
+
+Output:
+```
+Sorting by Name
+106 Caelyn Romero 23
+105 Courtlyn Kilgore 21
+101 Olivea Gold 27
+
+Sorting by Age       
+105 Courtlyn Kilgore 21
+101 Caelyn Romero 23
+106 Olivea Gold 27
+```
+
 #### Q. DAO factory pattern. 
 #### Q. How to stop thread? 
 #### Q. Insert a uppercase value into map without using toUpperCase() of string class. 
