@@ -2320,8 +2320,51 @@ ServletContext is a configuration Object which is created when web application i
 5. **public Enumeration getInitParameterNames()**: Returns the names of the context's initialization parameters as an Enumeration of String objects.
 6. **public void removeAttribute(String name)**: Removes the attribute with the given name from the servlet context.
 
+Example: DemoServlet.java
+```
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+public class DemoServlet extends HttpServlet{
+   public void doGet(HttpServletRequest request,HttpServletResponse response)
+   throws ServletException,IOException {
 
+       response.setContentType("text/html");
+       PrintWriter pwriter=response.getWriter();
 
+       //ServletContext object creation
+       ServletContext scontext=getServletContext();
+
+       //fetching values of initialization parameters and printing it
+       String userName=scontext.getInitParameter("uname");
+       pwriter.println("User name is="+userName);
+       String userEmail=scontext.getInitParameter("email");
+       pwriter.println("Email Id is="+userEmail);
+       pwriter.close();
+   }
+}
+```
+web.xml
+```
+<web-app>
+    <servlet>
+        <servlet-name>UserDetails</servlet-name>
+        <servlet-class>DemoServlet</servlet-class>
+    </servlet>
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>Pradeep Kumar</param-value>
+    </context-param>
+    <context-param>
+        <param-name>email</param-name>
+        <param-value>pradeep.vwa@gmail.com</param-value>
+    </context-param>
+    <servlet-mapping>
+        <servlet-name>UserDetails</servlet-name>
+    <url-pattern>/context</url-pattern>
+    </servlet-mapping>
+</web-app>
+```
 
 #### Q. How set implement unique values?
 #### Q. What is Comparable and Comparator interface in java?
