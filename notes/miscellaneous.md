@@ -2202,7 +2202,6 @@ XML config example of websocket bean scope –
 #### Q. Insert a uppercase value into map without using toUpperCase() of string class. 
 #### Q. While overriding a method can you throw another exception or broader exception? 
 #### Q. Difference between entrySet(), keySet() and values() in HashMap. 
-#### Q. A java program in windows, how will you run it on linux machine?
 #### Q. What is checked, unchecked exception and errors? 
 #### Q. What are the different ways to load the Spring container? 
 #### Q. How to implement webservices with spring using custom annotation?
