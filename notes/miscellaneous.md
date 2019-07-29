@@ -2412,7 +2412,124 @@ Comparable and Comparator both are interfaces and can be used to sort collection
 |4) Comparable is present in java.lang package.|A Comparator is present in the java.util package.|
 5) We can sort the list elements of Comparable type by Collections.sort(List) method.|We can sort the list elements of Comparator type by Collections.sort(List, Comparator) method.|
 
+Example:
+```
+/**
+* Java Program to demonstrate the use of Java Comparable.
+*
+**/
+import java.util.*;  
+import java.io.*;  
 
+class Student implements Comparable<Student>{  
+    int rollno;  
+    String name;  
+    int age;  
+    Student(int rollno,String name,int age){  
+        this.rollno=rollno;  
+        this.name=name;  
+        this.age=age;  
+    }  
+    public int compareTo(Student st){  
+        if(age==st.age)  
+          return 0;  
+        else if(age>st.age)  
+          return 1;  
+        else  
+          return -1;  
+    }  
+}  
+
+//Creating a test class to sort the elements  
+public class ComparableMain {  
+    public static void main(String args[]) {  
+        ArrayList<Student> al=new ArrayList<Student>();  
+        al.add(new Student(101,"Vijay",23));  
+        al.add(new Student(106,"Ajay",27));  
+        al.add(new Student(105,"Jai",21));  
+
+        Collections.sort(al);  
+        for(Student st:al){  
+            System.out.println(st.rollno+" "+st.name+" "+st.age);  
+        }  
+    }  
+}  
+```
+Example: Java Comparator 
+Student.java
+```
+class Student {  
+    int rollno;  
+    String name;  
+    int age;  
+    Student(int rollno,String name,int age) {  
+      this.rollno=rollno;  
+      this.name=name;  
+      this.age=age;  
+    }  
+}
+```
+AgeComparator.java
+```
+import java.util.*;  
+
+class AgeComparator implements Comparator<Student> {  
+    public int compare(Student s1,Student s2) {  
+    if(s1.age==s2.age)  
+      return 0;  
+    else if(s1.age>s2.age)  
+      return 1;  
+    else  
+      return -1;  
+    } 
+}  
+```
+NameComparator.java
+```
+import java.util.*;  
+
+class NameComparator implements Comparator<Student> {  
+    public int compare(Student s1,Student s2) {  
+        return s1.name.compareTo(s2.name);  
+    }  
+}  
+```
+TestComparator.java
+```
+/**
+* Java Program to demonstrate the use of Java Comparator  
+*
+**/
+import java.util.*;  
+import java.io.*; 
+
+class TestComparator {  
+
+    public static void main(String args[]) {  
+        //Creating a list of students  
+        ArrayList<Student> al=new ArrayList<Student>();  
+        al.add(new Student(101,"Vijay",23));  
+        al.add(new Student(106,"Ajay",27));  
+        al.add(new Student(105,"Jai",21));  
+        
+        System.out.println("Sorting by Name");  
+        //Using NameComparator to sort the elements  
+        Collections.sort(al,new NameComparator());  
+        //Traversing the elements of list  
+        for(Student st: al){  
+          System.out.println(st.rollno+" "+st.name+" "+st.age);  
+        }  
+        
+        System.out.println("sorting by Age");  
+        //Using AgeComparator to sort the elements  
+        Collections.sort(al,new AgeComparator());  
+        //Travering the list again  
+        for(Student st: al){  
+          System.out.println(st.rollno+" "+st.name+" "+st.age);  
+        }
+    }  
+}  
+```
 #### Q. DAO factory pattern. 
 #### Q. How to stop thread? 
 #### Q. Insert a uppercase value into map without using toUpperCase() of string class. 
