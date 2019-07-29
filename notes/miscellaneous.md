@@ -2223,10 +2223,10 @@ AOP provides the way to dynamically add the cross-cutting concern before, after 
 
 5. **Around advice**: Around advice can perform custom behavior before and after the method invocation. This type of advice is used where we need frequent access to a method or database like- caching.
 
-Example:
+Example: Types of Advices 
 ```
 /**
-* Program to show types of Advices 
+* AOP program to illustrate types of Advices
 *
 *// 
 @Aspect
@@ -2264,7 +2264,46 @@ class Logging {
 }
 ```
 
+Example: JoinPoints
+```
+/**
+* AOP program to illustrate JoinPoints
+*
+**/
+  
+@Aspect
+class Logging { 
+  
+    // Passing a JoinPoint Object into parameters of the method 
+    // with the annotated advice enables to print the information 
+  
+    @Before("execution(public void com.aspect.ImplementAspect.aspectCall())") 
+    public void loggingAdvice1(JoinPoint joinpoint) { 
+        System.out.println("Before advice is executed"); 
+        System.out.println(joinpoint.toString()); 
+    } 
+} 
+```
+Example: PointCuts 
+```
+/**
+* AOP program to illustrate PointCuts 
+*
+**/
+@Aspect
+class Logging { 
 
+    @Pointcut("execution(public void com.aspect.ImplementAspect.aspectCall())") 
+    public void pointCut() { 
+    } 
+  
+    // pointcut() is used to avoid repeatition of code 
+    @Before("pointcut()") 
+    public void loggingAdvice1() { 
+        System.out.println("Before advice is executed"); 
+    } 
+} 
+```
 
 #### Q. What is servlet context, parameter, argument?
 #### Q. How set implement unique values?
