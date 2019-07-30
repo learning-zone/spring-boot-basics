@@ -2550,7 +2550,7 @@ Data Access Object Pattern or DAO pattern is used to separate low level data acc
 
 DAO pattern is based on abstraction and encapsulation design principles and shields rest of application from any change in the persistence layer e.g. change of database from Oracle to MySQL, change of persistence technology e.g. from File System to Database.
 
-Step 1: Create Value Object
+Step 1: Create Value Object  
 Student.java
 ```
 public class Student {
