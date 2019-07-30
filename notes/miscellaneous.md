@@ -2662,7 +2662,7 @@ Student: Roll No 0, updated in the database
 Student: [RollNo : 0, Name : Michael ]
 ```
 
-#### Q. How to stop thread in Java? 
+#### Q. How to stop a Thread in Java?
 
 A thread is automatically destroyed when the run() method has completed. But it might be required to kill/stop a thread before it has completed its life cycle. Modern ways to suspend/stop a thread are by using a **boolean flag** and **Thread.interrupt()** method.
 
