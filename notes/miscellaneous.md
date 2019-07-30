@@ -1018,7 +1018,7 @@ public class MapToListExamples {
 ArrayList and LinkedList both implements List interface and maintains insertion order. Both are non synchronized classes.
 
 |ArrayList	                                                          |LinkedList                                         |
-|:--------------------------------------------------------------------|---------------------------------------------------
+|--------------------------------------------------------------------|---------------------------------------------------
 | ArrayList internally uses a dynamic array to store the elements.  |	LinkedList internally uses a doubly linked list to                                                                           store the elements. |
 | Manipulation with ArrayList is slow because it internally uses an array. If any element is removed from the array, all the bits are shifted in memory.|Manipulation with LinkedList is faster than ArrayList because it uses a doubly linked list, so no bit shifting is required in memory.|
 | An ArrayList class can act as a list only because it implements List only.|	LinkedList class can act as a list and queue |both because it implements List and Deque interfaces.|
