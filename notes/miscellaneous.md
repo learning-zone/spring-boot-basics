@@ -2055,7 +2055,7 @@ Output
 The core of spring framework is it’s bean factory and mechanisms to create and manage such beans inside Spring container. The beans in spring container can be created in six scopes i.e. singleton, prototype, request, session, application and websocket. They are called spring bean scopes.
 
 |SCOPE	                | DESCRIPTION                                                                              |
-|:----------------------|:-----------------------------------------------------------------------------------------|
+|-----------------------|-----------------------------------------------------------------------------------------|
 |singleton (default)	|Single bean object instance per spring IoC container                                      |
 |prototype	            |Opposite to singleton, it produces a new instance each and every time a bean is requested.|
 |request	            |A single instance will be created and available during complete lifecycle of an HTTP request. Only valid in web-aware Spring ApplicationContext.|
