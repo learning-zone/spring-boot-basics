@@ -2662,7 +2662,115 @@ Student: Roll No 0, updated in the database
 Student: [RollNo : 0, Name : Michael ]
 ```
 
-#### Q. How to stop thread? 
+#### Q. How to stop thread in Java? 
+
+A thread is automatically destroyed when the run() method has completed. But it might be required to kill/stop a thread before it has completed its life cycle. Modern ways to suspend/stop a thread are by using a **boolean flag** and **Thread.interrupt()** method.
+
+Example: Stop a thread Using a boolean variable
+```
+/**
+* Java program to illustrate 
+* stopping a thread using boolean flag 
+*
+**/
+class MyThread extends Thread {
+
+    //Initially setting the flag as true 
+    private volatile boolean flag = true;
+     
+    //This method will set flag as false
+    public void stopRunning() {
+        flag = false;
+    }
+     
+    @Override
+    public void run() {
+                 
+        //This will make thread continue to run until flag becomes false 
+        while (flag) {
+            System.out.println("I am running....");
+        }
+        System.out.println("Stopped Running....");
+    }
+}
+ 
+public class MainClass {
+
+    public static void main(String[] args) {
+
+        MyThread thread = new MyThread();
+        thread.start();
+         
+        try {
+            Thread.sleep(100);
+        } 
+        catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+         
+        //call stopRunning() method whenever you want to stop a thread
+        thread.stopRunning();
+    }   
+}
+```
+Output:
+```
+I am running….
+I am running….
+I am running….
+I am running….
+I am running….
+Stopped Running….
+```
+
+Example: Stop a thread Using interrupt() Method
+```
+/**
+* Java program to illustrate 
+* stopping a thread using interrupt() method 
+*
+**/
+class MyThread extends Thread {
+
+    @Override
+    public void run() {
+
+        while (!Thread.interrupted()) {
+            System.out.println("I am running....");
+        }
+        System.out.println("Stopped Running.....");
+    }
+}
+ 
+public class MainClass {
+
+    public static void main(String[] args) {
+
+        MyThread thread = new MyThread(); 
+        thread.start();
+         
+        try {
+            Thread.sleep(100);
+        } 
+        catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        //interrupting the thread         
+        thread.interrupt();
+    }   
+}
+```
+Output:
+```
+I am running….
+I am running….
+I am running….
+I am running….
+I am running….
+Stopped Running….
+```
+
 #### Q. Insert a uppercase value into map without using toUpperCase() of string class. 
 #### Q. While overriding a method can you throw another exception or broader exception? 
 #### Q. Difference between entrySet(), keySet() and values() in HashMap. 
