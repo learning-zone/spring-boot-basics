@@ -2545,6 +2545,15 @@ Sorting by Age
 ```
 
 #### Q. What is DAO factory design pattern in Java?
+
+Data Access Object Pattern or DAO pattern is used to separate low level data accessing API or operations from high level business services.
+
+​```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+​```
+
 #### Q. How to stop thread? 
 #### Q. Insert a uppercase value into map without using toUpperCase() of string class. 
 #### Q. While overriding a method can you throw another exception or broader exception? 
