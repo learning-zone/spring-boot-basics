@@ -2544,7 +2544,7 @@ Sorting by Age
 106 Olivea Gold 27
 ```
 
-#### Q. DAO factory pattern. 
+#### Q. What is DAO factory design pattern in Java?
 #### Q. How to stop thread? 
 #### Q. Insert a uppercase value into map without using toUpperCase() of string class. 
 #### Q. While overriding a method can you throw another exception or broader exception? 
