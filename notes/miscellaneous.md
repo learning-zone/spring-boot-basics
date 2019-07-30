@@ -2404,8 +2404,8 @@ When we create a HashSet, it internally creates a HashMap and if we insert an el
 
 Comparable and Comparator both are interfaces and can be used to sort collection elements.
 
-|Comparable	                |Comparator                                                                                 |
-|:--------------------------|:------------------------------------------------------------------------------------------|
+|Comparable	                |Comparator                                                                                |
+|---------------------------|------------------------------------------------------------------------------------------|
 |1) Comparable provides a single sorting sequence. In other words, we can sort the collection on the basis of a single element such as id, name, and price. |The Comparator provides multiple sorting sequences. In other words, we can sort the collection on the basis of multiple elements such as id, name, and price etc.|
 |2) Comparable affects the original class, i.e., the actual class is modified.|Comparator doesn't affect the original class, i.e., the actual class is not modified.|
 |3) Comparable provides compareTo() method to sort elements. | Comparator provides compare() method to sort elements.
