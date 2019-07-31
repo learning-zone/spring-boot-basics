@@ -2771,7 +2771,31 @@ I am running….
 Stopped Running….
 ```
 
-#### Q. Insert a uppercase value into map without using toUpperCase() of string class. 
+#### Q. How Convert lower to upper case without using toUppercase() in java?
+
+```
+/**
+* Java program to Convert lower to upper case
+* 
+**/
+public class toLowerCase {
+
+    public static void main(String[] args) {
+        toLowerCase(args[0]);
+    }
+
+    public static void toLowerCase(String a) {
+
+        for (int i = 0; i< a.length(); i++) {
+            char aChar = a.charAt(i);
+            if (65 <= aChar && aChar<=90) {
+                aChar = (char)( (aChar + 32) ); 
+            }
+            System.out.print(aChar);
+         }
+     }
+}    
+```
 #### Q. While overriding a method can you throw another exception or broader exception? 
 #### Q. Difference between entrySet(), keySet() and values() in HashMap. 
 #### Q. What is checked, unchecked exception and errors? 
