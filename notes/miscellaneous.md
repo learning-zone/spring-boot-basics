@@ -2843,7 +2843,7 @@ Example:
 *
 **/
 import java.util.*; 
-public class NewClass {
+public class HashMapExample {
 
     public static void main(String args[]) {
 
