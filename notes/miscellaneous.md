@@ -2888,12 +2888,71 @@ public class HashMapExample {
 * They are programmatically recoverable problems which are caused by unexpected conditions outside the control of the code (e.g. database down, file I/O error, wrong input, etc).
 * Example: IOException, SQLException, etc.
 
+```
+import java.io.*; 
+  
+class Main { 
+    public static void main(String[] args) { 
+        FileReader file = new FileReader("C:\\assets\\file.txt"); 
+        BufferedReader fileInput = new BufferedReader(file); 
+          
+        for (int counter = 0; counter < 3; counter++)  
+            System.out.println(fileInput.readLine()); 
+          
+        fileInput.close(); 
+    } 
+} 
+```
+output:
+```
+Exception in thread "main" java.lang.RuntimeException: Uncompilable source code - 
+unreported exception java.io.FileNotFoundException; must be caught or declared to be 
+thrown
+    at Main.main(Main.java:5)
+```
+After adding IOException
+```
+import java.io.*; 
+  
+class Main { 
+    public static void main(String[] args) throws IOException { 
+        FileReader file = new FileReader("C:\\assets\\file.txt"); 
+        BufferedReader fileInput = new BufferedReader(file); 
+           
+        for (int counter = 0; counter < 3; counter++)  
+            System.out.println(fileInput.readLine()); 
+          
+        fileInput.close(); 
+    } 
+} 
+```
+output:
+```
+Output: First three lines of file “C:\assets\file.txt”
+```
+
 2. **Unchecked Exception**:
 
 * The classes that extend <code>RuntimeException</code> are known as unchecked exceptions.
 * Unchecked exceptions are not checked at compile-time, but rather at **runtime**, hence the name.
 * They are also programmatically recoverable problems but unlike checked exception they are caused by faults in code flow or configuration.
 * Example:  ArithmeticException,NullPointerException, ArrayIndexOutOfBoundsException, etc.
+
+```
+class Main { 
+   public static void main(String args[]) { 
+      int x = 0; 
+      int y = 10; 
+      int z = y/x; 
+  } 
+} 
+```
+Output:
+```
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+    at Main.main(Main.java:5)
+Java Result: 1
+```
 
 3. **Error**:
 
