@@ -2961,6 +2961,24 @@ Java Result: 1
 
 #### Q. What's the difference between @Component, @Repository & @Service annotations in Spring?
 
+* **@Component**
+This is a general-purpose stereotype annotation indicating that the class is a spring component.
+```
+@Component
+public @interface Service {
+    ….
+}
+```
+* **@Repository**
+This is to indicate that the class defines a database repository.
+```
+<bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
+```
+* **@Controller**
+This indicate that the annotate classes at presentation layers level, mainly used in Spring MVC.
+
+* **@Service**
+<code>@Service</code> beans hold the business logic and call methods in the repository layer.
 
 ![alt text](https://github.com/learning-zone/Spring/blob/spring/assets/spring-component.png)
 
