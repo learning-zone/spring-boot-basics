@@ -2797,6 +2797,35 @@ public class toLowerCase {
 }    
 ```
 #### Q. While overriding a method can you throw another exception or broader exception? 
+
+If a method declares to throw a given exception, the overriding method in a subclass can only declare to throw that exception or its subclass. This is because of polymorphism.
+
+Example:
+```
+class A {
+   public void message() throws IOException {..}
+}
+
+class B extends A {
+   @Override
+   public void message() throws SocketException {..} // allowed
+
+   @Override
+   public void message() throws SQLException {..} // NOT allowed
+
+   public static void main(String args[]) {
+        A a = new B();
+        try {
+            a.message();
+        } catch (IOException ex) {
+            // forced to catch this by the compiler
+        }
+   }
+}
+```
+
+
+
 #### Q. Difference between entrySet(), keySet() and values() in HashMap. 
 #### Q. What is checked, unchecked exception and errors? 
 #### Q. What are the different ways to load the Spring container? 
