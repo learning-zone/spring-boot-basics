@@ -2883,7 +2883,7 @@ public class HashMapExample {
 
 * **Checked Exception**:
 
-* These are the classes that extend <code>Throwable<code> except <code>RuntimeException<code> and <code>Error<code>.
+* These are the classes that extend <code>Throwable</code> except <code>RuntimeException</code> and <code>Error</code>.
 * They are also known as compile time exceptions because they are checked at **compile time**, meaning the compiler forces us to either handle them with try/catch or indicate in the function signature that it throws them and forcing us to deal with them in the caller.
 * They are programmatically recoverable problems which are caused by unexpected conditions outside the control of the code (e.g. database down, file I/O error, wrong input, etc).
 
