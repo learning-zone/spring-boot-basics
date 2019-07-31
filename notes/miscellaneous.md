@@ -965,20 +965,20 @@ public class MapToListExamples {
 
     public static void main(String[] args) {
 
-        //Creating a HashMap object 
+        // Creating a HashMap object 
         HashMap<String, String> performanceMap = new HashMap<String, String>(); 
          
-        //Adding elements to HashMap 
+        // Adding elements to HashMap 
         performanceMap.put("John Kevin", "Average");  
         performanceMap.put("Ladarious Fernandez", "Very Good"); 
         performanceMap.put("Ivan Jose", "Very Bad"); 
         performanceMap.put("Smith Jacob", "Very Good"); 
         performanceMap.put("Athena Stiltner", "Bad"); 
          
-        //Getting Set of keys 
+        // Getting Set of keys 
         Set<String> keySet = performanceMap.keySet(); 
          
-        //Creating an ArrayList of keys 
+        // Creating an ArrayList of keys 
         ArrayList<String> listOfKeys = new ArrayList<String>(keySet); 
          
         System.out.println("ArrayList Of Keys :"); 
@@ -987,10 +987,10 @@ public class MapToListExamples {
             System.out.println(key); 
         }
                   
-        //Getting Collection of values 
+        // Getting Collection of values 
         Collection<String> values = performanceMap.values(); 
          
-        //Creating an ArrayList of values 
+        // Creating an ArrayList of values 
         ArrayList<String> listOfValues = new ArrayList<String>(values); 
          
         System.out.println("ArrayList Of Values :"); 
@@ -999,10 +999,10 @@ public class MapToListExamples {
             System.out.println(value); 
         } 
                   
-        //Getting the Set of entries 
+        // Getting the Set of entries 
         Set<Entry<String, String>> entrySet = performanceMap.entrySet(); 
          
-        //Creating an ArrayList Of Entry objects 
+        // Creating an ArrayList Of Entry objects 
         ArrayList<Entry<String, String>> listOfEntry = new ArrayList<Entry<String,String>>(entrySet); 
          
         System.out.println("ArrayList of Key-Values :"); 
@@ -1554,7 +1554,7 @@ The singly linked list is a linear data structure in which each element of the l
 Example:
 ```
 public class SinglyLinkedList {    
-    //Represent a node of the singly linked list    
+    // Represent a node of the singly linked list    
     class Node{    
         int data;    
         Node next;    
@@ -1565,32 +1565,32 @@ public class SinglyLinkedList {
         }    
     }    
      
-    //Represent the head and tail of the singly linked list    
+    // Represent the head and tail of the singly linked list    
     public Node head = null;    
     public Node tail = null;    
         
-    //addNode() will add a new node to the list    
+    // addNode() will add a new node to the list    
     public void addNode(int data) {    
-        //Create a new node    
+        // Create a new node    
         Node newNode = new Node(data);    
             
-        //Checks if the list is empty    
+        // Checks if the list is empty    
         if(head == null) {    
-            //If list is empty, both head and tail will point to new node    
+            // If list is empty, both head and tail will point to new node    
             head = newNode;    
             tail = newNode;    
         }    
         else {    
-            //newNode will be added after tail such that tail's next will point to newNode    
+            // newNode will be added after tail such that tail's next will point to newNode    
             tail.next = newNode;    
-            //newNode will become new tail of the list    
+            // newNode will become new tail of the list    
             tail = newNode;    
         }    
     }    
         
-    //display() will display all the nodes present in the list    
+    // display() will display all the nodes present in the list    
     public void display() {    
-        //Node current will point to head    
+        // Node current will point to head    
         Node current = head;    
             
         if(head == null) {    
@@ -1599,7 +1599,7 @@ public class SinglyLinkedList {
         }    
         System.out.println("Nodes of singly linked list: ");    
         while(current != null) {    
-            //Prints each node by incrementing pointer    
+            // Prints each node by incrementing pointer    
             System.out.print(current.data + " ");    
             current = current.next;    
         }    
@@ -1610,13 +1610,13 @@ public class SinglyLinkedList {
             
         SinglyLinkedList sList = new SinglyLinkedList();    
             
-        //Add nodes to the list    
+        // Add nodes to the list    
         sList.addNode(10);    
         sList.addNode(20);    
         sList.addNode(30);    
         sList.addNode(40);    
             
-        //Displays the nodes present in the list    
+        // Displays the nodes present in the list    
         sList.display();    
     }    
 }  
@@ -1641,7 +1641,7 @@ public class EagerInitializedSingleton {
     
     private static final EagerInitializedSingleton instance = new EagerInitializedSingleton();
     
-    //private constructor to avoid client applications to use constructor
+    // private constructor to avoid client applications to use constructor
     private EagerInitializedSingleton(){}
 
     public static EagerInitializedSingleton getInstance(){
@@ -1662,7 +1662,7 @@ public class StaticBlockSingleton  {
     
     private StaticBlockSingleton (){}
     
-    //static block initialization for exception handling
+    // static block initialization for exception handling
     static{
         try{
             instance = new StaticBlockSingleton ();
@@ -1828,22 +1828,22 @@ Example: Calculate Electricity Bill
 Plan.java
 ```
 import java.io.*;      
-abstract class Plan{  
-         protected double rate;  
-         abstract void getRate();  
-   
-         public void calculateBill(int units){  
-              System.out.println(units*rate);  
-          }  
+abstract class Plan {  
+    protected double rate;  
+    abstract void getRate();  
+
+    public void calculateBill(int units){  
+        System.out.println(units*rate);  
+    }  
 }  
 ```
 
 DomesticPlan.java
 ```
 class  DomesticPlan extends Plan{  
-    //@override  
-        public void getRate(){  
-            rate=3.50;              
+    @override  
+    public void getRate(){  
+        rate=3.50;              
     }  
 }
 ```
@@ -1851,17 +1851,17 @@ class  DomesticPlan extends Plan{
 CommercialPlan.java
 ```
 class  CommercialPlan extends Plan{  
-   //@override   
+    @override   
     public void getRate(){   
         rate=7.50;  
-   }   
+    }   
 }  
 ```
 
 InstitutionalPlan.java
 ```
 class  InstitutionalPlan extends Plan{  
-   //@override  
+    @override  
     public void getRate(){   
         rate=5.50;  
    }   
@@ -1872,7 +1872,7 @@ GetPlanFactory.java
 ```
 class GetPlanFactory {  
       
-   //use getPlan method to get object of type Plan   
+    // use getPlan method to get object of type Plan   
     public Plan getPlan(String planType){  
         if(planType == null){  
             return null;  
@@ -1907,7 +1907,7 @@ class GenerateBill {
       int units=Integer.parseInt(br.readLine());  
   
       Plan p = planFactory.getPlan(planName);  
-      //call getRate() method and calculateBill()method of DomesticPaln.  
+      // call getRate() method and calculateBill()method of DomesticPaln.  
   
        System.out.print("Bill amount for "+planName+" of  "+units+" units is: ");  
            p.getRate();  
@@ -2035,10 +2035,10 @@ public class ShoppingCartTest {
 		cart.addItem(item1);
 		cart.addItem(item2);
 		
-		//pay by paypal
+		// pay by paypal
 		cart.pay(new PaypalStrategy("myemail@example.com", "mypwd"));
 		
-		//pay by credit card
+		// pay by credit card
 		cart.pay(new CreditCardStrategy("Pankaj Kumar", "1234567890123456", "786", "12/15"));
 	}
 }
@@ -2070,8 +2070,8 @@ singleton is default bean scope in spring container. It tells the container to c
 Example of singleton scope bean using Java config –
 ```
 @Component
-//This statement is redundant - singleton is default scope
-@Scope("singleton")  //This statement is redundant
+// This statement is redundant - singleton is default scope
+@Scope("singleton")  // This statement is redundant
 public class BeanClass {
  
 }
@@ -2080,7 +2080,7 @@ Example of singleton scope bean using XML config –
 ```
 <!-- To specify singleton scope is redundant -->
 <bean id="beanId" class="com.springexample.BeanClass" scope="singleton" />
-//or
+// or
 <bean id="beanId" class="com.springexample.BeanClass" />
 ```
 
@@ -2112,7 +2112,7 @@ Java config example of request bean scope –
 public class BeanClass {
 }
  
-//or
+// or
  
 @Component
 @RequestScope
@@ -2136,7 +2136,7 @@ Java config example of session bean scope –
 public class BeanClass {
 }
  
-//or
+// or
  
 @Component
 @SessionScope
@@ -2163,7 +2163,7 @@ Java config example of application bean scope –
 public class BeanClass {
 }
  
-//or
+// or
  
 @Component
 @ApplicationScope
@@ -2330,10 +2330,10 @@ public class DemoServlet extends HttpServlet{
        response.setContentType("text/html");
        PrintWriter pwriter=response.getWriter();
 
-       //ServletContext object creation
+       // ServletContext object creation
        ServletContext scontext=getServletContext();
 
-       //fetching values of initialization parameters and printing it
+       // fetching values of initialization parameters and printing it
        String userName=scontext.getInitParameter("uname");
        pwriter.println("User name is="+userName);
        String userEmail=scontext.getInitParameter("email");
@@ -2383,7 +2383,7 @@ class HashSetExample {
 
  public static void main(String args[]){  
 
-  //Creating HashSet and adding elements  
+    // Creating HashSet and adding elements  
     HashSet<String> set=new HashSet();  
            set.add("10");    
            set.add("20");    
@@ -2440,7 +2440,7 @@ class Student implements Comparable<Student>{
     }  
 }  
 
-//Creating a test class to sort the elements  
+// Creating a test class to sort the elements  
 public class ComparableMain {  
     public static void main(String args[]) {  
         ArrayList<Student> al=new ArrayList<Student>();  
@@ -2506,24 +2506,24 @@ import java.io.*;
 class TestComparator {  
 
     public static void main(String args[]) {  
-        //Creating a list of students  
+        // Creating a list of students  
         ArrayList<Student> al=new ArrayList<Student>();  
         al.add(new Student(101,"Caelyn Romero",23));  
         al.add(new Student(106,"Olivea Gold",27));  
         al.add(new Student(105,"Courtlyn Kilgore",21));  
         
         System.out.println("Sorting by Name");  
-        //Using NameComparator to sort the elements  
+        // Using NameComparator to sort the elements  
         Collections.sort(al,new NameComparator());  
-        //Traversing the elements of list  
+        // Traversing the elements of list  
         for(Student st: al){  
           System.out.println(st.rollno+" "+st.name+" "+st.age);  
         }  
         
         System.out.println("sorting by Age");  
-        //Using AgeComparator to sort the elements  
+        // Using AgeComparator to sort the elements  
         Collections.sort(al,new AgeComparator());  
-        //Travering the list again  
+        // Travering the list again  
         for(Student st: al){  
           System.out.println(st.rollno+" "+st.name+" "+st.age);  
         }
@@ -2598,7 +2598,7 @@ import java.util.List;
 
 public class StudentDaoImpl implements StudentDao {
 	
-   //list is working as a database
+   // list is working as a database
    List<Student> students;
 
    public StudentDaoImpl(){
@@ -2614,7 +2614,7 @@ public class StudentDaoImpl implements StudentDao {
       System.out.println("Student: Roll No " + student.getRollNo() + ", deleted from database");
    }
 
-   //retrive list of students from the database
+   // retrive list of students from the database
    @Override
    public List<Student> getAllStudents() {
       return students;
@@ -2638,17 +2638,17 @@ public class DaoPatternDemo {
    public static void main(String[] args) {
       StudentDao studentDao = new StudentDaoImpl();
 
-      //print all students
+      // print all students
       for (Student student : studentDao.getAllStudents()) {
          System.out.println("Student: [RollNo : " + student.getRollNo() + ", Name : " + student.getName() + " ]");
       }
 
-      //update student
+      // update student
       Student student =studentDao.getAllStudents().get(0);
       student.setName("Michael");
       studentDao.updateStudent(student);
 
-      //get the student
+      // get the student
       studentDao.getStudent(0);
       System.out.println("Student: [RollNo : " + student.getRollNo() + ", Name : " + student.getName() + " ]");		
    }
@@ -2675,10 +2675,10 @@ Example: Stop a thread Using a boolean variable
 **/
 class MyThread extends Thread {
 
-    //Initially setting the flag as true 
+    // Initially setting the flag as true 
     private volatile boolean flag = true;
      
-    //This method will set flag as false
+    // This method will set flag as false
     public void stopRunning() {
         flag = false;
     }
@@ -2686,7 +2686,7 @@ class MyThread extends Thread {
     @Override
     public void run() {
                  
-        //This will make thread continue to run until flag becomes false 
+        // This will make thread continue to run until flag becomes false 
         while (flag) {
             System.out.println("I am running....");
         }
@@ -2708,7 +2708,7 @@ public class MainClass {
             e.printStackTrace();
         }
          
-        //call stopRunning() method whenever you want to stop a thread
+        // call stopRunning() method whenever you want to stop a thread
         thread.stopRunning();
     }   
 }
@@ -2756,7 +2756,7 @@ public class MainClass {
             e.printStackTrace();
         }
 
-        //interrupting the thread         
+        // interrupting the thread         
         thread.interrupt();
     }   
 }
