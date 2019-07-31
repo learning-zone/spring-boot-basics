@@ -2959,9 +2959,6 @@ Java Result: 1
 * <code>Error</code> refers to an irrecoverable situation that is not being handled by a <code>try/catch</code>.
 * Example: OutOfMemoryError, VirtualMachineError, AssertionError, etc.
 
-#### Q. What are the different ways to load the Spring container? 
-#### Q. How to implement webservices with spring using custom annotation?
-#### Q. How spring interceptors work?
 #### Q. Difference between @Service and @Component tags 
 #### Q. Implement your own String class 
 #### Q. How do you identify deadlock has happened in prod environment?
