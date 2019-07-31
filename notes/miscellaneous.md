@@ -2824,9 +2824,61 @@ class B extends A {
 }
 ```
 
+#### Q. Difference between containsKey(), keySet() and values() in HashMap. 
 
+* **The keySet() method**:
+This method returns a Set view of all the keys in the map. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. 
 
-#### Q. Difference between entrySet(), keySet() and values() in HashMap. 
+* **The containsKey() method**:
+It returns true if this map maps one or more keys to the specified value.
+
+* **The values() methods**:
+It returns a Collection view of the values contained in this map. The collection is backed by the map, so changes to the map are reflected in the collection, and vice-versa.
+
+Example:
+```
+/**
+* Java program illustrating usage of HashMap class methods 
+* keySet(), values(), containsKey() 
+*
+**/
+import java.util.*; 
+public class NewClass {
+
+    public static void main(String args[]) {
+
+        // Creation of HashMap 
+        HashMap<String, String> map = new HashMap<>(); 
+  
+        // Adding values to HashMap as ("keys", "values") 
+        map.put("Language", "Java"); 
+        map.put("Platform", "Window"); 
+        map.put("Code", "HashMap"); 
+        map.put("Learn", "More"); 
+  
+        // containsKey() method is to check the presence of a particluar key
+        if (map.containsKey("Code")) 
+            System.out.println("Testing .containsKey : " + map.get("Code")); 
+  
+        // keySet() method returns all the keys in HashMap 
+        Set<String> mapKeys = map.keySet(); 
+        System.out.println("Initial keys  : " + mapKeys); 
+  
+  
+        // values() method return all the values in HashMap 
+        Collection<String> mapValues = map.values(); 
+        System.out.println("Initial values : " + mapValues); 
+  
+        // Adding new set of key-value 
+        map.put("Search", "JavaArticle"); 
+  
+        // Again using .keySet() and .values() methods 
+        System.out.println("New Keys : " + mapKeys); 
+        System.out.println("New Values: " + mapValues); 
+    } 
+} 
+```
+
 #### Q. What is checked, unchecked exception and errors? 
 #### Q. What are the different ways to load the Spring container? 
 #### Q. How to implement webservices with spring using custom annotation?
