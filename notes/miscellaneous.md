@@ -2880,6 +2880,29 @@ public class HashMapExample {
 ```
 
 #### Q. What is checked, unchecked exception and errors? 
+
+* **Checked Exception**:
+
+* These are the classes that extend <code>Throwable<code> except <code>RuntimeException<code> and <code>Error<code>.
+* They are also known as compile time exceptions because they are checked at **compile time**, meaning the compiler forces us to either handle them with try/catch or indicate in the function signature that it throws them and forcing us to deal with them in the caller.
+* They are programmatically recoverable problems which are caused by unexpected conditions outside the control of the code (e.g. database down, file I/O error, wrong input, etc).
+
+Example: IOException, SQLException, etc.
+
+* **Unchecked Exception**:
+
+* The classes that extend RuntimeException are known as unchecked exceptions.
+* Unchecked exceptions are not checked at compile-time, but rather at **runtime**, hence the name.
+* They are also programmatically recoverable problems but unlike checked exception they are caused by faults in code flow or configuration.
+
+Example:  ArithmeticException,NullPointerException, ArrayIndexOutOfBoundsException, etc.
+
+* **Error**:
+
+* Error refers to an irrecoverable situation that is not being handled by a try/catch.
+
+Example: OutOfMemoryError, VirtualMachineError, AssertionError, etc.
+
 #### Q. What are the different ways to load the Spring container? 
 #### Q. How to implement webservices with spring using custom annotation?
 #### Q. How spring interceptors work?
