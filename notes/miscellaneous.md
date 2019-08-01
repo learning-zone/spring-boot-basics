@@ -3051,7 +3051,7 @@ Output:
 * **Primitives**: Array can contain both primitives and objects but ArrayList can contain only object elements
 * **Generics**: We can’t use generics along with array but ArrayList allows us to use generics to ensure type safety.
 * **Length**: We can use length variable to calculate length of an array but size() method to calculate size of ArrayList.
-* **store**: Array use assignment operator to store elements but ArrayList use add() to insert elements.
+* **Store**: Array use assignment operator to store elements but ArrayList use add() to insert elements.
 
 Example:
 ```
