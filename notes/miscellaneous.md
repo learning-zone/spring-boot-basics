@@ -3045,9 +3045,9 @@ Output:
     - None
 ```
 
-#### Q. How do you find third highest salary? 
-#### Q. Difference between procedures and triggers 
-#### Q. What is the difference between Array and arrayList datastructure? 
+#### Q. What is the difference between Array and ArrayList datastructure? 
+
+
 #### Q. How microservices communicate with each other? 
 #### Q. Array or ArrayList which one is faster?  [ Array is faster ]
 #### Q. How to prevent from database attacks/SQL Injection? 
