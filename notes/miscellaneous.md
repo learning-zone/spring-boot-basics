@@ -5,7 +5,7 @@
 
 * **Step 01: Configuring Server and File Storage Properties**
 
-```
+```java
 #src/main/resources/application.properties
 
 ## MULTIPART (MultipartProperties)
@@ -25,7 +25,7 @@ file.upload-dir=/Users/files/uploads
 
 * **Step 02: Automatically binding properties to a POJO class**
 
-```
+```java
 package com.example.filedemo.property;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -46,7 +46,7 @@ public class FileStorageProperties {
 
 * **Step 03: Enable Configuration Properties**
 
-```
+```java
 #src/main/java/com/example/filedemo/FileDemoApplication.java
 
 package com.example.filedemo;
@@ -70,7 +70,7 @@ public class FileDemoApplication {
 
 * **Step 04: Writing APIs for File Upload and Download**
 
-```
+```java
 package com.example.filedemo.controller;
 
 import com.example.filedemo.payload.UploadFileResponse;
@@ -148,7 +148,7 @@ public class FileController {
 
 * **Step 05: UploadFileResponse**
 
-```
+```java
 package com.example.filedemo.payload;
 
 public class UploadFileResponse {
@@ -170,7 +170,7 @@ public class UploadFileResponse {
 
 * **Step 06: Service for Storing Files in the FileSystem and retrieving them**
 
-```
+```java
 package com.example.filedemo.service;
 
 import com.example.filedemo.exception.FileStorageException;
@@ -244,7 +244,7 @@ public class FileStorageService {
 
 * **Step 07: FileStorageException**
 
-```
+```java
 package com.example.filedemo.exception;
 
 public class FileStorageException extends RuntimeException {
@@ -260,7 +260,7 @@ public class FileStorageException extends RuntimeException {
 
 * **Step 08: MyFileNotFoundException**
 
-```
+```java
 package com.example.filedemo.exception;
 
 import org.springframework.http.HttpStatus;
@@ -280,7 +280,7 @@ public class MyFileNotFoundException extends RuntimeException {
 
 * **Step 09: Running the Application and Testing the APIs via Postman**
 
-```
+```java
 mvn spring-boot:run
 ```
 
@@ -288,7 +288,7 @@ mvn spring-boot:run
 
 * **Step 01: pom.xml Settings**
 
-```
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -348,7 +348,7 @@ mvn spring-boot:run
 
 * **Step 02: application.properties Settings**
 
-```
+```java
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 spring.mail.username=pradeep.vwa@gmail.com
@@ -370,7 +370,7 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 
 * **Step 03: Application.java**
 
-```
+```java
 package com.springtutorial;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -457,7 +457,7 @@ public class Application implements CommandLineRunner {
 
 * **Step 01: pom.xml Settings**
 
-```
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -517,7 +517,7 @@ public class Application implements CommandLineRunner {
 
 * **Step 02: SpringBootCrudRestfulApplication.java**
 
-```
+```java
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
  
@@ -532,7 +532,7 @@ public class SpringBootCrudRestfulApplication {
 
 * **Step 03: Employee.java**
 
-```
+```java
 public class Employee {
  
     private String empNo;
@@ -575,7 +575,7 @@ public class Employee {
 ```
 * **Step 04: EmployeeDAO.java**
 
-```
+```java
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -633,7 +633,7 @@ public class EmployeeDAO {
 ```
 * **Step 05: MainRESTController.java**
 
-```
+```java
 import java.util.List;
  
 import org.springexample.sbcrudrestful.dao.EmployeeDAO;
@@ -738,7 +738,7 @@ public class MainRESTController {
 
 * **Step 06: Run and Test the application**
 
-```
+```java
 // Get all the employees details
 http://localhost:8080/employees
 http://localhost:8080/employees.json
