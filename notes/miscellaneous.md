@@ -2343,7 +2343,7 @@ public class DemoServlet extends HttpServlet{
 }
 ```
 web.xml
-```java
+```xml
 <web-app>
     <servlet>
         <servlet-name>UserDetails</servlet-name>
