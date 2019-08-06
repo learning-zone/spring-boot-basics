@@ -1031,7 +1031,7 @@ ArrayList and LinkedList both implements List interface and maintains insertion 
 
 Example: index.jsp
 
-```java
+```jsp
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
