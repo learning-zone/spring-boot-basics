@@ -1552,7 +1552,7 @@ Class.forName(String name, boolean initialize, ClassLoader loader);
 The singly linked list is a linear data structure in which each element of the list contains a pointer which points to the next element in the list. Each element in the singly linked list is called a node. Each node has two components: data and a pointer next which points to the next node in the list. 
 
 Example:
-```
+```java
 public class SinglyLinkedList {    
     // Represent a node of the singly linked list    
     class Node{    
