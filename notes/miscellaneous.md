@@ -2077,7 +2077,7 @@ public class BeanClass {
 }
 ```
 Example of singleton scope bean using XML config –
-```java
+```xml
 <!-- To specify singleton scope is redundant -->
 <bean id="beanId" class="com.springexample.BeanClass" scope="singleton" />
 // or
@@ -2097,7 +2097,7 @@ public class BeanClass {
 ```
 
 XML config example of prototype bean scope –
-```java
+```xml
 <bean id="beanId" class="com.springexample.BeanClass" scope="prototype" />
 ```
 
@@ -2121,7 +2121,7 @@ public class BeanClass {
 ```
 
 XML config example of request bean scope –
-```java
+```xml
 <bean id="beanId" class="com.springexample.BeanClass" scope="request" />
 ```
 
@@ -2145,7 +2145,7 @@ public class BeanClass {
 ```
 
 XML config example of session bean scope –
-```java
+```xml
 <bean id="beanId" class="com.springexample.BeanClass" scope="session" />
 ```
 
@@ -2172,7 +2172,7 @@ public class BeanClass {
 ```
 
 XML config example of application bean scope –
-```java
+```xml
 <bean id="beanId" class="com.springexample.BeanClass" scope="application" />
 ```
 
@@ -2189,7 +2189,7 @@ public class BeanClass {
 ```
 
 XML config example of websocket bean scope –
-```java
+```xml
 <bean id="beanId" class="com.springexample.BeanClass" scope="websocket" />
 ```
 
