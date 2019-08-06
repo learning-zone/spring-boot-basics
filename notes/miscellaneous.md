@@ -1049,7 +1049,7 @@ Example: index.jsp
 </html>
 ```
 request.jsp
-```java
+```jsp
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1069,7 +1069,7 @@ request.jsp
 * **response**: This is the HttpServletResponse object associated with the response to the client.
 
 Example:
-```java
+```jsp
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1087,7 +1087,7 @@ Example:
 * **session**: This is the HttpSession object associated with the request.
 
 Example: index.jsp
-```java
+```jsp
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1103,7 +1103,7 @@ Example: index.jsp
 </html>
 ```
 session.jsp
-```java
+```jsp
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1123,7 +1123,7 @@ session.jsp
 * **out**: This is the PrintWriter object used to send output to the client.
 
 Example:
-```java
+```jsp
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1144,7 +1144,7 @@ Example:
 * **application**: This is the ServletContext object associated with the application context.
 
 Example:
-```
+```jsp
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1161,7 +1161,7 @@ Example:
 * **config**: This is the ServletConfig object associated with the page.
 
 Example: web.xml
-```java
+```xml
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
@@ -1178,7 +1178,7 @@ Example: web.xml
 </web-app>
 ```
 index.jsp
-```java
+```jsp
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1199,7 +1199,7 @@ index.jsp
 * **page**: Page implicit variable holds the currently executed servlet object for the corresponding jsp. Acts as this object for current jsp page.
 
 Example:
-```java
+```jsp
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1219,7 +1219,7 @@ Example:
 * **Exception**: It is used for exception handling in JSP.
 
 Example:
-```java
+```jsp
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1" isErrorPage="true"%>
 <!DOCTYPE html>
