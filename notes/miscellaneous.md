@@ -1293,7 +1293,7 @@ public class RedirectServlet extends HttpServlet {
 ```
 
 Example: forward() method
-```java
+```html
 //index.html
 
 <!DOCTYPE html>
