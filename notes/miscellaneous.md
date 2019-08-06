@@ -755,7 +755,7 @@ http://localhost:8080/employee/E01.json
 
 * **Step 01: application.properties Settings**
 
-```
+```java
 spring.datasource.url=jdbc:mysql://localhost:3306/springbootdb  
 spring.datasource.username=root  
 spring.datasource.password=mysql  
@@ -764,7 +764,7 @@ spring.jpa.hibernate.ddl-auto=create-drop
 
 * **Step 02: SpringBootJdbcApplication.java**
 
-```
+```java
 package com.learningzone;  
 
 import org.springframework.boot.SpringApplication;  
@@ -779,7 +779,7 @@ public class SpringBootJdbcApplication {
 
 * **Step 02: SpringBootJdbcController.java**
 
-```
+```java
 package com.learningzone;
   
 import org.springframework.web.bind.annotation.RequestMapping;  
@@ -807,7 +807,7 @@ There are three types of built-in ClassLoader in Java:
 1. **Extensions Class Loader** – It loads classes from the JDK extensions directory, usually $JAVA_HOME/lib/ext directory.
 1. **System Class Loader** – It loads classes from the current classpath that can be set while invoking a program using -cp or -classpath command line options.
 
-```
+```java
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -847,7 +847,7 @@ String Pool in java is a pool of Strings stored in Java Heap Memory. String pool
 
 When we use double quotes to create a String, it first looks for String with the same value in the String pool, if found it just returns the reference else it creates a new String in the pool and then returns the reference. However using new operator, we force String class to create a new String object in heap space.
 
-```
+```java
 /**
 * Java program to illustrate String Pool
 *
@@ -878,13 +878,13 @@ There are methods like <code>System.gc()</code> and <code>Runtime.gc()</code> wh
 An interface with no methods is known as marker or tagged interface. It provides some useful information to JVM/compiler so that JVM/compiler performs some special operations on it. It is used for better readability of code.  Example: Serializable, Clonnable etc. 
 
 Syntax:
-```
+```java
 public interface Interface_Name {
 
 }
 ```
 Example:
-```
+```java
 /**
 * Java program to illustrate Maker Interface 
 *
@@ -912,7 +912,7 @@ HashMap in Java works on **hashing** principle. It is a data structure which all
 Since the internal array of HashMap is of fixed size, and if you keep storing objects, at some point of time hash function will return same bucket location for two different keys, this is called collision in HashMap. In this case, a linked list is formed at that bucket location and a new entry is stored as next node.
 
 Example:
-```
+```java
 /**
 * Java program to illustrate internal working of HashMap 
 *
@@ -955,7 +955,7 @@ public class HashMapExample {
 
 #### Q. Write a code to convert HashMap to ArrayList.  
 
-```
+```java
 import java.util.ArrayList; 
 import java.util.Collection; 
 import java.util.HashMap; 
@@ -1031,7 +1031,7 @@ ArrayList and LinkedList both implements List interface and maintains insertion 
 
 Example: index.jsp
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1049,7 +1049,7 @@ Example: index.jsp
 </html>
 ```
 request.jsp
-```
+```java
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1069,7 +1069,7 @@ request.jsp
 * **response**: This is the HttpServletResponse object associated with the response to the client.
 
 Example:
-```
+```java
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1087,7 +1087,7 @@ Example:
 * **session**: This is the HttpSession object associated with the request.
 
 Example: index.jsp
-```
+```java
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1103,7 +1103,7 @@ Example: index.jsp
 </html>
 ```
 session.jsp
-```
+```java
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1123,7 +1123,7 @@ session.jsp
 * **out**: This is the PrintWriter object used to send output to the client.
 
 Example:
-```
+```java
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1161,7 +1161,7 @@ Example:
 * **config**: This is the ServletConfig object associated with the page.
 
 Example: web.xml
-```
+```java
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
@@ -1178,7 +1178,7 @@ Example: web.xml
 </web-app>
 ```
 index.jsp
-```
+```java
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1199,7 +1199,7 @@ index.jsp
 * **page**: Page implicit variable holds the currently executed servlet object for the corresponding jsp. Acts as this object for current jsp page.
 
 Example:
-```
+```java
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -1219,7 +1219,7 @@ Example:
 * **Exception**: It is used for exception handling in JSP.
 
 Example:
-```
+```java
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1" isErrorPage="true"%>
 <!DOCTYPE html>
@@ -1244,7 +1244,7 @@ Example:
 This method is declared in **HttpServletResponse** Interface. It is used to redirect client request to some other location for further processing, the new location is available on different server or different context.our web container handle this and transfer the request using  browser, and this request is visible in browser as a new request. 
 
 Signature: 
-```
+```java
 void sendRedirect(String url)
 ```
 
@@ -1252,7 +1252,7 @@ void sendRedirect(String url)
 This method is declared in **RequestDispatcher** Interface. It is used to pass the request to another resource for further processing within the same server, another resource could be any servlet, jsp page any kind of file.
 
 Signature:
-```
+```java
 forward(ServletRequest request, ServletResponse response)
 ```
 
@@ -1269,7 +1269,7 @@ forward(ServletRequest request, ServletResponse response)
 |Signature: _forward(ServletRequest request, ServletResponse response)_ |Signature: _void sendRedirect(String url)_ |
 
 Example: sendRedirect() method
-```
+```java
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -1293,7 +1293,7 @@ public class RedirectServlet extends HttpServlet {
 ```
 
 Example: forward() method
-```
+```java
 //index.html
 
 <!DOCTYPE html>
@@ -1312,7 +1312,7 @@ Example: forward() method
 </html>
 ```
 SimpleServlet.java
-```
+```java
 package javaexample.net.servlets;
 
 import java.io.IOException;
@@ -1361,7 +1361,7 @@ The web container maintains the life cycle of a servlet instance.
 The web container calls the init method only once after creating the servlet instance. The init method is used to initialize the servlet. It is the life cycle method of the javax.servlet.Servlet interface.
 
 Syntax 
-```
+```java
 public void init(ServletConfig config) throws ServletException {
     // Initialization code...
 }
@@ -1371,7 +1371,7 @@ public void init(ServletConfig config) throws ServletException {
 The servlet container calls the service() method to handle requests coming from the client and to write the formatted response back to the client. The service() method checks the HTTP request type (GET, POST, PUT, DELETE, etc.) and calls doGet, doPost, doPut, doDelete, etc. 
 
 Syntax
-```
+```java
 public void service(ServletRequest request, ServletResponse response) 
    throws ServletException, IOException {
 }
@@ -1381,7 +1381,7 @@ public void service(ServletRequest request, ServletResponse response)
 A GET request results from a normal request for a URL or from an HTML form that has no METHOD specified and it should be handled by doGet() method.
 
 Syntax
-```
+```java
 public void doGet(HttpServletRequest request, HttpServletResponse response)
    throws ServletException, IOException {
    // Servlet code
@@ -1392,7 +1392,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
 A POST request results from an HTML form that specifically lists POST as the METHOD and it should be handled by doPost() method.
 
 Syntax
-```
+```java
 public void doPost(HttpServletRequest request, HttpServletResponse response)
    throws ServletException, IOException {
    // Servlet code
@@ -1403,7 +1403,7 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)
 The web container calls the destroy method before removing the servlet instance from the service. It gives the servlet an opportunity to clean up any resource for example memory, thread etc.
 
 Syntax
-```
+```java
 public void destroy() {
    // Finalization code...
 }
@@ -1437,7 +1437,7 @@ Java 8 provides following features for Java Programming:
 Serialization is a mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory. This mechanism is used to persist the object.
 
 Example:
-```
+```java
 /**
 * Serialization and Deserialization  
 * example of a Java object 
@@ -1528,22 +1528,22 @@ public class SerialExample {
 #### Q. What are the various ways to load a class in Java?
 
 1. **Creating a reference**:
-```
+```java
 SomeClass someInstance = null;
 ```
 
 2. **Using Class.forName(String)**:
-```
+```java
  Class.forName("SomeClass");
 ```
 
 3. **Using SystemClassLoader()**: 
-```
+```java
 ClassLoader.getSystemClassLoader().loadClass("SomeClass");
 ```
 
 4. **Using Overloaded Class.forName()**:
-```
+```java
 Class.forName(String name, boolean initialize, ClassLoader loader);
 ```
 
@@ -1622,7 +1622,7 @@ public class SinglyLinkedList {
 }  
 ```
 **Output:**
-```
+```java
 Nodes of singly linked list: 
 10 20 30 40
 ```
@@ -1636,7 +1636,7 @@ Nodes of singly linked list:
 In eager initialization, the instance of Singleton Class is created at the time of class loading.
 
 Example:
-```
+```java
 public class EagerInitializedSingleton {
     
     private static final EagerInitializedSingleton instance = new EagerInitializedSingleton();
@@ -1655,7 +1655,7 @@ public class EagerInitializedSingleton {
 Static block initialization implementation is similar to eager initialization, except that instance of class is created in the static block that provides option for exception handling.
 
 Example:
-```
+```java
 public class StaticBlockSingleton  {
 
     private static StaticBlockSingleton  instance;
@@ -1682,7 +1682,7 @@ public class StaticBlockSingleton  {
 Lazy initialization method to implement Singleton pattern creates the instance in the global access method.
 
 Example:
-```
+```java
 public class LazyInitializedSingleton  {
 
     private static LazyInitializedSingleton  instance;
@@ -1703,7 +1703,7 @@ public class LazyInitializedSingleton  {
 The easier way to create a thread-safe singleton class is to make the global access method synchronized, so that only one thread can execute this method at a time.
 
 Example:
-```
+```java
 public class ThreadSafeSingleton {
 
     private static ThreadSafeSingleton instance;
@@ -1724,7 +1724,7 @@ public class ThreadSafeSingleton {
 Prior to Java5, memory model had a lot of issues and above methods caused failure in certain scenarios in multithreaded environment. So, Bill Pugh suggested a concept of inner static classes to use for singleton.
 
 Example:
-```
+```java
 public class BillPughSingleton {
 
     private BillPughSingleton(){}
@@ -1748,21 +1748,21 @@ Example:
 we have two incompatible interfaces: **MediaPlayer** and **MediaPackage**. MP3 class is an implementation of the MediaPlayer interface and we have VLC and MP4 as implementations of the MediaPackage interface. We want to use MediaPackage implementations as MediaPlayer instances. So, we need to create an adapter to help to work with two incompatible classes.
 
 MediaPlayer.java
-```
+```java
 public interface MediaPlayer {
     void play(String filename);
 }
 ```
 
 MediaPackage.java
-```
+```java
 public interface MediaPackage {
     void playFile(String filename);
 }
 ```
 
 MP3.java
-```
+```java
 public class MP3 implements MediaPlayer {
  @Override
  public void play(String filename) {
@@ -1772,7 +1772,7 @@ public class MP3 implements MediaPlayer {
 ```
 
 MP4.java
-```
+```java
 public class MP4 implements MediaPackage {
     @Override
     public void playFile(String filename) {
@@ -1782,7 +1782,7 @@ public class MP4 implements MediaPackage {
 ```
 
 VLC.java
-```
+```java
 public class VLC implements MediaPackage {
     @Override
     public void playFile(String filename) {
@@ -1792,7 +1792,7 @@ public class VLC implements MediaPackage {
 ```
 
 FormatAdapter.java
-```
+```java
 public class FormatAdapter implements MediaPlayer {
     private MediaPackage media;
     public FormatAdapter(MediaPackage m) {
@@ -1807,7 +1807,7 @@ public class FormatAdapter implements MediaPlayer {
 ```
 
 Main.java
-```
+```java
 public class Main {
     public static void main(String[] args) {
         MediaPlayer player = new MP3();
@@ -1826,7 +1826,7 @@ A Factory Pattern or Factory Method Pattern says that just define an interface o
 
 Example: Calculate Electricity Bill
 Plan.java
-```
+```java
 import java.io.*;      
 abstract class Plan {  
     protected double rate;  
@@ -1839,7 +1839,7 @@ abstract class Plan {
 ```
 
 DomesticPlan.java
-```
+```java
 class  DomesticPlan extends Plan{  
     @override  
     public void getRate(){  
@@ -1849,7 +1849,7 @@ class  DomesticPlan extends Plan{
 ```
 
 CommercialPlan.java
-```
+```java
 class  CommercialPlan extends Plan{  
     @override   
     public void getRate(){   
@@ -1859,7 +1859,7 @@ class  CommercialPlan extends Plan{
 ```
 
 InstitutionalPlan.java
-```
+```java
 class  InstitutionalPlan extends Plan{  
     @override  
     public void getRate(){   
@@ -1869,7 +1869,7 @@ class  InstitutionalPlan extends Plan{
 ```
 
 GetPlanFactory.java
-```
+```java
 class GetPlanFactory {  
       
     // use getPlan method to get object of type Plan   
@@ -1892,7 +1892,7 @@ class GetPlanFactory {
 ```
 
 GenerateBill.java
-```
+```java
 import java.io.*;    
 class GenerateBill {
 
@@ -1923,14 +1923,14 @@ Strategy design pattern is one of the behavioral design pattern. Strategy patter
 Example: Simple Shopping Cart where we have two payment strategies – using Credit Card or using PayPal.
 
 PaymentStrategy.java
-```
+```java
 public interface PaymentStrategy {
 	public void pay(int amount);
 }
 ```
 
 CreditCardStrategy.java
-```
+```java
 public class CreditCardStrategy implements PaymentStrategy {
 
 	private String name;
@@ -1952,7 +1952,7 @@ public class CreditCardStrategy implements PaymentStrategy {
 ```
 
 PaypalStrategy.java
-```
+```java
 public class PaypalStrategy implements PaymentStrategy {
 
 	private String emailId;
@@ -1970,7 +1970,7 @@ public class PaypalStrategy implements PaymentStrategy {
 ```
 
 Item.java
-```
+```java
 public class Item {
 
 	private String upcCode;
@@ -1990,7 +1990,7 @@ public class Item {
 ```
 
 ShoppingCart.java
-```
+```java
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -2023,7 +2023,7 @@ public class ShoppingCart {
 ```
 
 ShoppingCartTest.java
-```
+```java
 public class ShoppingCartTest {
 
 	public static void main(String[] args) {
@@ -2045,7 +2045,7 @@ public class ShoppingCartTest {
 ```
 
 Output 
-```
+```java
 500 paid using Paypal.
 500 paid with credit/debit card
 ```
@@ -2068,7 +2068,7 @@ The core of spring framework is it’s bean factory and mechanisms to create and
 singleton is default bean scope in spring container. It tells the container to create and manage only one instance of bean class, per container. This single instance is stored in a cache of such singleton beans, and all subsequent requests and references for that named bean return the cached instance.
 
 Example of singleton scope bean using Java config –
-```
+```java
 @Component
 // This statement is redundant - singleton is default scope
 @Scope("singleton")  // This statement is redundant
@@ -2077,7 +2077,7 @@ public class BeanClass {
 }
 ```
 Example of singleton scope bean using XML config –
-```
+```java
 <!-- To specify singleton scope is redundant -->
 <bean id="beanId" class="com.springexample.BeanClass" scope="singleton" />
 // or
@@ -2089,7 +2089,7 @@ Example of singleton scope bean using XML config –
 prototype scope results in the creation of a new bean instance every time a request for the bean is made by application code.
 
 Java config example of prototype bean scope –
-```
+```java
 @Component
 @Scope("prototype")
 public class BeanClass {
@@ -2097,7 +2097,7 @@ public class BeanClass {
 ```
 
 XML config example of prototype bean scope –
-```
+```java
 <bean id="beanId" class="com.springexample.BeanClass" scope="prototype" />
 ```
 
@@ -2106,7 +2106,7 @@ XML config example of prototype bean scope –
 In request scope, container creates a new instance for each and every HTTP request. So, if server is currently handling 5 requests, then container can have at most 5 individual instances of bean class. 
 
 Java config example of request bean scope –
-```
+```java
 @Component
 @Scope("request")
 public class BeanClass {
@@ -2121,7 +2121,7 @@ public class BeanClass {
 ```
 
 XML config example of request bean scope –
-```
+```java
 <bean id="beanId" class="com.springexample.BeanClass" scope="request" />
 ```
 
@@ -2130,7 +2130,7 @@ XML config example of request bean scope –
 In session scope, container creates a new instance for each and every HTTP session. So, if server has 10 active sessions, then container can have at most 10 individual instances of bean class. All HTTP requests within single session lifetime will have access to same single bean instance in that session scope.
 
 Java config example of session bean scope –
-```
+```java
 @Component
 @Scope("session")
 public class BeanClass {
@@ -2145,7 +2145,7 @@ public class BeanClass {
 ```
 
 XML config example of session bean scope –
-```
+```java
 <bean id="beanId" class="com.springexample.BeanClass" scope="session" />
 ```
 
@@ -2157,7 +2157,7 @@ In application scope, container creates one instance per web application runtime
 * application scoped bean is visible as a ServletContext attribute.
 
 Java config example of application bean scope –
-```
+```java
 @Component
 @Scope("application")
 public class BeanClass {
@@ -2172,7 +2172,7 @@ public class BeanClass {
 ```
 
 XML config example of application bean scope –
-```
+```java
 <bean id="beanId" class="com.springexample.BeanClass" scope="application" />
 ```
 
@@ -2181,7 +2181,7 @@ XML config example of application bean scope –
 The WebSocket Protocol enables two-way communication between a client and a remote host that has opted-in to communication with client. WebSocket Protocol provides a single TCP connection for traffic in both directions. 
 
 Java config example of websocket bean scope –
-```
+```java
 @Component
 @Scope("websocket")
 public class BeanClass {
@@ -2189,7 +2189,7 @@ public class BeanClass {
 ```
 
 XML config example of websocket bean scope –
-```
+```java
 <bean id="beanId" class="com.springexample.BeanClass" scope="websocket" />
 ```
 
@@ -2224,7 +2224,7 @@ AOP provides the way to dynamically add the cross-cutting concern before, after 
 5. **Around advice**: Around advice can perform custom behavior before and after the method invocation. This type of advice is used where we need frequent access to a method or database like- caching.
 
 Example: Types of Advices 
-```
+```java
 /**
 * AOP program to illustrate types of Advices
 *
@@ -2265,7 +2265,7 @@ class Logging {
 ```
 
 Example: JoinPoints
-```
+```java
 /**
 * AOP program to illustrate JoinPoints
 *
@@ -2285,7 +2285,7 @@ class Logging {
 } 
 ```
 Example: PointCuts 
-```
+```java
 /**
 * AOP program to illustrate PointCuts 
 *
@@ -2319,7 +2319,7 @@ ServletContext is a configuration Object which is created when web application i
 6. **public void removeAttribute(String name)**: Removes the attribute with the given name from the servlet context.
 
 Example: DemoServlet.java
-```
+```java
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -2343,7 +2343,7 @@ public class DemoServlet extends HttpServlet{
 }
 ```
 web.xml
-```
+```java
 <web-app>
     <servlet>
         <servlet-name>UserDetails</servlet-name>
@@ -2377,7 +2377,7 @@ Java HashSet class is used to create a collection that uses a hash table for sto
 * The initial default capacity of HashSet is 16, and the load factor is 0.75.
 
 Example:
-```
+```java
 import java.util.*;  
 class HashSetExample {  
 
@@ -2413,7 +2413,7 @@ Comparable and Comparator both are interfaces and can be used to sort collection
 5) We can sort the list elements of Comparable type by Collections.sort(List) method.|We can sort the list elements of Comparator type by Collections.sort(List, Comparator) method.|
 
 Example:
-```
+```java
 /**
 * Java Program to demonstrate the use of Java Comparable.
 *
@@ -2457,7 +2457,7 @@ public class ComparableMain {
 ```
 Example: Java Comparator 
 Student.java
-```
+```java
 class Student {  
     int rollno;  
     String name;  
@@ -2470,7 +2470,7 @@ class Student {
 }
 ```
 AgeComparator.java
-```
+```java
 import java.util.*;  
 
 class AgeComparator implements Comparator<Student> {  
@@ -2485,7 +2485,7 @@ class AgeComparator implements Comparator<Student> {
 }  
 ```
 NameComparator.java
-```
+```java
 import java.util.*;  
 
 class NameComparator implements Comparator<Student> {  
@@ -2495,7 +2495,7 @@ class NameComparator implements Comparator<Student> {
 }  
 ```
 TestComparator.java
-```
+```java
 /**
 * Java Program to demonstrate the use of Java Comparator  
 *
@@ -2532,7 +2532,7 @@ class TestComparator {
 ```
 
 Output:
-```
+```java
 Sorting by Name
 106 Caelyn Romero 23
 105 Courtlyn Kilgore 21
@@ -2551,7 +2551,7 @@ Data Access Object Pattern or DAO pattern is used to separate low level data acc
 DAO pattern is based on abstraction and encapsulation design principles and shields rest of application from any change in the persistence layer e.g. change of database from Oracle to MySQL, change of persistence technology e.g. from File System to Database.
 
 Step 1: Create Value Object [ Student.java ]
-```
+```java
 public class Student {
    private String name;
    private int rollNo;
@@ -2580,7 +2580,7 @@ public class Student {
 ```
 
 Step 2: Create Data Access Object Interface [ StudentDao.java ]
-```
+```java
 import java.util.List;
 
 public interface StudentDao {
@@ -2592,7 +2592,7 @@ public interface StudentDao {
 ```
 
 Step 3: Create concrete class implementing above interface [ StudentDaoImpl.java ] 
-```
+```java
 import java.util.ArrayList;
 import java.util.List;
 
@@ -2633,7 +2633,7 @@ public class StudentDaoImpl implements StudentDao {
 }
 ```
 Step 4: Use the StudentDao to demonstrate Data Access Object pattern usage [ DaoPatternDemo.java ]
-```
+```java
 public class DaoPatternDemo {
    public static void main(String[] args) {
       StudentDao studentDao = new StudentDaoImpl();
@@ -2655,7 +2655,7 @@ public class DaoPatternDemo {
 }
 ```
 Output:
-```
+```java
 Student: [RollNo : 0, Name : Robert ]
 Student: [RollNo : 1, Name : John ]
 Student: Roll No 0, updated in the database
@@ -2667,7 +2667,7 @@ Student: [RollNo : 0, Name : Michael ]
 A thread is automatically destroyed when the run() method has completed. But it might be required to kill/stop a thread before it has completed its life cycle. Modern ways to suspend/stop a thread are by using a **boolean flag** and **Thread.interrupt()** method.
 
 Example: Stop a thread Using a boolean variable
-```
+```java
 /**
 * Java program to illustrate 
 * stopping a thread using boolean flag 
@@ -2714,7 +2714,7 @@ public class MainClass {
 }
 ```
 Output:
-```
+```java
 I am running….
 I am running….
 I am running….
@@ -2724,7 +2724,7 @@ Stopped Running….
 ```
 
 Example: Stop a thread Using interrupt() Method
-```
+```java
 /**
 * Java program to illustrate 
 * stopping a thread using interrupt() method 
@@ -2762,7 +2762,7 @@ public class MainClass {
 }
 ```
 Output:
-```
+```java
 I am running….
 I am running….
 I am running….
@@ -2773,7 +2773,7 @@ Stopped Running….
 
 #### Q. How Convert lower to upper case without using toUppercase() in java?
 
-```
+```java
 /**
 * Java program to Convert lower to upper case
 * 
@@ -2801,7 +2801,7 @@ public class toLowerCase {
 If a method declares to throw a given exception, the overriding method in a subclass can only declare to throw that exception or its subclass. This is because of polymorphism.
 
 Example:
-```
+```java
 class A {
    public void message() throws IOException {..}
 }
@@ -2836,7 +2836,7 @@ It returns true if this map maps one or more keys to the specified value.
 It returns a Collection view of the values contained in this map. The collection is backed by the map, so changes to the map are reflected in the collection, and vice-versa.
 
 Example:
-```
+```java
 /**
 * Java program illustrating usage of HashMap class methods 
 * keySet(), values(), containsKey() 
@@ -2888,7 +2888,7 @@ public class HashMapExample {
 * They are programmatically recoverable problems which are caused by unexpected conditions outside the control of the code (e.g. database down, file I/O error, wrong input, etc).
 * Example: IOException, SQLException, etc.
 
-```
+```java
 import java.io.*; 
   
 class Main { 
@@ -2904,14 +2904,14 @@ class Main {
 } 
 ```
 output:
-```
+```java
 Exception in thread "main" java.lang.RuntimeException: Uncompilable source code - 
 unreported exception java.io.FileNotFoundException; must be caught or declared to be 
 thrown
     at Main.main(Main.java:5)
 ```
 After adding IOException
-```
+```java
 import java.io.*; 
   
 class Main { 
@@ -2927,7 +2927,7 @@ class Main {
 } 
 ```
 output:
-```
+```java
 Output: First three lines of file “C:\assets\file.txt”
 ```
 
@@ -2938,7 +2938,7 @@ Output: First three lines of file “C:\assets\file.txt”
 * They are also programmatically recoverable problems but unlike checked exception they are caused by faults in code flow or configuration.
 * Example:  ArithmeticException,NullPointerException, ArrayIndexOutOfBoundsException, etc.
 
-```
+```java
 class Main { 
    public static void main(String args[]) { 
       int x = 0; 
@@ -2948,7 +2948,7 @@ class Main {
 } 
 ```
 Output:
-```
+```java
 Exception in thread "main" java.lang.ArithmeticException: / by zero
     at Main.main(Main.java:5)
 Java Result: 1
@@ -2963,7 +2963,7 @@ Java Result: 1
 
 * **@Component**
 This is a general-purpose stereotype annotation indicating that the class is a spring component.
-```
+```java
 @Component
 public @interface Service {
     ….
@@ -2971,7 +2971,7 @@ public @interface Service {
 ```
 * **@Repository**
 This is to indicate that the class defines a database repository.
-```
+```java
 <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
 ```
 * **@Controller**
@@ -2985,7 +2985,7 @@ This indicate that the annotate classes at presentation layers level, mainly use
 #### Q. Implement your own String class 
 #### Q. Explain deadlock condition in-between two threads with example?
 
-```
+```java
 public class DeadLockSimulator {
      
     public static Object Lock1 = new Object();
@@ -3025,7 +3025,7 @@ public class DeadLockSimulator {
 }
 ```
 Output:
-```
+```java
 "Thread-1" prio=6 tid=0x0000000007319000 nid=0x7cd3c waiting for monitor entry [0x0000000008a3f000]
    java.lang.Thread.State: BLOCKED (on object monitor)
     at com.tier1app.DeadLockSimulator$SecondThread.run(DeadLockSimulator.java:29)
@@ -3054,7 +3054,7 @@ Output:
 * **Store**: Array use assignment operator to store elements but ArrayList use add() to insert elements.
 
 Example:
-```
+```java
 /*
 * A Java program to demonstrate differences between array 
 * and ArrayList 
