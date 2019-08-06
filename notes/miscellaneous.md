@@ -738,7 +738,7 @@ public class MainRESTController {
 
 * **Step 06: Run and Test the application**
 
-```java
+```
 // Get all the employees details
 http://localhost:8080/employees
 http://localhost:8080/employees.json
