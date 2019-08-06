@@ -2971,7 +2971,7 @@ public @interface Service {
 ```
 * **@Repository**
 This is to indicate that the class defines a database repository.
-```java
+```xml
 <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
 ```
 * **@Controller**
