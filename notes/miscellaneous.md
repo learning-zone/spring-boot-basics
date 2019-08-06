@@ -2983,6 +2983,7 @@ This indicate that the annotate classes at presentation layers level, mainly use
 ![alt text](https://github.com/learning-zone/Spring/blob/spring/assets/spring-component.png)
 
 #### Q. Implement your own String class 
+TODO
 #### Q. Explain deadlock condition in-between two threads with example?
 
 ```java
