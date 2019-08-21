@@ -1,6 +1,5 @@
 # Java, J2EE, Spring-Boot Questions
 
-
 #### Q. Spring Boot program for file upload / download
 
 * **Step 01: Configuring Server and File Storage Properties**
@@ -797,6 +796,8 @@ public class SpringBootJdbcController {
     }  
 }  
 ```
+#### Q. What is difference between spring and spring boot?
+*TODO*
 
 #### Q. How bootstrap class loader works in java?
 
