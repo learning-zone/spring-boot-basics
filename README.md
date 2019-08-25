@@ -3157,8 +3157,28 @@ new instance of Employee will be inserted to HashMap
 *TODO*
 #### Q. Differentiate ArrayList from Vector?
 *TODO*
-#### Q. How do you sort out items in ArrayList in forward and reverse directions?
-*TODO*
+#### Q. How do you sort out items in ArrayList in forward and reverse direction?
+Reverse order of all elements of Java ArrayList
+```java
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class MainClass {
+  public static void main(String[] args) {
+    ArrayList<String> arrayList = new ArrayList<String>();
+
+    arrayList.add("A");
+    arrayList.add("B");
+    arrayList.add("C");
+    arrayList.add("D");
+    arrayList.add("E");
+
+    System.out.println(arrayList);
+    Collections.reverse(arrayList);
+    System.out.println(arrayList);
+  }
+}
+```
 #### Q. Tell me about join() and wait() methods?
 The `wait()` and `join()` methods are used to pause the current thread. The `wait()` is used in with `notify()` and `notifyAll()` methods, but `join()` is used in Java to wait until one thread finishes its execution. 
 
