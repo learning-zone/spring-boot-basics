@@ -3178,7 +3178,15 @@ new instance of Employee will be inserted to HashMap
 #### Q. Do you know Generics? How did you used in your coding?
 *TODO*
 #### Q. What is difference between String, StringBuilder and StringBuffer?
-*TODO*
+String is `immutable`, if you try to alter their values, another object gets created, whereas `StringBuffer` and `StringBuilder` are mutable so they can change their values.  
+
+The difference between `StringBuffer` and `StringBuilder` is that `StringBuffer` is thread-safe. So when the application needs to be run only in a single thread then it is better to use `StringBuilder`. `StringBuilder` is more efficient than StringBuffer.
+
+**Situations**:  
+* If your string is not going to change use a String class because a `String` object is immutable.
+* If your string can change (example: lots of logic and operations in the construction of the string) and will only be accessed from a single thread, using a `StringBuilder` is good enough.
+* If your string can change, and will be accessed from multiple threads, use a `StringBuffer` because `StringBuffer` is synchronous so you have thread-safety.
+
 #### Q. How can we create a object of a class without using new operator?
 Different ways to create an object in Java
 * **Using new Keyword**
