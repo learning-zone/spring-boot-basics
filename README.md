@@ -3157,7 +3157,7 @@ new instance of Employee will be inserted to HashMap
 *TODO*
 #### Q. Differentiate ArrayList from Vector?
 *TODO*
-#### Q. How do you sort out items in ArrayList in forward and reverse direction?
+#### Q. How do you sort out items in ArrayList in reverse direction?
 Reverse order of all elements of Java ArrayList
 ```java
 import java.util.ArrayList;
