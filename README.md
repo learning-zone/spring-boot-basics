@@ -3112,14 +3112,14 @@ Array is faster
 *TODO*
 #### Q. Optimistic vs pessimistic locking in table level and row level.
 *TODO*
-#### Q. What is main advantage of RESTful implementation over SOAP
+#### Q. What is main advantage of RESTful implementation over SOAP?
 *TODO*
 #### Q. How do you implement secondary level cache? Clustering?
 *TODO*
 #### Q. Difference between symmetric, public and private keys, what are the procedure to implement the same using spring security.
 *TODO*
-#### Q. What code coverage tools are you using for your project? (we use cobetura, you can use it with ant, maven, gradle)
-*TODO*
+#### Q. What code coverage tools are you using for your project? 
+we use `cobetura`
 #### Q. Implement thread-safe code without using the `synchronized` keyword? 
 *TODO*
 #### Q. Design parking lot with 100 parking space.
@@ -3134,15 +3134,6 @@ use `persistent MQueues`
 new instance of Employee will be inserted to HashMap 
 
 #### Q. Given a string "abc" or any other string print all possible combinations of it.
-*TODO*
-#### Q. Spring MVC flow (what design patterns do it use).
-*TODO*
-#### Q. Given a requirement where in we have a html file and textbox:
-        -> user can enter number( find sum of digits)
-        -> user can enter string (print the string)
-        -> user can enter JSON object (print the attributes)
-        -> user can enter function name: add(2,3)  (invoke the respective function.)
-              Based on user input perform the indicated task in parenthesis.
 *TODO*
 #### Q. Given table Employee and Department write a sql statement to find count of employees department
 *TODO*
