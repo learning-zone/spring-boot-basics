@@ -3185,10 +3185,13 @@ new instance of Employee will be inserted to HashMap
 
 Example:
 ```java
-// A Simple Java program to show multiple 
-// type parameters in Java Generics 
-  
-// We use < > to specify Parameter type 
+/** 
+* A Simple Java program to show multiple 
+* type parameters in Java Generics 
+*
+* We use < > to specify Parameter type
+*
+**/ 
 class GenericClass<T, U> { 
     T obj1;  // An object of type T 
     U obj2;  // An object of type U 
