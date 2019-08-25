@@ -3176,7 +3176,52 @@ new instance of Employee will be inserted to HashMap
 #### Q. What hashCode() and equals() does in HashMap?
 *TODO*
 #### Q. Do you know Generics? How did you used in your coding?
-*TODO*
+`Generics` allows type (Integer, String, … etc and user defined types) to be a parameter to methods, classes and interfaces. For example, classes like HashSet, ArrayList, HashMap, etc use generics very well.
+
+**Advantages**
+* **Type-safety**: We can hold only a single type of objects in generics. It doesn't allow to store other objects.
+* **Type Casting**: There is no need to typecast the object.
+* **Compile-Time Checking**: It is checked at compile time so problem will not occur at runtime.
+
+Example:
+```java
+// A Simple Java program to show multiple 
+// type parameters in Java Generics 
+  
+// We use < > to specify Parameter type 
+class GenericClass<T, U> { 
+    T obj1;  // An object of type T 
+    U obj2;  // An object of type U 
+  
+    // constructor 
+    GenericClass(T obj1, U obj2) { 
+        this.obj1 = obj1; 
+        this.obj2 = obj2; 
+    } 
+  
+    // To print objects of T and U 
+    public void print() { 
+        System.out.println(obj1); 
+        System.out.println(obj2); 
+    } 
+} 
+  
+// Driver class to test above 
+class MainClass { 
+    public static void main (String[] args) { 
+        GenericClass <String, Integer> obj = 
+            new GenericClass<String, Integer>("Generic Class Example !", 100); 
+  
+        obj.print(); 
+    } 
+}
+```
+Output:
+```
+Generic Class Example !
+100
+```
+
 #### Q. What is difference between String, StringBuilder and StringBuffer?
 String is `immutable`, if you try to alter their values, another object gets created, whereas `StringBuffer` and `StringBuilder` are mutable so they can change their values.  
 
