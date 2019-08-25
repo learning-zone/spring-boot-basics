@@ -3160,11 +3160,12 @@ new instance of Employee will be inserted to HashMap
 #### Q. How do you sort out items in ArrayList in forward and reverse directions?
 *TODO*
 #### Q. Tell me about join() and wait() methods?
-*TODO*
-#### Q. If Parent Class have a method add() throws Exception, and child class overrides same method without Exception, will that compile and run? Is it overridden or overloaded? 
-*TODO*
-#### Q. If I don't have Explicit constructor in parent class and having in child class, while calling the child's constructor jvm automatically calls Implicit Constructor of parent class? Yes OR No ?
-*TODO*
+The `wait()` and `join()` methods are used to pause the current thread. The `wait()` is used in with `notify()` and `notifyAll()` methods, but `join()` is used in Java to wait until one thread finishes its execution.  
+`wait()` is mainly used for shared resources, a thread notifies other waiting thread when a resource becomes free. On the other hand `join()` is used for waiting a thread to die.
+
+#### Q. If I don't have Explicit constructor in parent class and having in child class, while calling the child's constructor jvm automatically calls Implicit Constructor of parent class? 
+If the subclass constructor does not specify which superclass constructor to invoke then the compiler will automatically call the accessible no-args constructor in the superclass.
+
 #### Q. What are the different types of JDBC Driver?
 JDBC Driver is a software component that enables java application to interact with the database.   
 There are 4 types of JDBC drivers:
