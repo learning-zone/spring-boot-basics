@@ -3185,8 +3185,48 @@ The difference between `StringBuffer` and `StringBuilder` is that `StringBuffer`
 **Situations**:  
 * If your string is not going to change use a String class because a `String` object is immutable.
 * If your string can change (example: lots of logic and operations in the construction of the string) and will only be accessed from a single thread, using a `StringBuilder` is good enough.
-* If your string can change, and will be accessed from multiple threads, use a `StringBuffer` because `StringBuffer` is synchronous so you have thread-safety.
+* If your string can change, and will be accessed from multiple threads, use a `StringBuffer` because `StringBuffer` is synchronous so you have thread-safety.  
 
+Example:
+```java
+class StringExample {
+
+    // Concatenates to String 
+    public static void concat1(String s1) { 
+        s1 = s1 + "World"; 
+    } 
+  
+    // Concatenates to StringBuilder 
+    public static void concat2(StringBuilder s2) { 
+        s2.append("World"); 
+    } 
+  
+    // Concatenates to StringBuffer 
+    public static void concat3(StringBuffer s3) { 
+        s3.append("World"); 
+    } 
+  
+    public static void main(String[] args) { 
+        String s1 = "Hello"; 
+        concat1(s1);  // s1 is not changed 
+        System.out.println("String: " + s1); 
+  
+        StringBuilder s2 = new StringBuilder("Hello"); 
+        concat2(s2); // s2 is changed 
+        System.out.println("StringBuilder: " + s2); 
+  
+        StringBuffer s3 = new StringBuffer("Hello"); 
+        concat3(s3); // s3 is changed 
+        System.out.println("StringBuffer: " + s3); 
+    } 
+} 
+```
+Output  
+```java
+String: Hello
+StringBuilder: World
+StringBuffer: World
+```
 #### Q. How can we create a object of a class without using new operator?
 Different ways to create an object in Java
 * **Using new Keyword**
