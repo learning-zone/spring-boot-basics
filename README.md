@@ -3093,53 +3093,100 @@ class ArrayExample {
 ```
 
 #### Q. How microservices communicate with each other? 
+*TODO*
 #### Q. Array or ArrayList which one is faster?  [ Array is faster ]
+*TODO*
 #### Q. How to prevent from database attacks/SQL Injection? 
+*TODO*
 #### Q. How to do SSO implementation using Spring Boot?
+*TODO*
 #### Q. Various ways that you implement JAAS.
-#### Q. Assume you have a singly linked list, now you need to find reverse of it without using new operator. 
+*TODO*
+#### Q. Assume you have a singly linked list, now you need to find reverse of it without using new operator.
+*TODO* 
 #### Q. Name design patterns used in collection framework.
+*TODO*
 #### Q. Object oriented feature like: Association, Composition, Aggregation
+*TODO*
 #### Q. Difference between DI and IOC in spring.
+*TODO*
 #### Q. Optimistic vs pessimistic locking in table level and row level.
+*TODO*
 #### Q. What is main advantage of RESTful implementation over SOAP
+*TODO*
 #### Q. How do you implement secondary level cache? Clustering?
+*TODO*
 #### Q. Difference between symmetric, public and private keys, what are the procedure to implement the same using spring security.
+*TODO*
 #### Q. What code coverage tools are you using for your project? (we use cobetura, you can use it with ant, maven, gradle)
+*TODO*
 #### Q. Implement thread-safe code without using the `synchronized` keyword? 
+*TODO*
 #### Q. Design parking lot with 100 parking space.
+*TODO*
 #### Q. Scenario of browser’s browsing history, where you need to store the browsing history, what data structure will you use.? [ Ans: use stack ]
+*TODO*
 #### Q. Scenario where in we have to download a big file by clicking on a link, how will you make sure that connections is reliable throughout. [ Ans: use persistent MQueues ]
+*TODO*
 #### Q. If you store Employee object as key say: Employee emp = new Employee(“name1”,20); store it in a HashMap as key, now if we add a new parameter emp.setMarriedStatus(true) and try to override it what will happen? [ Ans: new instance of Employee will be inserted to HashMap ]
+*TODO*
 #### Q. Given a string "abc" or any other string print all possible combinations of it.
+*TODO*
 #### Q. Spring MVC flow (what design patterns do it use).
+*TODO*
 #### Q. Given a requirement where in we have a html file and textbox:
         -> user can enter number( find sum of digits)
         -> user can enter string (print the string)
         -> user can enter JSON object (print the attributes)
         -> user can enter function name: add(2,3)  (invoke the respective function.)
               Based on user input perform the indicated task in parenthesis.
+*TODO*
 #### Q. Given table Employee and Department write a sql statement to find count of employees department
+*TODO*
 #### Q. Difference between classnotfound and noclassdeffound
+*TODO*
 #### Q. What do we mean by weak reference?
+*TODO*
 #### Q. Difference between hashset and linkedhashset
+*TODO*
 #### Q. What do you mean Run time Polymorphism?
+*TODO*
 #### Q. How will you create thread?
+*TODO*
 #### Q. Why implementing Runnable is better than extending thread?
+*TODO*
 #### Q. What is the use of Synchronized keyword?
+*TODO*
 #### Q. What is the difference between HashTable and HashMap?
+*TODO*
 #### Q. What will happen if I insert duplicate key-pair value inserted in to HashTable?
+*TODO*
 #### Q. Differentiate ArrayList from Vector?
+*TODO*
 #### Q. How do you sort out items in ArrayList in forward and reverse directions?
+*TODO*
 #### Q. Tell me about join() and wait() methods?
+*TODO*
 #### Q. If Parent Class have a method add() throws Exception, and child class overrides same method without Exception, will that compile and run? Is it overridden or overloaded? 
+*TODO*
 #### Q. If I don't have Explicit constructor in parent class and having in child class, while calling the child's constructor jvm automatically calls Implicit Constructor of parent class? Yes OR No ?
+*TODO*
 #### Q. What are the different types of JDBC Driver?
+*TODO*
 #### Q. How Encapsulation concept implemented in JAVA?
+*TODO*
 #### Q. Create a ordered collection, which allows duplicates? Which collection is used for this?
+*TODO*
 #### Q. Create a class, which have the behavior of Hash-map? 
+*TODO*
 #### Q. What hashCode() and equals() does in HashMap?
+*TODO*
 #### Q. Do you know Generics? How did you used in your coding?
-#### Q. What is difference between String, StringBuilder and StringBuffer ?
+*TODO*
+#### Q. What is difference between String, StringBuilder and StringBuffer?
+*TODO*
 #### Q. How can we create a object of a class without using new operator?
+*TODO*
 #### Q. What are upcasting and downcasting?
+*TODO*
+
