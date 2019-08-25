@@ -3122,8 +3122,6 @@ Array is faster
 we use `cobetura`
 #### Q. Implement thread-safe code without using the `synchronized` keyword? 
 *TODO*
-#### Q. Design parking lot with 100 parking space.
-*TODO*
 #### Q. Scenario of browser’s browsing history, where you need to store the browsing history, what data structure will you use.? 
 use `stack`
 
