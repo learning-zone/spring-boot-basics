@@ -3222,7 +3222,7 @@ class StringExample {
 } 
 ```
 Output  
-```java
+```cmd
 String: Hello
 StringBuilder: World
 StringBuffer: World
