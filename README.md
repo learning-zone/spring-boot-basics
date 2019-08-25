@@ -3168,13 +3168,34 @@ new instance of Employee will be inserted to HashMap
 #### Q. What are the different types of JDBC Driver?
 *TODO*
 #### Q. How Encapsulation concept implemented in JAVA?
-*TODO*
-#### Q. Create a ordered collection, which allows duplicates? Which collection is used for this?
-*TODO*
-#### Q. Create a class, which have the behavior of Hash-map? 
-*TODO*
-#### Q. What hashCode() and equals() does in HashMap?
-*TODO*
+Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class. Therefore, it is also known as `data hiding`.
+
+To achieve encapsulation in Java −  
+* Declare the variables of a class as private.
+* Provide public setter and getter methods to modify and view the variables values.
+
+Example:
+```java
+public class EncapClass {
+   private String name;
+
+   public String getName() {
+      return name;
+   }
+   public void setName(String newName) {
+      name = newName;
+   }
+}
+
+public class MainClass {
+
+   public static void main(String args[]) {
+      EncapClass obj = new EncapClass();
+      obj.setName("Pradeep Kumar");
+      System.out.print("Name : " + obj.getName());
+   }
+}
+```
 #### Q. Do you know Generics? How did you used in your coding?
 `Generics` allows type (Integer, String, … etc and user defined types) to be a parameter to methods, classes and interfaces. For example, classes like HashSet, ArrayList, HashMap, etc use generics very well.
 
