@@ -3100,8 +3100,6 @@ Array is faster
 *TODO*
 #### Q. How to do SSO implementation using Spring Boot?
 *TODO*
-#### Q. Various ways that you implement JAAS.
-*TODO*
 #### Q. Assume you have a singly linked list, now you need to find reverse of it without using new operator.
 *TODO* 
 #### Q. Name design patterns used in collection framework.
@@ -3132,8 +3130,6 @@ use `persistent MQueues`
 new instance of Employee will be inserted to HashMap 
 
 #### Q. Given a string "abc" or any other string print all possible combinations of it.
-*TODO*
-#### Q. Given table Employee and Department write a sql statement to find count of employees department
 *TODO*
 #### Q. Difference between classnotfound and noclassdeffound
 *TODO*
