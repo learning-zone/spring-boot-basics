@@ -3094,8 +3094,8 @@ class ArrayExample {
 
 #### Q. How microservices communicate with each other? 
 *TODO*
-#### Q. Array or ArrayList which one is faster?  [ Array is faster ]
-*TODO*
+#### Q. Array or ArrayList which one is faster?  
+Array is faster
 #### Q. How to prevent from database attacks/SQL Injection? 
 *TODO*
 #### Q. How to do SSO implementation using Spring Boot?
@@ -3124,12 +3124,15 @@ class ArrayExample {
 *TODO*
 #### Q. Design parking lot with 100 parking space.
 *TODO*
-#### Q. Scenario of browser’s browsing history, where you need to store the browsing history, what data structure will you use.? [ Ans: use stack ]
-*TODO*
-#### Q. Scenario where in we have to download a big file by clicking on a link, how will you make sure that connections is reliable throughout. [ Ans: use persistent MQueues ]
-*TODO*
-#### Q. If you store Employee object as key say: Employee emp = new Employee(“name1”,20); store it in a HashMap as key, now if we add a new parameter emp.setMarriedStatus(true) and try to override it what will happen? [ Ans: new instance of Employee will be inserted to HashMap ]
-*TODO*
+#### Q. Scenario of browser’s browsing history, where you need to store the browsing history, what data structure will you use.? 
+use `stack`
+
+#### Q. Scenario where in we have to download a big file by clicking on a link, how will you make sure that connections is reliable throughout. 
+use `persistent MQueues`
+
+#### Q. If you store Employee object as key say: Employee emp = new Employee(“name1”,20); store it in a HashMap as key, now if we add a new parameter emp.setMarriedStatus(true) and try to override it what will happen? 
+new instance of Employee will be inserted to HashMap 
+
 #### Q. Given a string "abc" or any other string print all possible combinations of it.
 *TODO*
 #### Q. Spring MVC flow (what design patterns do it use).
@@ -3186,7 +3189,115 @@ class ArrayExample {
 #### Q. What is difference between String, StringBuilder and StringBuffer?
 *TODO*
 #### Q. How can we create a object of a class without using new operator?
-*TODO*
-#### Q. What are upcasting and downcasting?
-*TODO*
+Different ways to create an object in Java
+* **Using new Keyword**
+```java
+class ObjectCreationExample{
+	String Owner;
+}
+public class MainClass {
+	public static void main(String[] args) {
+		// Here we are creating Object of JBT using new keyword
+		ObjectCreationExample obj = new ObjectCreationExample();
+	}
+}
+
+```
+* **Using New Instance (Reflection)**
+```java
+class CreateObjectClass {
+	static int j = 10;
+	CreateObjectClass() {
+		i = j++;
+	}
+	int i;
+	@Override
+	public String toString() {
+		return "Value of i :" + i;
+	}
+}
+
+class MainClass {
+	public static void main(String[] args) {
+		try {
+			Class cls = Class.forName("CreateObjectClass");
+			CreateObjectClass obj = (CreateObjectClass) cls.newInstance();
+			CreateObjectClass obj1 = (CreateObjectClass) cls.newInstance();
+			System.out.println(obj);
+			System.out.println(obj1);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+```
+* **Using Clone**
+```java
+ class CreateObjectWithClone implements Cloneable {
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+	int i;
+	static int j = 10;
+	CreateObjectWithClone() {
+		i = j++;
+	}
+	@Override
+	public String toString() {
+		return "Value of i :" + i;
+	}
+}
+
+class MainClass {
+	public static void main(String[] args) {
+		CreateObjectWithClone obj1 = new CreateObjectWithClone();
+		System.out.println(obj1);
+		try {
+			CreateObjectWithClone obj2 = (CreateObjectWithClone) obj1.clone();
+			System.out.println(obj2);
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+```
+* **Using ClassLoader**
+```java
+class CreateObjectWithClassLoader {
+	static int j = 10;
+	CreateObjectWithClassLoader() {
+		i = j++;
+	}
+	int i;
+	@Override
+	public String toString() {
+		return "Value of i :" + i;
+	}
+}
+
+public class MainClass {
+	public static void main(String[] args) {
+		CreateObjectWithClassLoader obj = null;
+		try {
+			obj = (CreateObjectWithClassLoader) new MainClass().getClass()
+					.getClassLoader().loadClass("CreateObjectWithClassLoader").newInstance();
+        // Fully qualified classname should be used.
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		System.out.println(obj);
+	}
+}
+```
+
 
