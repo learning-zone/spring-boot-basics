@@ -46,8 +46,7 @@ public class FileStorageProperties {
 * **Step 03: Enable Configuration Properties**
 
 ```java
-#src/main/java/com/example/filedemo/FileDemoApplication.java
-
+/* src/main/java/com/example/filedemo/FileDemoApplication.java */
 package com.example.filedemo;
 
 import com.example.filedemo.property.FileStorageProperties;
@@ -279,7 +278,7 @@ public class MyFileNotFoundException extends RuntimeException {
 
 * **Step 09: Running the Application and Testing the APIs via Postman**
 
-```java
+```
 mvn spring-boot:run
 ```
 
@@ -347,7 +346,7 @@ mvn spring-boot:run
 
 * **Step 02: application.properties Settings**
 
-```java
+```
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 spring.mail.username=pradeep.vwa@gmail.com
