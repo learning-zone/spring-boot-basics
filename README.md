@@ -3138,8 +3138,6 @@ new instance of Employee will be inserted to HashMap
 *TODO*
 #### Q. What do you mean Run time Polymorphism?
 *TODO*
-#### Q. How will you create thread?
-*TODO*
 #### Q. Why implementing Runnable is better than extending thread?
 | Features	           |implements Runnable	   | extends Thread |
 |----------------------|-----------------------|----------------|
