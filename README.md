@@ -3134,8 +3134,9 @@ new instance of Employee will be inserted to HashMap
 *TODO*
 #### Q. What do we mean by weak reference?
 *TODO*
-#### Q. Difference between hashset and linkedhashset
-*TODO*
+#### Q. What is difference between HashSet and LinkedHashSet?
+A `LinkedHashSet` is an ordered version of `HashSet` that maintains a doubly-linked List across all elements. Use this class instead of HashSet when you care about the iteration order. When you iterate through a HashSet the order is unpredictable, while a LinkedHashSet lets you iterate through the elements in the order in which they were inserted.
+
 #### Q. What do you mean Run time Polymorphism?
 `Polymorphism` in Java is a concept by which we can perform a single action in different ways.   
 There are two types of polymorphism in java:  
