@@ -4,7 +4,7 @@
 
 * **Step 01: Configuring Server and File Storage Properties**
 
-```java
+```
 #src/main/resources/application.properties
 
 ## MULTIPART (MultipartProperties)
