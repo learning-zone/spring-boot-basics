@@ -3141,9 +3141,74 @@ new instance of Employee will be inserted to HashMap
 #### Q. How will you create thread?
 *TODO*
 #### Q. Why implementing Runnable is better than extending thread?
-*TODO*
-#### Q. What is the use of Synchronized keyword?
-*TODO*
+| Features	           |implements Runnable	   | extends Thread |
+|----------------------|-----------------------|----------------|
+|Inheritance option	   |extends any java class | No             |
+|Reusability	       |Yes	                   | No             |
+|Object Oriented Design|Good,allows composition| Bad            |
+|Loosely Coupled	   |Yes 	               | No             |
+|Function Overhead	   |No	                   | Yes            |
+
+Example:
+```java
+/**
+* Java program to illustrate defining Thread 
+* by extending Thread class 
+*
+**/
+// Here we cant extends any other class 
+class ThreadExample extends Thread  
+{ 
+    public void run() { 
+        System.out.println("Run method executed by child Thread"); 
+    } 
+    public static void main(String[] args) { 
+        ThreadExample obj = new ThreadExample(); 
+        obj.start(); 
+        System.out.println("Main method executed by main thread"); 
+    } 
+} 
+```
+Output
+```
+Main method executed by main thread
+Run method executed by child Thread
+```
+```java
+/**
+* Java program to illustrate defining Thread 
+* by implements Runnable interface 
+*
+**/
+class RunnableExample 
+{ 
+    public static void m1() { 
+        System.out.println("Runnable interface Example"); 
+    } 
+} 
+  
+// Here we can extends any other class 
+class Test extends RunnableExample implements Runnable 
+{ 
+    public void run() { 
+        System.out.println("Run method executed by child Thread"); 
+    } 
+    public static void main(String[] args) { 
+        Test t = new Test(); 
+        t.m1(); 
+        Thread t1 = new Thread(t); 
+        t1.start(); 
+        System.out.println("Main method executed by main thread"); 
+    } 
+} 
+```
+Output
+```
+Runnable interface Example
+Main method executed by main thread
+Run method executed by child Thread
+```
+
 #### Q. What is the difference between HashTable and HashMap?
 |HashMap	                                           |Hashtable                                               |
 |------------------------------------------------------|--------------------------------------------------------|
