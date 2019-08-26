@@ -3145,7 +3145,65 @@ new instance of Employee will be inserted to HashMap
 #### Q. What is the use of Synchronized keyword?
 *TODO*
 #### Q. What is the difference between HashTable and HashMap?
-*TODO*
+|HashMap	                                           |Hashtable                                               |
+|------------------------------------------------------|--------------------------------------------------------|
+|HashMap is **non synchronized**. It is not-thread safe and can't be shared between many threads without proper synchronization code. |	Hashtable is **synchronized**. It is thread-safe and can be shared with many threads.|
+|HashMap allows one null key and multiple null values. |Hashtable doesn't allow any null key or value.|
+|HashMap is a new class introduced in JDK 1.2. |Hashtable is a legacy class.|
+|HashMap is fast.	                           |Hashtable is slow.|
+|We can make the HashMap as synchronized by calling this code
+ Map m = Collections.synchronizedMap(hashMap); | Hashtable is internally synchronized and can't be unsynchronized.|
+|HashMap is traversed by Iterator.             |Hashtable is traversed by Enumerator and Iterator.|
+|Iterator in HashMap is fail-fast.             |Enumerator in Hashtable is not fail-fast.|
+|HashMap inherits AbstractMap class.           |	Hashtable inherits Dictionary class.|
+
+Example:
+```java
+/**
+* A sample Java program to demonstrate HashMap and HashTable 
+*
+**/
+import java.util.*; 
+import java.lang.*; 
+import java.io.*; 
+
+class Example 
+{ 
+    public static void main(String args[]) { 
+        // HashTable  
+        Hashtable<Integer,String> ht = new Hashtable<Integer,String>(); 
+        ht.put(101,"One"); 
+        ht.put(101,"Two"); 
+        ht.put(102,"Three");  
+        System.out.println("Hash Table Values"); 
+        for (Map.Entry m:ht.entrySet()) { 
+            System.out.println(m.getKey() + " " + m.getValue()); 
+        } 
+  
+        // HashMap
+        HashMap<Integer,String> hm = new HashMap<Integer,String>(); 
+        hm.put(100,"Four"); 
+        hm.put(104,"Four");  // hash map allows duplicate values 
+        hm.put(101,"Five");
+        System.out.println("Hash Map Values"); 
+        for (Map.Entry m:hm.entrySet()) { 
+            System.out.println(m.getKey() + " " + m.getValue()); 
+        } 
+    } 
+} 
+```
+Output:
+```
+Hash Table Values
+102 Three
+101 One
+
+Hash Map Values
+100 Four
+101 Five
+104 Four
+```
+
 #### Q. What happens when a duplicate key is put into a HashMap?
 By definition, the `put` command replaces the previous value associated with the given key in the map (conceptually like an array indexing operation for primitive types).
 
