@@ -3137,7 +3137,59 @@ new instance of Employee will be inserted to HashMap
 #### Q. Difference between hashset and linkedhashset
 *TODO*
 #### Q. What do you mean Run time Polymorphism?
-*TODO*
+`Polymorphism` in Java is a concept by which we can perform a single action in different ways.   
+There are two types of polymorphism in java:  
+
+* **Static Polymorphism** also known as compile time polymorphism
+* **Dynamic Polymorphism** also known as runtime polymorphism
+
+Example: Static Polymorphism
+```java
+class SimpleCalculator {
+
+    int add(int a, int b) {
+        return a + b;
+    }
+    int  add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+public class MainClass
+{
+   public static void main(String args[]) {
+	   SimpleCalculator obj = new SimpleCalculator();
+       System.out.println(obj.add(10, 20));
+       System.out.println(obj.add(10, 20, 30));
+   }
+}
+```
+Output
+```
+30
+60
+```
+Example: Runtime polymorphism
+```java
+class ABC {
+   public void myMethod() {
+	  System.out.println("Overridden Method");
+   }
+}
+public class XYZ extends ABC {
+
+   public void myMethod() {
+	  System.out.println("Overriding Method");
+   }
+   public static void main(String args[]) {
+      ABC obj = new XYZ();
+	  obj.myMethod();
+   }
+}
+```
+Output
+```
+Overriding Method
+```
 #### Q. Why implementing Runnable is better than extending thread?
 | Features	           |implements Runnable	   | extends Thread |
 |----------------------|-----------------------|----------------|
