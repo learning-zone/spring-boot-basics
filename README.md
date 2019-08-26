@@ -3151,11 +3151,11 @@ new instance of Employee will be inserted to HashMap
 #### Q. What are the differences between ArrayList and Vector?
 |ArrayList	                    |Vector                               |
 |-------------------------------|-------------------------------------|
-|ArrayList is not synchronized. |Vector is synchronized.              |
-|ArrayList increments 50% of current array size if the number of elements exceeds from its capacity.|	Vector increments 100% means doubles the array size if the total number of elements exceeds than its capacity. |
+|ArrayList is **not synchronized**. |Vector is **synchronized**.              |
+|ArrayList **increments 50%** of current array size if the number of elements exceeds from its capacity.|	Vector **increments 100%** means doubles the array size if the total number of elements exceeds than its capacity. |
 |ArrayList is not a legacy class. It is introduced in JDK 1.2. |	Vector is a legacy class.|
-|ArrayList is fast because it is non-synchronized. | Vector is slow because it is synchronized, i.e., in a multithreading environment, it holds the other threads in runnable or non-runnable state until current thread releases the lock of the object.|
-|ArrayList uses the Iterator interface to traverse the elements. |A Vector can use the Iterator interface or Enumeration interface to traverse the elements.|
+|ArrayList is **fast** because it is non-synchronized. | Vector is **slow** because it is synchronized, i.e., in a multithreading environment, it holds the other threads in runnable or non-runnable state until current thread releases the lock of the object.|
+|ArrayList uses the **Iterator** interface to traverse the elements. |A Vector can use the **Iterator** interface or **Enumeration** interface to traverse the elements.|
 
 #### Q. How do you sort out items in ArrayList in reverse direction?
 Reverse order of all elements of Java ArrayList
