@@ -3146,7 +3146,7 @@ new instance of Employee will be inserted to HashMap
 *TODO*
 #### Q. What is the difference between HashTable and HashMap?
 *TODO*
-#### Q. What will happen if I insert duplicate key-pair value inserted in to HashTable?
+#### Q. What happens when a duplicate key is put into a HashMap?
 By definition, the `put` command replaces the previous value associated with the given key in the map (conceptually like an array indexing operation for primitive types).
 
 The map simply drops its reference to the value. If nothing else holds a reference to the object, that object becomes eligible for garbage collection. Additionally, Java returns any previous value associated with the given key (or `null` if none present), so you can determine what was there and maintain a reference if necessary.
