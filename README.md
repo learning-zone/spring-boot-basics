@@ -3135,7 +3135,7 @@ new instance of Employee will be inserted to HashMap
 #### Q. What do we mean by weak reference?
 *TODO*
 #### Q. What is difference between HashSet and LinkedHashSet?
-A `LinkedHashSet` is an ordered version of `HashSet` that maintains a doubly-linked List across all elements. Use this class instead of HashSet when you care about the iteration order. When you iterate through a HashSet the order is unpredictable, while a LinkedHashSet lets you iterate through the elements in the order in which they were inserted.
+A HashSet is unordered and unsorted Set. LinkedHashSet is the ordered version of HashSet. The only difference between HashSet and LinkedHashSet is that LinkedHashSet maintains the **insertion order**. When we iterate through a HashSet, the order is unpredictable while it is predictable in case of LinkedHashSet. The reason why LinkedHashSet maintains insertion order is because the underlying data structure is a doubly-linked list.
 
 #### Q. What do you mean Run time Polymorphism?
 `Polymorphism` in Java is a concept by which we can perform a single action in different ways.   
