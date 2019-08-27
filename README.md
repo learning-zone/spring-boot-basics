@@ -2982,8 +2982,6 @@ This indicate that the annotate classes at presentation layers level, mainly use
 
 ![alt text](https://github.com/learning-zone/Spring/blob/spring/assets/spring-component.png)
 
-#### Q. Implement your own String class 
-TODO
 #### Q. Explain deadlock condition in-between two threads with example?
 
 ```java
@@ -3110,7 +3108,16 @@ Array is faster
 #### Q. Optimistic vs pessimistic locking in table level and row level.
 *TODO*
 #### Q. What is main advantage of RESTful implementation over SOAP?
-*TODO*
+SOAP (Simple Object Access Protocol) and REST (Representational State Transfer) are both web service communication protocols.
+In addition to using HTTP for simplicity, REST offers a number of other benefits over SOAP:
+
+* REST allows a greater variety of data formats, whereas SOAP only allows XML.
+* Coupled with JSON (which typically works better with data and offers faster parsing), REST is generally considered easier to work with.
+* REST offers better support for browser clients.
+* REST provides superior performance, particularly through caching for information that’s not altered and not dynamic.
+* It is the protocol used most often for major services such as Yahoo, Ebay, Amazon, and even Google.
+* REST is generally faster and uses less bandwidth. It’s also easier to integrate with existing websites with no need to  refactor site infrastructure. This enables developers to work faster rather than spend time rewriting a site from scratch.  Instead, they can simply add additional functionality.
+
 #### Q. What code coverage tools are you using for your project? 
 we use `cobetura`
 #### Q. How to implement thread-safe code without using the synchronized keyword? 
