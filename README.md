@@ -3130,8 +3130,12 @@ new instance of Employee will be inserted to HashMap
 
 #### Q. Given a string "abc" or any other string print all possible combinations of it.
 *TODO*
-#### Q. Difference between classnotfound and noclassdeffound
-*TODO*
+#### Q. What is difference between ClassNotFoundException and NoClassDefFoundError?
+`ClassNotFoundException` and `NoClassDefFoundError` occur when a particular class is not found at runtime. However, they occur at different scenarios.
+
+`ClassNotFoundException` is an exception that occurs when you try to load a class at run time using `Class.forName()` or `loadClass()` methods and mentioned classes are not found in the classpath.
+
+`NoClassDefFoundError` is an error that occurs when a particular class is present at compile time, but was missing at run time.
 #### Q. What do we mean by weak reference?
 In Java there are four types of references differentiated on the way by which they are garbage collected.
 
