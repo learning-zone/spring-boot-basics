@@ -3111,7 +3111,7 @@ There are 3 types of Dependency injection
 
 1. Constructor Injection
 1. Setter/Getter Injection
-1. Interface Injection
+1. Interface Injection  
 Spring support only Constructor Injection and Setter/Getter Injection.
 
 * **IOC(Inversion Of Control)**:
