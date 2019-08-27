@@ -3111,12 +3111,29 @@ Array is faster
 SOAP (Simple Object Access Protocol) and REST (Representational State Transfer) are both web service communication protocols.
 In addition to using HTTP for simplicity, REST offers a number of other benefits over SOAP:
 
-* REST allows a greater variety of data formats, whereas SOAP only allows XML.
-* Coupled with JSON (which typically works better with data and offers faster parsing), REST is generally considered easier to work with.
-* REST offers better support for browser clients.
-* REST provides superior performance, particularly through caching for information that’s not altered and not dynamic.
-* It is the protocol used most often for major services such as Yahoo, Ebay, Amazon, and even Google.
-* REST is generally faster and uses less bandwidth. It’s also easier to integrate with existing websites with no need to  refactor site infrastructure. This enables developers to work faster rather than spend time rewriting a site from scratch.  Instead, they can simply add additional functionality.
+**SOAP**
+
+* SOAP is a protocol.
+* SOAP stands for Simple Object Access Protocol.
+* SOAP can't use REST because it is a protocol.
+* SOAP uses services interfaces to expose the business logic.
+* SOAP defines standards to be strictly followed.
+* SOAP requires more bandwidth and resource than REST.
+* SOAP defines its own security.
+* SOAP permits XML data format only.
+* SOAP is less preferred than REST.
+
+**REST**
+
+* REST is an architectural style.
+* REST stands for Representational State Transfer.
+* REST can use SOAP web services because it is a concept and can use any protocol like HTTP, SOAP.
+* REST uses URI to expose business logic.
+* REST does not define too much standards like SOAP.
+* REST requires less bandwidth and resource than SOAP.
+* RESTful web services inherits security measures from the underlying transport.
+* REST permits different data format such as Plain text, HTML, XML, JSON etc.
+* REST more preferred than SOAP.
 
 #### Q. What code coverage tools are you using for your project? 
 we use `cobetura`
