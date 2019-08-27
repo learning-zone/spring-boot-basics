@@ -3133,7 +3133,51 @@ new instance of Employee will be inserted to HashMap
 #### Q. Difference between classnotfound and noclassdeffound
 *TODO*
 #### Q. What do we mean by weak reference?
-*TODO*
+In Java there are four types of references differentiated on the way by which they are garbage collected.
+
+1. Strong References
+1. Weak References
+1. Soft References
+1. Phantom References
+
+* **Strong References**: This is the default type/class of Reference Object. Any object which has an active strong reference are not eligible for garbage collection. The object is garbage collected only when the variable which was strongly referenced points to null.
+```java
+StrongReferenceClass obj = new StrongReferenceClass();
+```
+Here `obj` object is strong reference to newly created instance of MyClass, currently obj is active object so can't be garbage collected.
+
+* **Weak References**: A weakly referenced object is cleared by the Garbage Collector when it’s weakly reachable.
+Weak reachability means that an object has neither strong nor soft references pointing to it. The object can be reached only by traversing a weak reference.
+```java
+/**
+* Java Code to illustrate Weak reference
+*
+**/ 
+import java.lang.ref.WeakReference; 
+class WeakReferenceExample { 
+    
+    public void message() { 
+        System.out.println("Weak Reference Example !!!"); 
+    } 
+} 
+
+public class MainClass {
+
+    public static void main(String[] args) { 
+        // Strong Reference 
+        WeakReferenceExample obj = new WeakReferenceExample();    
+        obj.message(); 
+          
+        // Creating Weak Reference to WeakReferenceExample-type object to which 'obj'  
+        // is also pointing. 
+        WeakReference<Gfg> weakref = new WeakReference<Gfg>(obj); 
+
+        obj = null;  // is available for garbage collection.
+        obj = weakref.get();  
+        obj.message(); 
+    } 
+} 
+```
 #### Q. What is difference between HashSet and LinkedHashSet?
 A HashSet is unordered and unsorted Set. LinkedHashSet is the ordered version of HashSet. The only difference between HashSet and LinkedHashSet is that LinkedHashSet maintains the **insertion order**. When we iterate through a HashSet, the order is unpredictable while it is predictable in case of LinkedHashSet. The reason why LinkedHashSet maintains insertion order is because the underlying data structure is a doubly-linked list.
 
