@@ -3096,13 +3096,35 @@ Array is faster
 #### Q. How to prevent from database attacks/SQL Injection? 
 *TODO*
 #### Q. How to do SSO implementation using Spring Boot?
-*TODO*
-#### Q. Assume you have a singly linked list, now you need to find reverse of it without using new operator.
-*TODO* 
-#### Q. Name design patterns used in collection framework.
-*TODO*
-#### Q. Object oriented feature like: Association, Composition, Aggregation
-*TODO*
+Single sign-on (or SSO) allow users to use a single set of credentials to login into multiple related yet independent web applications. SSO is achieved by implementing a centralised login system that handles authentication of users and share that information with applications that need that data.
+
+Example: Simple Single Sign-On with Spring Security OAuth2
+
+Step 01: Maven Dependencies (pom.xml)
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.security.oauth.boot</groupId>
+    <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+    <version>2.0.1.RELEASE</version>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.thymeleaf.extras</groupId>
+    <artifactId>thymeleaf-extras-springsecurity4</artifactId>
+</dependency>
+```
+
 #### Q. What is difference between DI and IOC in spring?
 * **DI(Dependency Injection)**:
 Dependency injection is a pattern used to create instances of objects that other objects rely upon without knowing at compile time which class will be used to provide that functionality or simply the way of injecting properties to an object is called dependency injection.
