@@ -3111,10 +3111,6 @@ Array is faster
 *TODO*
 #### Q. What is main advantage of RESTful implementation over SOAP?
 *TODO*
-#### Q. How do you implement secondary level cache? Clustering?
-*TODO*
-#### Q. Difference between symmetric, public and private keys, what are the procedure to implement the same using spring security.
-*TODO*
 #### Q. What code coverage tools are you using for your project? 
 we use `cobetura`
 #### Q. How to implement thread-safe code without using the synchronized keyword? 
