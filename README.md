@@ -3135,19 +3135,19 @@ new instance of Employee will be inserted to HashMap
 #### Q. What do we mean by weak reference?
 In Java there are four types of references differentiated on the way by which they are garbage collected.
 
-1. Strong References
-1. Weak References
-1. Soft References
-1. Phantom References
+1. Strong Reference
+1. Weak Reference
+1. Soft Reference
+1. Phantom Reference
 
-* **Strong References**: This is the default type/class of Reference Object. Any object which has an active strong reference are not eligible for garbage collection. The object is garbage collected only when the variable which was strongly referenced points to null.
+* **Strong Reference**: This is the default type/class of Reference Object. Any object which has an active strong reference are not eligible for garbage collection. The object is garbage collected only when the variable which was strongly referenced points to null.
 ```java
 StrongReferenceClass obj = new StrongReferenceClass();
 ```
 Here `obj` object is strong reference to newly created instance of MyClass, currently obj is active object so can't be garbage collected.
 
-* **Weak References**: A weakly referenced object is cleared by the Garbage Collector when it’s weakly reachable.
-Weak reachability means that an object has neither strong nor soft references pointing to it. The object can be reached only by traversing a weak reference.
+* **Weak Reference**: A weakly referenced object is cleared by the Garbage Collector when it’s weakly reachable.
+Weak reachability means that an object has neither strong nor soft references pointing to it. The object can be reached only by traversing a weak reference. To create such references `java.lang.ref.WeakReference` class is used.
 ```java
 /**
 * Java Code to illustrate Weak reference
@@ -3157,7 +3157,7 @@ import java.lang.ref.WeakReference;
 class WeakReferenceExample { 
     
     public void message() { 
-        System.out.println("Weak Reference Example !!!"); 
+        System.out.println("Weak Reference Example!"); 
     } 
 } 
 
@@ -3170,11 +3170,87 @@ public class MainClass {
           
         // Creating Weak Reference to WeakReferenceExample-type object to which 'obj'  
         // is also pointing. 
-        WeakReference<Gfg> weakref = new WeakReference<Gfg>(obj); 
+        WeakReference<WeakReferenceExample> weakref = new WeakReference<WeakReferenceExample>(obj); 
 
         obj = null;  // is available for garbage collection.
         obj = weakref.get();  
         obj.message(); 
+    } 
+} 
+```
+Output
+```
+Weak Reference Example!
+Weak Reference Example!
+```
+* **Soft Reference**: In Soft reference, even if the object is free for garbage collection then also its not garbage collected, until JVM is in need of memory badly.The objects gets cleared from the memory when JVM runs out of memory.To create such references `java.lang.ref.SoftReference` class is used.
+```java
+/**
+* Java Code to illustrate Soft reference
+*
+**/ 
+import java.lang.ref.SoftReference; 
+class SoftReferenceExample { 
+    
+    public void message() { 
+        System.out.println("Soft Reference Example!"); 
+    } 
+} 
+
+public class MainClass {
+
+    public static void main(String[] args) { 
+        // Soft Reference 
+        SoftReferenceExample obj = new SoftReferenceExample();    
+        obj.message(); 
+          
+        // Creating Soft Reference to SoftReferenceExample-type object to which 'obj'  
+        // is also pointing. 
+        SoftReference<SoftReferenceExample> softref = new SoftReference<SoftReferenceExample>(obj); 
+
+        obj = null;  // is available for garbage collection.
+        obj = softref.get();  
+        obj.message(); 
+    } 
+} 
+```
+Output
+```
+Soft Reference Example!
+Soft Reference Example!
+```
+* **Phantom Reference**: The objects which are being referenced by phantom references are eligible for garbage collection. But, before removing them from the memory, JVM puts them in a queue called **reference queue**. They are put in a reference queue after calling finalize() method on them. To create such references `java.lang.ref.PhantomReference` class is used.
+```java
+/**
+* Code to illustrate Phantom reference 
+*
+**/
+import java.lang.ref.*; 
+class PhantomReferenceExample { 
+    
+    public void message() { 
+        System.out.println("Phantom Reference Example!"); 
+    } 
+} 
+  
+public class MainClass {
+
+    public static void main(String[] args) {
+
+        //Strong Reference 
+        PhantomReferenceExample obj = new PhantomReferenceExample();    
+        obj.message(); 
+          
+        //Creating reference queue 
+        ReferenceQueue<PhantomReferenceExample> refQueue = new ReferenceQueue<PhantomReferenceExample>(); 
+  
+        //Creating Phantom Reference to PhantomReferenceExample-type object to which 'obj'  
+        //is also pointing. 
+        PhantomReference<PhantomReferenceExample> phantomRef = null; 
+        phantomRef = new PhantomReference<PhantomReferenceExample>(obj, refQueue); 
+        obj = null;  
+        obj = phantomRef.get();  //It always returns null
+        obj.message(); //It shows NullPointerException
     } 
 } 
 ```
