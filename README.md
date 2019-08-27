@@ -3098,7 +3098,7 @@ Array is faster
 #### Q. How to do SSO implementation using Spring Boot?
 Single sign-on (or SSO) allow users to use a single set of credentials to login into multiple related yet independent web applications. SSO is achieved by implementing a centralised login system that handles authentication of users and share that information with applications that need that data.
 
-Example: Simple Single Sign-On with Spring Security OAuth2
+Example: **Simple Single Sign-On with Spring Security OAuth2**
 
 Step 01: Maven Dependencies (pom.xml)
 ```
@@ -3124,7 +3124,74 @@ Step 01: Maven Dependencies (pom.xml)
     <artifactId>thymeleaf-extras-springsecurity4</artifactId>
 </dependency>
 ```
-
+Step 02: Security Configuration
+```java
+@Configuration
+@EnableOAuth2Sso
+public class UiSecurityConfig extends WebSecurityConfigurerAdapter {
+     
+    @Override
+    public void configure(HttpSecurity http) throws Exception {
+        http.antMatcher("/**")
+          .authorizeRequests()
+          .antMatchers("/", "/login**")
+          .permitAll()
+          .anyRequest()
+          .authenticated();
+    }
+}
+```
+Step 03: OAuth Configuration
+```java
+@SpringBootApplication
+@EnableResourceServer
+public class AuthorizationServerApplication extends SpringBootServletInitializer {
+    public static void main(String[] args) {
+        SpringApplication.run(AuthorizationServerApplication.class, args);
+    }
+}
+```
+Step 04: Security Configuration
+```java
+@Configuration
+@Order(1)
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
+ 
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.requestMatchers()
+          .antMatchers("/login", "/oauth/authorize")
+          .and()
+          .authorizeRequests()
+          .anyRequest().authenticated()
+          .and()
+          .formLogin().permitAll();
+    }
+ 
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.inMemoryAuthentication()
+            .withUser("john")
+            .password(passwordEncoder().encode("123"))
+            .roles("USER");
+    }
+     
+    @Bean
+    public BCryptPasswordEncoder passwordEncoder(){ 
+        return new BCryptPasswordEncoder(); 
+    }
+}
+```
+Step 05: User Endpoint
+```java
+@RestController
+public class UserController {
+    @GetMapping("/user/me")
+    public Principal user(Principal principal) {
+        return principal;
+    }
+}
+```
 #### Q. What is difference between DI and IOC in spring?
 * **DI(Dependency Injection)**:
 Dependency injection is a pattern used to create instances of objects that other objects rely upon without knowing at compile time which class will be used to provide that functionality or simply the way of injecting properties to an object is called dependency injection.
