@@ -3117,8 +3117,13 @@ Array is faster
 *TODO*
 #### Q. What code coverage tools are you using for your project? 
 we use `cobetura`
-#### Q. Implement thread-safe code without using the `synchronized` keyword? 
-*TODO*
+#### Q. How to implement thread-safe code without using the `synchronized` keyword? 
+* **Atomic updates**: A technique in which you call atomic instructions like compare and set provided by the CPU
+* **java.util.concurrent.locks.ReentrantLock**: A lock implementation that provides more flexibility than synchronized blocks
+* **java.util.concurrent.locks.ReentrantReadWriteLock**: A lock implementation in which reads do not block reads
+* **java.util.concurrent.locks.StampedLock** a nonreeantrant Read-Write lock with the possibility of optimistically reading values.
+* **java.lang.ThreadLocal**: No need for synchronization if the mutable state is confined to a single thread. This can be done by using local variables or `java.lang.ThreadLocal`.
+
 #### Q. Scenario of browser’s browsing history, where you need to store the browsing history, what data structure will you use.? 
 use `stack`
 
@@ -3128,8 +3133,6 @@ use `persistent MQueues`
 #### Q. If you store Employee object as key say: Employee emp = new Employee(“name1”,20); store it in a HashMap as key, now if we add a new parameter emp.setMarriedStatus(true) and try to override it what will happen? 
 new instance of Employee will be inserted to HashMap 
 
-#### Q. Given a string "abc" or any other string print all possible combinations of it.
-*TODO*
 #### Q. What is difference between ClassNotFoundException and NoClassDefFoundError?
 `ClassNotFoundException` and `NoClassDefFoundError` occur when a particular class is not found at runtime. However, they occur at different scenarios.
 
