@@ -12,10 +12,26 @@
 * It provides lots of plugins to work with embedded and in-memory Databases very easily.
 
 #### Q. Write a program in Spring-Boot to get employees details based on employee id?
-#### Q. What does the @Autowired, @pathVariable, @ResponseEntity, @ResponseBody, @Configuration, @RestController, @RequestMapping, @Qualifier, @Required, @RequestParam, @ContextConfiguration annotation do?
-#### Q. What is the role of @SpringBootApplication?
+#### Q. What does the @pathVariable, @ResponseEntity, @ResponseBody, @Configuration, @RestController, @RequestMapping, @Qualifier, @Required, @RequestParam, @ContextConfiguration annotation do?
 #### Q. What are the different components of a Spring Boot application?
-#### Q. What does @EnableAutoConfiguration and @SpringBootApplication do? 
+#### Q. What does @SpringBootApplication and @EnableAutoConfiguration do? 
+* **@SpringBootApplication**: annotation is used to annotate the main class of our Spring Boot application. It also enables the auto-configuration feature of Spring Boot.
+```java
+@SpringBootApplication
+public class SpringBootDemo {
+   public static void main(String args[]) {
+      SpringApplication.run(SpringBootDemo.class, args);
+   }
+}
+```
+* **@EnableAutoConfiguration**: The auto-configuration feature automatically configures things if certain classes are present in the Classpath e.g. if thymeleaf.jar is present in the Classpath then it can automatically configure Thymeleaf `TemplateResolver` and `ViewResolver`.
+```java
+@Configuration
+@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+public class SpringBootDemo {
+  //.. Java code
+}
+```
 #### Q. How to reload changes on Spring Boot without having to restart server?  
 #### Q. What is Auto Configuration?
 #### Q. How does Spring Boot enforce common dependency management for all its Starter projects?
