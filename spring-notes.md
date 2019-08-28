@@ -1,6 +1,6 @@
 ## Spring-Boot Notes
 
-
+#### Q. Write a program in spring-boot to get employees details based on employee id?
 #### Q. What are the advantages of using Spring Boot?
 * It is very easy to develop Spring Based applications with Java or Groovy.
 * It reduces lots of development time and increases productivity.
@@ -12,55 +12,57 @@
 * It provides lots of plugins to develop and test Spring Boot Applications very easily using Build Tools like Maven and Gradle
 * It provides lots of plugins to work with embedded and in-memory Databases very easily.
 
-#### Q. What does @EnableAutoConfiguration and @SpringBootApplication do? 
-#### Q. How to reload my changes on Spring Boot without having to restart server?
-#### Q. What are the different types of events in spring framework?
-#### Q. Name some of the design patterns used in Spring Framework?
-#### Q. What is a Spring Framework? Name the different modules of the Spring framework.
-#### Q. List some of the important annotations in annotation-based Spring configuration.  
-#### Q. Explain Bean in Spring and List the different Scopes of Spring bean.
-#### Q. Explain the role of DispatcherServlet and ContextLoaderListener.
-#### Q. What is autowiring in Spring? What are the autowiring modes?
-#### Q. How to handle exceptions in Spring MVC Framework?
-#### Q. How can we fetch records by spring JdbcTemplate?  
-#### Q. Difference between FileSystemResource and ClassPathResource?
-#### Q. How will you handle Circular dependencies in Spring?
-#### Q. How do you injection collection in Spring?
-#### Q. What is Application Context? Explain the process of creating an ApplicationContext in Spring.
-#### Q. What is the difference between the Configuration types XML and Annotation?
-#### Q. Spring vs Spring MVC vs Spring Boot?
-#### Q. What is the difference between JDBC and Spring JDBC?
-#### Q. What do you understand by Aspect Oriented Programming?
-#### Q. What is the difference between Spring AOP and AspectJ AOP?
-#### Q. What is a Controller in Spring MVC?
-#### Q. What is Spring Bean life cycle?
-#### Q. How can we use Spring to create Restful Web Service returning JSON response?
-#### Q. What is the difference between BeanFactory and ApplicationContext?
-#### Q. What are the different components of a Spring Boot application?
-#### Q. What is Spring Security?
-#### Q. What is Weaving? What are the different points where weaving can be applied?
-#### Q. How to validate form data in Spring Web MVC Framework?
-#### Q. What is Spring MVC Interceptor and how to use it?
-#### Q. What’s the difference between @Component, @Controller, @Repository & @Service annotations in Spring?
-#### Q. Explain ApplicationContext vs WebApplicationContext in Spring MVC.
-#### Q. What is the importance of the annotation @Primary
-#### Q. Explain Component Scan.
-#### Q. What is a FrontController?
-#### Q. Explain Model Attribute?
-#### Q. What is a Session Attribute?
-#### Q. Explain the @InitBinder?
-#### Q. Define @ControllerAdvice?
+#### Q. What does the @Autowired, @pathVariable, @ResponseEntity, @ResponseBody, @Configuration, @RestController, @RequestMapping, @Qualifier, @Required, @RequestParam, @ContextConfiguration annotation do?
 #### Q. What is the role of @SpringBootApplication?
 #### Q. What does an Embedded Server mean in Spring Boot?
-#### Q. What does the @RequestMapping, @Qualifier, @Required, @RequestParam annotation do?
-#### Q. How to get ServletContext and ServletConfig object in a Spring Bean?
-#### Q. What is ViewResolver in Spring?
-#### Q. How to upload file in Spring MVC Application?
-#### Q. How many bean scopes are supported by Spring?
-#### Q. Explain inner beans in Spring.
-#### Q. How annotation wiring can be turned on in Spring?
-#### Q. What do you mean by Proxy in Spring Framework?
-#### Q. How does the scope Prototype work?
-#### Q. What is a MultipartResolver and when its used?
-#### Q. Difference between JavaBean and Spring bean?
-#### Q. Write a program in spring-boot to get employees details based on employee id?
+#### Q. What are the different components of a Spring Boot application?
+#### Q. What does @EnableAutoConfiguration and @SpringBootApplication do? 
+#### Q. How to reload my changes on Spring Boot without having to restart server?
+#### Q. List some of the important annotations in annotation-based Spring configuration.  
+#### Q. What is the difference between @Component, @Controller, @Repository & @Service annotations in Spring?
+#### Q. What is Auto Configuration?
+#### Q. How does Spring Boot enforce common dependency management for all its Starter projects?
+#### Q. What is Spring Initializr?
+#### Q. What is a profile? How do you create application configuration for a specific profile?
+#### Q. How do you have different configuration for different environments?
+#### Q. What is Spring Boot Actuator? How do you monitor web services using Spring Boot Actuator?
+#### Q. What is a CommandLineRunner?
+#### Q. What is Spring JDBC? How is different from JDBC?
+#### Q. What is Mockito?
+#### Q. What is @SpringBootTest?
+#### Q. What is TestRestTemplate?
+#### Q. What is JavaConfig?
+#### Q. How to depoy Spring Boot application as a WAR?
+#### Q. What is Docker? How to deploy Spring Boot Applications to Docker?
+#### Q. How to disable Actuator endpoint security in Spring Boot?
+#### Q. What is ELK stack?How to use it with Spring Boot?
+#### Q. Have you written Test cases using Spring Boot?
+#### Q. How to implement security for Spring boot application?
+#### Q. Have you integrated Spring Boot and ActiveMQ?
+#### Q. How to implement Pagination and Sorting with Spring Boot?
+#### Q. What is Swagger? Have you implemented it using Spring Boot?
+#### Q. What is Spring Batch? How do you implement it using Spring Boot?
+#### Q. What is FreeMarker Template? How do you implement it using Spring Boot?
+#### Q. How to implement Exception Handling using Spring Boot?
+#### Q. What is caching? Have you used any caching framework with Spring Boot?
+#### Q. How did you perform database operations using Spring Boot?
+#### Q. How to develop a full stack application using Spring Boot and Angular?
+#### Q. How to implement interceptors with Spring Boot?
+#### Q. How to use schedulers with Spring Boot?
+#### Q. Which all starter maven dependencies have you used?
+#### Q. What is CSRF attack? How to enable CSRF protection against it?
+#### Q. How to use Form Login Authentication using Spring Boot?
+#### Q. What is OAuth2? How to implement it using Spring Boot?
+#### Q. What is GZIP? How to implement it using Spring Boot?
+#### Q. When will you use WebSockets? How tto implement it using Spring Boot?
+#### Q. What is AOP? How to use it with Spring Boot?
+#### Q. How can we monitor all the Spring Boot Microservices?
+#### Q. What is spring boot transaction management?
+#### Q. What is CORS in Spring Boot? How to enable CORS in Spring Boot?
+#### Q. What is Spring boot devtools?
+#### Q. What is best way to expose custom application configuration with Spring Boot?
+#### Q. How do you configure error logging/debugging in Spring boot application?
+#### Q. How do you Enable HTTP response compression in spring boot?
+#### Q. What is the Configuration File Name, which is used By Spring Boot?
+#### Q. What is differentiate Between an Embedded Container and a War?
+#### Q.
