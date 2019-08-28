@@ -12,6 +12,8 @@
 * It provides lots of plugins to develop and test Spring Boot Applications very easily using Build Tools like Maven and Gradle
 * It provides lots of plugins to work with embedded and in-memory Databases very easily.
 
+#### Q. What does @EnableAutoConfiguration and @SpringBootApplication do? 
+#### Q. How to reload my changes on Spring Boot without having to restart server?
 #### Q. What are the different types of events in spring framework?
 #### Q. Name some of the design patterns used in Spring Framework?
 #### Q. What is a Spring Framework? Name the different modules of the Spring framework.
