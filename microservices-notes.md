@@ -13,7 +13,7 @@
 #### Q. What is an idempotent in REST APIs? 
 In the context of REST APIs, when making multiple identical requests has the same effect as making a single request – then that REST API is called **idempotent**.  
 
-An idempotent HTTP method is an HTTP method that can be called many times without different outcomes. It would not matter if the method is called only once, or ten times over. The result should be the same. It essentially means that the result of a successfully performed request is independent of the number of times it is executed. For example, in arithmetic, adding zero to a number is idempotent operation.
+*An idempotent HTTP method is an HTTP method that can be called many times without different outcomes. It would not matter if the method is called only once, or ten times over. The result should be the same. It essentially means that the result of a successfully performed request is independent of the number of times it is executed. For example, in arithmetic, adding zero to a number is idempotent operation.*
 
 Example:
 * `POST` is NOT idempotent.
