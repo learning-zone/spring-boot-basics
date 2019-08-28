@@ -71,5 +71,6 @@ The aim of this module is to try and improve the development-time experience whe
 #### Q. How do you Enable HTTP response compression in Spring Boot?
 #### Q. What is the configuration file name, which is used by Spring Boot?
 `application.properties`
-#### Q. What is differentiate Between an Embedded Container and a War?
+#### Q. What is difference Between an Embedded Container and a War?
+
 
