@@ -17,7 +17,6 @@
 #### Q. What are the different components of a Spring Boot application?
 #### Q. What does @EnableAutoConfiguration and @SpringBootApplication do? 
 #### Q. How to reload changes on Spring Boot without having to restart server?  
-#### Q. What is the difference between @Component, @Controller, @Repository & @Service annotations in Spring?
 #### Q. What is Auto Configuration?
 #### Q. How does Spring Boot enforce common dependency management for all its Starter projects?
 #### Q. What is Spring Initializr?
@@ -60,7 +59,7 @@
 #### Q. What is Spring boot devtools?
 #### Q. What is best way to expose custom application configuration with Spring Boot?
 #### Q. How do you configure error logging/debugging in Spring boot application?
-#### Q. How do you Enable HTTP response compression in spring boot?
+#### Q. How do you Enable HTTP response compression in Spring Boot?
 #### Q. What is the Configuration File Name, which is used By Spring Boot?
 #### Q. What is differentiate Between an Embedded Container and a War?
 
