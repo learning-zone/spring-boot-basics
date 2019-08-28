@@ -57,6 +57,15 @@
 #### Q. What is Spring Boot transaction management?
 #### Q. What is CORS in Spring Boot? How to enable CORS in Spring Boot?
 #### Q. What is Spring Boot devtools?
+The aim of this module is to try and improve the development-time experience when working on Spring Boot applications.
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-devtools</artifactId>
+    </dependency>
+</dependencies>
+```
 #### Q. What is best way to expose custom application configuration with Spring Boot?
 #### Q. How do you configure error logging/debugging in Spring Boot application?
 #### Q. How do you Enable HTTP response compression in Spring Boot?
