@@ -34,7 +34,7 @@
 #### Q. How to disable Actuator endpoint security in Spring Boot?
 #### Q. What is ELK stack?How to use it with Spring Boot?
 #### Q. Have you written Test cases using Spring Boot?
-#### Q. How to implement security for Spring boot application?
+#### Q. How to implement security for Spring Boot application?
 #### Q. Have you integrated Spring Boot and ActiveMQ?
 #### Q. How to implement Pagination and Sorting with Spring Boot?
 #### Q. What is Swagger? Have you implemented it using Spring Boot?
@@ -56,9 +56,9 @@
 #### Q. How can we monitor all the Spring Boot Microservices?
 #### Q. What is Spring Boot transaction management?
 #### Q. What is CORS in Spring Boot? How to enable CORS in Spring Boot?
-#### Q. What is Spring boot devtools?
+#### Q. What is Spring Boot devtools?
 #### Q. What is best way to expose custom application configuration with Spring Boot?
-#### Q. How do you configure error logging/debugging in Spring boot application?
+#### Q. How do you configure error logging/debugging in Spring Boot application?
 #### Q. How do you Enable HTTP response compression in Spring Boot?
 #### Q. What is the Configuration File Name, which is used By Spring Boot?
 #### Q. What is differentiate Between an Embedded Container and a War?
