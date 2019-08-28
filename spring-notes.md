@@ -134,12 +134,10 @@ Bean life cycle in Spring Bean Factory Container is as follows:
 -	If an init-method is specified for the bean, it will be called.
 -	Finally, if there are any BeanPostProcessors associated with the bean, their postProcessAfterInitialization() methods will be called
 
-#### Q. What are the various ways of using Spring Framework?
 #### Q. What are the different types of events in spring framework?
 #### Q. Name some of the design patterns used in Spring Framework?
 #### Q. What is a Spring Framework? Name the different modules of the Spring framework.
 #### Q. List some of the important annotations in annotation-based Spring configuration.  
-#### Q. What is Inversion of Control (IoC) and Dependency Injection in Spring Framework?
 #### Q. Explain Bean in Spring and List the different Scopes of Spring bean.
 #### Q. Explain the role of DispatcherServlet and ContextLoaderListener.
 #### Q. What is autowiring in Spring? What are the autowiring modes?
