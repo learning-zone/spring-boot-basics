@@ -14,7 +14,6 @@
 #### Q. Write a program in spring-boot to get employees details based on employee id?
 #### Q. What does the @Autowired, @pathVariable, @ResponseEntity, @ResponseBody, @Configuration, @RestController, @RequestMapping, @Qualifier, @Required, @RequestParam, @ContextConfiguration annotation do?
 #### Q. What is the role of @SpringBootApplication?
-#### Q. What does an Embedded Server mean in Spring Boot?
 #### Q. What are the different components of a Spring Boot application?
 #### Q. What does @EnableAutoConfiguration and @SpringBootApplication do? 
 #### Q. How to reload my changes on Spring Boot without having to restart server?
