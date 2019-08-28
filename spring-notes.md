@@ -1,6 +1,5 @@
 ## Spring-Boot Notes
 
-#### Q. Write a program in spring-boot to get employees details based on employee id?
 #### Q. What are the advantages of using Spring Boot?
 * It is very easy to develop Spring Based applications with Java or Groovy.
 * It reduces lots of development time and increases productivity.
@@ -12,6 +11,7 @@
 * It provides lots of plugins to develop and test Spring Boot Applications very easily using Build Tools like Maven and Gradle
 * It provides lots of plugins to work with embedded and in-memory Databases very easily.
 
+#### Q. Write a program in spring-boot to get employees details based on employee id?
 #### Q. What does the @Autowired, @pathVariable, @ResponseEntity, @ResponseBody, @Configuration, @RestController, @RequestMapping, @Qualifier, @Required, @RequestParam, @ContextConfiguration annotation do?
 #### Q. What is the role of @SpringBootApplication?
 #### Q. What does an Embedded Server mean in Spring Boot?
@@ -65,4 +65,4 @@
 #### Q. How do you Enable HTTP response compression in spring boot?
 #### Q. What is the Configuration File Name, which is used By Spring Boot?
 #### Q. What is differentiate Between an Embedded Container and a War?
-#### Q.
+
