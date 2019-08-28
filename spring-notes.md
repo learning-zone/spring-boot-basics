@@ -253,8 +253,7 @@ public class SpringBootDemo {
 public class SpringBootDemo {
   //.. Java code
 }
-```
-#### Q. How to reload changes on Spring Boot without having to restart server?  
+``` 
 #### Q. What is Auto Configuration?
 #### Q. How does Spring Boot enforce common dependency management for all its Starter projects?
 #### Q. What is Spring Initializr?
