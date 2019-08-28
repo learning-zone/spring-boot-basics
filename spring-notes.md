@@ -254,7 +254,15 @@ public class SpringBootDemo {
   //.. Java code
 }
 ``` 
-#### Q. what is Spring Boot initializr?
+#### Q. What is Spring Boot initializr?
+The Spring Initializr is ultimately a web application that can generate a Spring Boot project structure for you. It doesn’t generate any application code, but it will give you a basic project structure and either a Maven or a Gradle build specification to build your code with. All you need to do is write the application code.
+
+Spring Initializr can be used several ways, including:
+
+1. A web-based interface.
+1. Via Spring ToolSuite.
+1. Using the Spring Boot CLI.
+
 #### Q. What is a profile? How do you create application configuration for a specific profile?
 #### Q. How do you have different configuration for different environments?
 #### Q. What is Spring Boot Actuator? How do you monitor web services using Spring Boot Actuator?
