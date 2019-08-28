@@ -254,8 +254,7 @@ public class SpringBootDemo {
   //.. Java code
 }
 ``` 
-#### Q. How does Spring Boot enforce common dependency management for all its Starter projects?
-#### Q. What is Spring Initializr?
+#### Q. what is Spring Boot initializr?
 #### Q. What is a profile? How do you create application configuration for a specific profile?
 #### Q. How do you have different configuration for different environments?
 #### Q. What is Spring Boot Actuator? How do you monitor web services using Spring Boot Actuator?
