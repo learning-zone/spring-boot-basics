@@ -13,7 +13,7 @@
 
 #### Q. Write a program in Spring-Boot to get employees details based on employee id?
 *TODO*
-#### Q. What does the @RestController, @RequestMapping, @RequestParam, @ContextConfiguration, @ResponseBody, @Configuration, @pathVariable, @ResponseEntity, @Qualifier, @Required annotation do?
+#### Q. What does the @RestController, @RequestMapping, @RequestParam, @ContextConfiguration, @ResponseBody, @pathVariable, @ResponseEntity, @Qualifier, @Required annotation do?
 * **@RestController**: The @RestController is a stereotype annotation. It adds `@Controller` and `@ResponseBody` annotations to the class. It requires to import `org.springframework.web.bind.annotation` package.
 The @RestController annotation informs to the Spring to render the result back to the caller.
 ```java
@@ -153,6 +153,53 @@ public class PaymentServiceTests {
 }
 ```
 Here, `@ContextConfiguration` class instructs to load the Spring application context defined in the PaymentConfiguration class.
+
+* **@ResponseBody**: The @ResponseBody annotation tells a controller that the object returned is automatically serialized into JSON and passed back into the HttpResponse object.
+```java
+@Controller
+@RequestMapping("/post")
+public class ExamplePostController {
+ 
+    @Autowired
+    ExampleService exampleService;
+ 
+    @PostMapping("/response")
+    @ResponseBody
+    public ResponseTransfer postResponseController(
+      @RequestBody LoginForm loginForm) {
+        return new ResponseTransfer("Thanks For Posting!!!");
+     }
+}
+```
+Output
+```
+{"text":"Thanks For Posting!!!"}
+```
+
+* **@pathVariable**: @PathVariable is a Spring annotation which indicates that a method parameter should be bound to a URI template variable.
+It has the following optional elements:
+
+  * **name**: name of the path variable to bind to
+  * **required**: tells whether the path variable is required
+  * **value**: alias for name
+```java
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MyController {
+
+    @RequestMapping(path="/{name}/{age}")
+    public String getMessage(@PathVariable("name") String name, 
+            @PathVariable("age") String age) {
+        
+        var msg = String.format("%s is %s years old", name, age);
+        return msg;
+    }
+}
+```
+
 #### Q. What are the different components of a Spring Boot application?
 #### Q. What does @SpringBootApplication and @EnableAutoConfiguration do? 
 * **@SpringBootApplication**: annotation is used to annotate the main class of our Spring Boot application. It also enables the auto-configuration feature of Spring Boot.
