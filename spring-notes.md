@@ -254,7 +254,6 @@ public class SpringBootDemo {
   //.. Java code
 }
 ``` 
-#### Q. What is Auto Configuration?
 #### Q. How does Spring Boot enforce common dependency management for all its Starter projects?
 #### Q. What is Spring Initializr?
 #### Q. What is a profile? How do you create application configuration for a specific profile?
