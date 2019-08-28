@@ -14,6 +14,129 @@
 #### Q. Write a program in Spring-Boot to get employees details based on employee id?
 *TODO*
 #### Q. What does the @RestController, @RequestMapping, @RequestParam, @ContextConfiguration, @ResponseBody, @Configuration, @pathVariable, @ResponseEntity, @Qualifier, @Required annotation do?
+* **@RestController**: The @RestController is a stereotype annotation. It adds `@Controller` and `@ResponseBody` annotations to the class. It requires to import `org.springframework.web.bind.annotation` package.
+The @RestController annotation informs to the Spring to render the result back to the caller.
+```java
+import org.springframework.web.bind.annotation.RestController;  
+@RestController  // using @RestController annotation  
+public class HomeController {  
+    // controller body  
+}  
+```
+* **@RequestMapping**: The @RequestMapping annotation is used to provide routing information. It tells to the Spring that any HTTP request should map to the corresponding method. It requires to import `org.springframework.web.annotation` package.
+Example: Here method index() should map with `/index` url
+```java
+import org.springframework.web.bind.annotation.RequestMapping;  
+import org.springframework.web.bind.annotation.RestController;  
+@RestController  
+public class HomeController {  
+    @RequestMapping(value = "/index", method = "GET")  
+    public String index() {  
+        return "Dashboard Page!";  
+    }  
+}  
+```
+* **@RequestParam**: @RequestParam is a Spring annotation used to bind a web request parameter to a method parameter.
+It has the following optional elements:  
+
+* **defaultValue**: used as a fallback when the request parameter is not provided or has an empty value
+* **name**: name of the request parameter to bind to
+* **required**: tells whether the parameter is required
+* **value**: alias for name
+
+1. A Simple Mapping
+```java
+@GetMapping("/api/foos")
+@ResponseBody
+public String getFoos(@RequestParam String id) {
+    return "ID: " + id;
+}
+```
+Output
+```
+http://localhost:8080/api/foos?id=abc
+----
+ID: abc
+```
+2. Specifying the Request Parameter Name
+```java
+@PostMapping("/api/foos")
+@ResponseBody
+public String addFoo(@RequestParam(name = "id") String fooId, @RequestParam String name) { 
+    return "ID: " + fooId + " Name: " + name;
+}
+```
+3. Making an Optional Request Parameter
+```java
+@GetMapping("/api/foos")
+@ResponseBody
+public String getFoos(@RequestParam(required = false) String id) { 
+    return "ID: " + id;
+}
+```
+Output
+```
+http://localhost:8080/api/foos?id=abc
+----
+ID: abc
+
+
+http://localhost:8080/api/foos
+----
+ID: null
+```
+4. A Default Value for the Request Parameter
+```java
+@GetMapping("/api/foos")
+@ResponseBody
+public String getFoos(@RequestParam(defaultValue = "test") String id) {
+    return "ID: " + id;
+}
+```
+Output
+```
+http://localhost:8080/api/foos
+----
+ID: test
+
+
+http://localhost:8080/api/foos?id=abc
+----
+ID: abc
+```
+5. Mapping All Parameters
+```java
+@PostMapping("/api/foos")
+@ResponseBody
+public String updateFoos(@RequestParam Map<String,String> allParams) {
+    return "Parameters are " + allParams.entrySet();
+}
+```
+Output
+```
+curl -X POST -F 'name=abc' -F 'id=123' http://localhost:8080/api/foos
+-----
+Parameters are {[name=abc], [id=123]}
+```
+6. Mapping a Multi-Value Parameter
+```java
+@GetMapping("/api/foos")
+@ResponseBody
+public String getFoos(@RequestParam List<String> id) {
+    return "IDs are " + id;
+}
+```
+Output
+```
+http://localhost:8080/api/foos?id=1,2,3
+----
+IDs are [1,2,3]
+
+http://localhost:8080/api/foos?id=1&id=2
+----
+IDs are [1,2]
+```
+
 * **@ContextConfiguration**: This annotation specifies how to load the application context while writing a unit test for the Spring environment. Here is an example of using @ContextConfiguration along with @RunWith annotation of JUnit to test a Service class in Spring Boot.
 ```java
 @RunWith(SpringJUnit4ClassRunner.class)
