@@ -1,4 +1,4 @@
-## Spring-Boot Framework Notes
+## Spring-Boot Notes
 
 
 #### Q. What are the advantages of using Spring Boot?
