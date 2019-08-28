@@ -11,13 +11,12 @@
 * It provides lots of plugins to develop and test Spring Boot Applications very easily using Build Tools like Maven and Gradle
 * It provides lots of plugins to work with embedded and in-memory Databases very easily.
 
-#### Q. Write a program in spring-boot to get employees details based on employee id?
+#### Q. Write a program in Spring-Boot to get employees details based on employee id?
 #### Q. What does the @Autowired, @pathVariable, @ResponseEntity, @ResponseBody, @Configuration, @RestController, @RequestMapping, @Qualifier, @Required, @RequestParam, @ContextConfiguration annotation do?
 #### Q. What is the role of @SpringBootApplication?
 #### Q. What are the different components of a Spring Boot application?
 #### Q. What does @EnableAutoConfiguration and @SpringBootApplication do? 
-#### Q. How to reload my changes on Spring Boot without having to restart server?
-#### Q. List some of the important annotations in annotation-based Spring configuration.  
+#### Q. How to reload changes on Spring Boot without having to restart server?  
 #### Q. What is the difference between @Component, @Controller, @Repository & @Service annotations in Spring?
 #### Q. What is Auto Configuration?
 #### Q. How does Spring Boot enforce common dependency management for all its Starter projects?
@@ -56,7 +55,7 @@
 #### Q. When will you use WebSockets? How tto implement it using Spring Boot?
 #### Q. What is AOP? How to use it with Spring Boot?
 #### Q. How can we monitor all the Spring Boot Microservices?
-#### Q. What is spring boot transaction management?
+#### Q. What is Spring Boot transaction management?
 #### Q. What is CORS in Spring Boot? How to enable CORS in Spring Boot?
 #### Q. What is Spring boot devtools?
 #### Q. What is best way to expose custom application configuration with Spring Boot?
