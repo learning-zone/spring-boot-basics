@@ -13,6 +13,22 @@
 
 #### Q. Write a program in Spring-Boot to get employees details based on employee id?
 #### Q. What does the @pathVariable, @ResponseEntity, @ResponseBody, @Configuration, @RestController, @RequestMapping, @Qualifier, @Required, @RequestParam, @ContextConfiguration annotation do?
+* **@ContextConfiguration**: This annotation specifies how to load the application context while writing a unit test for the Spring environment. Here is an example of using @ContextConfiguration along with @RunWith annotation of JUnit to test a Service class in Spring Boot.
+```java
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes=PaymentConfiguration.class)
+public class PaymentServiceTests {
+
+  @Autowired
+  private PaymentService paymentService;
+
+  @Test
+  public void testPaymentService() {
+      // code to test PaymentService class
+  }
+}
+```
+Here, `@ContextConfiguration` class instructs to load the Spring application context defined in the PaymentConfiguration class.
 #### Q. What are the different components of a Spring Boot application?
 #### Q. What does @SpringBootApplication and @EnableAutoConfiguration do? 
 * **@SpringBootApplication**: annotation is used to annotate the main class of our Spring Boot application. It also enables the auto-configuration feature of Spring Boot.
