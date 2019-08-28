@@ -60,6 +60,7 @@
 #### Q. What is best way to expose custom application configuration with Spring Boot?
 #### Q. How do you configure error logging/debugging in Spring Boot application?
 #### Q. How do you Enable HTTP response compression in Spring Boot?
-#### Q. What is the Configuration File Name, which is used By Spring Boot?
+#### Q. What is the configuration file name, which is used by Spring Boot?
+`application.properties`
 #### Q. What is differentiate Between an Embedded Container and a War?
 
