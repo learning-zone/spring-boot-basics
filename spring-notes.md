@@ -39,10 +39,10 @@ public class HomeController {
 * **@RequestParam**: @RequestParam is a Spring annotation used to bind a web request parameter to a method parameter.
 It has the following optional elements:  
 
-* **defaultValue**: used as a fallback when the request parameter is not provided or has an empty value
-* **name**: name of the request parameter to bind to
-* **required**: tells whether the parameter is required
-* **value**: alias for name
+  * **defaultValue**: used as a fallback when the request parameter is not provided or has an empty value
+  * **name**: name of the request parameter to bind to
+  * **required**: tells whether the parameter is required
+  * **value**: alias for name
 
 1. A Simple Mapping
 ```java
