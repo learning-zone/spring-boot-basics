@@ -13,7 +13,7 @@
 
 #### Q. Write a program in Spring-Boot to get employees details based on employee id?
 *TODO*
-#### Q. What does the @RestController, @RequestMapping, @RequestParam, @ContextConfiguration, @ResponseBody, @pathVariable, @ResponseEntity, @Qualifier, @Required annotation do?
+#### Q. What does the @RestController, @RequestMapping, @RequestParam, @ContextConfiguration, @ResponseBody, @pathVariable, @ResponseEntity, @Qualifier annotation do?
 * **@RestController**: The @RestController is a stereotype annotation. It adds `@Controller` and `@ResponseBody` annotations to the class. It requires to import `org.springframework.web.bind.annotation` package.
 The @RestController annotation informs to the Spring to render the result back to the caller.
 ```java
@@ -199,7 +199,32 @@ public class MyController {
     }
 }
 ```
+* **@ResponseEntity**: ResponseEntity represents an HTTP response, including headers, body, and status. While `@ResponseBody` puts the return value into the body of the response, ResponseEntity also allows us to add headers and status code.
+```java
+@GetMapping("/customHeader")
+ResponseEntity<String> customHeader() {
+    HttpHeaders headers = new HttpHeaders();
+    headers.add("Custom-Header", "foo");
+         
+    return new ResponseEntity<>(
+      "Custom header set", headers, HttpStatus.OK);
+}
+```
+* **@Qualifier**: Spring Boot `@Qualifier` shows how to differentiate beans of the same type with @Qualifier. It can also be used to annotate other custom annotations that can then be used as qualifiers.
+```java
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
+@Component
+@Qualifier("manager")
+public class Manager implements Person {
+
+    @Override
+    public String info() {
+        return "Manager";
+    }
+}
+```
 #### Q. What are the different components of a Spring Boot application?
 #### Q. What does @SpringBootApplication and @EnableAutoConfiguration do? 
 * **@SpringBootApplication**: annotation is used to annotate the main class of our Spring Boot application. It also enables the auto-configuration feature of Spring Boot.
