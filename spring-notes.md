@@ -323,6 +323,21 @@ http://localhost:8080/actuator
 }
 ```
 
+|Endpoint	             |Description                         |
+|------------------------|------------------------------------| 
+|health	                 | Application health info            |
+|info	                 | Info about the application         |
+|env	                 | Properties from environment        |
+|metrics	             | Various metrics about the app      |
+|mappings	             | @RequestMapping Controller mappings|
+|shutdown	             | Triggers application shutdown      |
+|httptrace	             | HTTP request/response log          |
+|loggers	             | Display and configure logger info  |
+|logfile	             | Contents of the log file           |
+|threaddump	             | Perform thread dump                |
+|heapdump	             | Obtain JVM heap dump               |
+|caches	                 | Check available caches             |
+|integrationgraph	     | Graph of Spring Integration components|
 
 #### Q. What is a CommandLineRunner?
 #### Q. What is Spring JDBC? How is different from JDBC?
