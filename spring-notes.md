@@ -339,6 +339,19 @@ http://localhost:8080/actuator
 |caches	                 | Check available caches             |
 |integrationgraph	     | Graph of Spring Integration components|
 
+**Enabling / Disabling endpoints**
+```
+# Disable an endpoint
+management.endpoint.[endpoint-name].enabled=false
+
+# Specific example for 'health' endpoint
+management.endpoint.health.enabled=false
+
+# Instead of enabled by default, you can change to mode
+# where endpoints need to be explicitly enabled
+management.endpoints.enabled-by-default=false
+```
+
 #### Q. What is a CommandLineRunner?
 #### Q. What is Spring JDBC? How is different from JDBC?
 #### Q. What is Mockito?
