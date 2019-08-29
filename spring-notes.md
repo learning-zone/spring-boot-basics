@@ -363,7 +363,8 @@ public class CommandLineAppStartupRunner implements CommandLineRunner {
     private static final Logger logger = LoggerFactory.getLogger(CommandLineAppStartupRunner.class);
     @Override
     public void run(String...args) throws Exception {
-        logger.info("Application started with command-line arguments: {} . \n To kill this application, press Ctrl + C.", Arrays.toString(args));
+        logger.info("Application started with command-line arguments: {} . 
+        \n To kill this application, press Ctrl + C.", Arrays.toString(args));
     }
 }
 ```
