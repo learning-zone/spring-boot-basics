@@ -286,7 +286,7 @@ public class ProdConfigurations {
 ```
 
 #### Q. What is Spring Boot Actuator? How do you monitor web services using Spring Boot Actuator?
-Spring Boot Actuator module used to monitor and manage Spring Boot application by providing production-ready features like health check-up, auditing, metrics gathering, HTTP tracing etc. All of these features can be accessed over JMX or HTTP endpoints.
+Spring Boot Actuator module use to monitor and manage Spring Boot application by providing production-ready features like health check-up, auditing, metrics gathering, HTTP tracing etc. All of these features can be accessed over JMX or HTTP endpoints.
 
 **Adding Spring Boot Actuator**
 ```xml
@@ -352,7 +352,34 @@ management.endpoint.health.enabled=false
 management.endpoints.enabled-by-default=false
 ```
 
-#### Q. What is a CommandLineRunner?
+#### Q. What is a CommandLineRunner and ApplicationRunner?
+`ApplicationRunner` and `CommandLineRunner` interfaces use to execute the code after the Spring Boot application is started. These interfaces can be used to perform any actions immediately after the application has started.
+
+* **CommandLineRunner**
+This interface provides access to application arguments as string array. 
+```java
+@Component
+public class CommandLineAppStartupRunner implements CommandLineRunner {
+    private static final Logger logger = LoggerFactory.getLogger(CommandLineAppStartupRunner.class);
+    @Override
+    public void run(String...args) throws Exception {
+        logger.info("Application started with command-line arguments: {} . \n To kill this application, press Ctrl + C.", Arrays.toString(args));
+    }
+}
+```
+* **ApplicationRunner**
+ApplicationRunner wraps the raw application arguments and exposes the ApplicationArguments interface, which has many convinent methods to get arguments, like getOptionNames() to return all the arguments' names, getOptionValues() to return the agrument value, and raw source arguments with method getSourceArgs(). 
+```java
+@Component
+public class AppStartupRunner implements ApplicationRunner {
+    private static final Logger logger = LoggerFactory.getLogger(AppStartupRunner.class);
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+        logger.info("Your application started with option names : {}", args.getOptionNames());
+    }
+}
+```
+
 #### Q. What is Spring JDBC? How is different from JDBC?
 #### Q. What is Mockito?
 #### Q. What is @SpringBootTest?
