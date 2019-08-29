@@ -264,6 +264,27 @@ Spring Initializr can be used several ways, including:
 1. Using the Spring Boot CLI.
 
 #### Q. What is a profile? How do you create application configuration for a specific profile?
+Spring Profiles helps to segregating application configurations, and make them available only in certain environments. Any `@Component` or `@Configuration` can be marked with `@Profile` to limit when it is loaded. You can define default configuration in application.properties. Environment specific overrides can be configured in specific files:
+
+* application-dev.properties
+* application-qa.properties
+* application-stage.properties
+* application-prod.properties
+
+Using Profiles In Code
+```java
+@Configuration
+@Profile("dev")
+public class DevConfigurations {
+    // DEV Configurations
+}
+@Configuration
+@Profile("prod")
+public class ProdConfigurations {
+    // Production Configurations
+}
+```
+
 #### Q. How do you have different configuration for different environments?
 #### Q. What is Spring Boot Actuator? How do you monitor web services using Spring Boot Actuator?
 #### Q. What is a CommandLineRunner?
