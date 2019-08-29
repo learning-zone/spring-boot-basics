@@ -271,7 +271,7 @@ Spring Profiles helps to segregating application configurations, and make them a
 * application-stage.properties
 * application-prod.properties
 
-Using Profiles In Code
+**Using Profiles In Code**
 ```java
 @Configuration
 @Profile("dev")
@@ -285,8 +285,46 @@ public class ProdConfigurations {
 }
 ```
 
-#### Q. How do you have different configuration for different environments?
 #### Q. What is Spring Boot Actuator? How do you monitor web services using Spring Boot Actuator?
+Spring Boot Actuator module used to monitor and manage Spring Boot application by providing production-ready features like health check-up, auditing, metrics gathering, HTTP tracing etc. All of these features can be accessed over JMX or HTTP endpoints.
+
+**Adding Spring Boot Actuator**
+```xml
+<dependencies>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-actuator</artifactId>
+	</dependency>
+</dependencies>
+```
+
+**Monitoring**
+Actuator creates several so-called **endpoints** that can be exposed over HTTP or JMX to let you monitor and interact with application.
+
+For example, There is a `/health` endpoint that provides basic information about the application's health. The `/metrics` endpoint shows several useful metrics information like JVM memory used, system CPU usage, open files, and much more. The `/loggers` endpoint shows application's logs and also lets you change the log level at runtime.
+```
+http://localhost:8080/actuator
+
+----
+{
+  "_links": {
+    "self": {
+      "href": "http://localhost:8080/actuator",
+      "templated": false
+    },
+    "health": {
+      "href": "http://localhost:8080/actuator/health",
+      "templated": false
+    },
+    "info": {
+      "href": "http://localhost:8080/actuator/info",
+      "templated": false
+    }
+  }
+}
+```
+
+
 #### Q. What is a CommandLineRunner?
 #### Q. What is Spring JDBC? How is different from JDBC?
 #### Q. What is Mockito?
