@@ -380,17 +380,9 @@ public class AppStartupRunner implements ApplicationRunner {
     }
 }
 ```
-
-#### Q. What is Spring JDBC? How is different from JDBC?
-#### Q. What is Mockito?
-#### Q. What is @SpringBootTest?
-#### Q. What is TestRestTemplate?
-#### Q. What is JavaConfig?
-#### Q. How to depoy Spring Boot application as a WAR?
+#### Q. How to deploy Spring Boot application as a WAR?
 #### Q. What is Docker? How to deploy Spring Boot Applications to Docker?
-#### Q. How to disable Actuator endpoint security in Spring Boot?
-#### Q. What is ELK stack?How to use it with Spring Boot?
-#### Q. Have you written Test cases using Spring Boot?
+#### Q. What is ELK stack? How to use it with Spring Boot?
 #### Q. How to implement security for Spring Boot application?
 #### Q. Have you integrated Spring Boot and ActiveMQ?
 #### Q. How to implement Pagination and Sorting with Spring Boot?
@@ -399,7 +391,6 @@ public class AppStartupRunner implements ApplicationRunner {
 #### Q. What is FreeMarker Template? How do you implement it using Spring Boot?
 #### Q. How to implement Exception Handling using Spring Boot?
 #### Q. What is caching? Have you used any caching framework with Spring Boot?
-#### Q. How did you perform database operations using Spring Boot?
 #### Q. How to develop a full stack application using Spring Boot and Angular?
 #### Q. How to implement interceptors with Spring Boot?
 #### Q. How to use schedulers with Spring Boot?
@@ -410,7 +401,6 @@ public class AppStartupRunner implements ApplicationRunner {
 #### Q. What is GZIP? How to implement it using Spring Boot?
 #### Q. When will you use WebSockets? How tto implement it using Spring Boot?
 #### Q. What is AOP? How to use it with Spring Boot?
-#### Q. How can we monitor all the Spring Boot Microservices?
 #### Q. What is Spring Boot transaction management?
 #### Q. What is CORS in Spring Boot? How to enable CORS in Spring Boot?
 #### Q. What is Spring Boot devtools?
@@ -429,5 +419,8 @@ The aim of this module is to try and improve the development-time experience whe
 #### Q. What is the configuration file name, which is used by Spring Boot?
 `application.properties`
 #### Q. What is difference Between an Embedded Container and a War?
-
-
+#### Q. What is Mockito?
+#### Q. What is @SpringBootTest?
+#### Q. What is TestRestTemplate?
+#### Q. What is JavaConfig?
+#### Q. Have you written Test cases using Spring Boot?
