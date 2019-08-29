@@ -384,6 +384,31 @@ public class AppStartupRunner implements ApplicationRunner {
 A Docker container is a tool that makes it very easy to deploy and run an application using **containers**. A container allows a developer to create an all-in-one package of the developed application with all its dependencies. For example, a Java application requires Java libraries, and when we deploy it on any system or VM, we need to install Java first. But, in a container, everything is kept together and shipped as one package, such as in a Docker container.
 
 Example: *Create a simple Spring Boot Application using Docker*
+Step 01:
+```java
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@SpringBootApplication
+@RestController
+public class Application {
+
+    @RequestMapping("/")
+    public String home() {
+        return "Hello Docker World";
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+}
+```
+To run the application, use the following Maven command from the project root folder:
+```
+cmd> mvn spring-boot:run
+```
 
 #### Q. What is ELK stack? How to use it with Spring Boot?
 #### Q. How to implement security for Spring Boot application?
