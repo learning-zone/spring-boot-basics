@@ -383,8 +383,7 @@ public class AppStartupRunner implements ApplicationRunner {
 #### Q. What is Docker? How to deploy Spring Boot Application to Docker?
 A Docker is a tool that makes it very easy to deploy and run an application using **containers**. A container allows a developer to create an all-in-one package of the developed application with all its dependencies. For example, a Java application requires Java libraries, and when we deploy it on any system or VM, we need to install Java first. But, in a container, everything is kept together and shipped as one package, such as in a Docker container.
 
-Example: *Create a simple Spring Boot Application using Docker*  
-Step 01:
+Step 01: **Create a simple Spring Boot Application**
 ```java
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -433,7 +432,7 @@ ENTRYPOINT ["java","-jar","demo-docker-0.0.1-SNAPSHOT.jar"]
 * **RUN** - This tells Docker to execute a shell command-line within the target system. Here we practically just "touch" our file so that it has its modification time updated (Docker creates all container files in an "unmodified" state by default).
 * **ENTRYPOINT** - This allows you to configure a container that will run as an executable. It's where you tell Docker how to run your application. We know we run our spring-boot app as java -jar <app-name>.jar, so we put it in an array.
 
-Step 03: **create Docker image**  
+Step 03: **Create Docker image**  
 
 Generate a Spring Boot `.jar` file using `mvn clean install` command. This file will be used to create the Docker image.
 Let's build the image using this Dockerfile. To do so, move to the root directory of the application and run this command:
