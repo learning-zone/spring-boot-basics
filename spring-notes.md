@@ -298,8 +298,7 @@ Spring Boot Actuator module used to monitor and manage Spring Boot application b
 </dependencies>
 ```
 
-**Monitoring**
-Actuator creates several so-called **endpoints** that can be exposed over HTTP or JMX to let you monitor and interact with application.
+**Monitoring**: Actuator creates several so-called **endpoints** that can be exposed over HTTP or JMX to let you monitor and interact with application.
 
 For example, There is a `/health` endpoint that provides basic information about the application's health. The `/metrics` endpoint shows several useful metrics information like JVM memory used, system CPU usage, open files, and much more. The `/loggers` endpoint shows application's logs and also lets you change the log level at runtime.
 ```
