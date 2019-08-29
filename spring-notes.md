@@ -380,8 +380,7 @@ public class AppStartupRunner implements ApplicationRunner {
     }
 }
 ```
-#### Q. How to deploy Spring Boot application as a WAR?
-#### Q. What is Docker? How to deploy Spring Boot Applications to Docker?
+#### Q. What is Docker? How to deploy Spring Boot Application to Docker?
 #### Q. What is ELK stack? How to use it with Spring Boot?
 #### Q. How to implement security for Spring Boot application?
 #### Q. Have you integrated Spring Boot and ActiveMQ?
