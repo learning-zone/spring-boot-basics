@@ -414,8 +414,7 @@ Step 02: **Dockerizing using Dockerfile**
 * **Dockerfile** – Specifying a file that contains native Docker commands to build the image
 * **Maven** – Using a Maven plugin to build the image  
 
-A Dockerfile is just a regular .txt file that includes native Docker commands that are used to specify the layers of an image. 
-The content of the file itself can look something like this:
+A Dockerfile is just a regular `.txt` file that includes native Docker commands that are used to specify the layers of an image. The content of the file itself can look something like this:
 ```
 FROM java:8-jdk-alpine
 
@@ -434,7 +433,27 @@ ENTRYPOINT ["java","-jar","demo-docker-0.0.1-SNAPSHOT.jar"]
 * **RUN** - This tells Docker to execute a shell command-line within the target system. Here we practically just "touch" our file so that it has its modification time updated (Docker creates all container files in an "unmodified" state by default).
 * **ENTRYPOINT** - This allows you to configure a container that will run as an executable. It's where you tell Docker how to run your application. We know we run our spring-boot app as java -jar <app-name>.jar, so we put it in an array.
 
+Step 03: **create Docker image**  
 
+Generate a Spring Boot `.jar` file using `mvn clean install` command. This file will be used to create the Docker image.
+Let's build the image using this Dockerfile. To do so, move to the root directory of the application and run this command:
+```
+cmd> docker build -t greeting-app 
+```
+We built the image using `docker build`. We gave it a name with the `-t` flag and specified the current directory where the Dockerfile is. The image is built and stored in our local docker registry.  
+
+Let's check our image:  
+```
+cmd> docker images
+```
+And finally, let's run our image:
+```
+cmd> docker run -p 8090:8080 greeting-app 
+```
+We can run Docker images using the `docker run` command.  
+
+Each container is an isolated environment in itself and we have to map the port of the host operating system - 8090 and the port inside the container - 8080, which is specified as the -p 8090:8080 argument.
+Now, we can access the endpoint on `http://localhost:8080/greet/Pradeep`
 
 #### Q. What is ELK stack? How to use it with Spring Boot?
 #### Q. How to implement security for Spring Boot application?
