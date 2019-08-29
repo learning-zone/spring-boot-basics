@@ -383,24 +383,7 @@ public class AppStartupRunner implements ApplicationRunner {
 #### Q. What is Docker? How to deploy Spring Boot Application to Docker?
 A Docker container is a tool that makes it very easy to deploy and run an application using **containers**. A container allows a developer to create an all-in-one package of the developed application with all its dependencies. For example, a Java application requires Java libraries, and when we deploy it on any system or VM, we need to install Java first. But, in a container, everything is kept together and shipped as one package, such as in a Docker container.
 
-* **Dockerfile**: Docker gives the user the capability to create their own Docker images and deploy them in Docker. To create your own Docker image, we have to create our own Dockerfile. Basically, a Dockerfile is a simple text file with all the instructions required to build the image.  
-
-Example: *DockerFile*
-```
-FROM java:8
-EXPOSE 8080
-ADD /target/dockerdemo.jar dockerdemo.jar
-ENTRYPOINT ["java", "-jar", "dockerdemo.jar"]
-```
-* **FROM java:8**: means this is a Java application and will require all the Java librariesk so it will pull all the Java-related libraries and add them to the container.
-* **EXPOSE 8080** means that we would like to expose 8080 to the outside world to access our application.
-* **ADD /target/dockerdemo.jar dockerdemo.jar**
-ADD <source from where Docker should create the image> <destination>
-* **ENTRYPOINT [“java”, “-jar”, “dockerdemo.jar”]** will run the command as the entry point as this is a JAR and we need to run this JAR from within Docker.
-
-These are the four steps for that will create an image of our Java application to be able to run Docker.
-
-To load these up in the Docker container, we have to first create the image and then run that image from the Docker container. We need to run certain commands in the folder that contains the Dockerfile. This will create our image in Docker and load it up to the container.
+Example: *Create Simple Spring Boot Application using Docker*
 
 #### Q. What is ELK stack? How to use it with Spring Boot?
 #### Q. How to implement security for Spring Boot application?
