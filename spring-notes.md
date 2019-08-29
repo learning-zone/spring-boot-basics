@@ -385,7 +385,7 @@ A Docker container is a tool that makes it very easy to deploy and run an applic
 
 * **Dockerfile**: Docker gives the user the capability to create their own Docker images and deploy them in Docker. To create your own Docker image, we have to create our own Dockerfile. Basically, a Dockerfile is a simple text file with all the instructions required to build the image.  
 
-Example: DockerFile
+Example: *DockerFile*
 ```
 FROM java:8
 EXPOSE 8080
