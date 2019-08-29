@@ -454,8 +454,7 @@ We can run Docker images using the `docker run` command.
 Each container is an isolated environment in itself and we have to map the port of the host operating system - 8090 and the port inside the container - 8080, which is specified as the -p 8090:8080 argument.
 Now, we can access the endpoint on `http://localhost:8080/greet/Pradeep`
 
-#### Q. What is ELK stack? How to use it with Spring Boot?
-#### Q. How to implement security for Spring Boot application?
+#### Q. How to provide security to spring boot application?
 #### Q. Have you integrated Spring Boot and ActiveMQ?
 #### Q. How to implement Pagination and Sorting with Spring Boot?
 #### Q. What is Swagger? Have you implemented it using Spring Boot?
