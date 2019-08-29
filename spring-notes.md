@@ -409,6 +409,10 @@ To run the application, use the following Maven command from the project root fo
 ```
 cmd> mvn spring-boot:run
 ```
+Step 02: **Dockerizing using Dockerfile**  
+
+* **Dockerfile** – Specifying a file that contains native Docker commands to build the image
+* **Maven** – Using a Maven plugin to build the image
 
 #### Q. What is ELK stack? How to use it with Spring Boot?
 #### Q. How to implement security for Spring Boot application?
