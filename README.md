@@ -414,7 +414,6 @@ public class Application implements CommandLineRunner {
 
         SimpleMailMessage msg = new SimpleMailMessage();
         msg.setTo("1@gmail.com", "2@yahoo.com");
-
         msg.setSubject("Testing from Spring Boot");
         msg.setText("Hello World \n Spring Boot Email");
 
@@ -428,15 +427,8 @@ public class Application implements CommandLineRunner {
         // true = multipart message
         MimeMessageHelper helper = new MimeMessageHelper(msg, true);
         helper.setTo("1@gmail.com");
-
         helper.setSubject("Testing from Spring Boot");
-
-        // default = text/plain
-        //helper.setText("Check attachment for image!");
-
-        // true = text/html
         helper.setText("<h1>Check attachment for image!</h1>", true);
-
         helper.addAttachment("my_photo.png", new ClassPathResource("android.png"));
 
         javaMailSender.send(msg);
