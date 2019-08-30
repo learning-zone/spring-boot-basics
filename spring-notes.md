@@ -494,7 +494,7 @@ public class RestExceptionHandler {
 @ExceptionHandler(CustomNotFoundException.class)
 public ApiErrorResponse handleNotFoundException(CustomNotFoundException ex) {
 
-ApiErrorResponse response =new ApiErrorResponse.ApiErrorResponseBuilder()
+ApiErrorResponse response = new ApiErrorResponse.ApiErrorResponseBuilder()
       .withStatus(HttpStatus.NOT_FOUND)
       .withError_code("NOT_FOUND")
       .withMessage(ex.getLocalizedMessage()).build();
