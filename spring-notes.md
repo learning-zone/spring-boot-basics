@@ -511,6 +511,21 @@ Caching is a mechanism to enhance the performance of a system. It is a temporary
 * **Database caching**: Database usually includes some level of caching in a default configuration, optimized for a generic use case. Tweaking these settings for specific usage patterns can further boost performance. One popular in this area is first level cache of `Hibernate` or any `ORM frameworks`.
 * **Web server caching**: Reverse proxies and caches such as Varnish can serve static and dynamic content directly. Web servers can also cache requests, returning responses without having to contact application servers. In today’s API age, this option is a viable if we want to cache API responses in web server level.
 * **CDN caching**: Caches can be located on the client side (OS or browser), server side, or in a distinct cache layer.
+
+**Spring boot cache annotations**
+* **@EnableCaching**: It can be added to the boot application class annotated with `@SpringBootApplication`. Spring provides one concurrent hashmap as default cache, but we can override CacheManager to register external cache providers as well easily.
+* **@Cacheable**: It is used on the method level to let spring know that the response of the method are cacheable. Spring manages the request/response of this method to the cache specified in annotation attribute. 
+```java
+@Cacheable(value="books", key="#isbn")
+public Book findStoryBook(ISBN isbn, boolean checkWarehouse, boolean includeUsed)
+```
+* **@CachePut**: It allow us to update the cache and will also allow the method to be executed. It supports the same options as `@Cacheable` and should be used for cache population rather then method flow optimization.
+* **@CacheEvict**: It is used when we need to evict (remove) the cache previously loaded of master data. When CacheEvict annotated methods will be executed, it will clear the cache.
+* **@Caching**: This annotation is required when we need both `@CachePut` and `@CacheEvict` at the same time.
+
+
+
+
 #### Q. How to develop a full stack application using Spring Boot and Angular?
 #### Q. How to implement Pagination and Sorting with Spring Boot?
 #### Q. What is Swagger? Have you implemented it using Spring Boot?
