@@ -503,7 +503,6 @@ ApiErrorResponse response =new ApiErrorResponse.ApiErrorResponseBuilder()
     }
 }
 ```
-
 #### Q. What is caching? Have you used any caching framework with Spring Boot?
 #### Q. How to develop a full stack application using Spring Boot and Angular?
 #### Q. How to implement Pagination and Sorting with Spring Boot?
