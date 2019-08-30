@@ -1209,16 +1209,14 @@ Example:
 
 #### Q. What is difference between sendRedirect() and forward() in Servlet?
 
-* **SendRedirect()**:  
-This method is declared in **HttpServletResponse** Interface. It is used to redirect client request to some other location for further processing, the new location is available on different server or different context.our web container handle this and transfer the request using  browser, and this request is visible in browser as a new request. 
+* **SendRedirect()**: This method is declared in **HttpServletResponse** Interface. It is used to redirect client request to some other location for further processing, the new location is available on different server or different context.our web container handle this and transfer the request using  browser, and this request is visible in browser as a new request. 
 
 Signature: 
 ```java
 void sendRedirect(String url)
 ```
 
-* **Forward()**:
-This method is declared in **RequestDispatcher** Interface. It is used to pass the request to another resource for further processing within the same server, another resource could be any servlet, jsp page any kind of file.
+* **Forward()**: This method is declared in **RequestDispatcher** Interface. It is used to pass the request to another resource for further processing within the same server, another resource could be any servlet, jsp page any kind of file.
 
 Signature:
 ```java
