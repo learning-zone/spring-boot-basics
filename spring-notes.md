@@ -512,7 +512,7 @@ Caching is a mechanism to enhance the performance of a system. It is a temporary
 * **Web server caching**: Reverse proxies and caches such as Varnish can serve static and dynamic content directly. Web servers can also cache requests, returning responses without having to contact application servers. In today’s API age, this option is a viable if we want to cache API responses in web server level.
 * **CDN caching**: Caches can be located on the client side (OS or browser), server side, or in a distinct cache layer.
 
-**Spring boot cache annotations**
+**Spring Boot Cache Annotations**
 * **@EnableCaching**: It can be added to the boot application class annotated with `@SpringBootApplication`. Spring provides one concurrent hashmap as default cache, but we can override CacheManager to register external cache providers as well easily.
 * **@Cacheable**: It is used on the method level to let spring know that the response of the method are cacheable. Spring manages the request/response of this method to the cache specified in annotation attribute. 
 ```java
