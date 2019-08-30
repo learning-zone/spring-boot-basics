@@ -824,9 +824,9 @@ When we use double quotes to create a String, it first looks for String with the
 public class StringPool {
 
     public static void main(String[] args) {
-        String s1 = "Hello";
-        String s2 = "Hello";
-        String s3 = new String("Hello");
+        String s1 = "Java";
+        String s2 = "Java";
+        String s3 = new String("Java");
         
         System.out.println("s1 == s2 :" +(s1==s2)); // true
         System.out.println("s1 == s3 :" +(s1==s3)); // false
