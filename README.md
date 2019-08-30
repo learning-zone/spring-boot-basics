@@ -172,7 +172,7 @@ public class UploadFileResponse {
 package com.example.filedemo.service;
 
 import com.example.filedemo.exception.FileStorageException;
-import com.example.filedemo.exception.MyFileNotFoundException;
+import com.example.filedemo.exception.CustomFileNotFoundException;
 import com.example.filedemo.property.FileStorageProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
@@ -231,10 +231,10 @@ public class FileStorageService {
             if(resource.exists()) {
                 return resource;
             } else {
-                throw new MyFileNotFoundException("File not found " + fileName);
+                throw new CustomFileNotFoundException("File not found " + fileName);
             }
         } catch (MalformedURLException ex) {
-            throw new MyFileNotFoundException("File not found " + fileName, ex);
+            throw new CustomFileNotFoundException("File not found " + fileName, ex);
         }
     }
 }
@@ -256,7 +256,7 @@ public class FileStorageException extends RuntimeException {
 }
 ```
 
-* **Step 08: MyFileNotFoundException**
+* **Step 08: CustomFileNotFoundException**
 
 ```java
 package com.example.filedemo.exception;
@@ -265,12 +265,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(HttpStatus.NOT_FOUND)
-public class MyFileNotFoundException extends RuntimeException {
-    public MyFileNotFoundException(String message) {
+public class CustomFileNotFoundException extends RuntimeException {
+    public CustomFileNotFoundException(String message) {
         super(message);
     }
 
-    public MyFileNotFoundException(String message, Throwable cause) {
+    public CustomFileNotFoundException(String message, Throwable cause) {
         super(message, cause);
     }
 }
