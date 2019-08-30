@@ -454,7 +454,18 @@ We can run Docker images using the `docker run` command.
 Each container is an isolated environment in itself and we have to map the port of the host operating system - 8090 and the port inside the container - 8080, which is specified as the -p 8090:8080 argument.
 Now, we can access the endpoint on `http://localhost:8080/greet/Pradeep`
 
-#### Q. How to implement Exception Handling using Spring Boot?
+#### Q. How to implement Exception Handling in Spring Boot?
+Spring Boot provides a number of options for error/exception handling.
+1. **ExceptionHandler Annotation**
+This annotation works at the @Controller class level.The issue with the approach is only active for the given controller.The annotation is not global, so we need to implement in each and every controller.
+2. **@ControllerAdvice Annotation**
+This annotation supports global Exception handler mechanism.So we can implement the controller exception handling events in a central location.
+3. **ResponseEntityExceptionHandler**
+This method can be used with @ControllerAdvice classes.It allows the developer to specify some specific templates of ResponseEntity and return values.
+4. **@RestControllerAdvice**
+Spring Boot 1.4 introduced the @RestControllerAdvice annotation for easier exception handling.It is a convenience annotation that is itself annotated with @ControllerAdvice and @ResponseBody.
+
+
 #### Q. What is caching? Have you used any caching framework with Spring Boot?
 #### Q. How to develop a full stack application using Spring Boot and Angular?
 #### Q. How to implement Pagination and Sorting with Spring Boot?
