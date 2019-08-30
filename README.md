@@ -642,10 +642,6 @@ public class MainRESTController {
         return "Welcome to RestTemplate Example.";
     }
  
-    // URL:
-    // http://localhost:8080/SomeContextPath/employees
-    // http://localhost:8080/SomeContextPath/employees.xml
-    // http://localhost:8080/SomeContextPath/employees.json
     @RequestMapping(value = "/employees", //
             method = RequestMethod.GET, //
             produces = { MediaType.APPLICATION_JSON_VALUE, //
@@ -656,10 +652,6 @@ public class MainRESTController {
         return list;
     }
  
-    // URL:
-    // http://localhost:8080/SomeContextPath/employee/{empNo}
-    // http://localhost:8080/SomeContextPath/employee/{empNo}.xml
-    // http://localhost:8080/SomeContextPath/employee/{empNo}.json
     @RequestMapping(value = "/employee/{empNo}", //
             method = RequestMethod.GET, //
             produces = { MediaType.APPLICATION_JSON_VALUE, //
@@ -668,11 +660,6 @@ public class MainRESTController {
     public Employee getEmployee(@PathVariable("empNo") String empNo) {
         return employeeDAO.getEmployee(empNo);
     }
- 
-    // URL:
-    // http://localhost:8080/SomeContextPath/employee
-    // http://localhost:8080/SomeContextPath/employee.xml
-    // http://localhost:8080/SomeContextPath/employee.json
  
     @RequestMapping(value = "/employee", //
             method = RequestMethod.POST, //
