@@ -523,11 +523,10 @@ public Book findStoryBook(ISBN isbn, boolean checkWarehouse, boolean includeUsed
 * **@CacheEvict**: It is used when we need to evict (remove) the cache previously loaded of master data. When CacheEvict annotated methods will be executed, it will clear the cache.
 * **@Caching**: This annotation is required when we need both `@CachePut` and `@CacheEvict` at the same time.
 
-**Spring boot caching example**  
+**Spring Boot Caching Example**  
 * **Create HTTP GET REST API**
 ```java
 // Student.java
- 
 public class Student {
  
     String id;
@@ -543,9 +542,85 @@ public class Student {
     //Setters and getters
 }
 ```
+```java
+// StudentService.java
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.stereotype.Service;
+import com.example.springcache.domain.Student;
+ 
+@Service
+public class StudentService {
 
+    @Cacheable("student")
+    public Student getStudentByID(String id) {
 
+        try {
+            System.out.println("Going to sleep for 5 Secs.. to simulate backend call.");
+            Thread.sleep(1000*5);
+        }
+        catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return new Student(id, "Pradeep", "V");
+    }
+}
+```
+```java
+// StudentController.java
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+import com.example.springcache.domain.Student;
+import com.example.springcache.service.StudentService;
+ 
+@RestController
+public class StudentController {
+ 
+    @Autowired
+    StudentService studentService;
+ 
+    @GetMapping("/student/{id}")
+    public Student findStudentById(@PathVariable String id) {
 
+        System.out.println("Searching by ID  : " + id);
+        return studentService.getStudentByID(id);
+    }
+}
+```
+Enable Spring managed Caching
+```java
+// SpringCacheApplication.java
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
+ 
+@SpringBootApplication
+@EnableCaching
+public class SpringCacheApplication {
+ 
+    public static void main(String[] args) {
+        SpringApplication.run(SpringCacheApplication.class, args);
+    }
+}
+```
+Output
+```
+Searching by ID  : 1
+Going to sleep for 5 Secs.. to simulate backend call.
+ 
+Searching by ID  : 1
+Searching by ID  : 1
+Searching by ID  : 1
+Searching by ID  : 1
+Searching by ID  : 1
+ 
+Searching by ID  : 2
+Going to sleep for 5 Secs.. to simulate backend call.
+ 
+Searching by ID  : 2
+Searching by ID  : 2
+```
 #### Q. How to develop a full stack application using Spring Boot and Angular?
 #### Q. How to implement Pagination and Sorting with Spring Boot?
 #### Q. What is Swagger? Have you implemented it using Spring Boot?
