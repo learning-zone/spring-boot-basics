@@ -753,8 +753,8 @@ public class SpringBootJdbcController {
     JdbcTemplate jdbc;    
     @RequestMapping("/insert")  
     public String index(){  
-        jdbc.execute("insert into user(name,email)values('javatpoint','java@javatpoint.com')");  
-        return"data inserted Successfully";  
+        jdbc.execute("insert into user(name, email) values('Pradeep Kumar','pradeep.vwa@gmail.com')");  
+        return "Record inserted Successfully";  
     }  
 }  
 ```
