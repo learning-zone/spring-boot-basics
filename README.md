@@ -436,7 +436,6 @@ public class Application implements CommandLineRunner {
 }
 ```
 
-
 #### Q. Spring Boot RESTful web services example
 
 * **Step 01: pom.xml Settings**
@@ -632,7 +631,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
  
 @RestController
- 
 public class MainRESTController {
  
     @Autowired
@@ -684,7 +682,7 @@ public class MainRESTController {
     public Employee addEmployee(@RequestBody Employee emp) {
  
         System.out.println("(Service Side) Creating employee: " + emp.getEmpNo());
- 
+
         return employeeDAO.addEmployee(emp);
     }
  
@@ -716,7 +714,6 @@ public class MainRESTController {
  
         employeeDAO.deleteEmployee(empNo);
     }
- 
 }
 ```
 
