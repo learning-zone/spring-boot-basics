@@ -504,6 +504,13 @@ ApiErrorResponse response =new ApiErrorResponse.ApiErrorResponseBuilder()
 }
 ```
 #### Q. What is caching? Have you used any caching framework with Spring Boot?
+Caching is a mechanism to enhance the performance of a system. It is a temporary memory that lies between the application and the persistent database. Cache memory stores recently used data items in order to reduce the number of database hits as much as possible.
+
+**Types of cache**
+* **In-memory caching**: This is the most frequently used area where caching is used extensively to increase performance of the application. In-memory caches such as `Memcached` and `Radis` are key-value stores between your application and your data storage. Since the data is held in RAM, it is much faster than typical databases where data is stored on disk.
+* **Database caching**: Database usually includes some level of caching in a default configuration, optimized for a generic use case. Tweaking these settings for specific usage patterns can further boost performance. One popular in this area is first level cache of `Hibernate` or any `ORM frameworks`.
+* **Web server caching**: Reverse proxies and caches such as Varnish can serve static and dynamic content directly. Web servers can also cache requests, returning responses without having to contact application servers. In today’s API age, this option is a viable if we want to cache API responses in web server level.
+* **CDN caching**: Caches can be located on the client side (OS or browser), server side, or in a distinct cache layer.
 #### Q. How to develop a full stack application using Spring Boot and Angular?
 #### Q. How to implement Pagination and Sorting with Spring Boot?
 #### Q. What is Swagger? Have you implemented it using Spring Boot?
