@@ -673,10 +673,6 @@ public class MainRESTController {
         return employeeDAO.addEmployee(emp);
     }
  
-    // URL:
-    // http://localhost:8080/SomeContextPath/employee
-    // http://localhost:8080/SomeContextPath/employee.xml
-    // http://localhost:8080/SomeContextPath/employee.json
     @RequestMapping(value = "/employee", //
             method = RequestMethod.PUT, //
             produces = { MediaType.APPLICATION_JSON_VALUE, //
@@ -689,8 +685,6 @@ public class MainRESTController {
         return employeeDAO.updateEmployee(emp);
     }
  
-    // URL:
-    // http://localhost:8080/SomeContextPath/employee/{empNo}
     @RequestMapping(value = "/employee/{empNo}", //
             method = RequestMethod.DELETE, //
             produces = { MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE })
@@ -703,7 +697,6 @@ public class MainRESTController {
     }
 }
 ```
-
 * **Step 06: Run and Test the application**
 
 ```
