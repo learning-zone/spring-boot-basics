@@ -419,7 +419,6 @@ public class Application implements CommandLineRunner {
         msg.setText("Hello World \n Spring Boot Email");
 
         javaMailSender.send(msg);
-
     }
 
     void sendEmailWithAttachment() throws MessagingException, IOException {
@@ -441,7 +440,6 @@ public class Application implements CommandLineRunner {
         helper.addAttachment("my_photo.png", new ClassPathResource("android.png"));
 
         javaMailSender.send(msg);
-
     }
 }
 ```
