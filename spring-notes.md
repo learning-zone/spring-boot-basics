@@ -522,7 +522,26 @@ public Book findStoryBook(ISBN isbn, boolean checkWarehouse, boolean includeUsed
 * **@CachePut**: It allow us to update the cache and will also allow the method to be executed. It supports the same options as `@Cacheable` and should be used for cache population rather then method flow optimization.
 * **@CacheEvict**: It is used when we need to evict (remove) the cache previously loaded of master data. When CacheEvict annotated methods will be executed, it will clear the cache.
 * **@Caching**: This annotation is required when we need both `@CachePut` and `@CacheEvict` at the same time.
-
+**Spring boot caching example**
+* **Create HTTP GET REST API**
+```java
+// Student.java
+ 
+public class Student {
+ 
+    String id;
+    String name;
+    String clz;
+ 
+    public Student(String id, String name, String clz) {
+        super();
+        this.id = id;
+        this.name = name;
+        this.clz = clz;
+    } 
+    //Setters and getters
+}
+```
 
 
 
