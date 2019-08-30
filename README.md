@@ -398,9 +398,7 @@ public class Application implements CommandLineRunner {
     public void run(String... args) {
 
         System.out.println("Sending Email...");
-
         try {
-		
             sendEmail();
             //sendEmailWithAttachment();
 
@@ -409,9 +407,7 @@ public class Application implements CommandLineRunner {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         System.out.println("Done");
-
     }
 
     void sendEmail() {
