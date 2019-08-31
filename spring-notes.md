@@ -631,6 +631,7 @@ Searching by ID  : 2
 #### Q. How to implement interceptors with Spring Boot?
 #### Q. Which all starter maven dependencies have you used?
 #### Q. What is CSRF attack? How to enable CSRF protection against it?
+#### Q. How do you configure error logging/debugging in Spring Boot application?
 #### Q. How to use Form Login Authentication using Spring Boot?
 #### Q. What is OAuth2? How to implement it using Spring Boot?
 #### Q. What is GZIP? How to implement it using Spring Boot?
@@ -649,7 +650,6 @@ The aim of this module is to try and improve the development-time experience whe
 </dependencies>
 ```
 #### Q. What is best way to expose custom application configuration with Spring Boot?
-#### Q. How do you configure error logging/debugging in Spring Boot application?
 #### Q. How do you Enable HTTP response compression in Spring Boot?
 #### Q. What is the configuration file name, which is used by Spring Boot?
 `application.properties`
