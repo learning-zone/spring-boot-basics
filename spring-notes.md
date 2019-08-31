@@ -621,9 +621,8 @@ Going to sleep for 5 Secs.. to simulate backend call.
 Searching by ID  : 2
 Searching by ID  : 2
 ```
-#### Q. How to develop a full stack application using Spring Boot and Angular?
-#### Q. How to implement Pagination and Sorting with Spring Boot?
 #### Q. What is Swagger? Have you implemented it using Spring Boot?
+#### Q. How to implement Pagination and Sorting with Spring Boot?
 #### Q. How to use schedulers with Spring Boot?
 #### Q. How to provide security to spring boot application?
 #### Q. Have you integrated Spring Boot and ActiveMQ?
