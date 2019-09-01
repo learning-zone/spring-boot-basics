@@ -1501,7 +1501,6 @@ public class ProductServiceInterceptor implements HandlerInterceptor {
 }
 ```
 #### Q. How to use Form Login Authentication using Spring Boot?
-#### Q. What is OAuth2? How to implement it using Spring Boot?
 #### Q. What is Spring Boot transaction management?
 #### Q. What is FreeMarker Template? How do you implement it using Spring Boot?
 #### Q. Which all starter maven dependencies have you used?
