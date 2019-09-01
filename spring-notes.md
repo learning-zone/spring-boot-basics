@@ -1460,6 +1460,46 @@ o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=demoJob]] comp
 the following parameters: [{JobID=1530697766768}] and the following status: [COMPLETED]
 ```
 #### Q. How to implement interceptor with Spring Boot?
+Interceptor can be used to perform operations in the following situations −    
+* Before sending the request to the controller
+* Before sending the response to the client
+
+For example, interceptor can be used to add the request header before sending the request to the controller and add the response header before sending the response to the client.  
+
+Interceptors support three methods −  
+
+* **preHandle()** − This is used to perform operations before sending the request to the controller. This method should return true to return the response to the client.
+* **postHandle()** − This is used to perform operations before sending the response to the client.
+* **afterCompletion()** − This is used to perform operations after completing the request and response.
+
+```java
+@Component
+public class ProductServiceInterceptor implements HandlerInterceptor {
+   @Override
+   public boolean preHandle(
+      HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+      
+       log.info("[preHandle][" + request + "]" + "[" + request.getMethod()
+      + "]" + request.getRequestURI() + getParameters(request));
+      return true;
+   }
+   @Override
+   public void postHandle(
+      HttpServletRequest request, HttpServletResponse response, Object handler, 
+      ModelAndView modelAndView) throws Exception {
+          log.info("[postHandle][" + request + "]");
+      }
+   
+   @Override
+   public void afterCompletion(HttpServletRequest request, HttpServletResponse response, 
+      Object handler, Exception ex) throws Exception {
+           if (ex != null) {
+              ex.printStackTrace();
+           }
+           log.info("[afterCompletion][" + request + "][exception: " + ex + "]");
+      }
+}
+```
 #### Q. How to use Form Login Authentication using Spring Boot?
 #### Q. What is OAuth2? How to implement it using Spring Boot?
 #### Q. What is Spring Boot transaction management?
