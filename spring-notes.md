@@ -1092,7 +1092,7 @@ $(document).ajaxSend(function(e, xhr, options) {
 });
 ```
 #### Q. How do you configure error logging/debugging in Spring Boot application?
-In Spring Boot, Logback is the default logging framework, just add spring-boot-starter-web, it will pull in the logback dependencies.
+In Spring Boot, Logback is the default logging framework, just add spring-boot-starter-web, it will pull in the logback dependencies.  
 **pom.xml** 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
