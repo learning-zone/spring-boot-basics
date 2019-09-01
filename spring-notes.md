@@ -813,7 +813,7 @@ public class EmployeeEntity {
     }
 }
 ```
-* **PagingAndSortingRepository**  
+* **PagingAndSortingRepository**   
 PagingAndSortingRepository is an extension of CrudRepository to provide additional methods to retrieve entities using the pagination and sorting abstraction. It provides two methods :
 
   * **Page findAll(Pageable pageable)** – returns a Page of entities meeting the paging restriction provided in the Pageable object.
@@ -879,20 +879,17 @@ public class EmployeeService
 }
 ```
 * **Pagination and sorting techniques**
-  * **Paging WITHOUT sorting**
-To apply only pagination in result set, we shall create Pageable object without any Sort information.
+  * **Paging WITHOUT sorting**: To apply only pagination in result set, we shall create Pageable object without any Sort information.
 ```java
 Pageable paging = PageRequest.of(pageNo, pageSize);
 Page<EmployeeEntity> pagedResult = repository.findAll(paging);
 ```
-   * **Paging WITH sorting**
-To apply only pagination in result set, we shall create Pageable object with desired Sort column name.
+   * **Paging WITH sorting**: To apply only pagination in result set, we shall create Pageable object with desired Sort column name.
 ```java
 Pageable paging = PageRequest.of(pageNo, pageSize, Sort.by("email"));
 Page<EmployeeEntity> pagedResult = repository.findAll(paging);
 ```
-   * **Sorting only**
-If there is no need to page, and only sorting is required, we can create Sort object for that.
+   * **Sorting only**: If there is no need to page, and only sorting is required, we can create Sort object for that.
 ```java
 Sort sortOrder = Sort.by("email");
 List<EmployeeEntity> list = repository.findAll(sortOrder);
