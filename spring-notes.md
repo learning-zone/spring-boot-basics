@@ -778,8 +778,7 @@ public class Swagger2UiConfiguration extends WebMvcConfigurerAdapter
 ![alt text](https://github.com/learning-zone/Spring/blob/spring/assets/Swagger2-UI-Docs-without-Annotations.png)
 
 #### Q. How to implement Pagination and Sorting in Spring Boot?
-* **JPA Entity**
-Each entity instance represent an employee record in database.
+* **JPA Entity**: 
 EmployeeEntity.java  
 ```java
 import javax.persistence.Column;
@@ -886,13 +885,13 @@ To apply only pagination in result set, we shall create Pageable object without 
 Pageable paging = PageRequest.of(pageNo, pageSize);
 Page<EmployeeEntity> pagedResult = repository.findAll(paging);
 ```
-  * **Paging WITH sorting**
+   * **Paging WITH sorting**
 To apply only pagination in result set, we shall create Pageable object with desired Sort column name.
 ```java
 Pageable paging = PageRequest.of(pageNo, pageSize, Sort.by("email"));
 Page<EmployeeEntity> pagedResult = repository.findAll(paging);
 ```
-  * **Sorting only**
+   * **Sorting only**
 If there is no need to page, and only sorting is required, we can create Sort object for that.
 ```java
 Sort sortOrder = Sort.by("email");
