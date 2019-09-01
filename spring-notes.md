@@ -1701,6 +1701,8 @@ public class LoginController
 Output
 ```
 // Run
+--------
+
 http://localhost:8080/login
 ```
 #### Q. What is Spring Boot transaction management?
