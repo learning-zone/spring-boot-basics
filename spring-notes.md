@@ -1459,7 +1459,7 @@ TaskTwo done..
 o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=demoJob]] completed with
 the following parameters: [{JobID=1530697766768}] and the following status: [COMPLETED]
 ```
-#### Q. How to implement interceptors with Spring Boot?
+#### Q. How to implement interceptor with Spring Boot?
 #### Q. How to use Form Login Authentication using Spring Boot?
 #### Q. What is OAuth2? How to implement it using Spring Boot?
 #### Q. What is Spring Boot transaction management?
