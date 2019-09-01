@@ -1310,42 +1310,40 @@ In this project, we will create a simple job with 2 step tasks and execute the j
 
 * **Add Tasklets**
 
-**MyTaskOne.java**
+**TaskOne.java**
 ```java
 import org.springframework.batch.core.StepContribution;
 import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.core.step.tasklet.Tasklet;
 import org.springframework.batch.repeat.RepeatStatus;
  
-public class MyTaskOne implements Tasklet {
+public class TaskOne implements Tasklet {
  
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception
     {
-        System.out.println("MyTaskOne start..");
+        System.out.println("TaskOne start..");
  
         // ... your code
          
-        System.out.println("MyTaskOne done..");
+        System.out.println("TaskOne done..");
         return RepeatStatus.FINISHED;
     }   
 }
 ```
-MyTaskTwo.java
+**TaskTwo.java**
 ```java
 import org.springframework.batch.core.StepContribution;
 import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.core.step.tasklet.Tasklet;
 import org.springframework.batch.repeat.RepeatStatus;
  
-public class MyTaskTwo implements Tasklet {
+public class TaskTwo implements Tasklet {
  
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception 
     {
-        System.out.println("MyTaskTwo start..");
- 
-        // ... your code
-         
-        System.out.println("MyTaskTwo done..");
+        System.out.println("TaskTwo start..");
+        // ... some code
+        System.out.println("TaskTwo done..");
         return RepeatStatus.FINISHED;
     }   
 }
@@ -1364,8 +1362,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
  
-import com.springbatchexample.demo.tasks.MyTaskOne;
-import com.springbatchexample.demo.tasks.MyTaskTwo;
+import com.springbatchexample.demo.tasks.TaskOne;
+import com.springbatchexample.demo.tasks.TaskTwo;
  
 @Configuration
 @EnableBatchProcessing
@@ -1380,14 +1378,14 @@ public class BatchConfig {
     @Bean
     public Step stepOne(){
         return steps.get("stepOne")
-                .tasklet(new MyTaskOne())
+                .tasklet(new TaskOne())
                 .build();
     }
      
     @Bean
     public Step stepTwo() {
         return steps.get("stepTwo")
-                .tasklet(new MyTaskTwo())
+                .tasklet(new TaskTwo())
                 .build();
     }  
      
@@ -1442,12 +1440,12 @@ o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=demoJob]] laun
 the following parameters: [{JobID=1530697766768}]
  
 o.s.batch.core.job.SimpleStepHandler     : Executing step: [stepOne]
-MyTaskOne start..
-MyTaskOne done..
+TaskOne start..
+TaskOne done..
  
 o.s.batch.core.job.SimpleStepHandler     : Executing step: [stepTwo]
-MyTaskTwo start..
-MyTaskTwo done..
+TaskTwo start..
+TaskTwo done..
  
 o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=demoJob]] completed with
 the following parameters: [{JobID=1530697766768}] and the following status: [COMPLETED]
