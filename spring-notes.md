@@ -1118,23 +1118,19 @@ In Spring Boot, Logback is the default logging framework, just add spring-boot-s
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
-
     </dependencies>
     <build>
         <plugins>
@@ -1237,7 +1233,6 @@ public class HelloController {
     }
 }
 ```
-
 #### Q. Have you integrated Spring Boot and ActiveMQ?
 #### Q. What is Spring Batch? How do you implement it using Spring Boot?
 #### Q. What is FreeMarker Template? How do you implement it using Spring Boot?
