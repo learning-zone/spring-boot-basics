@@ -1706,10 +1706,15 @@ Output
 http://localhost:8080/login
 ```
 #### Q. What is Spring Boot transaction management?
+*TODO*
 #### Q. What is FreeMarker Template? How do you implement it using Spring Boot?
+*TODO*
 #### Q. Which all starter maven dependencies have you used?
+*TODO*
 #### Q. What is GZIP? How to implement it using Spring Boot?
+*TODO*
 #### Q. When will you use WebSockets? How to implement it using Spring Boot?
+*TODO*
 #### Q. What is Spring Boot devtools?
 The aim of this module is to try and improve the development-time experience when working on Spring Boot applications.
 ```xml
@@ -1721,12 +1726,20 @@ The aim of this module is to try and improve the development-time experience whe
 </dependencies>
 ```
 #### Q. What is best way to expose custom application configuration with Spring Boot?
+*TODO*
 #### Q. How do you Enable HTTP response compression in Spring Boot?
+*TODO*
 #### Q. What is the configuration file name, which is used by Spring Boot?
 `application.properties`
 #### Q. What is difference Between an Embedded Container and a War?
+*TODO*
 #### Q. What is Mockito?
+*TODO*
 #### Q. What is @SpringBootTest?
+*TODO*
 #### Q. What is TestRestTemplate?
+*TODO*
 #### Q. What is JavaConfig?
+*TODO*
 #### Q. Have you written Test cases using Spring Boot?
+*TODO*
