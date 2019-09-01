@@ -625,7 +625,7 @@ Searching by ID  : 2
 Swagger is widely used for visualizing APIs, and with Swagger UI it provides online sandbox for frontend developers. 
 Swagger is a tool, a specification and a complete framework implementation for producing the visual representation of RESTful Web Services. It enables documentation to be updated at the same pace as the server. When properly defined via Swagger, a consumer can understand and interact with the remote service with a minimal amount of implementation logic. 
 
-**Create REST APIs**
+**Create REST APIs**  
 * Open `application.properties` and add below property. This will start the application in /swagger2-demo context path.
 ```
 server.contextPath=/swagger2-demo
@@ -718,8 +718,7 @@ http://localhost:8080/swagger2-demo/getStudentByCountry/india
 http://localhost:8080/swagger2-demo/getStudentByClass/v
 ```
 **Swagger2 Configuration**
-* **Add Swagger2 Maven Dependencies**
-Open pom.xml file of the spring-boot-swagger2 project and add below two swagger related dependencies i.e. springfox-swagger2 and springfox-swagger-ui.
+* **Add Swagger2 Maven Dependencies**: Open pom.xml file of the spring-boot-swagger2 project and add below two swagger related dependencies i.e. springfox-swagger2 and springfox-swagger-ui.
 ```xml
 <dependency>
     <groupId>io.springfox</groupId>
@@ -733,8 +732,7 @@ Open pom.xml file of the spring-boot-swagger2 project and add below two swagger 
     <version>2.6.1</version>
 </dependency>
 ```
-* **Add Swagger2 Configuration**
-Add the below configuration in the code base. To help you understand the configuration, I have added inline comments.
+* **Add Swagger2 Configuration**: Add the below configuration in the code base. To help you understand the configuration, I have added inline comments.
 ```java
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
