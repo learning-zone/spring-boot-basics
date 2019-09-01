@@ -1242,7 +1242,7 @@ Spring Batch is a lightweight, comprehensive batch framework that is designed fo
 * Ease Of Transaction Management
 * Ease of parallel processing
 
-**Project Structure**
+**Project Structure**  
 In this project, we will create a simple job with 2 step tasks and execute the job to observe the logs. Job execution flow will be –
 
 1. Start job
