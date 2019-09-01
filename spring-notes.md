@@ -941,6 +941,64 @@ Cron Task :: Execution Time - 11:05:00
 ```
 
 #### Q. How to provide security to spring boot application?
+pom.xml
+```xml
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+```
+create a MVC configuration file that extends WebMvcConfigurerAdapter.
+```java
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+@Configuration
+public class MvcConfig extends WebMvcConfigurerAdapter {
+   @Override
+   public void addViewControllers(ViewControllerRegistry registry) {
+      registry.addViewController("/home").setViewName("home");
+      registry.addViewController("/").setViewName("home");
+      registry.addViewController("/hello").setViewName("hello");
+      registry.addViewController("/login").setViewName("login");
+   }
+}
+```
+create a Web Security Configuration file, that is used to secure your application to access the HTTP Endpoints by using basic authentication.
+```java
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+
+@Configuration
+@EnableWebSecurity
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+   @Override
+   protected void configure(HttpSecurity http) throws Exception {
+      http
+         .authorizeRequests()
+            .antMatchers("/", "/home").permitAll()
+            .anyRequest().authenticated()
+            .and()
+         .formLogin()
+            .loginPage("/login")
+            .permitAll()
+            .and()
+            .logout()
+            .permitAll();
+   }
+   @Autowired
+   public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+      auth
+         .inMemoryAuthentication()
+         .withUser("user").password("password").roles("USER");
+   }
+}
+```
 #### Q. Have you integrated Spring Boot and ActiveMQ?
 #### Q. What is Spring Batch? How do you implement it using Spring Boot?
 #### Q. What is FreeMarker Template? How do you implement it using Spring Boot?
@@ -952,7 +1010,6 @@ Cron Task :: Execution Time - 11:05:00
 #### Q. What is OAuth2? How to implement it using Spring Boot?
 #### Q. What is GZIP? How to implement it using Spring Boot?
 #### Q. When will you use WebSockets? How tto implement it using Spring Boot?
-#### Q. What is AOP? How to use it with Spring Boot?
 #### Q. What is Spring Boot transaction management?
 #### Q. What is CORS in Spring Boot? How to enable CORS in Spring Boot?
 #### Q. What is Spring Boot devtools?
