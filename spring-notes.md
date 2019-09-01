@@ -999,19 +999,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
    }
 }
 ```
+#### Q. What is CORS in Spring Boot? How to enable CORS in Spring Boot?
+#### Q. What is CSRF attack? How to enable CSRF protection against it?
+#### Q. How do you configure error logging/debugging in Spring Boot application?
 #### Q. Have you integrated Spring Boot and ActiveMQ?
 #### Q. What is Spring Batch? How do you implement it using Spring Boot?
 #### Q. What is FreeMarker Template? How do you implement it using Spring Boot?
 #### Q. How to implement interceptors with Spring Boot?
 #### Q. Which all starter maven dependencies have you used?
-#### Q. What is CSRF attack? How to enable CSRF protection against it?
-#### Q. How do you configure error logging/debugging in Spring Boot application?
 #### Q. How to use Form Login Authentication using Spring Boot?
 #### Q. What is OAuth2? How to implement it using Spring Boot?
 #### Q. What is GZIP? How to implement it using Spring Boot?
 #### Q. When will you use WebSockets? How tto implement it using Spring Boot?
 #### Q. What is Spring Boot transaction management?
-#### Q. What is CORS in Spring Boot? How to enable CORS in Spring Boot?
 #### Q. What is Spring Boot devtools?
 The aim of this module is to try and improve the development-time experience when working on Spring Boot applications.
 ```xml
