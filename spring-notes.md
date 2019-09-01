@@ -1,4 +1,4 @@
-## Spring-Boot Notes
+## Spring Boot Interview Questions and Answers
 
 #### Q. What are the advantages of using Spring Boot?
 * It is very easy to develop Spring Based applications with Java or Groovy.
