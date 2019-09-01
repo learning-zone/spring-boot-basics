@@ -1234,10 +1234,17 @@ public class HelloController {
 }
 ```
 #### Q. What is Spring Batch? How do you implement it using Spring Boot?
+Spring Batch is a lightweight, comprehensive batch framework that is designed for use in developing robust batch applications.
+**Why Is Spring Batch Useful**  
+* Restartability
+* Different readers and writers
+* Chunk Processing
+* Ease Of Transaction Management
+* Ease of parallel processing
+
 #### Q. How to implement interceptors with Spring Boot?
 #### Q. How to use Form Login Authentication using Spring Boot?
 #### Q. What is OAuth2? How to implement it using Spring Boot?
-#### Q. Have you integrated Spring Boot and ActiveMQ?
 #### Q. What is Spring Boot transaction management?
 #### Q. What is FreeMarker Template? How do you implement it using Spring Boot?
 #### Q. Which all starter maven dependencies have you used?
