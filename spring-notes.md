@@ -1234,7 +1234,7 @@ public class HelloController {
 }
 ```
 #### Q. What is Spring Batch? How do you implement it using Spring Boot?
-Spring Batch is a lightweight, comprehensive batch framework that is designed for use in developing robust batch applications.
+Spring Batch is a lightweight, comprehensive batch framework that is designed for use in developing robust batch applications.  
 **Why Is Spring Batch Useful**  
 * Restartability
 * Different readers and writers
