@@ -1322,9 +1322,7 @@ public class TaskOne implements Tasklet {
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception
     {
         System.out.println("TaskOne start..");
- 
-        // ... your code
-         
+        // ... some code
         System.out.println("TaskOne done..");
         return RepeatStatus.FINISHED;
     }   
@@ -1450,7 +1448,6 @@ TaskTwo done..
 o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=demoJob]] completed with
 the following parameters: [{JobID=1530697766768}] and the following status: [COMPLETED]
 ```
-
 #### Q. How to implement interceptors with Spring Boot?
 #### Q. How to use Form Login Authentication using Spring Boot?
 #### Q. What is OAuth2? How to implement it using Spring Boot?
