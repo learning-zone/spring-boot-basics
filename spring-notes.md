@@ -525,8 +525,9 @@ public Book findStoryBook(ISBN isbn, boolean checkWarehouse, boolean includeUsed
 
 **Spring Boot Caching Example**  
 * **Create HTTP GET REST API**
+
+**Student.java**
 ```java
-// Student.java
 public class Student {
  
     String id;
@@ -542,8 +543,9 @@ public class Student {
     //Setters and getters
 }
 ```
-```java
-// StudentService.java
+
+**StudentService.java**
+```java 
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import com.example.springcache.domain.Student;
@@ -565,8 +567,9 @@ public class StudentService {
     }
 }
 ```
+
+**StudentController.java**
 ```java
-// StudentController.java
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -589,8 +592,9 @@ public class StudentController {
 }
 ```
 Enable Spring managed Caching
+
+**SpringCacheApplication.java**
 ```java
-// SpringCacheApplication.java
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
@@ -631,7 +635,8 @@ Swagger is a tool, a specification and a complete framework implementation for p
 server.contextPath=/swagger2-demo
 ```
 * Add one REST controller `Swagger2DemoRestController` which will provide basic REST based functionalities on Student entity.
-Swagger2DemoRestController.java
+
+**Swagger2DemoRestController.java**
 ```java
 import java.util.ArrayList;
 import java.util.List;
@@ -677,7 +682,8 @@ public class Swagger2DemoRestController {
     }
 }
 ```
-* Student.java
+
+**Student.java**
 ```java
 public class Student {
      
@@ -779,7 +785,8 @@ public class Swagger2UiConfiguration extends WebMvcConfigurerAdapter
 
 #### Q. How to implement Pagination and Sorting in Spring Boot?
 * **JPA Entity**: 
-EmployeeEntity.java  
+
+**EmployeeEntity.java**  
 ```java
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -818,7 +825,8 @@ PagingAndSortingRepository is an extension of CrudRepository to provide addition
 
   * **Page findAll(Pageable pageable)** – returns a Page of entities meeting the paging restriction provided in the Pageable object.
   * **Iterable findAll(Sort sort)** – returns all entities sorted by the given options. No paging is applied here.
-EmployeeRepository.java  
+
+**EmployeeRepository.java**  
 ```java
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
@@ -833,7 +841,7 @@ public interface EmployeeRepository
 * **Accepting paging and sorting parameters**  
 In below spring mvc controller, we are accepting paging and sorting parameters using pageNo, pageSize and sortBy query parameters. Also, by default '10' employees will be fetched from database in page number '0', and employee records will be sorted based on 'id' field.
 
-EmployeeController.java  
+**EmployeeController.java**  
 ```java
 @RestController
 @RequestMapping("/employees")
@@ -856,7 +864,7 @@ public class EmployeeController
 ```
 To perform pagination and/or sorting, we must create org.springframework.data.domain.Pageable or org.springframework.data.domain.Sort instances are pass to the findAll() method.
 
-EmployeeService.java
+**EmployeeService.java**
 ```java
 @Service
 public class EmployeeService
@@ -1206,7 +1214,8 @@ logging.pattern.console=%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
 
 </configuration>
 ```
-* **HelloController.java**
+
+**HelloController.java**
 ```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -1328,6 +1337,7 @@ public class TaskOne implements Tasklet {
     }   
 }
 ```
+
 **TaskTwo.java**
 ```java
 import org.springframework.batch.core.StepContribution;
@@ -1347,7 +1357,8 @@ public class TaskTwo implements Tasklet {
 }
 ```
 * **Spring Batch Configuration**  
-This is major step where you define all the job related configurations and it’s execution logic.  
+This is major step where you define all the job related configurations and it’s execution logic. 
+
 **BatchConfig.java** 
 ```java
 import org.springframework.batch.core.Job;
