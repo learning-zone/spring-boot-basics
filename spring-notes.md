@@ -822,7 +822,7 @@ EmployeeRepository.java
 ```java
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
-import com.howtodoinjava.demo.entity.EmployeeEntity;
+import com.springbatchexample.demo.entity.EmployeeEntity;
  
 @Repository
 public interface EmployeeRepository
@@ -1259,7 +1259,7 @@ In this project, we will create a simple job with 2 step tasks and execute the j
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd;">
     <modelVersion>4.0.0</modelVersion>
  
-    <groupId>com.howtodoinjava</groupId>
+    <groupId>com.springbatchexample</groupId>
     <artifactId>App</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -1364,8 +1364,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
  
-import com.howtodoinjava.demo.tasks.MyTaskOne;
-import com.howtodoinjava.demo.tasks.MyTaskTwo;
+import com.springbatchexample.demo.tasks.MyTaskOne;
+import com.springbatchexample.demo.tasks.MyTaskTwo;
  
 @Configuration
 @EnableBatchProcessing
