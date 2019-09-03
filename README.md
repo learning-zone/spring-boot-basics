@@ -56,7 +56,7 @@
 |52. |[What are the differences between ArrayList and Vector?](#q-what-are-the-differences-between-arraylist-and-vector)|
 |53. |[How do you sort out items in ArrayList in reverse direction?](#q-how-do-you-sort-out-items-in-arraylist-in-reverse-direction)|
 |54. |[Tell me about join() and wait() methods?](#q-tell-me-about-join-and-wait-methods)|
-|55. |[If I don't have Explicit constructor in parent class and having in child class, while calling the child's constructor jvm automatically calls Implicit Constructor of parent class?](#q-if-i-don-t-have-explicit-constructor-in-parent-class-and-having-in-child-class-while-calling-the-child-s-constructor-jvm-automatically-calls-implicit-constructor-of-parent-class)|
+|55. |[If I do not have Explicit constructor in parent class and having in child class, while calling the child constructor jvm automatically calls Implicit Constructor of parent class?](#q-if-i-do-not-have-explicit-constructor-in-parent-class-and-having-in-child-class-while-calling-the-child-constructor-jvm-automatically-calls-implicit-constructor-of-parent-class)|
 |56. |[What are the different types of JDBC Driver?](#q-what-are-the-different-types-of-jdbc-driver)|
 |57. |[How Encapsulation concept implemented in JAVA?](#q-how-encapsulation-concept-implemented-in-java)|
 |58. |[Do you know Generics? How did you used in your coding?](#q-do-you-know-generics-how-did-you-used-in-your-coding)|
@@ -3689,7 +3689,7 @@ The `wait()` and `join()` methods are used to pause the current thread. The `wai
 
 The `wait()` is mainly used for shared resources, a thread notifies other waiting thread when a resource becomes free. On the other hand `join()` is used for waiting a thread to die.
 
-#### Q. If I don't have Explicit constructor in parent class and having in child class, while calling the child's constructor jvm automatically calls Implicit Constructor of parent class? 
+#### Q. If I do not have Explicit constructor in parent class and having in child class, while calling the child constructor jvm automatically calls Implicit Constructor of parent class? 
 If the subclass constructor does not specify which superclass constructor to invoke then the compiler will automatically call the accessible no-args constructor in the superclass.
 
 #### Q. What are the different types of JDBC Driver?
