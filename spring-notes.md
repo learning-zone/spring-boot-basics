@@ -1,5 +1,46 @@
 ## Spring Boot Interview Questions and Answers
 
+|Sl.No|Spring Boot Questions|
+|------|--------------------|
+|01. |[What are the advantages of using Spring Boot?](#q-what-are-the-advantages-of-using-spring-boot)|
+|02. |[Write a program in Spring-Boot to get employees details based on employee id?](#q-write-a-program-in-spring-boot-to-get-employees-details-based-on-employee-id)|
+|03. |[What does the @RestController, @RequestMapping, @RequestParam, @ContextConfiguration, @ResponseBody, @pathVariable, @ResponseEntity, @Qualifier annotation do?](#q-what-does-the-restcontroller-requestmapping-requestparam-contextconfiguration-responsebody-pathvariable-responseentity-qualifier-annotation-do)|
+|04. |[What are the different components of a Spring Boot application?](#q-what-are-the-different-components-of-a-spring-boot-application)|
+|05. |[What does @SpringBootApplication and @EnableAutoConfiguration do?](#q-what-does-springbootapplication-and-enableautoconfiguration-do)|
+|06. |[What is Spring Boot initializr?](#q-what-is-spring-boot-initializr)|
+|07. |[What is a profile? How do you create application configuration for a specific profile?](#q-what-is-a-profile-how-do-you-create-application-configuration-for-a-specific-profile)|
+|08. |[What is Spring Boot Actuator? How do you monitor web services using Spring Boot Actuator?](#q-what-is-spring-boot-actuator-how-do-you-monitor-web-services-using-spring-boot-actuator)|
+|09. |[What is a CommandLineRunner and ApplicationRunner?](#q-what-is-a-commandlinerunner-and-applicationrunner)|
+|10. |[What is Docker? How to deploy Spring Boot Application to Docker?](#q-what-is-docker-how-to-deploy-spring-boot-application-to-docker)|
+|11. |[How to implement Exception Handling in Spring Boot?](#q-how-to-implement-exception-handling-in-spring-boot)|
+|12. |[What is caching? Have you used any caching framework with Spring Boot?](#q-what-is-caching-have-you-used-any-caching-framework-with-spring-boot)|
+|13. |[What is Swagger? Have you implemented it using Spring Boot?](#q-what-is-swagger-have-you-implemented-it-using-spring-boot)|
+|14. |[How to implement Pagination and Sorting in Spring Boot?](#q-how-to-implement-pagination-and-sorting-in-spring-boot)|
+|15. |[How to use schedulers in Spring Boot?](#q-how-to-use-schedulers-in-spring-boot)|
+|16. |[How to provide security to spring boot application?](#q-how-to-provide-security-to-spring-boot-application)|
+|17. |[What is CORS in Spring Boot? How to enable CORS in Spring Boot?](#q-what-is-cors-in-spring-boot-how-to-enable-cors-in-spring-boot)|
+|18. |[What is CSRF attack? How to enable CSRF protection against it?](#q-what-is-csrf-attack-how-to-enable-csrf-protection-against-it)|
+|19. |[How do you configure error logging/debugging in Spring Boot application?](#q-how-do-you-configure-error-logging-debugging-in-spring-boot-application)|
+|20. |[What is Spring Batch? How do you implement it using Spring Boot?](#q-what-is-spring-batch-how-do-you-implement-it-using-spring-boot)|
+|21. |[How to implement interceptor with Spring Boot?](#q-how-to-implement-interceptor-with-spring-boot)|
+|22. |[How to use Form Login Authentication using Spring Boot?](#q-how-to-use-form-login-authentication-using-spring-boot)|
+|23. |[What is Spring Boot transaction management?](#q-what-is-spring-boot-transaction-management)|
+|24. |[What is FreeMarker Template? How do you implement it using Spring Boot?](#q-what-is-freemarker-template-how-do-you-implement-it-using-spring-boot)|
+|25. |[Which all starter maven dependencies have you used?](#q-which-all-starter-maven-dependencies-have-you-used)|
+|26. |[What is GZIP? How to implement it using Spring Boot?](#q-what-is-gzip-how-to-implement-it-using-spring-boot)|
+|27. |[When will you use WebSockets? How to implement it using Spring Boot?](#q-when-will-you-use-websockets-how-to-implement-it-using-spring-boot)|
+|28. |[What is Spring Boot devtools?](#q-what-is-spring-boot-devtools)|
+|29. |[What is best way to expose custom application configuration with Spring Boot?](#q-what-is-best-way-to-expose-custom-application-configuration-with-spring-boot)|
+|30. |[How do you Enable HTTP response compression in Spring Boot?](#q-how-do-you-enable-http-response-compression-in-spring-boot)|
+|31. |[What is the configuration file name, which is used by Spring Boot?](#q-what-is-the-configuration-file-name-which-is-used-by-spring-boot)|
+|32. |[What is difference Between an Embedded Container and a War?](#q-what-is-difference-between-an-embedded-container-and-a-war)|
+|33. |[What is Mockito?](#q-what-is-mockito)|
+|34. |[What is @SpringBootTest?](#q-what-is-springboottest)|
+|35. |[What is TestRestTemplate?](#q-what-is-testresttemplate)|
+|36. |[What is JavaConfig?](#q-what-is-javaconfig)|
+|37. |[Have you written Test cases using Spring Boot?](#q-have-you-written-test-cases-using-spring-boot)|
+
+
 #### Q. What are the advantages of using Spring Boot?
 * It is very easy to develop Spring Based applications with Java or Groovy.
 * It reduces lots of development time and increases productivity.
