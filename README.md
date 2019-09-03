@@ -1,5 +1,69 @@
 ## Java, J2EE, Spring-Boot Interview Questions and Answers
 
+|Sl.No |Java, J2EE, Spring-Boot Questions|
+|------|--------------------------------|
+|01. |[Spring Boot program for file upload / download](#q-spring-boot-program-for-file-upload-download)|
+|02. |[Spring Boot program for Send Mail](#q-spring-boot-program-for-send-mail)|
+|03. |[Spring Boot RESTful web services example](#q-spring-boot-restful-web-services-example)|
+|04. |[Connecting Spring Boot with databases](#q-connecting-spring-boot-with-databases)|
+|05. |[What is difference between spring and spring boot?](#q-what-is-difference-between-spring-and-spring-boot)|
+|06. |[How bootstrap class loader works in java?](#q-how-bootstrap-class-loader-works-in-java)|
+|07. |[Why string is immutable in java?](#q-why-string-is-immutable-in-java)|
+|08. |[What is Java String Pool?](#q-what-is-java-string-pool)|
+|09. |[Explain how Garbage collector algorithm works?](#q-explain-how-garbage-collector-algorithm-works)|
+|10. |[How to create marker interface?](#q-how-to-create-marker-interface)|
+|11. |[Explain how hashMap works in Java?](#q-explain-how-hashmap-works-in-java)|
+|12. |[Write a code to convert HashMap to ArrayList.](#q-write-a-code-to-convert-hashmap-to-arraylist)
+|13. |[Difference between arrayList and linkedList.](#q-difference-between-arraylist-and-linkedlist)
+|14. |[What is JSP Implicit Object?](#q-what-is-jsp-implicit-object)|
+|15. |[What is difference between sendRedirect() and forward() in Servlet?](#q-what-is-difference-between-sendredirect-and-forward-in-servlet)|
+|16. |[Explain Servlets Lifecycle?](#q-explain-servlets-lifecycle)|
+|17. |[What are the major additions for jdk from 1.7 to 1.8?](#q-what-are-the-major-additions-for-jdk-from-17-to-18)|
+|18. |[How serialization works in java?](#q-how-serialization-works-in-java)|
+|19. |[What are the various ways to load a class in Java?](#q-what-are-the-various-ways-to-load-a-class-in-java)|
+|20. |[Java Program to Implement Singly Linked List](#q-java-program-to-implement-singly-linked-list)
+|21. |[Design patterns related question (Singleton, Adaptor, Factory, Strategy)](#q-design-patterns-related-question-singleton-adaptor-factory-strategy)|
+|22. |[Explain types of spring bean scopes.](#q-explain-types-of-spring-bean-scopes)
+|23. |[What is AOP? what does spring AOP provide?](#q-what-is-aop-what-does-spring-aop-provide)|
+|24. |[What is ServletContext Interface?](#q-what-is-servletcontext-interface)|
+|25. |[How Set/HashSet implement unique values?](#q-how-set-hashset-implement-unique-values)|
+|26. |[What is Comparable and Comparator Interface in java?](#q-what-is-comparable-and-comparator-interface-in-java)|
+|27. |[What is DAO factory design pattern in Java?](#q-what-is-dao-factory-design-pattern-in-java)|
+|28. |[How to stop a Thread in Java?](#q-how-to-stop-a-thread-in-java)|
+|29. |[How Convert lower to upper case without using toUppercase() in java?](#q-how-convert-lower-to-upper-case-without-using-touppercase-in-java)|
+|30. |[While overriding a method can you throw another exception or broader exception?](#q-while-overriding-a-method-can-you-throw-another-exception-or-broader-exception)|
+|31. |[Difference between containsKey(), keySet() and values() in HashMap.](#q-difference-between-containskey-keyset-and-values-in-hashmap)
+|32. |[What is checked, unchecked exception and errors?](#q-what-is-checked-unchecked-exception-and-errors)|
+|33. |[What's the difference between @Component, @Repository & @Service annotations in Spring?](#q-what-s-the-difference-between-component-repository-service-annotations-in-spring)|
+|34. |[Explain deadlock condition in-between two threads with example?](#q-explain-deadlock-condition-in-between-two-threads-with-example)|
+|35. |[What is the difference between Array and ArrayList data-structure?](#q-what-is-the-difference-between-array-and-arraylist-data-structure)|
+|36. |[Array or ArrayList which one is faster?](#q-array-or-arraylist-which-one-is-faster)|
+|37. |[How to do SSO implementation using Spring Boot?](#q-how-to-do-sso-implementation-using-spring-boot)|
+|38. |[What is difference between DI and IOC in spring?](#q-what-is-difference-between-di-and-ioc-in-spring)|
+|39. |[What is main advantage of RESTful implementation over SOAP?](#q-what-is-main-advantage-of-restful-implementation-over-soap)|
+|40. |[What code coverage tools are you using for your project?](#q-what-code-coverage-tools-are-you-using-for-your-project)|
+|41. |[How to implement thread-safe code without using the synchronized keyword?](#q-how-to-implement-thread-safe-code-without-using-the-synchronized-keyword)|
+|42. |[Scenario of browser’s browsing history, where you need to store the browsing history, what data structure will you use.?](#q-scenario-of-browser-s-browsing-history-where-you-need-to-store-the-browsing-history-what-data-structure-will-you-use)|
+|43. |[Scenario where in we have to download a big file by clicking on a link, how will you make sure that connections is reliable throughout.](#q-scenario-where-in-we-have-to-download-a-big-file-by-clicking-on-a-link-how-will-you-make-sure-that-connections-is-reliable-throughout)
+|44. |[If you store Employee object as key say: Employee emp = new Employee(“name1”,20); store it in a HashMap as key, now if we add a new parameter emp.setMarriedStatus(true) and try to override it what will happen?](#q-if-you-store-employee-object-as-key-say-employee-emp-new-employee-name1-20-store-it-in-a-hashmap-as-key-now-if-we-add-a-new-parameter-empsetmarriedstatus-true-and-try-to-override-it-what-will-happen)|
+|45. |[What is difference between ClassNotFoundException and NoClassDefFoundError?](#q-what-is-difference-between-classnotfoundexception-and-noclassdeffounderror)|
+|46. |[What do we mean by weak reference?](#q-what-do-we-mean-by-weak-reference)|
+|47. |[What is difference between HashSet and LinkedHashSet?](#q-what-is-difference-between-hashset-and-linkedhashset)|
+|48. |[What do you mean Run time Polymorphism?](#q-what-do-you-mean-run-time-polymorphism)|
+|49. |[Why implementing Runnable is better than extending thread?](#q-why-implementing-runnable-is-better-than-extending-thread)|
+|50. |[What is the difference between HashTable and HashMap?](#q-what-is-the-difference-between-hashtable-and-hashmap)|
+|51. |[What happens when a duplicate key is put into a HashMap?](#q-what-happens-when-a-duplicate-key-is-put-into-a-hashmap)|
+|52. |[What are the differences between ArrayList and Vector?](#q-what-are-the-differences-between-arraylist-and-vector)|
+|53. |[How do you sort out items in ArrayList in reverse direction?](#q-how-do-you-sort-out-items-in-arraylist-in-reverse-direction)|
+|54. |[Tell me about join() and wait() methods?](#q-tell-me-about-join-and-wait-methods)|
+|55. |[If I don't have Explicit constructor in parent class and having in child class, while calling the child's constructor jvm automatically calls Implicit Constructor of parent class?](#q-if-i-don-t-have-explicit-constructor-in-parent-class-and-having-in-child-class-while-calling-the-child-s-constructor-jvm-automatically-calls-implicit-constructor-of-parent-class)|
+|56. |[What are the different types of JDBC Driver?](#q-what-are-the-different-types-of-jdbc-driver)|
+|57. |[How Encapsulation concept implemented in JAVA?](#q-how-encapsulation-concept-implemented-in-java)|
+|58. |[Do you know Generics? How did you used in your coding?](#q-do-you-know-generics-how-did-you-used-in-your-coding)|
+|59. |[What is difference between String, StringBuilder and StringBuffer?](#q-what-is-difference-between-string-stringbuilder-and-stringbuffer)|
+|60. |[How can we create a object of a class without using new operator?](#q-how-can-we-create-a-object-of-a-class-without-using-new-operator)|
+
+
 #### Q. Spring Boot program for file upload / download
 
 * **Step 01: Configuring Server and File Storage Properties**
