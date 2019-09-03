@@ -2,7 +2,7 @@
 
 |Sl.No |Java, J2EE, Spring-Boot Questions|
 |------|--------------------------------|
-|01. |[Spring Boot program for file upload / download](#q-spring-boot-program-for-file-upload-download)|
+|01. |[Spring Boot program for file upload and download.](#q-spring-boot-program-for-file-upload-and-download)|
 |02. |[Spring Boot program for Send Mail](#q-spring-boot-program-for-send-mail)|
 |03. |[Spring Boot RESTful web services example](#q-spring-boot-restful-web-services-example)|
 |04. |[Connecting Spring Boot with databases](#q-connecting-spring-boot-with-databases)|
@@ -64,7 +64,7 @@
 |60. |[How can we create a object of a class without using new operator?](#q-how-can-we-create-a-object-of-a-class-without-using-new-operator)|
 
 
-#### Q. Spring Boot program for file upload / download
+#### Q. Spring Boot program for file upload and download.
 
 * **Step 01: Configuring Server and File Storage Properties**
 
