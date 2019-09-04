@@ -33,7 +33,7 @@
 |29. |[What is best way to expose custom application configuration with Spring Boot?](#q-what-is-best-way-to-expose-custom-application-configuration-with-spring-boot)|
 |30. |[How do you Enable HTTP response compression in Spring Boot?](#q-how-do-you-enable-http-response-compression-in-spring-boot)|
 |31. |[What is the configuration file name, which is used by Spring Boot?](#q-what-is-the-configuration-file-name-which-is-used-by-spring-boot)|
-|32. |[What is difference Between an Embedded Container and a War?](#q-what-is-difference-between-an-embedded-container-and-a-war)|
+|32. |[What is difference Between an Embedded Container and a WAR?](#q-what-is-difference-between-an-embedded-container-and-a-war)|
 |33. |[What is Mockito?](#q-what-is-mockito)|
 |34. |[What is @SpringBootTest?](#q-what-is-springboottest)|
 |35. |[What is TestRestTemplate?](#q-what-is-testresttemplate)|
@@ -1772,7 +1772,7 @@ The aim of this module is to try and improve the development-time experience whe
 *TODO*
 #### Q. What is the configuration file name, which is used by Spring Boot?
 `application.properties`
-#### Q. What is difference Between an Embedded Container and a War?
+#### Q. What is difference Between an Embedded Container and a WAR?
 *TODO*
 #### Q. What is Mockito?
 *TODO*
