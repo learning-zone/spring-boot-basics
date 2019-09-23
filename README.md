@@ -1,6 +1,6 @@
 ## Java, J2EE, Spring-Boot Interview Questions and Answers
 
-> Click :star: if you like the project. Pull Request are highly appreciated.
+> Click :star2: if you like the project. Pull Request are highly appreciated.
 
 |Sl.No |Java, J2EE, Spring-Boot Questions|
 |------|--------------------------------|
