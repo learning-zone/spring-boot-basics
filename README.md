@@ -32,7 +32,7 @@
 |26. |[What is Comparable and Comparator Interface in java?](#q-what-is-comparable-and-comparator-interface-in-java)|
 |27. |[What is DAO factory design pattern in Java?](#q-what-is-dao-factory-design-pattern-in-java)|
 |28. |[How to stop a Thread in Java?](#q-how-to-stop-a-thread-in-java)|
-|29. |[How Convert lower to upper case without using toUppercase()| in java?](#q-how-convert-lower-to-upper-case-without-using-touppercase-in-java)|
+|29. |[How Convert lower to upper case without using toUppercase() in java?](#q-how-convert-lower-to-upper-case-without-using-touppercase-in-java)|
 |30. |[While overriding a method can you throw another exception or broader exception?](#q-while-overriding-a-method-can-you-throw-another-exception-or-broader-exception)|
 |31. |[Difference between containsKey(), keySet() and values() in HashMap.](#q-difference-between-containskey-keyset-and-values-in-hashmap)|
 |32. |[What is checked, unchecked exception and errors?](#q-what-is-checked-unchecked-exception-and-errors)|
