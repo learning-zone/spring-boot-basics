@@ -24,7 +24,7 @@
 |18. |[How serialization works in java?](#q-how-serialization-works-in-java)|
 |19. |[What are the various ways to load a class in Java?](#q-what-are-the-various-ways-to-load-a-class-in-java)|
 |20. |[Java Program to Implement Singly Linked List](#q-java-program-to-implement-singly-linked-list)|
-|21. |[Design patterns related question (Singleton, Adaptor, Factory, Strategy)(#q-design-patterns-related-question-singleton-adaptor-factory-strategy)|
+|21. |[Design patterns related question Singleton, Adaptor, Factory, Strategy](#q-design-patterns-related-question-singleton-adaptor-factory-strategy)|
 |22. |[Explain types of spring bean scopes.](#q-explain-types-of-spring-bean-scopes)|
 |23. |[What is AOP? what does spring AOP provide?](#q-what-is-aop-what-does-spring-aop-provide)|
 |24. |[What is ServletContext Interface?](#q-what-is-servletcontext-interface)|
