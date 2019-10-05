@@ -67,7 +67,7 @@
 |61. |[What is Spring Cloud?](#q-what-is-spring-cloud)|
 |62. |[What is Role of Actuator in Spring Boot?](#q-what-is-role-of-actuator-in-spring-boot)|
 |63. |[Which Embedded Containers Are Supported by Spring Boot?](#q-which-embedded-containers-are-supported-by-spring-boot)|
-
+|64. |[What are the advantages of using Spring Cloud?](#q-what-are-the-advantages-of-using-spring-cloud)|
 
 #### Q. Spring Boot program for file upload and download.
 
@@ -3969,3 +3969,18 @@ Spring Boot contains Jetty, Tomcat, and Undertow servers, all of which are embed
 * **Jetty** – Used in a wide number of projects, Eclipse Jetty can be embedded in framework, application servers, tools, and * clusters.
 * **Tomcat** – Apache Tomcat is an open source JavaServer Pages implementation which works well with embedded systems.
 * **Undertow** – A flexible and prominent web server that uses small single handlers to develop a web server.
+
+#### Q. What are the advantages of using Spring Cloud?
+When developing distributed microservices with Spring Boot we face the following issues-
+* **Complexity associated with distributed systems**-  
+This overhead includes network issues, Latency overhead, Bandwidth issues, security issues.
+* **Service Discovery**-  
+Service discovery tools manage how processes and services in a cluster can find and talk to one another. It involves a directory of services, registering services in that directory, and then being able to lookup and connect to services in that directory.
+* **Redundancy**-  
+Redundancy issues in distributed systems.
+* **Loadbalancing**-  
+Load balancing improves the distribution of workloads across multiple computing resources, such as computers, a computer cluster, network links, central processing units, or disk drives.
+* **Performance issues**-  
+Performance issues due to various operational overheads.
+* **Deployment complexities**-  
+Requirement of Devops skills.
