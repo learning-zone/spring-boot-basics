@@ -3958,3 +3958,5 @@ For typical use cases, Spring Cloud provides the out of the box experiences and 
 * Cluster state and leadership election.
 * Global locks and distributed messaging.
 
+#### Q. What is Role of Actuator in Spring Boot?
+It helps to access the current state of an application that is running in a production environment. There are multiple metrics which can be used to check the current state. They also provide endpoints for RESTful web services which can be simply used to check the different metrics.
