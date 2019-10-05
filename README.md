@@ -68,6 +68,7 @@
 |62. |[What is Role of Actuator in Spring Boot?](#q-what-is-role-of-actuator-in-spring-boot)|
 |63. |[Which Embedded Containers Are Supported by Spring Boot?](#q-which-embedded-containers-are-supported-by-spring-boot)|
 |64. |[What are the advantages of using Spring Cloud?](#q-what-are-the-advantages-of-using-spring-cloud)|
+|65. |[How to achieve server side load balancing using Spring Cloud?](#q-how-to-achieve-server-side-load-balancing-using-spring-cloud)|
 
 #### Q. Spring Boot program for file upload and download.
 
@@ -3984,3 +3985,8 @@ Load balancing improves the distribution of workloads across multiple computing 
 Performance issues due to various operational overheads.
 * **Deployment complexities**-  
 Requirement of Devops skills.
+
+#### Q. How to achieve server side load balancing using Spring Cloud?
+Server side load balancingcan be achieved using `Netflix Zuul`.
+Zuul is a JVM based router and server side load balancer by Netflix.
+It provides a single entry to our system, which allows a browser, mobile app, or other user interface to consume services from multiple hosts without managing cross-origin resource sharing (CORS) and authentication for each one. We can integrate Zuul with other Netflix projects like Hystrix for fault tolerance and Eureka for service discovery, or use it to manage routing rules, filters, and load balancing across your system.
