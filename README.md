@@ -66,6 +66,7 @@
 |60. |[How can we create a object of a class without using new operator?](#q-how-can-we-create-a-object-of-a-class-without-using-new-operator)|
 |61. |[What is Spring Cloud?](#q-what-is-spring-cloud)|
 |62. |[What is Role of Actuator in Spring Boot?](#q-what-is-role-of-actuator-in-spring-boot)|
+|63. |[Which Embedded Containers Are Supported by Spring Boot?](#q-which-embedded-containers-are-supported-by-spring-boot)|
 
 
 #### Q. Spring Boot program for file upload and download.
@@ -3960,3 +3961,11 @@ For typical use cases, Spring Cloud provides the out of the box experiences and 
 
 #### Q. What is Role of Actuator in Spring Boot?
 It helps to access the current state of an application that is running in a production environment. There are multiple metrics which can be used to check the current state. They also provide endpoints for RESTful web services which can be simply used to check the different metrics.
+
+#### Q. Which Embedded Containers are Supported by Spring Boot?
+
+Spring Boot contains Jetty, Tomcat, and Undertow servers, all of which are embedded.
+
+* **Jetty** – Used in a wide number of projects, Eclipse Jetty can be embedded in framework, application servers, tools, and * clusters.
+* **Tomcat** – Apache Tomcat is an open source JavaServer Pages implementation which works well with embedded systems.
+* **Undertow** – A flexible and prominent web server that uses small single handlers to develop a web server.
