@@ -64,6 +64,8 @@
 |58. |[Do you know Generics? How did you used in your coding?](#q-do-you-know-generics-how-did-you-used-in-your-coding)|
 |59. |[What is difference between String, StringBuilder and StringBuffer?](#q-what-is-difference-between-string-stringbuilder-and-stringbuffer)|
 |60. |[How can we create a object of a class without using new operator?](#q-how-can-we-create-a-object-of-a-class-without-using-new-operator)|
+|61. |[What is Spring Cloud?](#q-what-is-spring-cloud)|
+|62. |[What is Role of Actuator in Spring Boot?](#q-what-is-role-of-actuator-in-spring-boot)|
 
 
 #### Q. Spring Boot program for file upload and download.
@@ -3943,5 +3945,16 @@ public class MainClass {
 	}
 }
 ```
+#### Q. What is Spring Cloud?
+Spring Cloud, in microservices, is a system that provides integration with external systems. It is a short-lived framework that builds an application, fast. Being associated with the finite amount of data processing, it plays a very important role in microservice architectures.
 
+For typical use cases, Spring Cloud provides the out of the box experiences and a sets of extensive features mentioned below:
+
+* Versioned and distributed configuration.
+* Discovery of service registration.
+* Service to service calls.
+* Routing.
+* Circuit breakers and load balancing.
+* Cluster state and leadership election.
+* Global locks and distributed messaging.
 
