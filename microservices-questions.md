@@ -14,7 +14,6 @@ Example:
 * `GET`, `PUT`, `DELETE`, `HEAD`, `OPTIONS` and `TRACE` are idempotent.
 
 #### Q. What is Bounded Context? 
-
 #### Q. What is the use of PACT in Microservices architecture?
 #### Q. What is the use of Container in Microservices? 
 #### Q. What is the role of Web, RESTful APIs in Microservices? 
