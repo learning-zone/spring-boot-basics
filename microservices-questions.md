@@ -2,9 +2,8 @@
 
 #### Q. List down the advantages of Microservices Architecture. 
 #### Q. What are the best practices to design Microservices? 
-#### Q. What is Cohesion and Coupling?  
-#### Q. What are different types of Tests for Microservices?
-#### Q. What do you understand by Distributed Transaction in microservices?
+#### Q. How does HTTPS authentication works in Microservices? 
+#### Q. What is RabbitMQ?
 #### Q. What is an idempotent in REST APIs? 
 In the context of REST APIs, when making multiple identical requests has the same effect as making a single request – then that REST API is called **idempotent**.  
 
@@ -15,7 +14,7 @@ Example:
 * `GET`, `PUT`, `DELETE`, `HEAD`, `OPTIONS` and `TRACE` are idempotent.
 
 #### Q. What is Bounded Context? 
-#### Q. How does HTTPS authentication works in Microservices? 
+
 #### Q. What is the use of PACT in Microservices architecture?
 #### Q. What is the use of Container in Microservices? 
 #### Q. What is the role of Web, RESTful APIs in Microservices? 
@@ -43,11 +42,10 @@ Example:
 #### Q. How to monitor multiple Microservices For Various Indicators Like Health?
 #### Q. What are the possible ways for communication between microservices?
 #### Q. What is exchange in message queue?
-#### Q. What are the benefits of microservices?
-#### Q. What are the disadvantages of microservices?
-#### Q. What are the possible issues in microservices
 #### Q. What are the possible solutions for the case when one service is not available?
-#### Q. What is RabbitMQ?
 #### Q. What is the difference between synchronous and asynchronous communication?
 #### Q. What are possible ways for implementing authentication in microservices?
 #### Q. What is Eventual consistency?
+#### Q. What is Cohesion and Coupling?  
+#### Q. What are different types of Tests for Microservices?
+#### Q. What do you understand by Distributed Transaction in microservices?
