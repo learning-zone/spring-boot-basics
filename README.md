@@ -3054,7 +3054,7 @@ This indicate that the annotate classes at presentation layers level, mainly use
 * **@Service**
 <code>@Service</code> beans hold the business logic and call methods in the repository layer.
 
-![alt text](https://github.com/learning-zone/Spring/blob/spring/assets/spring-component.png)
+![alt text](https://github.com/learning-zone/spring-interview-questions/blob/spring/assets/spring-component.png)
 
 #### Q. Explain deadlock condition in-between two threads with example?
 
