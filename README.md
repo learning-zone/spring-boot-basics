@@ -4809,7 +4809,7 @@ public class Swagger2UiConfiguration extends WebMvcConfigurerAdapter
 ```
  http://localhost:8080/swagger2-demo/swagger-ui.html
 ```
-![alt text](https://github.com/learning-zone/Spring/blob/spring/assets/Swagger2-UI-Docs-without-Annotations.png)
+![alt text](https://github.com/learning-zone/spring-interview-questions/blob/spring/assets/Swagger2-UI-Docs-without-Annotations.png)
 
 #### Q. How to implement Pagination and Sorting in Spring Boot?
 * **JPA Entity**: 
