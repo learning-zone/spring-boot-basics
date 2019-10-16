@@ -1,6 +1,6 @@
 ## Java, J2EE, Spring-Boot Interview Questions and Answers
 
-*Click <img src="https://github.com/learning-zone/spring-interview-questions/blob/spring/assets/star.png" width="20" height="20" align="absmiddle" title="Star" /> if you like the project. Pull Request are highly appreciated.*
+*Click <img src="https://github.com/learning-zone/spring-interview-questions/blob/spring/assets/star.png" width="18" height="18" align="absmiddle" title="Star" /> if you like the project. Pull Request are highly appreciated.*
 
 ### Table of Contents
 
