@@ -611,7 +611,7 @@ public class CustomFileNotFoundException extends RuntimeException {
 mvn spring-boot:run
 ```
 
-#### Q. Spring Boot program for Send Mail
+#### Q. Spring Boot program for Sending Email.
 
 * **Step 01**: pom.xml Settings
 
