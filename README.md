@@ -550,7 +550,7 @@ public class Application implements CommandLineRunner {
 
 #### Q. Spring Boot RESTful web services example
 
-* **Step 01: pom.xml Settings**
+* **Step 01**: pom.xml Settings
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -610,7 +610,7 @@ public class Application implements CommandLineRunner {
 </project>
 ```
 
-* **Step 02: SpringBootCrudRestfulApplication.java**
+* **Step 02**: SpringBootCrudRestfulApplication.java
 
 ```java
 import org.springframework.boot.SpringApplication;
@@ -625,7 +625,7 @@ public class SpringBootCrudRestfulApplication {
 }
 ```
 
-* **Step 03: Employee.java**
+* **Step 03**: Employee.java
 
 ```java
 public class Employee {
@@ -668,7 +668,7 @@ public class Employee {
  
 }
 ```
-* **Step 04: EmployeeDAO.java**
+* **Step 04**: EmployeeDAO.java
 
 ```java
 import java.util.ArrayList;
@@ -726,7 +726,7 @@ public class EmployeeDAO {
  
 }
 ```
-* **Step 05: MainRESTController.java**
+* **Step 05**: MainRESTController.java
 
 ```java
 import java.util.List;
@@ -809,7 +809,7 @@ public class MainRESTController {
     }
 }
 ```
-* **Step 06: Run and Test the application**
+* **Step 06**: Run and Test the application
 
 ```
 // Get all the employees details
