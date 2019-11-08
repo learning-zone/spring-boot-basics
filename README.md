@@ -7,7 +7,7 @@
 * [Microservices Interview Questions and Answers](microservices-questions.md)
 
 
-#### Q. Spring Boot RESTful web services example
+#### Q. Spring Boot RESTful Web Service example.
 
 * **Step 01**: pom.xml Settings
 
