@@ -396,7 +396,7 @@ mvn spring-boot:run
 
 #### Q. Spring Boot program for Send Mail
 
-* **Step 01: pom.xml Settings**
+* **Step 01**: pom.xml Settings
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -456,7 +456,7 @@ mvn spring-boot:run
 </project>
 ```
 
-* **Step 02: application.properties Settings**
+* **Step 02**: application.properties Settings
 
 ```
 spring.mail.host=smtp.gmail.com
@@ -478,7 +478,7 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 #spring.mail.properties.mail.smtp.socketFactory.class = javax.net.ssl.SSLSocketFactory
 ```
 
-* **Step 03: Application.java**
+* **Step 03**: Application.java
 
 ```java
 package com.springtutorial;
