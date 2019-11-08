@@ -283,9 +283,9 @@ http://localhost:8080/employee/E01.xml
 http://localhost:8080/employee/E01.json
 ```
 
-#### Q. Connecting Spring Boot with databases
+#### Q. Spring Boot Program to Connect with databases.
 
-* **Step 01: application.properties Settings**
+* **Step 01**: application.properties Settings
 
 ```java
 spring.datasource.url=jdbc:mysql://localhost:3306/springbootdb  
@@ -294,7 +294,7 @@ spring.datasource.password=mysql
 spring.jpa.hibernate.ddl-auto=create-drop  
 ```
 
-* **Step 02: SpringBootJdbcApplication.java**
+* **Step 02**: SpringBootJdbcApplication.java
 
 ```java
 package com.learningzone;  
@@ -309,7 +309,7 @@ public class SpringBootJdbcApplication {
 }
 ```
 
-* **Step 02: SpringBootJdbcController.java**
+* **Step 02**: SpringBootJdbcController.java
 
 ```java
 package com.learningzone;
