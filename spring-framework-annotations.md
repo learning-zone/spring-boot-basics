@@ -48,7 +48,7 @@
 
 ##### Workflow and Tools 
 
-|Sl.No| CATEGORY     |TOOL                    | Description                         |
+|Sl.No| Category     |Tool                    | Description                         |
 |-----|--------------|------------------------|-------------------------------------|
 | 01. |Development	 |Spring Tool Suite (STS) |	STS is an Eclipse-based development environment that can be used to develop Spring applications easily.|
 | 02. |Development	 |Eclipse	              |IDE used to develop Java applications. It has a plugin for develping Spring applications. Useful when working simultaneously on Spring and non-Spring based apps.|
