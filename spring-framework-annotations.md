@@ -46,7 +46,7 @@
 | 13. |@Sql	                  |Annotation declares a test class/method to run SQL scripts against a database.|	
 
 
-##### Workflow and tools 
+##### Workflow and Tools 
 
 |Sl.No| CATEGORY     |TOOL                    | Description                         |
 |-----|--------------|------------------------|-------------------------------------|
