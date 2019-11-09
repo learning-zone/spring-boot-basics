@@ -13,7 +13,7 @@
 | 09.  |@Value	      |It is used to inject values into a bean’s attribute from a property file. @Value annotation indicates a default value expression for the field or parameter.|	
 
 
-#### Spring-boot web Annotations
+#### Spring-Boot Web Annotations
 
 |Sl.No| Annotation            | Description  |
 |-----|-----------------------|--------------|
@@ -27,7 +27,7 @@
 | 08. |@PathVariable	       |This annotations binds the placeholder from the URI to the method parameter and can be used when the URI is dynamically created or the value of the URI itself acts as a parameter.	|	
 
 
-#### Spring-boot Testing Annotations
+#### Spring-Boot Testing Annotations
 
 |Sl.No| Annotation            | Description  |
 |-----|-----------------------|--------------|
