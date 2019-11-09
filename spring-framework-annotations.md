@@ -25,3 +25,22 @@
 | 06. |@RequestMapping	       |Used to map web requests to specific handler classes and methods, based on the URI.|
 | 07. |@RequestParam	       |This annotation is used to bind request parameters to a method parameter in your controller.| 
 | 08. |@PathVariable	       |This annotations binds the placeholder from the URI to the method parameter and can be used when the URI is dynamically created or the value of the URI itself acts as a parameter.	|	
+
+
+#### Spring-boot Testing Annotations
+
+|Sl.No| Annotation            | Description  |
+|-----|-----------------------|--------------|
+| 01.  |@AfterTransaction	  |Annotation used to identify which method needs to be invoked after a transaction is completed.|
+| 02.  |@BeforeTransaction	  |Used to identify the method to be invoked before a transaction starts executing.	|			
+| 03.  |@ContextConfiguration |Declares the annotated classes which will be used to load the context for the test. The location of the configuration file has to be povided to Spring.|					
+| 04.  |@DirtiesContext	      |This annotation indicates the test(s) modify or corrupt the SpringApplicationContext and that it should be closed. Hence, context is reloaded before the next test is executed.|					
+| 05. |@ExpectedException	  |The test method is expected to throw a particular exception, else the test fails.|
+| 06. |@WebAppConfiguration	  |Used to create web version of the application context.	|				
+| 07. |@Repeat	              |Specifies the test method to be executed multiple times.	|				
+| 08. |@Transactional 	      |Describes transaction attributes on a method or class.	|				
+| 09. |@Rollback	          |Indicates if the transaction of a test method must be rolled back after the execution of the test completed.	|     			
+| 10. |@Commit	              |Indicates that the transaction of a test method must be committed after the execution of the test completed.|     		
+| 11. |@Timed	              |Indicates the time limit for the test method. If the test has not completed execution before the time expires, the test fails.|					
+| 12. |@TestPropertySource	  |Annotation specifies the property sources for the test class.|					
+| 13. |@Sql	                  |Annotation declares a test class/method to run SQL scripts against a database.|	
