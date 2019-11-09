@@ -5,6 +5,7 @@
 ### Table of Contents
 
 * [Microservices Interview Questions and Answers](microservices-questions.md)
+* [Spring Framework Annotations](spring-framework-annotations.md)
 
 
 #### Q. Spring Boot RESTful Web Service example.
