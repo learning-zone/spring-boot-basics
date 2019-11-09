@@ -44,3 +44,20 @@
 | 11. |@Timed	              |Indicates the time limit for the test method. If the test has not completed execution before the time expires, the test fails.|					
 | 12. |@TestPropertySource	  |Annotation specifies the property sources for the test class.|					
 | 13. |@Sql	                  |Annotation declares a test class/method to run SQL scripts against a database.|	
+
+
+##### Workflow and tools 
+
+|Sl.No| CATEGORY     |TOOL                    | Description                         |
+|-----|--------------|------------------------|-------------------------------------|
+| 01. |Development	 |Spring Tool Suite (STS) |	STS is an Eclipse-based development environment that can be used to develop Spring applications easily.|
+| 02. |Development	 |Eclipse	              |IDE used to develop Java applications. It has a plugin for develping Spring applications. Useful when working simultaneously on Spring and non-Spring based apps.|
+| 03. |Development	 |IntelliJ IDEA	          |Provides a smooth environment and user experience for developing Spring applications. Provides a comprehensive view of the project forspeedy navigation, error highlighting, plugins for numerous purposes, code completion.|
+| 04. |Unit Testing	  |JUnit	              |JUnit is a regression Testing Framework used to implement unit testing in Java with an enhanced speed and quality.|
+| 05. |Unit testing	  |Mockito                |It is an open source mocking framework to create mock classes and interfaces providing realistic tests to predict the behaviour of the application.|
+| 06. |Unit testing	  |JaCoCo                 |Provides support for code-coverage measurement and generates a detailed test report.|
+| 07. |API Testing	  |JMeter                 |Apache’s JMeter is an open source testing tool which includes load, functional, regression and performance tests.|
+| 08. |API Testing	  |Postman	              |Postman is a powerful tool used to test web services. It provides a feature to create test collections and can be used for API testing.|
+| 09. |API Testing	  |REST-Assured	          |Makes API tesing in Java simple by providing behaviour driven development. It can integrate with any existing Java automation framework.|
+| 10. |Monitoring	  |spring-boot-actuators  |Enables monitoring and managing Spring boot application by shipping production ready featues like health, metrics, HTTP tracing etc.|
+| 11. |Monitoring	  |Micrometer	          |Micrometer is an application-neutral facade or abstraction for reporting application metrics which integrates with many monitoring systems, e.g., Graphite, New Relic and Statsd. Micrometer integrates with the metrics endpoint of spring-boot-actuators.|
