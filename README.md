@@ -5634,8 +5634,6 @@ Output
 
 http://localhost:8080/login
 ```
-#### Q. What is FreeMarker Template? How do you implement it using Spring Boot?
-*TODO*
 #### Q. Which all starter maven dependencies have you used?
 *TODO*
 #### Q. What is GZIP? How to implement it using Spring Boot?
