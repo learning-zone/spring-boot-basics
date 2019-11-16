@@ -12,11 +12,11 @@
 | 08.  |@Lazy	      |Makes a @Bean or @Component to be initialized only if it is requested.|		
 | 09.  |@Value	      |It is used to inject values into a bean’s attribute from a property file. @Value annotation indicates a default value expression for the field or parameter.|	
 | 10.  |@Resource     |Annotation used to inject an object that is already in the Appl­ication Context. It searches the instance by name. It also works on setter methods.|
-|      |@Primary      |Annotation used when no name is provided telling Spring to inject an object of the annotated class first. Used along with @Comp­onent.|
-|      |@Component    |Generic stereotype annotation used to tell Spring to create an instance of the object in the Appl­ication Context. It's possible to define any name for the instance, the default is the class name as camel case.|
-|      |@Contr­oller   |Stereotype annotation for presen­tation layer.|
-|      |@Repos­itory   |Stereotype annotation for persis­tence layer. |
-|      |@Service      |Stereotype annotation for service layer.     |
+| 11.  |@Primary      |Annotation used when no name is provided telling Spring to inject an object of the annotated class first. Used along with @Comp­onent.|
+| 12.  |@Component    |Generic stereotype annotation used to tell Spring to create an instance of the object in the Appl­ication Context. It's possible to define any name for the instance, the default is the class name as camel case.|
+| 13.  |@Contr­oller   |Stereotype annotation for presen­tation layer.|
+| 14.  |@Repos­itory   |Stereotype annotation for persis­tence layer. |
+| 15.  |@Service      |Stereotype annotation for service layer.     |
 
 
 #### Spring-Boot Web Annotations
