@@ -11,6 +11,12 @@
 | 07.  |@Bean	      |It indicates that a method produces a bean which will be mananged by the Spring container.|			
 | 08.  |@Lazy	      |Makes a @Bean or @Component to be initialized only if it is requested.|		
 | 09.  |@Value	      |It is used to inject values into a bean’s attribute from a property file. @Value annotation indicates a default value expression for the field or parameter.|	
+| 10.  |@Resource     |Annotation used to inject an object that is already in the Appl­ication Context. It searches the instance by name. It also works on setter methods.|
+|      |@Primary      |Annotation used when no name is provided telling Spring to inject an object of the annotated class first. Used along with @Comp­onent.|
+|      |@Component    |Generic stereotype annotation used to tell Spring to create an instance of the object in the Appl­ication Context. It's possible to define any name for the instance, the default is the class name as camel case.|
+|      |@Contr­oller   |Stereotype annotation for presen­tation layer.|
+|      |@Repos­itory   |Stereotype annotation for persis­tence layer. |
+|      |@Service      |Stereotype annotation for service layer.     |
 
 
 #### Spring-Boot Web Annotations
@@ -25,6 +31,14 @@
 | 06. |@RequestMapping	       |Used to map web requests to specific handler classes and methods, based on the URI.|
 | 07. |@RequestParam	       |This annotation is used to bind request parameters to a method parameter in your controller.| 
 | 08. |@PathVariable	       |This annotations binds the placeholder from the URI to the method parameter and can be used when the URI is dynamically created or the value of the URI itself acts as a parameter.	|	
+
+
+#### Profile
+
+|Sl.No| Annotation            | Description  |
+|-----|-----------------------|--------------|
+| 01. |spring.profiles.active |Property to be set in appl­ica­tio­n.p­rop­ert­ies in order to tell Spring what profiles are active.|
+| 02. |@Profile("!dev")       |Annotation used to define which profile can execute the annotated method.|
 
 
 #### Spring-Boot Testing Annotations
