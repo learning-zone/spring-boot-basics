@@ -33,12 +33,27 @@
 | 08. |@PathVariable	       |This annotations binds the placeholder from the URI to the method parameter and can be used when the URI is dynamically created or the value of the URI itself acts as a parameter.	|	
 
 
+
 #### Profile
 
 |Sl.No| Annotation            | Description  |
 |-----|-----------------------|--------------|
 | 01. |spring.profiles.active |Property to be set in appl­ica­tio­n.p­rop­ert­ies in order to tell Spring what profiles are active.|
 | 02. |@Profile("!dev")       |Annotation used to define which profile can execute the annotated method.|
+
+
+#### Aspect Annotations
+
+|Sl.No| Annotation     |USE       | Description  |
+|-----|----------------|----------|--------------|
+| 01. |@Aspect         |Type      |Declares a class to be an aspect.|
+| 02. |@After          |Method    |Declares a method to be called after a pointcut completes.|
+| 03. |@AfterReturning |Method    |Declares a method to be called after a pointcut returns successfully.|
+| 04. |@AfterThrowing  |Method    |Declares a method to be called after a pointcut throws an exception.|
+| 05. |@Around         |Method    |Declares a method that will wrap the pointcut.|
+| 06. |@Before         |Method    |Declares a method to be called before proceeding to the pointcut.|
+| 07. |@DeclareParents |Static Field |Declares that matching types should be given new parents,that is, it introduces new functionality into matching types.|
+| 08. |@Pointcut       |Method    |Declares an empty method as a pointcut placeholder method.|
 
 
 #### Spring-Boot Testing Annotations
