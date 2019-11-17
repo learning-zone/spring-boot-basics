@@ -5645,7 +5645,7 @@ GZip compression is disabled by default in Spring Boot. To enable it, add the fo
 server.compression.enabled=true
 
 # The comma-separated list of mime types that should be compressed
-server.compression.mime-types=text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+server.compression.mime-types=text/html,text/xml,text/plain,text/css,text/javascript,application/json
 
 # Compress the response only if the response size is at least 1KB
 server.compression.min-response-size=1024
