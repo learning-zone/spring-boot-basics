@@ -5681,7 +5681,7 @@ In the Maven we need the spring boot WebSocket dependency.Maven will be as follo
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.javainuse</groupId>
+	<groupId>com.javaexample</groupId>
 	<artifactId>boot-websocket</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
@@ -5696,7 +5696,6 @@ In the Maven we need the spring boot WebSocket dependency.Maven will be as follo
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-websocket</artifactId>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.json</groupId>
@@ -5718,7 +5717,7 @@ In the Maven we need the spring boot WebSocket dependency.Maven will be as follo
 ```
 Create the SpringBoot Bootstrap class as below-
 ```java
-package com.javainuse.websocket.config;
+package com.javaexample.websocket.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -5734,7 +5733,7 @@ public class Application {
 On the Server end, we recieve the data and reply back to the client. In Spring we can create a customized handler by using either TextWebSocketHandler or BinaryWebSocketHandler.
 
 ```java
-package com.javainuse.websocket.config;
+package com.javaexample.websocket.config;
 import java.io.IOException;
 import org.json.JSONObject;
 import org.springframework.stereotype.Component;
@@ -5758,7 +5757,7 @@ public class SocketTextHandler extends TextWebSocketHandler {
 ```
 In order to tell Spring to forward client requests to the endpoint , we need to register the handler.
 ```java
-package com.javainuse.websocket.config;
+package com.javaexample.websocket.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
