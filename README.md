@@ -5651,7 +5651,26 @@ server.compression.mime-types=text/html,text/xml,text/plain,text/css,text/javasc
 server.compression.min-response-size=1024
 ```
 #### Q. When will you use WebSockets? How to implement it using Spring Boot?
-*TODO*
+WebSocket is a protocol which enables communication between the server and the browser. It has an advantage over RESTful HTTP because communications are both bi-directional and real-time. This allows for the server to notify the client at any time instead of the client polling on a regular interval for updates.
+
+Following are some of the drawbacks of HTTP due to which they are unsuitable for certain scenarios-
+
+![alt text](https://github.com/learning-zone/spring-interview-questions/blob/spring/assets/http-request.jpg)
+
+* **Traditional HTTP** requests are unidirectional - In traditional client server communication, the client always initiates the * request.
+* **Half Duplex** - User requests for a resource and the server then serves it to the client. The response is only sent after the request. So at a time only a single request occurs.
+* **Multiple TCP connections** - For each request a new TCPsession is needed to be established and then closed after receiving the response. So without using WebSockets we will have multiple sessions.
+* **Heavy** - Normal HTTP request and response require exchange of extra data between client and server.
+
+WebSocket is a computer communications protocol, providing full-duplex communication channels over a single TCP connection.
+
+![alt text](https://github.com/learning-zone/spring-interview-questions/blob/spring/assets/web-socket.jpg)
+
+* **WebSocket are bi-directional** - Using WebSocket either client or server can initiate sending a message.
+* **WebSocket are Full Duplex** - The client and server communication is independent of each other.
+* **Single TCP connection** - The initial connection is using HTTP, then this connection gets upgraded to a socket based * connection. This single connection is then used for all the future communication
+* **Light** - The WebSocket message data exchange is much lighter compared to http.
+
 #### Q. What is Spring Boot devtools?
 The aim of this module is to try and improve the development-time experience when working on Spring Boot applications.
 ```xml
