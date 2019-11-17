@@ -5637,7 +5637,19 @@ http://localhost:8080/login
 #### Q. Which all starter maven dependencies have you used?
 *TODO*
 #### Q. What is GZIP? How to implement it using Spring Boot?
-*TODO*
+GZip compression is a very simple and effective way to save bandwidth and improve the speed of website. It reduces the response time of website by compressing the resources and then sending it over to the clients. It saves bandwidth by at least 50%.
+
+GZip compression is disabled by default in Spring Boot. To enable it, add the following properties to your `application.properties` file
+```
+# Enable response compression
+server.compression.enabled=true
+
+# The comma-separated list of mime types that should be compressed
+server.compression.mime-types=text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+
+# Compress the response only if the response size is at least 1KB
+server.compression.min-response-size=1024
+```
 #### Q. When will you use WebSockets? How to implement it using Spring Boot?
 *TODO*
 #### Q. What is Spring Boot devtools?
