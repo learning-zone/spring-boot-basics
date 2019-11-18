@@ -6099,7 +6099,35 @@ public class EmployeeDao {
 }
 ```
 #### Q. What is @SpringBootTest?
-*TODO*
+**Using @SpringBootTest for integration testing**  
+
+`@SpringBootTest` tries to mimic the processes added by Spring Boot framework for creating the context e.g. it decides what to scan based on package structures, loads external configurations from predefined locations, optionally runs auto-configuration starters and so on.
+
+```java
+@SpringBootTest(webEnvironment=WebEnvironment.RANDOM_PORT)
+public class SpringBootDemoApplicationTests 
+{   
+    @LocalServerPort
+    int randomServerPort;
+ 
+    //---- tests -----
+}
+```
+**Using @SpringBootTest for unit testing**  
+
+`@SpringBootTest` annotation loads whole application, but it is better to limit Application Context only to a set of spring components that participate in test scenario.
+
+The classes attribute specifies the annotated classes to use for loading an ApplicationContext.
+```java
+@SpringBootTest(classes = {EmployeeRepository.class, EmployeeService.class})
+public class SpringBootDemoApplicationTests 
+{   
+    @Autowired
+    private EmployeeService employeeService;
+    //---- tests -----
+}
+```
+
 #### Q. What is TestRestTemplate?
 *TODO*
 #### Q. What is JavaConfig?
