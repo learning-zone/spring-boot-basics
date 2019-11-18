@@ -6099,7 +6099,7 @@ public class EmployeeDao {
 }
 ```
 #### Q. What is @SpringBootTest?
-**Using @SpringBootTest for integration testing**  
+* **@SpringBootTest for integration testing**  
 
 `@SpringBootTest` tries to mimic the processes added by Spring Boot framework for creating the context e.g. it decides what to scan based on package structures, loads external configurations from predefined locations, optionally runs auto-configuration starters and so on.
 
@@ -6113,7 +6113,7 @@ public class SpringBootDemoApplicationTests
     //---- tests -----
 }
 ```
-**Using @SpringBootTest for unit testing**  
+* **@SpringBootTest for unit testing**  
 
 `@SpringBootTest` annotation loads whole application, but it is better to limit Application Context only to a set of spring components that participate in test scenario.
 
