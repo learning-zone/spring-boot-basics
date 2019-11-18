@@ -5634,9 +5634,11 @@ Output
 
 http://localhost:8080/login
 ```
-#### Q. Which all starter maven dependencies have you used?
+#### Q. What are the Spring Boot starters and what are available the starters??
 *TODO*
 #### Q. What is GZIP? How to implement it using Spring Boot?
+OR
+#### Q. How to enable HTTP response compression in Spring Boot?
 GZip compression is a very simple and effective way to save bandwidth and improve the speed of website. It reduces the response time of website by compressing the resources and then sending it over to the clients. It saves bandwidth by at least 50%.
 
 GZip compression is disabled by default in Spring Boot. To enable it, add the following properties to your `application.properties` file
@@ -5890,7 +5892,6 @@ The aim of this module is to try and improve the development-time experience whe
     </dependency>
 </dependencies>
 ```
-#### Q. How to enable HTTP response compression in Spring Boot?
 *TODO*
 #### Q. What is the configuration file name, which is used by Spring Boot?
 `application.properties`
