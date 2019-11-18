@@ -5901,7 +5901,6 @@ The aim of this module is to try and improve the development-time experience whe
     </dependency>
 </dependencies>
 ```
-*TODO*
 #### Q. What is the configuration file name, which is used by Spring Boot?
 `application.properties`
 #### Q. What is difference Between an Embedded Container and a WAR?
