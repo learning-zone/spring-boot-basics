@@ -5890,7 +5890,7 @@ The aim of this module is to try and improve the development-time experience whe
     </dependency>
 </dependencies>
 ```
-#### Q. How do you Enable HTTP response compression in Spring Boot?
+#### Q. How to enable HTTP response compression in Spring Boot?
 *TODO*
 #### Q. What is the configuration file name, which is used by Spring Boot?
 `application.properties`
