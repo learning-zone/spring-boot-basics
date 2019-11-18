@@ -5889,7 +5889,7 @@ Define the index.html as follows-
 </body>
 </html>
 ```
-Start the application- Go to http://localhost:8080 Click on start new chat it opens the WebSocket connection.
+Start the application- http://localhost:8080 Click on start new chat it opens the WebSocket connection.
 
 #### Q. What is Spring Boot devtools?
 The aim of this module is to try and improve the development-time experience when working on Spring Boot applications.
