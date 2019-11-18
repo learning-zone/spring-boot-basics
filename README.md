@@ -5927,8 +5927,7 @@ The spring-boot-starter-test dependency includes all required dependencies to cr
   <artifactId>spring-boot-starter-test</artifactId>
 </dependency>
 ```
-* **MockitoJUnitRunner class**  
-**MockitoJUnitRunner** class automatically initialize all the objects annotated with `@Mock` and `@InjectMocks` annotations.
+* **MockitoJUnitRunner class**: It automatically initialize all the objects annotated with `@Mock` and `@InjectMocks` annotations.
 ```java
 @RunWith(MockitoJUnitRunner.class)
 public class TestEmployeeManager {
@@ -5946,8 +5945,8 @@ public class TestEmployeeManager {
 
 Here `getAllEmployees()` which will return list of EmployeeVO objects, `getEmployeeById(int id)` to return a employee by given id; and `createEmployee()` which will add an employee object and return void.
 
-* **Service layer tests**  
-TestEmployeeManager.java
+* **Service layer tests** ( TestEmployeeManager.java )
+
 ```java
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.times;
@@ -6026,8 +6025,8 @@ public class TestEmployeeManager {
     }
 }
 ```
-**Service layer class**   
-EmployeeManager.java
+**Service layer class** ( EmployeeManager.java )
+
 ```java
 import java.util.List;
  
@@ -6056,8 +6055,7 @@ public class EmployeeManager
     }
 }
 ```
-**Dao layer class**  
-EmployeeDao.java
+**Dao layer class** ( EmployeeDao.java ) 
 ```java
 import java.util.ArrayList;
 import java.util.HashMap;
