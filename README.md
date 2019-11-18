@@ -5635,7 +5635,16 @@ Output
 http://localhost:8080/login
 ```
 #### Q. What are the Spring Boot starters and what are available the starters??
-*TODO*
+Spring Boot starters are a set of convenient dependency management providers which can be used in the application to enable dependencies. These starters, make development easy and rapid. All the available starters come under the `org.springframework.boot` group. Few of the popular starters are as follows:
+
+* **spring-boot-starter**:  This is the core starter and includes logging, auto-configuration support, and YAML.
+* **spring-boot-starter-jdbc**: This starter is used for HikariCP connection pool with JDBC
+* **spring-boot-starter-web**: Is the starter for building web applications, including RESTful, applications using Spring MVC
+* **spring-boot-starter-data-jpa**: Is the starter to use Spring Data JPA with Hibernate
+* **spring-boot-starter-security**: Is the starter used for Spring Security
+* **spring-boot-starter-aop**: This starter is used for aspect-oriented programming with AspectJ and  Spring AOP
+* **spring-boot-starter-test**: Is the starter for testing Spring Boot applications
+
 #### Q. What is GZIP? How to implement it using Spring Boot?
 OR
 #### Q. How to enable HTTP response compression in Spring Boot?
