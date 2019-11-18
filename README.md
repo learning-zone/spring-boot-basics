@@ -6127,7 +6127,3 @@ public class SpringBootDemoApplicationTests
     //---- tests -----
 }
 ```
-#### Q. What is JavaConfig?
-*TODO*
-#### Q. Have you written Test cases using Spring Boot?
-*TODO*
