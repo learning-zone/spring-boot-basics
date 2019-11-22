@@ -11,8 +11,7 @@
 
 #### Q. Spring Boot RESTful Web Service example.
 
-* **Step 01**: pom.xml Settings
-
+**Step 01**: pom.xml Settings
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -71,8 +70,7 @@
 </project>
 ```
 
-* **Step 02**: SpringBootCrudRestfulApplication.java
-
+**Step 02**: SpringBootCrudRestfulApplication.java
 ```java
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
