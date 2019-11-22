@@ -4990,7 +4990,7 @@ public class DemoApplication {
 
 In order to use the Spring Security CSRF protection, we'll first need to make sure we use the proper HTTP methods for anything that modifies state (PATCH, POST, PUT, and DELETE – not GET).
 
-* **Java Configuration**  
+**1. Java Configuration**    
 CSRF protection is **enabled by default** in the Java configuration. We can still disable it if we need to:
 ```java
 @Override
@@ -4999,7 +4999,7 @@ protected void configure(HttpSecurity http) throws Exception {
       .csrf().disable();
 }
 ```
-* **XML Configuration**  
+**2. XML Configuration**    
 Starting from Spring Security 4.x – the CSRF protection is enabled by default in the XML configuration as well; we can of course still disable it if we need to:
 ```xml
 <http>
@@ -5007,12 +5007,12 @@ Starting from Spring Security 4.x – the CSRF protection is enabled by default 
     <csrf disabled="true"/>
 </http>
 ```
-* **Extra Form Parameters**  
+**3. Extra Form Parameters**    
 With CSRF protection enabled on the server side, we'll need to include the CSRF token in our requests on the client side as well:
 ```html
 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 ```
-* **Using JSON**  
+**4. Using JSON**    
 We can't submit the CSRF token as a parameter if we're using JSON; instead we can submit the token within the header.
 We'll first need to include the token in our page – and for that we can use meta tags:
 ```html
