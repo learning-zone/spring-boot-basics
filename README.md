@@ -2013,7 +2013,7 @@ The core of spring framework is it’s bean factory and mechanisms to create and
 |application	        |A single instance will be created and available during complete lifecycle of ServletContext. Only valid in web-aware Spring ApplicationContext.|
 |websocket	            |A single instance will be created and available during complete lifecycle of WebSocket. Only valid in web-aware Spring ApplicationContext.|
 
-1. singleton scope
+**1. singleton scope**  
 
 singleton is default bean scope in spring container. It tells the container to create and manage only one instance of bean class, per container. This single instance is stored in a cache of such singleton beans, and all subsequent requests and references for that named bean return the cached instance.
 
@@ -2034,7 +2034,7 @@ Example of singleton scope bean using XML config –
 <bean id="beanId" class="com.springexample.BeanClass" />
 ```
 
-2. prototype scope
+**2. prototype scope**  
 
 prototype scope results in the creation of a new bean instance every time a request for the bean is made by application code.
 
@@ -2051,7 +2051,7 @@ XML config example of prototype bean scope –
 <bean id="beanId" class="com.springexample.BeanClass" scope="prototype" />
 ```
 
-3. request scope
+**3. request scope**  
 
 In request scope, container creates a new instance for each and every HTTP request. So, if server is currently handling 5 requests, then container can have at most 5 individual instances of bean class. 
 
@@ -2075,7 +2075,7 @@ XML config example of request bean scope –
 <bean id="beanId" class="com.springexample.BeanClass" scope="request" />
 ```
 
-4. session scope
+**4. session scope**  
 
 In session scope, container creates a new instance for each and every HTTP session. So, if server has 10 active sessions, then container can have at most 10 individual instances of bean class. All HTTP requests within single session lifetime will have access to same single bean instance in that session scope.
 
@@ -2099,7 +2099,7 @@ XML config example of session bean scope –
 <bean id="beanId" class="com.springexample.BeanClass" scope="session" />
 ```
 
-5. application scope
+**5. application scope**  
 
 In application scope, container creates one instance per web application runtime. It is almost similar to singleton scope, with only two differences i.e.
 
@@ -2126,7 +2126,7 @@ XML config example of application bean scope –
 <bean id="beanId" class="com.springexample.BeanClass" scope="application" />
 ```
 
-6. websocket scope
+**6. websocket scope**  
 
 The WebSocket Protocol enables two-way communication between a client and a remote host that has opted-in to communication with client. WebSocket Protocol provides a single TCP connection for traffic in both directions. 
 
