@@ -1584,10 +1584,9 @@ Nodes of singly linked list:
 
 #### Q. Design patterns related question (Singleton, Adaptor, Factory, Strategy) 
 
-* **Java Singleton Pattern**
+**Java Singleton Pattern**
 
-1. Eager initialization:
-
+**1. Eager initialization:**  
 In eager initialization, the instance of Singleton Class is created at the time of class loading.
 
 Example:
@@ -1605,8 +1604,7 @@ public class EagerInitializedSingleton {
 }
 ```
 
-2. Static block initialization:
-
+**2. Static block initialization**  
 Static block initialization implementation is similar to eager initialization, except that instance of class is created in the static block that provides option for exception handling.
 
 Example:
@@ -1632,8 +1630,7 @@ public class StaticBlockSingleton  {
 }
 ```
 
-3. Lazy Initialization
-
+**3. Lazy Initialization**  
 Lazy initialization method to implement Singleton pattern creates the instance in the global access method.
 
 Example:
@@ -1653,8 +1650,7 @@ public class LazyInitializedSingleton  {
 }
 ```
 
-4. Thread Safe Singleton
-
+**4. Thread Safe Singleton**  
 The easier way to create a thread-safe singleton class is to make the global access method synchronized, so that only one thread can execute this method at a time.
 
 Example:
@@ -1674,8 +1670,7 @@ public class ThreadSafeSingleton {
 }
 ```
 
-5. Bill Pugh Singleton Implementation:
-
+**5. Bill Pugh Singleton Implementation**  
 Prior to Java5, memory model had a lot of issues and above methods caused failure in certain scenarios in multithreaded environment. So, Bill Pugh suggested a concept of inner static classes to use for singleton.
 
 Example:
@@ -1694,7 +1689,7 @@ public class BillPughSingleton {
 }
 ```
 
-* **Adapter Design Pattern in Java**
+**Adapter Design Pattern in Java**
 
 Adapter design pattern is one of the structural design pattern and its used so that two unrelated interfaces can work together. The object that joins these unrelated interface is called an Adapter.
 
@@ -1775,7 +1770,7 @@ public class Main {
 }
 ```
 
-* **Java Factory Pattern**
+**Java Factory Pattern**
 
 A Factory Pattern or Factory Method Pattern says that just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. In other words, subclasses are responsible to create the instance of the class.
 
@@ -1871,7 +1866,7 @@ class GenerateBill {
 } 
 ```
 
-* **Strategy Design Pattern in Java**
+**Strategy Design Pattern in Java**
 
 Strategy design pattern is one of the behavioral design pattern. Strategy pattern is used when we have multiple algorithm for a specific task and client decides the actual implementation to be used at runtime.
 
