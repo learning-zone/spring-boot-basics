@@ -84,8 +84,7 @@ public class SpringBootCrudRestfulApplication {
 }
 ```
 
-* **Step 03**: Employee.java
-
+**Step 03**: Employee.java
 ```java
 public class Employee {
  
@@ -127,8 +126,7 @@ public class Employee {
  
 }
 ```
-* **Step 04**: EmployeeDAO.java
-
+**Step 04**: EmployeeDAO.java
 ```java
 import java.util.ArrayList;
 import java.util.Collection;
@@ -185,8 +183,7 @@ public class EmployeeDAO {
  
 }
 ```
-* **Step 05**: MainRESTController.java
-
+**Step 05**: MainRESTController.java
 ```java
 import java.util.List;
  
@@ -268,8 +265,7 @@ public class MainRESTController {
     }
 }
 ```
-* **Step 06**: Run and Test the application
-
+**Step 06**: Run and Test the application
 ```
 // Get all the employees details
 http://localhost:8080/employees
@@ -285,8 +281,7 @@ http://localhost:8080/employee/E01.json
 
 #### Q. Spring Boot Program to Connect with databases.
 
-* **Step 01**: application.properties Settings
-
+**Step 01**: application.properties Settings
 ```java
 spring.datasource.url=jdbc:mysql://localhost:3306/springbootdb  
 spring.datasource.username=root  
@@ -294,8 +289,7 @@ spring.datasource.password=mysql
 spring.jpa.hibernate.ddl-auto=create-drop  
 ```
 
-* **Step 02**: SpringBootJdbcApplication.java
-
+**Step 02**: SpringBootJdbcApplication.java
 ```java
 package com.learningzone;  
 
@@ -309,8 +303,7 @@ public class SpringBootJdbcApplication {
 }
 ```
 
-* **Step 02**: SpringBootJdbcController.java
-
+**Step 03**: SpringBootJdbcController.java
 ```java
 package com.learningzone;
   
@@ -331,7 +324,7 @@ public class SpringBootJdbcController {
 ```
 #### Q. Spring Boot program for file upload and download.
 
-* **Step 01**: Configuring Server and File Storage Properties
+**Step 01**: Configuring Server and File Storage Properties
 
 ```
 #src/main/resources/application.properties
@@ -351,8 +344,7 @@ spring.servlet.multipart.max-request-size=215MB
 file.upload-dir=/Users/files/uploads
 ```
 
-* **Step 02**: Automatically binding properties to a POJO class
-
+**Step 02**: Automatically binding properties to a POJO class
 ```java
 package com.example.filedemo.property;
 
@@ -372,8 +364,7 @@ public class FileStorageProperties {
 }
 ```
 
-* **Step 03**: Enable Configuration Properties
-
+**Step 03**: Enable Configuration Properties
 ```java
 /* src/main/java/com/example/filedemo/FileDemoApplication.java */
 package com.example.filedemo;
@@ -395,8 +386,7 @@ public class FileDemoApplication {
 }
 ```
 
-* **Step 04**: Writing APIs for File Upload and Download
-
+**Step 04**: Writing APIs for File Upload and Download
 ```java
 package com.example.filedemo.controller;
 
@@ -473,8 +463,7 @@ public class FileController {
 }
 ```
 
-* **Step 05**: UploadFileResponse
-
+**Step 05**: UploadFileResponse
 ```java
 package com.example.filedemo.payload;
 
@@ -495,8 +484,7 @@ public class UploadFileResponse {
 }
 ```
 
-* **Step 06**: Service for Storing Files in the FileSystem and retrieving them
-
+**Step 06**: Service for Storing Files in the FileSystem and retrieving them
 ```java
 package com.example.filedemo.service;
 
@@ -569,8 +557,7 @@ public class FileStorageService {
 }
 ```
 
-* **Step 07**: FileStorageException
-
+**Step 07**: FileStorageException
 ```java
 package com.example.filedemo.exception;
 
@@ -585,8 +572,7 @@ public class FileStorageException extends RuntimeException {
 }
 ```
 
-* **Step 08**: CustomFileNotFoundException
-
+**Step 08**: CustomFileNotFoundException
 ```java
 package com.example.filedemo.exception;
 
@@ -605,8 +591,7 @@ public class CustomFileNotFoundException extends RuntimeException {
 }
 ```
 
-* **Step 09**: Running the Application and Testing the APIs via Postman
-
+**Step 09**: Running the Application and Testing the APIs via Postman
 ```
 mvn spring-boot:run
 ```
