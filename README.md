@@ -1482,22 +1482,22 @@ public class SerialExample {
 
 #### Q. What are the various ways to load a class in Java?
 
-1. **Creating a reference**:
+**1. Creating a reference**:
 ```java
 SomeClass someInstance = null;
 ```
 
-2. **Using Class.forName(String)**:
+**2. Using Class.forName(String)**:
 ```java
  Class.forName("SomeClass");
 ```
 
-3. **Using SystemClassLoader()**: 
+**3. Using SystemClassLoader()**: 
 ```java
 ClassLoader.getSystemClassLoader().loadClass("SomeClass");
 ```
 
-4. **Using Overloaded Class.forName()**:
+**4. Using Overloaded Class.forName()**:
 ```java
 Class.forName(String name, boolean initialize, ClassLoader loader);
 ```
