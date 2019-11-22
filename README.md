@@ -2825,7 +2825,7 @@ public class HashMapExample {
 
 #### Q. What is checked, unchecked exception and errors? 
 
-1. **Checked Exception**:
+**1. Checked Exception**:
 
 * These are the classes that extend <code>Throwable</code> except <code>RuntimeException</code> and <code>Error</code>.
 * They are also known as compile time exceptions because they are checked at **compile time**, meaning the compiler forces us to either handle them with try/catch or indicate in the function signature that it <code>throws</code> them and forcing us to deal with them in the caller.
@@ -2875,7 +2875,7 @@ output:
 Output: First three lines of file “C:\assets\file.txt”
 ```
 
-2. **Unchecked Exception**:
+**2. Unchecked Exception**:
 
 * The classes that extend <code>RuntimeException</code> are known as unchecked exceptions.
 * Unchecked exceptions are not checked at compile-time, but rather at **runtime**, hence the name.
@@ -2898,7 +2898,7 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 Java Result: 1
 ```
 
-3. **Error**:
+**3. Error**:
 
 * <code>Error</code> refers to an irrecoverable situation that is not being handled by a <code>try/catch</code>.
 * Example: OutOfMemoryError, VirtualMachineError, AssertionError, etc.
