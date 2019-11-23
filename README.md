@@ -5614,9 +5614,7 @@ Spring Boot starters are a set of convenient dependency management providers whi
 * **spring-boot-starter-aop**: This starter is used for aspect-oriented programming with AspectJ and  Spring AOP
 * **spring-boot-starter-test**: Is the starter for testing Spring Boot applications
 
-#### Q. What is GZIP? How to implement it using Spring Boot?
-OR
-#### Q. How to enable HTTP response compression in Spring Boot?
+#### Q. What is GZIP? How to implement it using Spring Boot?  How to enable HTTP response compression in Spring Boot?
 GZip compression is a very simple and effective way to save bandwidth and improve the speed of website. It reduces the response time of website by compressing the resources and then sending it over to the clients. It saves bandwidth by at least 50%.
 
 GZip compression is disabled by default in Spring Boot. To enable it, add the following properties to your `application.properties` file
