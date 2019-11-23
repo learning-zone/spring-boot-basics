@@ -4354,7 +4354,7 @@ Now, we can access the endpoint on `http://localhost:8080/greet/Pradeep`
 
 #### Q. How to implement Exception Handling in Spring Boot?
 Spring Boot provides a number of options for error/exception handling.
-1. **@ExceptionHandler Annotation**: This annotation works at the `@Controller` class level. The issue with the approach is only active for the given controller. The annotation is not global, so we need to implement in each and every controller.
+**1. @ExceptionHandler Annotation**: This annotation works at the `@Controller` class level. The issue with the approach is only active for the given controller. The annotation is not global, so we need to implement in each and every controller.
 ```java
 @RestController
 public class WelcomeController {
@@ -4370,7 +4370,7 @@ public class WelcomeController {
     }
 }
 ```
-2. **@ControllerAdvice Annotation**: This annotation supports global Exception handler mechanism. So we can implement the controller exception handling events in a central location.
+**2. @ControllerAdvice Annotation**: This annotation supports global Exception handler mechanism. So we can implement the controller exception handling events in a central location.
 ```java
 @ControllerAdvice
 public class GlobalRestExceptionHandler extends ResponseEntityExceptionHandler {
@@ -4382,9 +4382,9 @@ public class GlobalRestExceptionHandler extends ResponseEntityExceptionHandler {
     }
 }
 ```
-3. **@ResponseEntityExceptionHandler**: This method can be used with `@ControllerAdvice` classes. It allows the developer to specify some specific templates of ResponseEntity and return values.
+**3. @ResponseEntityExceptionHandler**: This method can be used with `@ControllerAdvice` classes. It allows the developer to specify some specific templates of ResponseEntity and return values.
 
-4. **@RestControllerAdvice**: Spring Boot 1.4 introduced the `@RestControllerAdvice` annotation for easier exception handling. It is a convenience annotation that is itself annotated with `@ControllerAdvice` and `@ResponseBody`.
+**4. @RestControllerAdvice**: Spring Boot 1.4 introduced the `@RestControllerAdvice` annotation for easier exception handling. It is a convenience annotation that is itself annotated with `@ControllerAdvice` and `@ResponseBody`.
 ```java
 @RestControllerAdvice
 public class RestExceptionHandler {
