@@ -3207,13 +3207,13 @@ In Java there are four types of references differentiated on the way by which th
 1. Soft Reference
 1. Phantom Reference
 
-* **Strong Reference**: This is the default type/class of Reference Object. Any object which has an active strong reference are not eligible for garbage collection. The object is garbage collected only when the variable which was strongly referenced points to null.
+**1. Strong Reference**: This is the default type/class of Reference Object. Any object which has an active strong reference are not eligible for garbage collection. The object is garbage collected only when the variable which was strongly referenced points to null.
 ```java
 StrongReferenceClass obj = new StrongReferenceClass();
 ```
 Here `obj` object is strong reference to newly created instance of MyClass, currently obj is active object so can't be garbage collected.
 
-* **Weak Reference**: A weakly referenced object is cleared by the Garbage Collector when it’s weakly reachable.
+**2. Weak Reference**: A weakly referenced object is cleared by the Garbage Collector when it’s weakly reachable.
 Weak reachability means that an object has neither strong nor soft references pointing to it. The object can be reached only by traversing a weak reference. To create such references `java.lang.ref.WeakReference` class is used.
 ```java
 /**
@@ -3250,7 +3250,7 @@ Output
 Weak Reference Example!
 Weak Reference Example!
 ```
-* **Soft Reference**: In Soft reference, even if the object is free for garbage collection then also its not garbage collected, until JVM is in need of memory badly.The objects gets cleared from the memory when JVM runs out of memory.To create such references `java.lang.ref.SoftReference` class is used.
+**3. Soft Reference**: In Soft reference, even if the object is free for garbage collection then also its not garbage collected, until JVM is in need of memory badly.The objects gets cleared from the memory when JVM runs out of memory.To create such references `java.lang.ref.SoftReference` class is used.
 ```java
 /**
 * Java Code to illustrate Soft reference
@@ -3286,7 +3286,7 @@ Output
 Soft Reference Example!
 Soft Reference Example!
 ```
-* **Phantom Reference**: The objects which are being referenced by phantom references are eligible for garbage collection. But, before removing them from the memory, JVM puts them in a queue called **reference queue**. They are put in a reference queue after calling finalize() method on them. To create such references `java.lang.ref.PhantomReference` class is used.
+**4. Phantom Reference**: The objects which are being referenced by phantom references are eligible for garbage collection. But, before removing them from the memory, JVM puts them in a queue called **reference queue**. They are put in a reference queue after calling finalize() method on them. To create such references `java.lang.ref.PhantomReference` class is used.
 ```java
 /**
 * Code to illustrate Phantom reference 
