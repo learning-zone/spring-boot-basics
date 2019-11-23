@@ -4353,7 +4353,7 @@ Each container is an isolated environment in itself and we have to map the port 
 Now, we can access the endpoint on `http://localhost:8080/greet/Pradeep`
 
 #### Q. How to implement Exception Handling in Spring Boot?
-Spring Boot provides a number of options for error/exception handling.
+Spring Boot provides a number of options for error/exception handling.  
 **1. @ExceptionHandler Annotation**: This annotation works at the `@Controller` class level. The issue with the approach is only active for the given controller. The annotation is not global, so we need to implement in each and every controller.
 ```java
 @RestController
