@@ -3894,9 +3894,7 @@ Performance issues due to various operational overheads.
 Requirement of Devops skills.
 
 #### Q. How to achieve server side load balancing using Spring Cloud?
-Server side load balancingcan be achieved using `Netflix Zuul`.
-Zuul is a JVM based router and server side load balancer by Netflix.
-It provides a single entry to our system, which allows a browser, mobile app, or other user interface to consume services from multiple hosts without managing cross-origin resource sharing (CORS) and authentication for each one. We can integrate Zuul with other Netflix projects like Hystrix for fault tolerance and Eureka for service discovery, or use it to manage routing rules, filters, and load balancing across your system.
+Server side load balancing can be achieved using `Netflix Zuul`. Zuul is a JVM based router and server side load balancer by Netflix. It provides a single entry to our system, which allows a browser, mobile app, or other user interface to consume services from multiple hosts without managing cross-origin resource sharing (CORS) and authentication for each one. We can integrate Zuul with other Netflix projects like Hystrix for fault tolerance and Eureka for service discovery, or use it to manage routing rules, filters, and load balancing across your system.
 
 #### Q. What are the advantages of using Spring Boot?
 * It is very easy to develop Spring Based applications with Java or Groovy.
