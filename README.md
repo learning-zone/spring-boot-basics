@@ -3176,7 +3176,7 @@ In addition to using HTTP for simplicity, REST offers a number of other benefits
 * REST more preferred than SOAP.
 
 #### Q. What code coverage tools are you using for your project? 
-we use `cobetura`
+* <a href="https://cobertura.github.io/cobertura/" target="_blank">Cobertura</a>
 #### Q. How to implement thread-safe code without using the synchronized keyword? 
 * **Atomic updates**: A technique in which you call atomic instructions like compare and set provided by the CPU
 * **java.util.concurrent.locks.ReentrantLock**: A lock implementation that provides more flexibility than synchronized blocks
