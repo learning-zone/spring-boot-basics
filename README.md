@@ -3915,7 +3915,7 @@ We make use of the h2 database. Maven will be as follows-
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.javainuse</groupId>
+	<groupId>com.springexample</groupId>
 	<artifactId>SpringBootHelloWorld</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -4038,8 +4038,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.javainuse.data.EmployeeRepository;
-import com.javainuse.model.Employee;
+import com.springexample.data.EmployeeRepository;
+import com.springexample.model.Employee;
 
 @Controller
 public class EmployeeController {
