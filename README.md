@@ -3185,10 +3185,10 @@ In addition to using HTTP for simplicity, REST offers a number of other benefits
 * **java.lang.ThreadLocal**: No need for synchronization if the mutable state is confined to a single thread. This can be done by using local variables or `java.lang.ThreadLocal`.
 
 #### Q. Scenario of browser’s browsing history, where you need to store the browsing history, what data structure will you use.? 
-use `stack`
+* use `stack`
 
 #### Q. Scenario where in we have to download a big file by clicking on a link, how will you make sure that connections is reliable throughout. 
-use `persistent MQueues`
+* use `persistent MQueues`
 
 #### Q. If you store Employee object as key say: Employee emp = new Employee(“name1”,20); store it in a HashMap as key, now if we add a new parameter emp.setMarriedStatus(true) and try to override it what will happen? 
 new instance of Employee will be inserted to HashMap 
