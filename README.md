@@ -3033,7 +3033,7 @@ class ArrayExample {
 } 
 ```
 #### Q. Array or ArrayList which one is faster?  
-Array is faster
+* Array is faster
 #### Q. How to do SSO implementation using Spring Boot?
 Single sign-on (or SSO) allow users to use a single set of credentials to login into multiple related yet independent web applications. SSO is achieved by implementing a centralised login system that handles authentication of users and share that information with applications that need that data.
 
