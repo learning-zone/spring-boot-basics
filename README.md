@@ -3907,7 +3907,7 @@ Server side load balancing can be achieved using `Netflix Zuul`. Zuul is a JVM b
 * It provides lots of plugins to develop and test Spring Boot Applications very easily using Build Tools like Maven and Gradle
 * It provides lots of plugins to work with embedded and in-memory Databases very easily.
 
-#### Q. Write a program in Spring-Boot to get employees details based on employee id?
+#### Q. Write a program in Spring-Boot to get employee details based on employee id?
 *TODO*
 #### Q. What does the @RestController, @RequestMapping, @RequestParam, @ContextConfiguration, @ResponseBody, @pathVariable, @ResponseEntity, @Qualifier annotation do?
 * **@RestController**: The @RestController is a stereotype annotation. It adds `@Controller` and `@ResponseBody` annotations to the class. It requires to import `org.springframework.web.bind.annotation` package.
