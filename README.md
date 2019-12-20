@@ -4341,7 +4341,7 @@ public class SpringBootDemo {
    }
 }
 ```
-* **@EnableAutoConfiguration**: The auto-configuration feature automatically configures things if certain classes are present in the Classpath e.g. if thymeleaf.jar is present in the Classpath then it can automatically configure Thymeleaf `TemplateResolver` and `ViewResolver`.
+* **@EnableAutoConfiguration**: The auto-configuration feature automatically configures things if certain classes are present in the Classpath. For example, if you have a data source bean present in the classpath of the application, then it automatically configures the JDBC template. 
 ```java
 @Configuration
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
@@ -6291,3 +6291,4 @@ public class SpringBootDemoApplicationTests
     //---- tests -----
 }
 ```
+#### Q. Mention the differences between JPA and Hibernate?
