@@ -2894,7 +2894,7 @@ Java Result: 1
 
 **3. Error**:
 
-**Error** refers to an irrecoverable situation that is not being handled by a **try/catch**.
+**Error** refers to an irrecoverable situation that is not being handled by a **try/catch**.  
 Example: **OutOfMemoryError, VirtualMachineError, AssertionError** etc.
 
 #### Q. What's the difference between @Component, @Repository & @Service annotations in Spring?
