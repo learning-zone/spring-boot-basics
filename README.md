@@ -964,7 +964,7 @@ public class MapToListExamples {
     } 
 }
 ```
-#### Q. Difference between arrayList and linkedList.
+#### Q. What is difference between arrayList and linkedList?
 
 ArrayList and LinkedList both implements List interface and maintains insertion order. Both are non synchronized classes.
 
