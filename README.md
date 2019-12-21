@@ -760,9 +760,9 @@ public class Application implements CommandLineRunner {
 Bootstrap **ClassLoader** is repsonsible for loading standard JDK classs files from **rt.jar** and it is parent of all class loaders in java.
 There are three types of built-in ClassLoader in Java:
 
-1. **Bootstrap Class Loader** – It loads JDK internal classes, typically loads rt.jar and other core classes for example java.lang.* package classes
-1. **Extensions Class Loader** – It loads classes from the JDK extensions directory, usually $JAVA_HOME/lib/ext directory.
-1. **System Class Loader** – It loads classes from the current classpath that can be set while invoking a program using -cp or -classpath command line options.
+**1. Bootstrap Class Loader** – It loads JDK internal classes, typically loads rt.jar and other core classes for example java.lang.* package classes
+**2. Extensions Class Loader** – It loads classes from the JDK extensions directory, usually $JAVA_HOME/lib/ext directory.
+**3. System Class Loader** – It loads classes from the current classpath that can be set while invoking a program using -cp or -classpath command line options.
 
 ```java
 import java.util.logging.Level;
