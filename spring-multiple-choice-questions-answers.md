@@ -25,3 +25,12 @@ byName, byType, constructor, and autodetect
 ```
 3.0
 ```
+#### Q. In Spring, which of the following is the correct way for using idref attribute?
+* Setter method
+* Constructor argument
+* Setter method and Constructor argument
+* Arguments
+```
+Setter method and Constructor argument
+```
+
