@@ -55,5 +55,6 @@ True
 ```
 org.springframework.ws.server.endpoint
 
-Explanation: Spring-WS provides various abstract endpoint classes for you to process the request and response XML messages using different XML processing technologies and APIs. These classes are all located in the org.springframework.ws.server.endpoint package.
+Explanation: Spring-WS provides various abstract endpoint classes for you to process the request and response 
+XML messages using different XML processing technologies and APIs. These classes are all located in the org.springframework.ws.server.endpoint package.
 ```
