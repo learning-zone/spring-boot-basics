@@ -77,5 +77,14 @@ Explanation: Endpoint Classes for Different XML Processing Technologies/APIs
 ```
 org.springframework.ws.server.endpoint.MessageEndpoint
 ```
+#### Q. Web services can be invoked through the core template class:-
+* org.springframework.ws.client.core.WebServiceTemplate
+* JDBC Template
+* All of the mentioned
+* None of the mentioned
+```
+org.springframework.ws.client.core.WebServiceTemplate
+```
+
 
 
