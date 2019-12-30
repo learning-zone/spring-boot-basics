@@ -33,4 +33,11 @@ byName, byType, constructor, and autodetect
 ```
 Setter method and Constructor argument
 ```
-
+#### Q. In Spring, which of the following about the scope of a stateful bean is correct?
+* Singleton scope
+* Prototype scope
+* Singleton and prototype scope
+* None of these
+```
+Singleton scope
+```
