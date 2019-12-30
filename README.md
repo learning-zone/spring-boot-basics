@@ -2897,7 +2897,7 @@ Java Result: 1
 **Error** refers to an irrecoverable situation that is not being handled by a **try/catch**.  
 Example: **OutOfMemoryError, VirtualMachineError, AssertionError** etc.
 
-#### Q. What's the difference between @Component, @Repository & @Service annotations in Spring?
+#### Q. What is the difference between @Component, @Repository & @Service annotations in Spring?
 
 * **@Component**
 This is a general-purpose stereotype annotation indicating that the class is a spring component.
