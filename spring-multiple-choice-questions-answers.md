@@ -68,5 +68,4 @@ org.springframework.ws.server.endpoint package.
 AbstractDomPayloadEndpoint
 
 Explanation: Endpoint Classes for Different XML Processing Technologies/APIs
-Technology/API Endpoint Class DOM AbstractDomPayloadEndpoint
 ```
