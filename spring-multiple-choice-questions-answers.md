@@ -59,3 +59,14 @@ Explanation: Spring-WS provides various abstract endpoint classes for you to pro
 XML messages using different XML processing technologies and APIs. These classes are all located in the
 org.springframework.ws.server.endpoint package.
 ```
+#### Q. Endpoint Classes for DOM:-
+* AbstractDomPayloadEndpoint
+* AbstractJDomPayloadEndpoint
+* AbstractDom4jPayloadEndpoint
+* AbstractXomPayloadEndpoint
+```
+AbstractDomPayloadEndpoint
+
+Explanation: Endpoint Classes for Different XML Processing Technologies/APIs
+Technology/API Endpoint Class DOM AbstractDomPayloadEndpoint
+```
