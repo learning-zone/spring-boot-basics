@@ -47,3 +47,13 @@ Singleton scope
 ```
 True
 ```
+#### Q. Spring-WS provides various abstract endpoint classes for you to process the request.
+* org.springframework.ws.server.endpoint
+* org.springframework.ws.server
+* org.springframework.*
+* none of the mentioned
+```
+org.springframework.ws.server.endpoint
+
+Explanation: Spring-WS provides various abstract endpoint classes for you to process the request and response XML messages using different XML processing technologies and APIs. These classes are all located in the org.springframework.ws.server.endpoint package.
+```
