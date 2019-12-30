@@ -69,3 +69,13 @@ AbstractDomPayloadEndpoint
 
 Explanation: Endpoint Classes for Different XML Processing Technologies/APIs
 ```
+#### Q. If you need to get access to the entire SOAP message, you should write an endpoint class by implementing:-
+* org.springframework.ws.server.endpoint.MessageEndpoint
+* org.springframework.ws
+* org.springframework.ws.server.endpoint
+* all of the mentioned
+```
+org.springframework.ws.server.endpoint.MessageEndpoint
+```
+
+
