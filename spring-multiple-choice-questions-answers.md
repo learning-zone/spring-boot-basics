@@ -85,6 +85,12 @@ org.springframework.ws.server.endpoint.MessageEndpoint
 ```
 org.springframework.ws.client.core.WebServiceTemplate
 ```
-
-
+#### Q. WebServiceTemplate provides a sendSourceAndReceiveToResult() method that accepts arguments:-
+* java.xml.transform.Source
+* java.xml.transform.Result
+* all of the mentioned
+* none of the mentioned
+```
+all of the mentioned
+```
 
