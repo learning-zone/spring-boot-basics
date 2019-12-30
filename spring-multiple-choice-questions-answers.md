@@ -17,3 +17,11 @@ registerShutdownHook()
 ```
 byName, byType, constructor, and autodetect 
 ```
+#### Q. The java 5 feature has been introduced in Spring __________ version.
+* 2.5
+* 3.0
+* 2.0
+* 4.0
+```
+3.0
+```
