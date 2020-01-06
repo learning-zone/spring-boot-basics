@@ -1296,9 +1296,7 @@ public class SimpleServlet extends HttpServlet {
 	}
 }
 ```
-
 #### Q. Explain Servlets Lifecycle?
-
 The web container maintains the life cycle of a servlet instance. 
 
 **Stages of the Servlet Life Cycle**: 
@@ -1358,32 +1356,7 @@ public void destroy() {
    // Finalization code...
 }
 ```
-
-
-#### Q. What are the major additions for jdk from 1.7 to 1.8?
-
-Java 8 provides following features for Java Programming:
-
-* Lambda expressions
-* Method references
-* Functional interfaces
-* Stream API
-* Default methods
-* Base64 Encode Decode
-* Static methods in interface
-* Optional class
-* Collectors class
-* ForEach() method
-* Parallel array sorting
-* Nashorn JavaScript Engine
-* Parallel Array Sorting
-* Type and Repating Annotations
-* IO Enhancements
-* Concurrency Enhancements
-* JDBC Enhancements etc.
-
 #### Q. How serialization works in java?
-
 Serialization is a mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory. This mechanism is used to persist the object.
 
 Example:
