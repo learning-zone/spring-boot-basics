@@ -2849,7 +2849,6 @@ Cron Task :: Execution Time - 11:03:00
 Cron Task :: Execution Time - 11:04:00
 Cron Task :: Execution Time - 11:05:00
 ```
-
 #### Q. How to provide security to spring boot application?
 pom.xml
 ```xml
@@ -4098,7 +4097,6 @@ public class SpringBootDemoApplicationTests
     //---- tests -----
 }
 ```
-#### Q. Mention the differences between JPA and Hibernate?
 #### Q. How Spring boot autowiring an interface with multiple implementations?
 Use `@Qualifier` annotation is used to differentiate beans of the same interface
 ```java
