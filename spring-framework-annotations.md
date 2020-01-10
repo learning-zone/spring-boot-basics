@@ -2,7 +2,7 @@
 
 |Sl.No| Annotation    | Description  |
 |-----|---------------|--------------|
-| 01. |@Autowired	  |Annotation @Autowired is used to inject object dependency implicitly for a constructor, field or method. This is known as “autowired by type” since the object to be injected is discovered by its type. The items declared @Autowired need not have to be public.|				
+| 01. |@Autowired	  |Annotation @Autowired is used to inject object dependency implicitly for a **constructor, field or method**. This is known as “autowired by type” since the object to be injected is discovered by its type. The items declared @Autowired need not have to be public.|				
 | 02. |@Configurable  |	Used on classes to inject properties of domain objects. Types whose properties are injected without being instantiated by Spring can be declared with @Configurable annotation.	|
 | 03. |@Qualifier	  |It can be used to create more than one bean of the same type and wire only one of the types with a property. It provides greater control on the dependency injection process and can be used with @Autowired annotation.|
 | 04. |@Required	  |Used to mark class members that are mandatory. The Spring auto-configuration fails if a particular property specified with this annotation cannot be injected.|
