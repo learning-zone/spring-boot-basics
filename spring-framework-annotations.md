@@ -39,7 +39,7 @@
 |Sl.No| Annotation            | Description  |
 |-----|-----------------------|--------------|
 | 01. |spring.profiles.active |Property to be set in appl­ica­tio­n.p­rop­ert­ies in order to tell Spring what profiles are active.|
-| 02. |@Profile("!dev")       |Annotation used to define which profile can execute the annotated method.|
+| 02. |@Profile("dev")       |Annotation used to define which profile can execute the annotated method.|
 
 
 #### Aspect Annotations
