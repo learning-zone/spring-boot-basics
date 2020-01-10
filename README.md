@@ -1167,15 +1167,6 @@ In addition to using HTTP for simplicity, REST offers a number of other benefits
 * REST permits different data format such as Plain text, HTML, XML, JSON etc.
 * REST more preferred than SOAP.
 
-#### Q. What code coverage tools are you using for your project? 
-* <a href="https://cobertura.github.io/cobertura/" target="_blank">Cobertura</a>
-
-#### Q. Scenario of browser’s browsing history, where you need to store the browsing history, what data structure will you use.? 
-* use `stack`
-
-#### Q. Scenario where in we have to download a big file by clicking on a link, how will you make sure that connections is reliable throughout. 
-* use `persistent MQueues`
-
 #### Q. What is Spring Cloud?
 Spring Cloud, in microservices, is a system that provides integration with external systems. It is a short-lived framework that builds an application, fast. Being associated with the finite amount of data processing, it plays a very important role in microservice architectures.
 
