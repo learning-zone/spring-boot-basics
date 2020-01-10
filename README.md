@@ -1170,13 +1170,6 @@ In addition to using HTTP for simplicity, REST offers a number of other benefits
 #### Q. What code coverage tools are you using for your project? 
 * <a href="https://cobertura.github.io/cobertura/" target="_blank">Cobertura</a>
 
-#### Q. How to implement thread-safe code without using the synchronized keyword? 
-* **Atomic updates**: A technique in which you call atomic instructions like compare and set provided by the CPU
-* **java.util.concurrent.locks.ReentrantLock**: A lock implementation that provides more flexibility than synchronized blocks
-* **java.util.concurrent.locks.ReentrantReadWriteLock**: A lock implementation in which reads do not block reads
-* **java.util.concurrent.locks.StampedLock** a nonreeantrant Read-Write lock with the possibility of optimistically reading values.
-* **java.lang.ThreadLocal**: No need for synchronization if the mutable state is confined to a single thread. This can be done by using local variables or `java.lang.ThreadLocal`.
-
 #### Q. Scenario of browser’s browsing history, where you need to store the browsing history, what data structure will you use.? 
 * use `stack`
 
