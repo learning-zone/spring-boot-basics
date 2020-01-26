@@ -4,9 +4,9 @@
 
 ### Table of Contents
 
-* [Spring Framework Annotations](spring-framework-annotations.md)
-* [Microservices Interview Questions and Answers](microservices-questions.md)
-* [Spring Multiple Choice Questions and Answers](spring-multiple-choice-questions-answers.md)
+* *[Spring Framework Annotations](spring-framework-annotations.md)*
+* *[Microservices Interview Questions and Answers](microservices-questions.md)*
+* *[Spring Multiple Choice Questions and Answers](spring-multiple-choice-questions-answers.md)*
 
 
 
