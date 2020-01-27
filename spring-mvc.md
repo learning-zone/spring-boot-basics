@@ -103,3 +103,70 @@
 #### Q. What is a Target?
 #### Q. Explain the term Proxy?
 #### Q. What is cross cutting concern and concern in spring AOP?
+#### Q. What is Spring MVC framework?
+#### Q. What is DispatcherServlet and ContextLoaderListener?
+#### Q. What is the front controller class of Spring MVC?
+#### Q. How to use Java based configuration?
+#### Q. How can we use Spring to create Restful Web Service returning JSON response?
+#### Q. Can we have multiple Spring configuration files?
+#### Q. Difference between <context:annotation-config> vs <context:component-scan>?
+#### Q. Difference between @Component, @Controller, @Repository & @Service annotations?
+#### Q. What does the ViewResolver class?
+#### Q. What is a MultipartResolver and when its used?
+#### Q. How to upload file in Spring MVC Application?
+#### Q. How does Spring MVC provide validation support?
+#### Q. How to validate form data in Spring Web MVC Framework?
+#### Q. What is Spring MVC Interceptor and how to use it?
+#### Q. How to handle exceptions in Spring MVC Framework?
+#### Q. How to achieve localization in Spring MVC applications?
+#### Q. How to get ServletContext and ServletConfig object in a Spring Bean?
+#### Q. How to use Tomcat JNDI DataSource in Spring Web Application?
+#### Q. How would you relate Spring MVC Framework to 3-tier architecture?
+#### Q. What is Spring Framework?
+#### Q. What are some of the important features and advantages of Spring Framework?
+#### Q. What do you understand by Dependency Injection?
+#### Q. How do we implement DI in Spring Framework?
+#### Q. What are the new features in Spring 5?
+#### Q. What is Spring WebFlux?
+#### Q. What are the benefits of using Spring Tool Suite?
+#### Q. Name some of the important Spring Modules?
+#### Q. What do you understand by Aspect Oriented Programming?
+#### Q. What is Aspect, Advice, Pointcut, JointPoint and Advice Arguments in AOP?
+#### Q. What is the difference between Spring AOP and AspectJ AOP?
+#### Q. What is Spring IoC Container?
+#### Q. What is a Spring Bean?
+#### Q. What is the importance of Spring bean configuration file?
+#### Q. What are different ways to configure a class as Spring Bean?
+#### Q. What are different scopes of Spring Bean?
+#### Q. What is Spring Bean life cycle?
+#### Q. How to get ServletContext and ServletConfig object in a Spring Bean?
+#### Q. What is Bean wiring and @Autowired annotation?
+#### Q. What are different types of Spring Bean autowiring?
+#### Q. Does Spring Bean provide thread safety?
+#### Q. What is a Controller in Spring MVC?
+#### Q. What’s the difference between @Component, @Repository & @Service annotations in Spring?
+#### Q. What is DispatcherServlet and ContextLoaderListener?
+#### Q. What is ViewResolver in Spring?
+#### Q. What is a MultipartResolver and when it’s used?
+#### Q. How to handle exceptions in Spring MVC Framework?
+#### Q. How to create ApplicationContext in a Java Program?
+#### Q. Can we have multiple Spring configuration files?
+#### Q. What is ContextLoaderListener?
+#### Q. What are the minimum configurations needed to create Spring MVC application?
+#### Q. How would you relate Spring MVC Framework to MVC architecture?
+#### Q. How to achieve localization in Spring MVC applications?
+#### Q. How can we use Spring to create Restful Web Service returning JSON response?
+#### Q. What are some of the important Spring annotations you have used?
+#### Q. Can we send an Object as the response of Controller handler method?
+#### Q. How to upload file in Spring MVC Application?
+#### Q. How to validate form data in Spring Web MVC Framework?
+#### Q. What is Spring MVC Interceptor and how to use it?
+#### Q. What is Spring JdbcTemplate class and how to use it?
+#### Q. How to use Tomcat JNDI DataSource in Spring Web Application?
+#### Q. How would you achieve Transaction Management in Spring?
+#### Q. What is Spring DAO?
+#### Q. How to integrate Spring and Hibernate Frameworks?
+#### Q. What is Spring Security?
+#### Q. How to inject a java.util.Properties into a Spring Bean?
+#### Q. Name some of the design patterns used in Spring Framework?
+#### Q. What are some of the best practices for Spring Framework?

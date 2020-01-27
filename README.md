@@ -7,7 +7,6 @@
 * *[Spring Framework Annotations](spring-framework-annotations.md)*
 * *[Microservices Interview Questions and Answers](microservices.md)*
 * *[Spring MVC Interview Questions and Answers](spring-mvc.md)*
-* *[Spring Security Interview Questions and Answers](spring-security.md)*
 * *[Spring Multiple Choice Questions and Answers](spring-multiple-choice-questions.md)*
 * *[RESTful Web Services Questions and Answers](restful-web-services.md)*
 
