@@ -1,8 +1,7 @@
 ## Spring MVC Interview Questions and Answers
 
-#### Q. What is Model 1 architecture?
-#### Q. What is Model 2 architecture?
-#### Q. What is Model 2 Front Controller architecture?
+#### Q. What is Model 1 and Model 2 architecture in Spring MVC?
+
 #### Q. Can you show an example controller method in Spring MVC?
 #### Q. Can you explain a simple flow in Spring MVC?
 #### Q. What is a ViewResolver?
