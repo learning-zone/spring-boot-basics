@@ -9,6 +9,7 @@
 * *[Spring MVC Interview Questions and Answers](spring-mvc-questions.md)*
 * *[Spring Security Interview Questions and Answers](spring-security-questions.md)*
 * *[Spring Multiple Choice Questions and Answers](spring-multiple-choice-questions-answers.md)*
+* *[RESTful Web Services Questions and Answers](restful-web-services.md)*
 
 
 
