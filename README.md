@@ -3674,7 +3674,8 @@ public static class SecondManager {
 ```
 #### Q. What is the use of thymeleaf in spring boot?
 *TODO*
-
+#### Q. What is difference between @Controller and @RestController in spring boot?
+*TODO*
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
