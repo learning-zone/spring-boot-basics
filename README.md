@@ -3676,6 +3676,8 @@ public static class SecondManager {
 *TODO*
 #### Q. What is difference between @Controller and @RestController in spring boot?
 *TODO*
+#### Q. What is the use of servlet initializer in spring boot?
+*TODO*
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
