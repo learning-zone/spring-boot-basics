@@ -1,14 +1,14 @@
-## Spring, Spring MVC, Spring Security, Spring-Boot, Microservices Interview Questions and Answers
+## Spring, Spring MVC, Spring Security, Spring-Boot, Microservices Interview Questions 
 
 *Click <img src="https://github.com/learning-zone/spring-interview-questions/blob/spring/assets/star.png" width="18" height="18" align="absmiddle" title="Star" /> if you like the project. Pull Request are highly appreciated.*
 
 ### Table of Contents
 
 * *[Spring Framework Annotations](spring-framework-annotations.md)*
-* *[Microservices Interview Questions and Answers](microservices.md)*
-* *[Spring MVC Interview Questions and Answers](spring-mvc.md)*
-* *[Spring Multiple Choice Questions and Answers](spring-multiple-choice-questions.md)*
-* *[RESTful Web Services Questions and Answers](restful-web-services.md)*
+* *[Microservices Interview Questions](microservices.md)*
+* *[Spring MVC Interview Questions](spring-mvc.md)*
+* *[Spring Multiple Choice Questions](spring-multiple-choice-questions.md)*
+* *[RESTful Web Services Questions](restful-web-services.md)*
 
 
 
