@@ -10,9 +10,9 @@
 * *[Spring Multiple Choice Questions](spring-multiple-choice-questions.md)*
 * *[RESTful Web Services Questions](restful-web-services.md)*
 
+<br/>
 
-
-#### Q. Spring Boot RESTful Web Service example.
+#### Q. ***Spring Boot RESTful Web Service example?***
 
 **Step 01**: pom.xml Settings
 ```xml
@@ -282,7 +282,7 @@ http://localhost:8080/employee/E01.xml
 http://localhost:8080/employee/E01.json
 ```
 
-#### Q. Spring Boot Program to Connect with databases.
+#### Q. ***Spring Boot Program to Connect with databases?***
 
 **Step 01**: application.properties Settings
 ```java
@@ -325,7 +325,7 @@ public class SpringBootJdbcController {
     }  
 }  
 ```
-#### Q. Spring Boot program for file upload and download.
+#### Q. ***Spring Boot program for file upload and download?***
 
 **Step 01**: Configuring Server and File Storage Properties
 
@@ -599,7 +599,7 @@ public class CustomFileNotFoundException extends RuntimeException {
 mvn spring-boot:run
 ```
 
-#### Q. Spring Boot program for Sending Email.
+#### Q. ***Spring Boot program for Sending Email?***
 
 **Step 01**: pom.xml Settings
 ```xml
@@ -749,7 +749,7 @@ public class Application implements CommandLineRunner {
     }
 }
 ```
-#### Q. What is difference between spring and spring boot?
+#### Q. ***What is difference between spring and spring boot?***
 
 |Basis of Differentiation   | Spring                  |Spring Boot                                       |
 |---------------------------|-------------------------|--------------------------------------------------|
@@ -758,7 +758,7 @@ public class Application implements CommandLineRunner {
 |**Controlling**            | As the configuration can be easily handled manually, Spring or Spring Boot need not load some unwanted default features for specific applications. |In Spring Boot, the controls are automatically handled during the default loading part. As such, developers do not have the option of not loading unusable components belonging to the default Spring Boot features.|
 |**Use**                    |Better to use if characteristics or application type are purely defined.|Better to use in cases where the application type of functionality of future use is not properly defined. As the task of integrating any Spring-specific feature is auto-configured in this case, there is no necessity of any additional configuration.
 
-#### Q. Explain types of spring bean scopes. 
+#### Q. ***Explain types of spring bean scopes?***
 
 The core of spring framework is it’s bean factory and mechanisms to create and manage such beans inside Spring container. The beans in spring container can be created in six scopes i.e. singleton, prototype, request, session, application and websocket. They are called spring bean scopes.
 
@@ -894,7 +894,7 @@ XML config example of websocket bean scope –
 ```xml
 <bean id="beanId" class="com.springexample.BeanClass" scope="websocket" />
 ```
-#### Q. What is AOP? what does spring AOP provide?
+#### Q. ***What is AOP? what does spring AOP provide?***
 
 Spring AOP enables Aspect-Oriented Programming in spring applications. In AOP, aspects enable the modularization of concerns such as transaction management, logging or security that cut across multiple types and objects (often termed crosscutting concerns).
 
@@ -1005,7 +1005,7 @@ class Logging {
     } 
 } 
 ```
-#### Q. What is the difference between @Component, @Repository & @Service annotations in Spring?
+#### Q. ***What is the difference between @Component, @Repository & @Service annotations in Spring?***
 
 * **@Component**
 This is a general-purpose stereotype annotation indicating that the class is a spring component.
@@ -1028,7 +1028,7 @@ This indicate that the annotate classes at presentation layers level, mainly use
 
 ![alt text](https://github.com/learning-zone/spring-interview-questions/blob/spring/assets/spring-component.png)
 
-#### Q. How to do SSO implementation using Spring Boot?
+#### Q. ***How to do SSO implementation using Spring Boot?***
 Single sign-on (or SSO) allow users to use a single set of credentials to login into multiple related yet independent web applications. SSO is achieved by implementing a centralised login system that handles authentication of users and share that information with applications that need that data.
 
 Example: **Simple Single Sign-On with Spring Security OAuth2**
@@ -1125,7 +1125,7 @@ public class UserController {
     }
 }
 ```
-#### Q. What is difference between DI and IOC in spring?
+#### Q. ***What is difference between DI and IOC in spring?***
 * **DI(Dependency Injection)**:
 Dependency injection is a pattern used to create instances of objects that other objects rely upon without knowing at compile time which class will be used to provide that functionality or simply the way of injecting properties to an object is called dependency injection.
 
@@ -1141,7 +1141,7 @@ Giving control to the container to create and inject instances of objects that y
 
 The two concepts work together in this way to allow for much more flexible, reusable, and encapsulated code to be written. As such, they are important concepts in designing object-oriented solutions.
 
-#### Q. What is main advantage of RESTful implementation over SOAP?
+#### Q. ***What is main advantage of RESTful implementation over SOAP?***
 SOAP (Simple Object Access Protocol) and REST (Representational State Transfer) are both web service communication protocols.
 In addition to using HTTP for simplicity, REST offers a number of other benefits over SOAP:
 
@@ -1169,7 +1169,7 @@ In addition to using HTTP for simplicity, REST offers a number of other benefits
 * REST permits different data format such as Plain text, HTML, XML, JSON etc.
 * REST more preferred than SOAP.
 
-#### Q. What is Spring Cloud?
+#### Q. ***What is Spring Cloud?***
 Spring Cloud, in microservices, is a system that provides integration with external systems. It is a short-lived framework that builds an application, fast. Being associated with the finite amount of data processing, it plays a very important role in microservice architectures.
 
 For typical use cases, Spring Cloud provides the out of the box experiences and a sets of extensive features mentioned below:
@@ -1182,17 +1182,17 @@ For typical use cases, Spring Cloud provides the out of the box experiences and 
 * Cluster state and leadership election.
 * Global locks and distributed messaging.
 
-#### Q. What is Role of Actuator in Spring Boot?
+#### Q. ***What is Role of Actuator in Spring Boot?***
 It helps to access the current state of an application that is running in a production environment. There are multiple metrics which can be used to check the current state. They also provide endpoints for RESTful web services which can be simply used to check the different metrics.
 
-#### Q. Which Embedded Containers are Supported by Spring Boot?
+#### Q. ***Which Embedded Containers are Supported by Spring Boot?***
 Spring Boot contains Jetty, Tomcat, and Undertow servers, all of which are embedded.
 
 * **Jetty** – Used in a wide number of projects, Eclipse Jetty can be embedded in framework, application servers, tools, and * clusters.
 * **Tomcat** – Apache Tomcat is an open source JavaServer Pages implementation which works well with embedded systems.
 * **Undertow** – A flexible and prominent web server that uses small single handlers to develop a web server.
 
-#### Q. What are the advantages of using Spring Cloud?
+#### Q. ***What are the advantages of using Spring Cloud?***
 When developing distributed microservices with Spring Boot we face the following issues-
 * **Complexity associated with distributed systems**-  
 This overhead includes network issues, Latency overhead, Bandwidth issues, security issues.
@@ -1207,10 +1207,10 @@ Performance issues due to various operational overheads.
 * **Deployment complexities**-  
 Requirement of Devops skills.
 
-#### Q. How to achieve server side load balancing using Spring Cloud?
+#### Q. ***How to achieve server side load balancing using Spring Cloud?***
 Server side load balancing can be achieved using `Netflix Zuul`. Zuul is a JVM based router and server side load balancer by Netflix. It provides a single entry to our system, which allows a browser, mobile app, or other user interface to consume services from multiple hosts without managing cross-origin resource sharing (CORS) and authentication for each one. We can integrate Zuul with other Netflix projects like Hystrix for fault tolerance and Eureka for service discovery, or use it to manage routing rules, filters, and load balancing across your system.
 
-#### Q. What are the advantages of using Spring Boot?
+#### Q. ***What are the advantages of using Spring Boot?***
 * It is very easy to develop Spring Based applications with Java or Groovy.
 * It reduces lots of development time and increases productivity.
 * It avoids writing lots of boilerplate Code, Annotations and XML Configuration.
@@ -1221,7 +1221,7 @@ Server side load balancing can be achieved using `Netflix Zuul`. Zuul is a JVM b
 * It provides lots of plugins to develop and test Spring Boot Applications very easily using Build Tools like Maven and Gradle
 * It provides lots of plugins to work with embedded and in-memory Databases very easily.
 
-#### Q. Write a program in Spring-Boot to get employee details based on employee id?
+#### Q. ***Write a program in Spring-Boot to get employee details based on employee id?***
 We make use of the h2 database. Maven will be as follows-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1422,7 +1422,7 @@ spring.mvc.view.suffix:.jsp
 spring.datasource.url=jdbc:h2:file:./DB
 spring.jpa.properties.hibernate.hbm2ddl.auto=update
 ```
-#### Q. What does the @RestController, @RequestMapping, @RequestParam, @ContextConfiguration, @ResponseBody, @pathVariable, @ResponseEntity, @Qualifier annotation do?
+#### Q. ***What does the @RestController, @RequestMapping, @RequestParam, @ContextConfiguration, @ResponseBody, @pathVariable, @ResponseEntity, @Qualifier annotation do?***
 * **@RestController**: The @RestController is a stereotype annotation. It adds `@Controller` and `@ResponseBody` annotations to the class. It requires to import `org.springframework.web.bind.annotation` package.
 The @RestController annotation informs to the Spring to render the result back to the caller.
 ```java
@@ -1634,7 +1634,7 @@ public class Manager implements Person {
     }
 }
 ```
-#### Q. What are the different components of a Spring Boot application?
+#### Q. ***What are the different components of a Spring Boot application?***
 Spring Boot Framework has mainly four major components.
 
 * **Spring Boot Starters**: The main responsibility of Spring Boot Starter is to combine a group of common or related dependencies into single dependencies. Spring Boot starters can help to reduce the number of manually added dependencies just by adding one dependency. So instead of manually specifying the dependencies just add one starter. Examples are spring-boot-starter-web, spring-boot-starter-test, spring-boot-starter-data-jpa, etc.
@@ -1645,7 +1645,7 @@ Spring Boot Framework has mainly four major components.
 
 * **Spring Boot Actuator**: Spring Boot Actuator is a sub-project of Spring Boot. It adds several production grade services to your application with little effort on your part. Actuators enable production-ready features to a Spring Boot application, without having to actually implement these things yourself. The Spring Boot Actuator is mainly used to get the internals of running application like health, metrics, info, dump, environment, etc. which is similar to your production environment monitoring setup.
 
-#### Q. What does @SpringBootApplication and @EnableAutoConfiguration do? 
+#### Q. ***What does @SpringBootApplication and @EnableAutoConfiguration do?*** 
 * **@SpringBootApplication**: annotation is used to annotate the main class of our Spring Boot application. It also enables the auto-configuration feature of Spring Boot.
 ```java
 @SpringBootApplication
@@ -1663,7 +1663,7 @@ public class SpringBootDemo {
   //.. Java code
 }
 ``` 
-#### Q. What is Spring Boot initializr?
+#### Q. ***What is Spring Boot initializr?***
 The Spring Initializr is ultimately a web application that can generate a Spring Boot project structure for you. It doesn’t generate any application code, but it will give you a basic project structure and either a Maven or a Gradle build specification to build your code with. All you need to do is write the application code.
 
 Spring Initializr can be used several ways, including:
@@ -1672,7 +1672,7 @@ Spring Initializr can be used several ways, including:
 1. Via Spring ToolSuite.
 1. Using the Spring Boot CLI.
 
-#### Q. What is a profile? How do you create application configuration for a specific profile?
+#### Q. ***What is a profile? How do you create application configuration for a specific profile?***
 Spring Profiles helps to segregating application configurations, and make them available only in certain environments. Any `@Component` or `@Configuration` can be marked with `@Profile` to limit when it is loaded. You can define default configuration in application.properties. Environment specific overrides can be configured in specific files:
 
 * application-dev.properties
@@ -1693,7 +1693,7 @@ public class ProdConfigurations {
     // Production Configurations
 }
 ```
-#### Q. What is Spring Boot Actuator? How do you monitor web services using Spring Boot Actuator?
+#### Q. ***What is Spring Boot Actuator? How do you monitor web services using Spring Boot Actuator?***
 Spring Boot Actuator module use to monitor and manage Spring Boot application by providing production-ready features like health check-up, auditing, metrics gathering, HTTP tracing etc. All of these features can be accessed over JMX or HTTP endpoints.
 
 **Adding Spring Boot Actuator**
@@ -1760,7 +1760,7 @@ management.endpoint.health.enabled=false
 management.endpoints.enabled-by-default=false
 ```
 
-#### Q. What is a CommandLineRunner and ApplicationRunner?
+#### Q. ***What is a CommandLineRunner and ApplicationRunner?***
 `ApplicationRunner` and `CommandLineRunner` interfaces use to execute the code after the Spring Boot application is started. These interfaces can be used to perform any actions immediately after the application has started.
 
 * **CommandLineRunner**
@@ -1788,7 +1788,7 @@ public class AppStartupRunner implements ApplicationRunner {
     }
 }
 ```
-#### Q. What is Docker? How to deploy Spring Boot Application to Docker?
+#### Q. ***What is Docker? How to deploy Spring Boot Application to Docker?***
 A Docker is a tool that makes it very easy to deploy and run an application using **containers**. A container allows a developer to create an all-in-one package of the developed application with all its dependencies. For example, a Java application requires Java libraries, and when we deploy it on any system or VM, we need to install Java first. But, in a container, everything is kept together and shipped as one package, such as in a Docker container.
 
 Step 01: **Create a simple Spring Boot Application**
@@ -1862,7 +1862,7 @@ We can run Docker images using the `docker run` command.
 Each container is an isolated environment in itself and we have to map the port of the host operating system - 8090 and the port inside the container - 8080, which is specified as the -p 8090:8080 argument.
 Now, we can access the endpoint on `http://localhost:8080/greet/Pradeep`
 
-#### Q. How to implement Exception Handling in Spring Boot?
+#### Q. ***How to implement Exception Handling in Spring Boot?***
 Spring Boot provides a number of options for error/exception handling.  
 **1. @ExceptionHandler Annotation**: This annotation works at the `@Controller` class level. The issue with the approach is only active for the given controller. The annotation is not global, so we need to implement in each and every controller.
 ```java
@@ -1911,7 +1911,7 @@ ApiErrorResponse response = new ApiErrorResponse.ApiErrorResponseBuilder()
     }
 }
 ```
-#### Q. What is caching? Have you used any caching framework with Spring Boot?
+#### Q. ***What is caching? Have you used any caching framework with Spring Boot?***
 Caching is a mechanism to enhance the performance of a system. It is a temporary memory that lies between the application and the persistent database. Cache memory stores recently used data items in order to reduce the number of database hits as much as possible.
 
 **Types of cache**
@@ -2033,7 +2033,7 @@ Going to sleep for 5 Secs.. to simulate backend call.
 Searching by ID  : 2
 Searching by ID  : 2
 ```
-#### Q. What is Swagger? Have you implemented it using Spring Boot?
+#### Q. ***What is Swagger? Have you implemented it using Spring Boot?***
 Swagger is widely used for visualizing APIs, and with Swagger UI it provides online sandbox for frontend developers. 
 Swagger is a tool, a specification and a complete framework implementation for producing the visual representation of RESTful Web Services. It enables documentation to be updated at the same pace as the server. When properly defined via Swagger, a consumer can understand and interact with the remote service with a minimal amount of implementation logic. 
 
@@ -2191,7 +2191,7 @@ public class Swagger2UiConfiguration extends WebMvcConfigurerAdapter
 ```
 ![alt text](https://github.com/learning-zone/spring-interview-questions/blob/spring/assets/Swagger2-UI-Docs-without-Annotations.png)
 
-#### Q. How to implement Pagination and Sorting in Spring Boot?
+#### Q. ***How to implement Pagination and Sorting in Spring Boot?***
 * **JPA Entity**: 
 
 **EmployeeEntity.java**  
@@ -2310,7 +2310,7 @@ Page<EmployeeEntity> pagedResult = repository.findAll(paging);
 Sort sortOrder = Sort.by("email");
 List<EmployeeEntity> list = repository.findAll(sortOrder);
 ```
-#### Q. How to use schedulers in Spring Boot?
+#### Q. ***How to use schedulers in Spring Boot?***
 Spring Boot internally uses the `TaskScheduler` interface for scheduling the annotated methods for execution. The @Scheduled annotation is added to a method along with some information about when to execute it, and Spring Boot takes care of the rest.
 **Enable Scheduling**
 ```java
@@ -2355,7 +2355,7 @@ Cron Task :: Execution Time - 11:03:00
 Cron Task :: Execution Time - 11:04:00
 Cron Task :: Execution Time - 11:05:00
 ```
-#### Q. How to provide security to spring boot application?
+#### Q. ***How to provide security to spring boot application?***
 pom.xml
 ```xml
 <dependency>
@@ -2414,7 +2414,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
    }
 }
 ```
-#### Q. What is CORS in Spring Boot? How to enable CORS in Spring Boot?
+#### Q. ***What is CORS in Spring Boot? How to enable CORS in Spring Boot?***
 Cross-Origin Resource Sharing (CORS) is a security concept that allows restricting the resources implemented in web browsers. It prevents the JavaScript code producing or consuming the requests against different origin.
 
 * **Enable CORS in Controller Method**
@@ -2463,7 +2463,7 @@ public class DemoApplication {
    }
 }
 ```
-#### Q. What is CSRF attack? How to enable CSRF protection against it?
+#### Q. ***What is CSRF attack? How to enable CSRF protection against it?***
 **CSRF**: CSRF stands for Cross-Site Request Forgery. It is an attack that forces an end user to execute unwanted actions on a web application in which they are currently authenticated. CSRF attacks specifically target state-changing requests, not theft of data, since the attacker has no way to see the response to the forged request.
 
 In order to use the Spring Security CSRF protection, we'll first need to make sure we use the proper HTTP methods for anything that modifies state (PATCH, POST, PUT, and DELETE – not GET).
@@ -2506,7 +2506,7 @@ $(document).ajaxSend(function(e, xhr, options) {
     xhr.setRequestHeader(header, token);
 });
 ```
-#### Q. How do you configure error logging/debugging in Spring Boot application?
+#### Q. ***How do you configure error logging/debugging in Spring Boot application?***
 In Spring Boot, Logback is the default logging framework, just add spring-boot-starter-web, it will pull in the logback dependencies.  
 **pom.xml** 
 ```xml
@@ -2649,7 +2649,7 @@ public class HelloController {
     }
 }
 ```
-#### Q. What is Spring Batch? How do you implement it using Spring Boot?
+#### Q. ***What is Spring Batch? How do you implement it using Spring Boot?***
 Spring Batch is a lightweight, comprehensive batch framework that is designed for use in developing robust batch applications.  
 **Why Is Spring Batch Useful**  
 * Restartability
@@ -2866,7 +2866,7 @@ TaskTwo done..
 o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=demoJob]] completed with
 the following parameters: [{JobID=1530697766768}] and the following status: [COMPLETED]
 ```
-#### Q. How to implement interceptor with Spring Boot?
+#### Q. ***How to implement interceptor with Spring Boot?***
 Interceptor can be used to perform operations in the following situations −    
 * Before sending the request to the controller
 * Before sending the response to the client
@@ -2907,7 +2907,7 @@ public class ProductServiceInterceptor implements HandlerInterceptor {
       }
 }
 ```
-#### Q. How to use Form Login Authentication using Spring Boot?
+#### Q. ***How to use Form Login Authentication using Spring Boot?***
 **Include spring security 5 dependencies**
 
 **pom.xml**
@@ -3112,7 +3112,7 @@ Output
 
 http://localhost:8080/login
 ```
-#### Q. What are the Spring Boot starters and what are available the starters??
+#### Q. ***What are the Spring Boot starters and what are available the starters?***
 Spring Boot starters are a set of convenient dependency management providers which can be used in the application to enable dependencies. These starters, make development easy and rapid. All the available starters come under the `org.springframework.boot` group. Few of the popular starters are as follows:
 
 * **spring-boot-starter**:  This is the core starter and includes logging, auto-configuration support, and YAML.
@@ -3123,7 +3123,7 @@ Spring Boot starters are a set of convenient dependency management providers whi
 * **spring-boot-starter-aop**: This starter is used for aspect-oriented programming with AspectJ and  Spring AOP
 * **spring-boot-starter-test**: Is the starter for testing Spring Boot applications
 
-#### Q. What is GZIP? How to implement it using Spring Boot?  How to enable HTTP response compression in Spring Boot?
+#### Q. ***What is GZIP? How to implement it using Spring Boot?  How to enable HTTP response compression in Spring Boot?***
 GZip compression is a very simple and effective way to save bandwidth and improve the speed of website. It reduces the response time of website by compressing the resources and then sending it over to the clients. It saves bandwidth by at least 50%.
 
 GZip compression is disabled by default in Spring Boot. To enable it, add the following properties to your `application.properties` file
@@ -3137,7 +3137,7 @@ server.compression.mime-types=text/html,text/xml,text/plain,text/css,text/javasc
 # Compress the response only if the response size is at least 1KB
 server.compression.min-response-size=1024
 ```
-#### Q. When will you use WebSockets? How to implement it using Spring Boot?
+#### Q. ***When will you use WebSockets? How to implement it using Spring Boot?***
 WebSocket is a protocol which enables communication between the server and the browser. It has an advantage over RESTful HTTP because communications are both bi-directional and real-time. This allows for the server to notify the client at any time instead of the client polling on a regular interval for updates.
 
 Following are some of the drawbacks of HTTP due to which they are unsuitable for certain scenarios-
@@ -3367,7 +3367,7 @@ Define the index.html as follows-
 ```
 Start the application- http://localhost:8080 Click on start new chat it opens the WebSocket connection.
 
-#### Q. What is Spring Boot devtools?
+#### Q. ***What is Spring Boot devtools?***
 The aim of this module is to try and improve the development-time experience when working on Spring Boot applications.
 ```xml
 <dependencies>
@@ -3377,9 +3377,9 @@ The aim of this module is to try and improve the development-time experience whe
     </dependency>
 </dependencies>
 ```
-#### Q. What is the configuration file name, which is used by Spring Boot?
+#### Q. ***What is the configuration file name, which is used by Spring Boot?***
 `application.properties`
-#### Q. What is difference Between an Embedded Container and a WAR?
+#### Q. ***What is difference Between an Embedded Container and a WAR?***
 Spring Boot includes support for embedded Tomcat, Jetty, and Undertow servers. By default the embedded server will listen for HTTP requests on port 8080.
 
 **JAR**  
@@ -3390,7 +3390,7 @@ You can run independently every appliction with different ports (in linux, **jav
 
 You can deploy into container and just run it. Easy managing at the server. If you want to re-configure app, open properties file from unarchived folder inside container, change it as need and restart container. So, managing and configuring will be easy. But, if you want to run another app in this server with another port, then you must install another copy of container and config it.
 
-#### Q. What is Mockito?
+#### Q. ***What is Mockito?***
 Mockito is a mocking framework, JAVA-based library that is used for effective unit testing of JAVA applications. Mockito is used to mock interfaces so that a dummy functionality can be added to a mock interface that can be used in unit testing. 
 
 **Spring Boot - mockito and junit – unit test service layer Example**  
@@ -3574,7 +3574,7 @@ public class EmployeeDao {
     }
 }
 ```
-#### Q. What is @SpringBootTest?
+#### Q. ***What is @SpringBootTest?***
 * **@SpringBootTest for integration testing**  
 
 `@SpringBootTest` tries to mimic the processes added by Spring Boot framework for creating the context e.g. it decides what to scan based on package structures, loads external configurations from predefined locations, optionally runs auto-configuration starters and so on.
@@ -3603,7 +3603,7 @@ public class SpringBootDemoApplicationTests
     //---- tests -----
 }
 ```
-#### Q. How Spring boot autowiring an interface with multiple implementations?
+#### Q. ***How Spring boot autowiring an interface with multiple implementations?***
 Use `@Qualifier` annotation is used to differentiate beans of the same interface
 ```java
 @SpringBootApplication
@@ -3672,11 +3672,9 @@ public static class SecondManager {
   }
 }
 ```
-#### Q. What is the use of thymeleaf in spring boot?
-*TODO*
-#### Q. What is difference between @Controller and @RestController in spring boot?
-*TODO*
-#### Q. What is the use of servlet initializer in spring boot?
+#### Q. ***What is the use of thymeleaf in spring boot?***
+#### Q. ***What is difference between @Controller and @RestController in spring boot?***
+#### Q. ***What is the use of servlet initializer in spring boot?***
 *TODO*
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
