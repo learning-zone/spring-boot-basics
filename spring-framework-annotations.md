@@ -17,6 +17,7 @@
 | 13.  |@Contr­oller   |Stereotype annotation for presen­tation layer.|
 | 14.  |@Repos­itory   |Stereotype annotation for persis­tence layer. |
 | 15.  |@Service      |Stereotype annotation for service layer.     |
+| 16.  |@Conditional  |Annotation is used to load beans into Application Context only if the given condition is met.|
 
 
 #### Spring-Boot Web Annotations
