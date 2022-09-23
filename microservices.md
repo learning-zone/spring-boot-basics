@@ -1,15 +1,18 @@
-## Microservices Interview Questions and Answers
+# Microservices Interview Questions and Answers
 
 #### Q. List down the advantages of Microservices Architecture. 
 #### Q. What are the best practices to design Microservices? 
+#### Q. How do microservices communicate with each other in java?
 #### Q. How does HTTPS authentication works in Microservices? 
 #### Q. What is RabbitMQ?
 #### Q. What is an idempotent in REST APIs? 
+
 In the context of REST APIs, when making multiple identical requests has the same effect as making a single request – then that REST API is called **idempotent**.  
 
 *An idempotent HTTP method is an HTTP method that can be called many times without different outcomes. It would not matter if the method is called only once, or ten times over. The result should be the same. It essentially means that the result of a successfully performed request is independent of the number of times it is executed. For example, in arithmetic, adding zero to a number is idempotent operation.*
 
 Example:
+
 * `POST` is NOT idempotent.
 * `GET`, `PUT`, `DELETE`, `HEAD`, `OPTIONS` and `TRACE` are idempotent.
 
@@ -48,6 +51,7 @@ Example:
 #### Q. What is Cohesion and Coupling?  
 #### Q. What are different types of Tests for Microservices?
 #### Q. What do you understand by Distributed Transaction in microservices?
+#### Q. What is a message broker service in java?
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
