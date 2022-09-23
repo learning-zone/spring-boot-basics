@@ -275,8 +275,10 @@ public class MainRESTController {
     }
 }
 ```
+
 **Step 06**: Run and Test the application
-```
+
+```java
 // Get all the employees details
 http://localhost:8080/employees
 http://localhost:8080/employees.json
@@ -296,6 +298,7 @@ http://localhost:8080/employee/E01.json
 ## Q. ***Spring Boot Program to Connect with databases?***
 
 **Step 01**: application.properties Settings
+
 ```java
 spring.datasource.url=jdbc:mysql://localhost:3306/springbootdb  
 spring.datasource.username=root  
@@ -304,6 +307,7 @@ spring.jpa.hibernate.ddl-auto=create-drop
 ```
 
 **Step 02**: SpringBootJdbcApplication.java
+
 ```java
 package com.learningzone;  
 
@@ -318,6 +322,7 @@ public class SpringBootJdbcApplication {
 ```
 
 **Step 03**: SpringBootJdbcController.java
+
 ```java
 package com.learningzone;
   
@@ -345,7 +350,7 @@ public class SpringBootJdbcController {
 
 **Step 01**: Configuring Server and File Storage Properties
 
-```
+```java
 #src/main/resources/application.properties
 
 ## MULTIPART (MultipartProperties)
@@ -364,6 +369,7 @@ file.upload-dir=/Users/files/uploads
 ```
 
 **Step 02**: Automatically binding properties to a POJO class
+
 ```java
 package com.example.filedemo.property;
 
@@ -384,6 +390,7 @@ public class FileStorageProperties {
 ```
 
 **Step 03**: Enable Configuration Properties
+
 ```java
 /* src/main/java/com/example/filedemo/FileDemoApplication.java */
 package com.example.filedemo;
@@ -406,6 +413,7 @@ public class FileDemoApplication {
 ```
 
 **Step 04**: Writing APIs for File Upload and Download
+
 ```java
 package com.example.filedemo.controller;
 
@@ -483,6 +491,7 @@ public class FileController {
 ```
 
 **Step 05**: UploadFileResponse
+
 ```java
 package com.example.filedemo.payload;
 
@@ -504,6 +513,7 @@ public class UploadFileResponse {
 ```
 
 **Step 06**: Service for Storing Files in the FileSystem and retrieving them
+
 ```java
 package com.example.filedemo.service;
 
@@ -577,6 +587,7 @@ public class FileStorageService {
 ```
 
 **Step 07**: FileStorageException
+
 ```java
 package com.example.filedemo.exception;
 
@@ -592,6 +603,7 @@ public class FileStorageException extends RuntimeException {
 ```
 
 **Step 08**: CustomFileNotFoundException
+
 ```java
 package com.example.filedemo.exception;
 
@@ -611,7 +623,8 @@ public class CustomFileNotFoundException extends RuntimeException {
 ```
 
 **Step 09**: Running the Application and Testing the APIs via Postman
-```
+
+```java
 mvn spring-boot:run
 ```
 
@@ -622,6 +635,7 @@ mvn spring-boot:run
 ## Q. ***Spring Boot program for Sending Email?***
 
 **Step 01**: pom.xml Settings
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -681,7 +695,8 @@ mvn spring-boot:run
 ```
 
 **Step 02**: application.properties Settings
-```
+
+```java
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 spring.mail.username=pradeep.vwa@gmail.com
@@ -702,6 +717,7 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 ```
 
 **Step 03**: Application.java
+
 ```java
 package com.springtutorial;
 
@@ -805,6 +821,7 @@ The core of spring framework is it’s bean factory and mechanisms to create and
 singleton is default bean scope in spring container. It tells the container to create and manage only one instance of bean class, per container. This single instance is stored in a cache of such singleton beans, and all subsequent requests and references for that named bean return the cached instance.
 
 Example of singleton scope bean using Java config –
+
 ```java
 @Component
 // This statement is redundant - singleton is default scope
@@ -813,7 +830,9 @@ public class BeanClass {
  
 }
 ```
+
 Example of singleton scope bean using XML config –
+
 ```xml
 <!-- To specify singleton scope is redundant -->
 <bean id="beanId" class="com.springexample.BeanClass" scope="singleton" />
@@ -821,11 +840,12 @@ Example of singleton scope bean using XML config –
 <bean id="beanId" class="com.springexample.BeanClass" />
 ```
 
-**2. prototype scope**  
+**2. prototype scope:**  
 
 prototype scope results in the creation of a new bean instance every time a request for the bean is made by application code.
 
 Java config example of prototype bean scope –
+
 ```java
 @Component
 @Scope("prototype")
@@ -834,15 +854,17 @@ public class BeanClass {
 ```
 
 XML config example of prototype bean scope –
+
 ```xml
 <bean id="beanId" class="com.springexample.BeanClass" scope="prototype" />
 ```
 
-**3. request scope** 
+**3. request scope:** 
 
 In request scope, container creates a new instance for each and every HTTP request. So, if server is currently handling 5 requests, then container can have at most 5 individual instances of bean class. 
 
 Java config example of request bean scope –
+
 ```java
 @Component
 @Scope("request")
@@ -858,15 +880,17 @@ public class BeanClass {
 ```
 
 XML config example of request bean scope –
+
 ```xml
 <bean id="beanId" class="com.springexample.BeanClass" scope="request" />
 ```
 
-**4. session scope** 
+**4. session scope:** 
 
 In session scope, container creates a new instance for each and every HTTP session. So, if server has 10 active sessions, then container can have at most 10 individual instances of bean class. All HTTP requests within single session lifetime will have access to same single bean instance in that session scope.
 
 Java config example of session bean scope –
+
 ```java
 @Component
 @Scope("session")
@@ -882,11 +906,12 @@ public class BeanClass {
 ```
 
 XML config example of session bean scope –
+
 ```xml
 <bean id="beanId" class="com.springexample.BeanClass" scope="session" />
 ```
 
-**5. application scope**
+**5. application scope:**
 
 In application scope, container creates one instance per web application runtime. It is almost similar to singleton scope, with only two differences i.e.
 
@@ -894,6 +919,7 @@ In application scope, container creates one instance per web application runtime
 * application scoped bean is visible as a ServletContext attribute.
 
 Java config example of application bean scope –
+
 ```java
 @Component
 @Scope("application")
@@ -909,15 +935,17 @@ public class BeanClass {
 ```
 
 XML config example of application bean scope –
+
 ```xml
 <bean id="beanId" class="com.springexample.BeanClass" scope="application" />
 ```
 
-**6. websocket scope**  
+**6. websocket scope:**  
 
 The WebSocket Protocol enables two-way communication between a client and a remote host that has opted-in to communication with client. WebSocket Protocol provides a single TCP connection for traffic in both directions. 
 
 Java config example of websocket bean scope –
+
 ```java
 @Component
 @Scope("websocket")
@@ -926,6 +954,7 @@ public class BeanClass {
 ```
 
 XML config example of websocket bean scope –
+
 ```xml
 <bean id="beanId" class="com.springexample.BeanClass" scope="websocket" />
 ```
@@ -964,7 +993,8 @@ AOP provides the way to dynamically add the cross-cutting concern before, after 
 
 5. **Around advice**: Around advice can perform custom behavior before and after the method invocation. This type of advice is used where we need frequent access to a method or database like- caching.
 
-Example: Types of Advices 
+**Example:** Types of Advices
+
 ```java
 /**
 * AOP program to illustrate types of Advices
@@ -1005,7 +1035,8 @@ class Logging {
 }
 ```
 
-Example: JoinPoints
+**Example:** JoinPoints
+
 ```java
 /**
 * AOP program to illustrate JoinPoints
@@ -1025,7 +1056,9 @@ class Logging {
     } 
 } 
 ```
-Example: PointCuts 
+
+**Example:** PointCuts
+
 ```java
 /**
 * AOP program to illustrate PointCuts 
@@ -1054,17 +1087,22 @@ class Logging {
 
 * **@Component**
 This is a general-purpose stereotype annotation indicating that the class is a spring component.
+
 ```java
 @Component
 public @interface Service {
     ….
 }
 ```
+
 * **@Repository**
+
 This is to indicate that the class defines a database repository.
+
 ```xml
 <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
 ```
+
 * **@Controller**
 This indicate that the annotate classes at presentation layers level, mainly used in Spring MVC.
 
@@ -1081,10 +1119,11 @@ This indicate that the annotate classes at presentation layers level, mainly use
 
 Single sign-on (or SSO) allow users to use a single set of credentials to login into multiple related yet independent web applications. SSO is achieved by implementing a centralised login system that handles authentication of users and share that information with applications that need that data.
 
-Example: **Simple Single Sign-On with Spring Security OAuth2**
+**Example:** Simple Single Sign-On with Spring Security OAuth2
 
 Step 01: Maven Dependencies (pom.xml)
-```
+
+```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-web</artifactId>
@@ -1107,7 +1146,9 @@ Step 01: Maven Dependencies (pom.xml)
     <artifactId>thymeleaf-extras-springsecurity4</artifactId>
 </dependency>
 ```
+
 Step 02: Security Configuration
+
 ```java
 @Configuration
 @EnableOAuth2Sso
@@ -1124,7 +1165,9 @@ public class UiSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 }
 ```
+
 Step 03: OAuth Configuration
+
 ```java
 @SpringBootApplication
 @EnableResourceServer
@@ -1134,7 +1177,9 @@ public class AuthorizationServerApplication extends SpringBootServletInitializer
     }
 }
 ```
+
 Step 04: Security Configuration
+
 ```java
 @Configuration
 @Order(1)
@@ -1165,7 +1210,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 }
 ```
+
 Step 05: User Endpoint
+
 ```java
 @RestController
 public class UserController {
@@ -1208,7 +1255,7 @@ The two concepts work together in this way to allow for much more flexible, reus
 SOAP (Simple Object Access Protocol) and REST (Representational State Transfer) are both web service communication protocols.
 In addition to using HTTP for simplicity, REST offers a number of other benefits over SOAP:
 
-**SOAP**
+**1. SOAP:**
 
 * SOAP is a protocol.
 * SOAP stands for Simple Object Access Protocol.
@@ -1220,7 +1267,7 @@ In addition to using HTTP for simplicity, REST offers a number of other benefits
 * SOAP permits XML data format only.
 * SOAP is less preferred than REST.
 
-**REST**
+**2. REST:**
 
 * REST is an architectural style.
 * REST stands for Representational State Transfer.
@@ -1277,6 +1324,7 @@ Spring Boot contains Jetty, Tomcat, and Undertow servers, all of which are embed
 ## Q. ***What are the advantages of using Spring Cloud?***
 
 When developing distributed microservices with Spring Boot we face the following issues-
+
 * **Complexity associated with distributed systems**-  
 This overhead includes network issues, Latency overhead, Bandwidth issues, security issues.
 * **Service Discovery**-  
@@ -1384,7 +1432,9 @@ We make use of the h2 database. Maven will be as follows-
 
 </project>
 ```
+
 Create the SpringBootHelloWorldApplication.java as follows-
+
 ```java
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -1402,6 +1452,7 @@ public class SpringBootHelloWorldApplication {
 }
 ```
 Create the Entity class as follows-
+
 ```java
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -1440,7 +1491,9 @@ public class Employee {
 	}
 }
 ```
+
 The Controller we define methods to add Employee record and display employee records as list. Define the controller as follows-
+
 ```java
 import java.util.List;
 
@@ -1478,7 +1531,9 @@ public class EmployeeController {
 	}
 }
 ```
+
 Define the newEmployee.jsp
+
 ```jsp
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -1490,7 +1545,9 @@ Define the newEmployee.jsp
 </c:forEach>
 </ul>
 ```
+
 Define the allEmployees.jsp
+
 ```jsp
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
@@ -1512,8 +1569,10 @@ Define the allEmployees.jsp
 </body>
 </html>
 ```
+
 The application.properties will be as follows-
-```
+
+```java
 spring.mvc.view.prefix:/WEB-INF/jsp/
 spring.mvc.view.suffix:.jsp
 
@@ -1529,6 +1588,7 @@ spring.jpa.properties.hibernate.hbm2ddl.auto=update
 
 * **@RestController**: The @RestController is a stereotype annotation. It adds `@Controller` and `@ResponseBody` annotations to the class. It requires to import `org.springframework.web.bind.annotation` package.
 The @RestController annotation informs to the Spring to render the result back to the caller.
+
 ```java
 import org.springframework.web.bind.annotation.RestController;  
 @RestController  // using @RestController annotation  
@@ -1536,8 +1596,11 @@ public class HomeController {
     // controller body  
 }  
 ```
+
 * **@RequestMapping**: The @RequestMapping annotation is used to provide routing information. It tells to the Spring that any HTTP request should map to the corresponding method. It requires to import `org.springframework.web.annotation` package.
-Example: Here method index() should map with `/index` url
+
+**Example:** Here method index() should map with `/index` url
+
 ```java
 import org.springframework.web.bind.annotation.RequestMapping;  
 import org.springframework.web.bind.annotation.RestController;  
@@ -1549,6 +1612,7 @@ public class HomeController {
     }  
 }  
 ```
+
 * **@RequestParam**: @RequestParam is a Spring annotation used to bind a web request parameter to a method parameter.
 It has the following optional elements:  
 
@@ -1558,6 +1622,7 @@ It has the following optional elements:
   * **value**: alias for name
 
 1. A Simple Mapping
+
 ```java
 @GetMapping("/api/foos")
 @ResponseBody
@@ -1565,13 +1630,17 @@ public String getFoos(@RequestParam String id) {
     return "ID: " + id;
 }
 ```
+
 Output
-```
+
+```java
 http://localhost:8080/api/foos?id=abc
 ----
 ID: abc
 ```
+
 2. Specifying the Request Parameter Name
+
 ```java
 @PostMapping("/api/foos")
 @ResponseBody
@@ -1579,7 +1648,9 @@ public String addFoo(@RequestParam(name = "id") String fooId, @RequestParam Stri
     return "ID: " + fooId + " Name: " + name;
 }
 ```
+
 3. Making an Optional Request Parameter
+
 ```java
 @GetMapping("/api/foos")
 @ResponseBody
@@ -1587,8 +1658,10 @@ public String getFoos(@RequestParam(required = false) String id) {
     return "ID: " + id;
 }
 ```
+
 Output
-```
+
+```java
 http://localhost:8080/api/foos?id=abc
 ----
 ID: abc
@@ -1598,7 +1671,9 @@ http://localhost:8080/api/foos
 ----
 ID: null
 ```
+
 4. A Default Value for the Request Parameter
+
 ```java
 @GetMapping("/api/foos")
 @ResponseBody
@@ -1606,8 +1681,10 @@ public String getFoos(@RequestParam(defaultValue = "test") String id) {
     return "ID: " + id;
 }
 ```
+
 Output
-```
+
+```java
 http://localhost:8080/api/foos
 ----
 ID: test
@@ -1617,7 +1694,9 @@ http://localhost:8080/api/foos?id=abc
 ----
 ID: abc
 ```
+
 5. Mapping All Parameters
+
 ```java
 @PostMapping("/api/foos")
 @ResponseBody
@@ -1625,13 +1704,17 @@ public String updateFoos(@RequestParam Map<String,String> allParams) {
     return "Parameters are " + allParams.entrySet();
 }
 ```
+
 Output
-```
+
+```java
 curl -X POST -F 'name=abc' -F 'id=123' http://localhost:8080/api/foos
 -----
 Parameters are {[name=abc], [id=123]}
 ```
+
 6. Mapping a Multi-Value Parameter
+
 ```java
 @GetMapping("/api/foos")
 @ResponseBody
@@ -1639,8 +1722,10 @@ public String getFoos(@RequestParam List<String> id) {
     return "IDs are " + id;
 }
 ```
+
 Output
-```
+
+```java
 http://localhost:8080/api/foos?id=1,2,3
 ----
 IDs are [1,2,3]
@@ -1651,6 +1736,7 @@ IDs are [1,2]
 ```
 
 * **@ContextConfiguration**: This annotation specifies how to load the application context while writing a unit test for the Spring environment. Here is an example of using @ContextConfiguration along with @RunWith annotation of JUnit to test a Service class in Spring Boot.
+
 ```java
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes=PaymentConfiguration.class)
@@ -1665,9 +1751,11 @@ public class PaymentServiceTests {
   }
 }
 ```
+
 Here, `@ContextConfiguration` class instructs to load the Spring application context defined in the PaymentConfiguration class.
 
 * **@ResponseBody**: The @ResponseBody annotation tells a controller that the object returned is automatically serialized into JSON and passed back into the HttpResponse object.
+
 ```java
 @Controller
 @RequestMapping("/post")
@@ -1684,8 +1772,10 @@ public class ExamplePostController {
      }
 }
 ```
+
 Output
-```
+
+```java
 {"text":"Thanks For Posting!!!"}
 ```
 
@@ -1695,6 +1785,7 @@ It has the following optional elements:
   * **name**: name of the path variable to bind to
   * **required**: tells whether the path variable is required
   * **value**: alias for name
+
 ```java
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -1712,7 +1803,9 @@ public class MyController {
     }
 }
 ```
+
 * **@ResponseEntity**: ResponseEntity represents an HTTP response, including headers, body, and status. While `@ResponseBody` puts the return value into the body of the response, ResponseEntity also allows us to add headers and status code.
+
 ```java
 @GetMapping("/customHeader")
 ResponseEntity<String> customHeader() {
@@ -1723,7 +1816,9 @@ ResponseEntity<String> customHeader() {
       "Custom header set", headers, HttpStatus.OK);
 }
 ```
+
 * **@Qualifier**: Spring Boot `@Qualifier` shows how to differentiate beans of the same type with @Qualifier. It can also be used to annotate other custom annotations that can then be used as qualifiers.
+
 ```java
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -1762,6 +1857,7 @@ Spring Boot Framework has mainly four major components.
 ## Q. ***What does @SpringBootApplication and @EnableAutoConfiguration do?*** 
 
 * **@SpringBootApplication**: annotation is used to annotate the main class of our Spring Boot application. It also enables the auto-configuration feature of Spring Boot.
+
 ```java
 @SpringBootApplication
 public class SpringBootDemo {
@@ -1770,7 +1866,9 @@ public class SpringBootDemo {
    }
 }
 ```
+
 * **@EnableAutoConfiguration**: The auto-configuration feature automatically configures things if certain classes are present in the Classpath. For example, if you have a data source bean present in the classpath of the application, then it automatically configures the JDBC template. 
+
 ```java
 @Configuration
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
@@ -1806,7 +1904,8 @@ Spring Profiles helps to segregating application configurations, and make them a
 * application-stage.properties
 * application-prod.properties
 
-**Using Profiles In Code**
+**Using Profiles In Code:**
+
 ```java
 @Configuration
 @Profile("dev")
@@ -1828,7 +1927,8 @@ public class ProdConfigurations {
 
 Spring Boot Actuator module use to monitor and manage Spring Boot application by providing production-ready features like health check-up, auditing, metrics gathering, HTTP tracing etc. All of these features can be accessed over JMX or HTTP endpoints.
 
-**Adding Spring Boot Actuator**
+**Adding Spring Boot Actuator:**
+
 ```xml
 <dependencies>
 	<dependency>
@@ -1841,7 +1941,8 @@ Spring Boot Actuator module use to monitor and manage Spring Boot application by
 **Monitoring**: Actuator creates several so-called **endpoints** that can be exposed over HTTP or JMX to let you monitor and interact with application.
 
 For example, There is a `/health` endpoint that provides basic information about the application's health. The `/metrics` endpoint shows several useful metrics information like JVM memory used, system CPU usage, open files, and much more. The `/loggers` endpoint shows application's logs and also lets you change the log level at runtime.
-```
+
+```java
 http://localhost:8080/actuator
 
 ----
@@ -1879,8 +1980,9 @@ http://localhost:8080/actuator
 |caches	                 | Check available caches             |
 |integrationgraph	     | Graph of Spring Integration components|
 
-**Enabling / Disabling endpoints**
-```
+**Enabling / Disabling endpoints:**
+
+```java
 # Disable an endpoint
 management.endpoint.[endpoint-name].enabled=false
 
@@ -1902,6 +2004,7 @@ management.endpoints.enabled-by-default=false
 
 * **CommandLineRunner**
 This interface provides access to application arguments as string array. 
+
 ```java
 @Component
 public class CommandLineAppStartupRunner implements CommandLineRunner {
@@ -1915,6 +2018,7 @@ public class CommandLineAppStartupRunner implements CommandLineRunner {
 ```
 * **ApplicationRunner**
 ApplicationRunner wraps the raw application arguments and exposes the ApplicationArguments interface, which has many convinent methods to get arguments, like getOptionNames() to return all the arguments' names, getOptionValues() to return the agrument value, and raw source arguments with method getSourceArgs(). 
+
 ```java
 @Component
 public class AppStartupRunner implements ApplicationRunner {
@@ -1935,6 +2039,7 @@ public class AppStartupRunner implements ApplicationRunner {
 A Docker is a tool that makes it very easy to deploy and run an application using **containers**. A container allows a developer to create an all-in-one package of the developed application with all its dependencies. For example, a Java application requires Java libraries, and when we deploy it on any system or VM, we need to install Java first. But, in a container, everything is kept together and shipped as one package, such as in a Docker container.
 
 Step 01: **Create a simple Spring Boot Application**
+
 ```java
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -2013,6 +2118,7 @@ Now, we can access the endpoint on `http://localhost:8080/greet/Pradeep`
 
 Spring Boot provides a number of options for error/exception handling.  
 **1. @ExceptionHandler Annotation**: This annotation works at the `@Controller` class level. The issue with the approach is only active for the given controller. The annotation is not global, so we need to implement in each and every controller.
+
 ```java
 @RestController
 public class WelcomeController {
@@ -2029,6 +2135,7 @@ public class WelcomeController {
 }
 ```
 **2. @ControllerAdvice Annotation**: This annotation supports global Exception handler mechanism. So we can implement the controller exception handling events in a central location.
+
 ```java
 @ControllerAdvice
 public class GlobalRestExceptionHandler extends ResponseEntityExceptionHandler {
@@ -2043,6 +2150,7 @@ public class GlobalRestExceptionHandler extends ResponseEntityExceptionHandler {
 **3. @ResponseEntityExceptionHandler**: This method can be used with `@ControllerAdvice` classes. It allows the developer to specify some specific templates of ResponseEntity and return values.
 
 **4. @RestControllerAdvice**: Spring Boot 1.4 introduced the `@RestControllerAdvice` annotation for easier exception handling. It is a convenience annotation that is itself annotated with `@ControllerAdvice` and `@ResponseBody`.
+
 ```java
 @RestControllerAdvice
 public class RestExceptionHandler {
@@ -2077,6 +2185,7 @@ Caching is a mechanism to enhance the performance of a system. It is a temporary
 **Spring Boot Cache Annotations**
 * **@EnableCaching**: It can be added to the boot application class annotated with `@SpringBootApplication`. Spring provides one concurrent hashmap as default cache, but we can override CacheManager to register external cache providers as well easily.
 * **@Cacheable**: It is used on the method level to let spring know that the response of the method are cacheable. Spring manages the request/response of this method to the cache specified in annotation attribute. 
+
 ```java
 @Cacheable(value="books", key="#isbn")
 public Book findStoryBook(ISBN isbn, boolean checkWarehouse, boolean includeUsed)
@@ -2089,6 +2198,7 @@ public Book findStoryBook(ISBN isbn, boolean checkWarehouse, boolean includeUsed
 * **Create HTTP GET REST API**
 
 **Student.java**
+
 ```java
 public class Student {
  
@@ -2107,6 +2217,7 @@ public class Student {
 ```
 
 **StudentService.java**
+
 ```java 
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -2131,6 +2242,7 @@ public class StudentService {
 ```
 
 **StudentController.java**
+
 ```java
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -2156,6 +2268,7 @@ public class StudentController {
 Enable Spring managed Caching
 
 **SpringCacheApplication.java**
+
 ```java
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -2205,6 +2318,7 @@ server.contextPath=/swagger2-demo
 * Add one REST controller `Swagger2DemoRestController` which will provide basic REST based functionalities on Student entity.
 
 **Swagger2DemoRestController.java**
+
 ```java
 import java.util.ArrayList;
 import java.util.List;
@@ -2252,6 +2366,7 @@ public class Swagger2DemoRestController {
 ```
 
 **Student.java**
+
 ```java
 public class Student {
      
@@ -2307,6 +2422,7 @@ http://localhost:8080/swagger2-demo/getStudentByClass/v
 </dependency>
 ```
 * **Add Swagger2 Configuration**: Add the below configuration in the code base. To help you understand the configuration, I have added inline comments.
+
 ```java
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -2360,6 +2476,7 @@ public class Swagger2UiConfiguration extends WebMvcConfigurerAdapter
 * **JPA Entity**: 
 
 **EmployeeEntity.java**  
+
 ```java
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -2400,6 +2517,7 @@ PagingAndSortingRepository is an extension of CrudRepository to provide addition
   * **Iterable findAll(Sort sort)** – returns all entities sorted by the given options. No paging is applied here.
 
 **EmployeeRepository.java**  
+
 ```java
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
@@ -2415,6 +2533,7 @@ public interface EmployeeRepository
 In below spring mvc controller, we are accepting paging and sorting parameters using pageNo, pageSize and sortBy query parameters. Also, by default '10' employees will be fetched from database in page number '0', and employee records will be sorted based on 'id' field.
 
 **EmployeeController.java**  
+
 ```java
 @RestController
 @RequestMapping("/employees")
@@ -2438,6 +2557,7 @@ public class EmployeeController
 To perform pagination and/or sorting, we must create org.springframework.data.domain.Pageable or org.springframework.data.domain.Sort instances are pass to the findAll() method.
 
 **EmployeeService.java**
+
 ```java
 @Service
 public class EmployeeService
@@ -2461,16 +2581,19 @@ public class EmployeeService
 ```
 * **Pagination and sorting techniques**
   * **Paging WITHOUT sorting**: To apply only pagination in result set, we shall create Pageable object without any Sort information.
+
 ```java
 Pageable paging = PageRequest.of(pageNo, pageSize);
 Page<EmployeeEntity> pagedResult = repository.findAll(paging);
 ```
    * **Paging WITH sorting**: To apply only pagination in result set, we shall create Pageable object with desired Sort column name.
+
 ```java
 Pageable paging = PageRequest.of(pageNo, pageSize, Sort.by("email"));
 Page<EmployeeEntity> pagedResult = repository.findAll(paging);
 ```
    * **Sorting only**: If there is no need to page, and only sorting is required, we can create Sort object for that.
+
 ```java
 Sort sortOrder = Sort.by("email");
 List<EmployeeEntity> list = repository.findAll(sortOrder);
@@ -2484,6 +2607,7 @@ List<EmployeeEntity> list = repository.findAll(sortOrder);
 
 Spring Boot internally uses the `TaskScheduler` interface for scheduling the annotated methods for execution. The @Scheduled annotation is added to a method along with some information about when to execute it, and Spring Boot takes care of the rest.
 **Enable Scheduling**
+
 ```java
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -2499,6 +2623,7 @@ public class SchedulerDemoApplication {
 }
 ```
 **Scheduling a Task with Fixed Rate**
+
 ```java
 @Scheduled(fixedRate = 2000)
 public void scheduleTaskWithFixedRate() {
@@ -2514,6 +2639,7 @@ Fixed Rate Task :: Execution Time - 10:27:02
 ....
 ```
 **Scheduling a Task using Cron Expression**
+
 ```java
 @Scheduled(cron = "0 * * * * ?")
 public void scheduleTaskWithCronExpression() {
@@ -2541,6 +2667,7 @@ pom.xml
 </dependency>
 ```
 create a MVC configuration file that extends WebMvcConfigurerAdapter.
+
 ```java
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
@@ -2558,6 +2685,7 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 }
 ```
 create a Web Security Configuration file, that is used to secure your application to access the HTTP Endpoints by using basic authentication.
+
 ```java
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -2601,6 +2729,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 Cross-Origin Resource Sharing (CORS) is a security concept that allows restricting the resources implemented in web browsers. It prevents the JavaScript code producing or consuming the requests against different origin.
 
 * **Enable CORS in Controller Method**
+
 ```java
 @RequestMapping(value = "/products")
 @CrossOrigin(origins = "http://localhost:8080")
@@ -2610,6 +2739,7 @@ public ResponseEntity<Object> getProduct() {
 ```
 * **Global CORS Configuration**
 We need to define the shown `@Bean` configuration to set the CORS configuration support globally to your Spring Boot application.
+
 ```java
 @Bean
 public WebMvcConfigurer corsConfigurer() {
@@ -2622,6 +2752,7 @@ public WebMvcConfigurer corsConfigurer() {
 }
 ```
 To code to set the CORS configuration globally in main Spring Boot application is given below.
+
 ```java
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -2659,6 +2790,7 @@ In order to use the Spring Security CSRF protection, we'll first need to make su
 
 **1. Java Configuration**    
 CSRF protection is **enabled by default** in the Java configuration. We can still disable it if we need to:
+
 ```java
 @Override
 protected void configure(HttpSecurity http) throws Exception {
@@ -2687,6 +2819,7 @@ We'll first need to include the token in our page – and for that we can use me
 <meta name="_csrf_header" content="${_csrf.headerName}"/>
 ```
 Then we'll construct the header:
+
 ```javascript
 var token = $("meta[name='_csrf']").attr("content");
 var header = $("meta[name='_csrf_header']").attr("content");
@@ -2818,6 +2951,7 @@ logging.pattern.console=%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
 ```
 
 **HelloController.java**
+
 ```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -2928,6 +3062,7 @@ In this project, we will create a simple job with 2 step tasks and execute the j
 * **Add Tasklets**
 
 **TaskOne.java**
+
 ```java
 import org.springframework.batch.core.StepContribution;
 import org.springframework.batch.core.scope.context.ChunkContext;
@@ -2947,6 +3082,7 @@ public class TaskOne implements Tasklet {
 ```
 
 **TaskTwo.java**
+
 ```java
 import org.springframework.batch.core.StepContribution;
 import org.springframework.batch.core.scope.context.ChunkContext;
@@ -2968,6 +3104,7 @@ public class TaskTwo implements Tasklet {
 This is major step where you define all the job related configurations and it’s execution logic. 
 
 **BatchConfig.java** 
+
 ```java
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -3020,6 +3157,7 @@ public class BatchConfig {
 Now our simple job 'demoJob' is configured and ready to be executed. I am using CommandLineRunner interface to execute the job automatically, with JobLauncher, when the application is fully started.
 
 **App.java**
+
 ```java
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParameters;
@@ -3161,6 +3299,7 @@ public class ProductServiceInterceptor implements HandlerInterceptor {
 * **Configure Authentication and URL Security**
 
 **SecurityConfig.java**
+
 ```java
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -3218,6 +3357,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 * **Bind spring security to web application**
 
 **SpringSecurityInitializer.java**
+
 ```java
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 public class SpringSecurityInitializer extends AbstractSecurityWebApplicationInitializer {
@@ -3226,6 +3366,7 @@ public class SpringSecurityInitializer extends AbstractSecurityWebApplicationIni
 ```
 
 **AppInitializer.java**
+
 ```java
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
  
@@ -3248,6 +3389,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
 }
 ```
 * **Login Controller**
+
 ```java
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -3433,6 +3575,7 @@ In the Maven we need the spring boot WebSocket dependency.Maven will be as follo
 </project>
 ```
 Create the SpringBoot Bootstrap class as below-
+
 ```java
 package com.javaexample.websocket.config;
 
@@ -3473,6 +3616,7 @@ public class SocketTextHandler extends TextWebSocketHandler {
 }
 ```
 In order to tell Spring to forward client requests to the endpoint , we need to register the handler.
+
 ```java
 package com.javaexample.websocket.config;
 
@@ -3493,6 +3637,7 @@ public class WebSocketConfig implements WebSocketConfigurer {
 ```
 Next we define the UI part for establishing WebSocket and making the calls-
 Define the app.js as follows-
+
 ```javascript
 var ws;
 function setConnected(connected) {
@@ -3656,6 +3801,7 @@ The spring-boot-starter-test dependency includes all required dependencies to cr
 </dependency>
 ```
 * **MockitoJUnitRunner class**: It automatically initialize all the objects annotated with `@Mock` and `@InjectMocks` annotations.
+
 ```java
 @RunWith(MockitoJUnitRunner.class)
 public class TestEmployeeManager {
@@ -3784,6 +3930,7 @@ public class EmployeeManager
 }
 ```
 **Dao layer class** ( EmployeeDao.java ) 
+
 ```java
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -3852,6 +3999,7 @@ public class SpringBootDemoApplicationTests
 `@SpringBootTest` annotation loads whole application, but it is better to limit Application Context only to a set of spring components that participate in test scenario.
 
 The classes attribute specifies the annotated classes to use for loading an ApplicationContext.
+
 ```java
 @SpringBootTest(classes = {EmployeeRepository.class, EmployeeService.class})
 public class SpringBootDemoApplicationTests 
@@ -3869,6 +4017,7 @@ public class SpringBootDemoApplicationTests
 ## Q. ***How Spring boot autowiring an interface with multiple implementations?***
 
 Use `@Qualifier` annotation is used to differentiate beans of the same interface
+
 ```java
 @SpringBootApplication
 public class DemoApplication {
