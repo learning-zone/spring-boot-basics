@@ -1313,11 +1313,12 @@ It helps to access the current state of an application that is running in a prod
 
 ## Q. ***Which Embedded Containers are Supported by Spring Boot?***
 
-Spring Boot contains Jetty, Tomcat, and Undertow servers, all of which are embedded.
+Spring Boot contains Jetty, Tomcat, Undertow and Reactor Netty servers, all of which are embedded.
 
 * **Jetty** – Used in a wide number of projects, Eclipse Jetty can be embedded in framework, application servers, tools, and * clusters.
 * **Tomcat** – Apache Tomcat is an open source JavaServer Pages implementation which works well with embedded systems.
 * **Undertow** – A flexible and prominent web server that uses small single handlers to develop a web server.
+* **Reactor Netty** - Reactor Netty offers non-blocking and backpressure-ready TCP/HTTP/UDP/QUIC clients & servers based on Netty framework.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
