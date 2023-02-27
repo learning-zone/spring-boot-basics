@@ -1,6 +1,6 @@
 # Spring Boot & Microservices Basics
 
-> *Click &#9733; if you like the project. Your contributions are heartily ♡ welcome.*
+> *Click &#9733; if you like the project. Your contributions are heartily ♡ welcome*
 
 <br/>
 
